@@ -11,7 +11,7 @@ export const projectData = [
     img: "./assets/instagramPic1.PNG",
     stack: ["React", "Tailwind", "Firebase"],
     repository: "https://github.com/KFig21/instagram_clone",
-    link: "https://kfig21.github.io/instagram_clone/",
+    live: "https://kfig21.github.io/instagram_clone/",
   },
   {
     id: "2",
@@ -24,7 +24,7 @@ export const projectData = [
     img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
     stack: ["React", "Tailwind", "Firebase"],
     repository: "https://github.com/KFig21/instagram_clone",
-    link: "https://kfig21.github.io/instagram_clone/",
+    live: "https://kfig21.github.io/instagram_clone/",
   },
   {
     id: "3",
@@ -37,6 +37,6 @@ export const projectData = [
     img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
     stack: ["React", "Tailwind", "Firebase"],
     repository: "https://github.com/KFig21/instagram_clone",
-    link: "https://kfig21.github.io/instagram_clone/",
+    live: "https://kfig21.github.io/instagram_clone/",
   },
 ];
