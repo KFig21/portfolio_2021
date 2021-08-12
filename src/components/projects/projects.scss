@@ -147,6 +147,10 @@
                 justify-content: center;
                 cursor: pointer;
 
+                @include mobile {
+                  margin-right: 0px;
+                }
+
                 img {
                   width: 25px;
                 }
