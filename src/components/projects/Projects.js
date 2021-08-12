@@ -2,6 +2,9 @@ import React from "react";
 import "./projects.scss";
 import { useState } from "react";
 import { projectData } from "./projectData";
+import CodeIcon from "@material-ui/icons/Code";
+import LanguageIcon from "@material-ui/icons/Language";
+import DescriptionIcon from "@material-ui/icons/Description";
 
 export default function Projects() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -26,8 +29,36 @@ export default function Projects() {
             <div className="item">
               <div className="left">
                 <div className="left-container">
+                  <div className="mobile-details">
+                    <a
+                      href={project.repository}
+                      className="option"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <CodeIcon />
+                      Code
+                    </a>
+                    <a
+                      href={project.live}
+                      className="option"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <LanguageIcon />
+                      Live
+                    </a>
+                    <a
+                      href={project.live}
+                      className="option"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <DescriptionIcon />
+                      Details
+                    </a>
+                  </div>
                   <div className="icons-container">
-                    {" "}
                     {project.icon.map((tech) => (
                       <div>
                         <div className={`img-container ${tech.color}-color-bg`}>
@@ -44,6 +75,28 @@ export default function Projects() {
                 </div>
               </div>
               <div className="right">
+                <div className="shade">
+                  <div className="shade-container">
+                    <a
+                      href={project.repository}
+                      className="option"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <CodeIcon />
+                      Code
+                    </a>
+                    <a
+                      href={project.live}
+                      className="option"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <LanguageIcon />
+                      Live
+                    </a>
+                  </div>
+                </div>
                 <img src={project.img} alt="" />
               </div>
             </div>

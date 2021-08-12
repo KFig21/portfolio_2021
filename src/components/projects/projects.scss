@@ -112,9 +112,9 @@
 
             @include mobile {
               flex-direction: column-reverse;
-              justify-content: space-around;
+              justify-content: space-between;
               width: 80%;
-              height: 50%;
+              height: 100%;
             }
 
             .icons-container {
@@ -192,22 +192,25 @@
               }
             }
 
-            h4 {
-              color: white;
-              text-align: center;
-            }
+            .mobile-details {
+              display: none;
 
-            .div-stack {
-              display: flex;
-              justify-content: center;
-              align-items: center;
+              @include mobile {
+                display: flex;
+                flex-direction: column;
 
-              span {
-                color: white;
-                font-size: 14px;
-                font-weight: 600;
-                padding: 5px;
-                cursor: pointer;
+                .option {
+                  padding: 3px 0px;
+                  font-size: 12px;
+                  font-weight: 700;
+                  display: flex;
+                  justify-content: space;
+                  align-items: center;
+                  cursor: pointer;
+                  transition: linear 0.2s;
+                  text-decoration: none;
+                  color: white;
+                }
               }
             }
           }
@@ -226,6 +229,53 @@
             top: 0;
             left: 0;
             width: 100%;
+          }
+
+          .shade {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            color: white;
+            opacity: 0;
+            transition: linear 0.2s;
+
+            @include mobile {
+              display: none;
+            }
+
+            &:hover {
+              opacity: 1;
+            }
+
+            .shade-container {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              margin: auto;
+              width: 80%;
+              height: 100%;
+
+              .option {
+                padding: 10px;
+                font-weight: 700;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: linear 0.2s;
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                  color: orange;
+                  transform: scale(1.2);
+                  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.473);
+                }
+              }
+            }
           }
         }
       }
