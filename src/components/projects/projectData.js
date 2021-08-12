@@ -34,7 +34,7 @@ export const projectData = [
       { icon: "./assets/css.png", color: "css" },
     ],
     title: "HoopShop",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     img: "./assets/projects/portfolio-hoopShopPic1.PNG",
     stack: ["React", "JavaScript", "CSS"],
     repository: "https://github.com/KFig21/shopping_cart",

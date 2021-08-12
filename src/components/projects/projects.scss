@@ -27,7 +27,7 @@
     cursor: pointer;
 
     @include mobile {
-      display: none;
+      height: 25px;
     }
 
     &:active {
@@ -43,6 +43,9 @@
       @media (max-width: 950px) {
         left: 20px;
       }
+      @include mobile {
+        left: 9px;
+      }
     }
 
     &.right {
@@ -53,6 +56,9 @@
       }
       @media (max-width: 950px) {
         right: 20px;
+      }
+      @include mobile {
+        right: 9px;
       }
     }
   }
@@ -66,7 +72,7 @@
 
     @include mobile {
       height: 100vh;
-      flex-direction: column;
+      // flex-direction: column;
       justify-content: center;
     }
 
@@ -80,7 +86,6 @@
         width: 700px;
         height: 90%;
         background-color: $primaryColor;
-
         border-radius: 20px;
         display: flex;
         align-items: center;
@@ -89,13 +94,14 @@
 
         @media (max-width: 875px) {
           width: 77%;
-          box-shadow: 0px 0px 7px $accentColor;
         }
 
         @include mobile {
-          width: 80%;
-          height: 22.5vh;
+          box-shadow: 0px 0px 12px $accentColor;
+          width: 75%;
+          height: 70vh;
           margin: 10px 0;
+          flex-direction: column-reverse;
         }
 
         .left {
@@ -104,6 +110,11 @@
           display: flex;
           justify-content: center;
 
+          @include mobile {
+            flex: 8;
+            width: 100%;
+          }
+
           .left-container {
             width: 86%;
             height: 100%;
@@ -111,10 +122,8 @@
             flex-direction: column;
 
             @include mobile {
-              flex-direction: column-reverse;
-              justify-content: flex-end;
-              width: 80%;
               height: 100%;
+              display: block;
             }
 
             .icons-container {
@@ -123,8 +132,9 @@
               height: 65px;
 
               @include mobile {
-                height: 20px;
-                margin-bottom: 15px;
+                width: 85%;
+                margin: 15px auto;
+                justify-content: space-around;
               }
 
               .img-container {
@@ -137,19 +147,10 @@
                 justify-content: center;
                 cursor: pointer;
 
-                @include mobile {
-                  width: 20px;
-                  height: 20px;
-                  margin-right: 6px;
-                }
-
                 img {
                   width: 25px;
-
-                  @include mobile {
-                    width: 15px;
-                  }
                 }
+
                 .stack {
                   position: absolute;
                   top: 45px;
@@ -157,16 +158,12 @@
                   opacity: 0;
 
                   @include mobile {
-                    display: none;
+                    opacity: 1;
                   }
                 }
 
                 &.img-container:hover .stack {
                   opacity: 1;
-
-                  @include mobile {
-                    opacity: 0;
-                  }
                 }
               }
             }
@@ -179,9 +176,10 @@
               text-underline-offset: 0.5px;
 
               @include mobile {
-                font-size: 15px;
-                line-height: 20px;
-                margin-bottom: 15px;
+                font-size: 25px;
+                height: 40px;
+                margin: 10px;
+                text-align: center;
               }
             }
 
@@ -192,29 +190,48 @@
               padding: 20px 0px;
 
               @include mobile {
+                height: calc((70vh * (2 / 3)) - 195px);
+                margin: 10px 0px;
+                padding: 0px;
+                overflow-y: scroll;
+              }
+            }
+
+            .details-container {
+              display: flex;
+              justify-content: space-around;
+              align-items: flex-start;
+              margin: auto;
+              width: 80%;
+              max-height: 40px;
+              min-height: 40px;
+
+              .option {
+                padding: 0px 10px;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: linear 0.2s;
+                text-decoration: none;
+                color: white;
+              }
+            }
+
+            .desktop {
+              display: flex;
+
+              @include mobile {
                 display: none;
               }
             }
 
-            .mobile-details {
+            .mobile {
               display: none;
 
               @include mobile {
                 display: flex;
-                flex-direction: column;
-
-                .option {
-                  padding: 3px 0px;
-                  font-size: 12px;
-                  font-weight: 700;
-                  display: flex;
-                  justify-content: space;
-                  align-items: center;
-                  cursor: pointer;
-                  transition: linear 0.2s;
-                  text-decoration: none;
-                  color: white;
-                }
               }
             }
           }
@@ -222,11 +239,16 @@
         .right {
           flex: 8;
           height: 100%;
+          width: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
           overflow: hidden;
           position: relative;
+
+          @include mobile {
+            flex: 4;
+          }
 
           img {
             position: absolute;
@@ -244,21 +266,6 @@
             color: white;
             opacity: 0;
             transition: linear 0.2s;
-
-            @include mobile {
-              background: rgb(255, 255, 255);
-              background: linear-gradient(
-                180deg,
-                rgba(0, 0, 0, 0) 66%,
-                rgba(0, 0, 0, 0.25) 83%,
-                rgba(0, 0, 0, 0.6) 100%
-              );
-              opacity: 1;
-              height: 100%;
-              bottom: 0;
-              overflow-y: hidden;
-            }
-
             &:hover {
               opacity: 1;
             }
@@ -272,9 +279,7 @@
               height: 100%;
 
               @include mobile {
-                width: 100%;
-                position: absolute;
-                bottom: -40%;
+                display: none;
               }
 
               .option {
@@ -293,10 +298,6 @@
                   color: orange;
                   transform: scale(1.2);
                   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.473);
-                }
-
-                @include mobile {
-                  flex-direction: row;
                 }
               }
             }

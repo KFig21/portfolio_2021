@@ -29,18 +29,8 @@ export default function Projects() {
             <div className="item">
               <div className="left">
                 <div className="left-container">
-                  {/* <div className="mobile-details">
-                    <a
-                      href={project.live}
-                      className="option"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <DescriptionIcon />
-                      Details
-                    </a>
-                  </div> */}
-                  <div className="icons-container">
+                  {/* desktop icons */}
+                  <div className="icons-container desktop">
                     {project.icon.map((tech) => (
                       <div>
                         <div className={`img-container ${tech.color}-color-bg`}>
@@ -54,6 +44,39 @@ export default function Projects() {
                   </div>
                   <h2>{project.title}</h2>
                   <p>{project.desc}</p>
+                  {/* mobile icons */}
+                  <div className="icons-container mobile">
+                    {project.icon.map((tech) => (
+                      <div>
+                        <div className={`img-container ${tech.color}-color-bg`}>
+                          <img src={tech.icon} alt="" />
+                          <span className={`stack ${tech.color}-color-text`}>
+                            {tech.color}
+                          </span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="details-container mobile">
+                    <a
+                      href={project.repository}
+                      className="option"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <CodeIcon style={{ margin: " 0px 5px" }} />
+                      Code
+                    </a>
+                    <a
+                      href={project.live}
+                      className="option"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <LanguageIcon style={{ margin: " 0px 5px" }} />
+                      Live
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="right">
