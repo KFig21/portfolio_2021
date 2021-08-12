@@ -1,0 +1,74 @@
+$primaryColor: #202020;
+$menuActiveBackgroundColor: rgba(0, 0, 0, 0.5);
+$mobileMenuActiveBackgroundColor: rgba(0, 0, 0, 0.9);
+$accentColor: #23c5d9;
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+.up-arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+
+  @include mobile {
+    bottom: 7px;
+    left: 37%;
+  }
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: 10px;
+  right: 45%;
+
+  @include mobile {
+    bottom: 7px;
+    right: 37%;
+  }
+}
+
+.arrow-img {
+  width: 30px;
+  animation: arrowBlink 3s infinite;
+}
+
+@keyframes arrowBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// tech colors
+$reactColor: #61b8fb;
+$tailwindColor: #17bbb9;
+$firebaseColor: #f79b00;
+.react-color-bg {
+  background-color: $reactColor;
+}
+.tailwind-color-bg {
+  background-color: $tailwindColor;
+}
+.firebase-color-bg {
+  background-color: $firebaseColor;
+}
+.react-color-text {
+  color: $reactColor;
+}
+.tailwind-color-text {
+  color: $tailwindColor;
+}
+.firebase-color-text {
+  color: $firebaseColor;
+}

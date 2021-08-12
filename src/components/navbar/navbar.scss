@@ -1,0 +1,183 @@
+@import "../../global.scss";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: $primaryColor;
+  color: white;
+  z-index: 100;
+  transition: ease all 0.5s;
+
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100vw;
+      padding: 10px 18px;
+    }
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      font-size: 40px;
+      text-decoration: none;
+      font-family: 700;
+      color: inherit;
+      margin-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo-img {
+        max-height: 40px;
+      }
+
+      @include mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .navbar-svg {
+        max-height: 40px;
+        max-width: 40px;
+        border-radius: 50%;
+        background-color: $accentColor;
+        background-size: 200% 200%;
+
+        .navbar-svg-g {
+          fill: $primaryColor;
+        }
+
+        &:hover {
+          background: linear-gradient(
+            130deg,
+            $accentColor,
+            $accentColor,
+            $accentColor,
+            $accentColor,
+            #97e7f5,
+            $accentColor,
+            $accentColor,
+            $accentColor,
+            $accentColor
+          );
+          -webkit-animation: animated-logo 3s ease infinite;
+          -moz-animation: animated-logo 3s ease infinite;
+          animation: animated-logo 3s ease infinite;
+          background-size: 200% 200%;
+          height: 300px;
+          width: 300px;
+
+          @-webkit-keyframes animated-logo {
+            0% {
+              background-position: 96% 100%;
+            }
+
+            100% {
+              background-position: 5% 0%;
+            }
+          }
+          @-moz-keyframes animated-logo {
+            0% {
+              background-position: 96% 100%;
+            }
+
+            100% {
+              background-position: 5% 0%;
+            }
+          }
+          @keyframes animated-logo {
+            0% {
+              background-position: 96% 100%;
+            }
+
+            100% {
+              background-position: 5% 0%;
+            }
+          }
+        }
+      }
+    }
+
+    .item-container {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+
+      @include mobile {
+        display: none;
+      }
+
+      .icon {
+        font-size: 18px;
+        margin-right: 5px;
+      }
+
+      span {
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .right {
+    overflow: visible;
+
+    .hamburger {
+      width: 32px;
+      height: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      overflow: visible;
+
+      span {
+        width: 100%;
+        height: 3px;
+        background-color: $accentColor;
+        transform-origin: left;
+        transition: ease all 0.5s;
+      }
+    }
+  }
+
+  &.active {
+    background-color: $menuActiveBackgroundColor;
+    color: white;
+
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: crimson;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: crimson;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

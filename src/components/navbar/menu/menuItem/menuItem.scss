@@ -1,0 +1,40 @@
+@import "../../../../global.scss";
+
+li {
+  height: 50px;
+  margin-bottom: 25px;
+
+  a {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    transition: linear 0.2s;
+  }
+}
+
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.underline:after {
+  border-radius: 50px;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: $accentColor;
+  height: 4px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}

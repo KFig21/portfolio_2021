@@ -1,0 +1,234 @@
+@import "../../global.scss";
+
+.projects {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .projects-title {
+    position: absolute;
+    top: 50px;
+    color: white;
+    font-size: 50px;
+
+    @include mobile {
+      top: 0px;
+      margin: 0;
+      padding: 0;
+      font-size: 2.25em;
+    }
+  }
+
+  .arrow {
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    &.left {
+      left: 100px;
+
+      @media (max-width: 1100px) {
+        left: 50px;
+      }
+      @media (max-width: 950px) {
+        left: 20px;
+      }
+    }
+
+    &.right {
+      right: 100px;
+
+      @media (max-width: 1100px) {
+        right: 50px;
+      }
+      @media (max-width: 950px) {
+        right: 20px;
+      }
+    }
+  }
+
+  .slider {
+    height: 400px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+
+    @include mobile {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        width: 700px;
+        height: 90%;
+        background-color: $primaryColor;
+
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 20px $accentColor;
+
+        @media (max-width: 875px) {
+          width: 77%;
+          box-shadow: 0px 0px 7px $accentColor;
+        }
+
+        @include mobile {
+          width: 80%;
+          height: 22.5vh;
+          margin: 10px 0;
+        }
+
+        .left {
+          flex: 4;
+          height: 80%;
+          display: flex;
+          justify-content: center;
+
+          .left-container {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            @include mobile {
+              flex-direction: column-reverse;
+              justify-content: space-around;
+              width: 80%;
+              height: 50%;
+            }
+
+            .icons-container {
+              display: flex;
+              position: relative;
+              height: 65px;
+
+              @include mobile {
+                height: 20px;
+              }
+
+              .img-container {
+                width: 40px;
+                height: 40px;
+                margin-right: 12px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                @include mobile {
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 6px;
+                }
+
+                img {
+                  width: 25px;
+
+                  @include mobile {
+                    width: 15px;
+                  }
+                }
+                .stack {
+                  position: absolute;
+                  top: 45px;
+                  transition: linear 0.2s;
+                  opacity: 0;
+
+                  @include mobile {
+                    display: none;
+                  }
+                }
+
+                &.img-container:hover .stack {
+                  opacity: 1;
+
+                  @include mobile {
+                    opacity: 0;
+                  }
+                }
+              }
+            }
+
+            h2 {
+              font-size: 20px;
+              color: white;
+              line-height: 40px;
+
+              @include mobile {
+                font-size: 15px;
+                line-height: 20px;
+              }
+            }
+
+            p {
+              font-size: 14px;
+              line-height: 18px;
+              color: white;
+              padding: 20px 0px;
+
+              @include mobile {
+                display: none;
+              }
+            }
+
+            h4 {
+              color: white;
+              text-align: center;
+            }
+
+            .div-stack {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              span {
+                color: white;
+                font-size: 14px;
+                font-weight: 600;
+                padding: 5px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .right {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          position: relative;
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
