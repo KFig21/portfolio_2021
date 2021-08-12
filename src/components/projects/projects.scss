@@ -112,7 +112,7 @@
 
             @include mobile {
               flex-direction: column-reverse;
-              justify-content: space-between;
+              justify-content: flex-end;
               width: 80%;
               height: 100%;
             }
@@ -124,6 +124,7 @@
 
               @include mobile {
                 height: 20px;
+                margin-bottom: 15px;
               }
 
               .img-container {
@@ -178,6 +179,7 @@
               @include mobile {
                 font-size: 15px;
                 line-height: 20px;
+                margin-bottom: 15px;
               }
             }
 
@@ -242,7 +244,15 @@
             transition: linear 0.2s;
 
             @include mobile {
-              display: none;
+              background: rgb(255, 255, 255);
+              background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0) 66%,
+                rgba(0, 0, 0, 0.5049370089832808) 100%
+              );
+              opacity: 1;
+              height: 100%;
+              bottom: 0;
             }
 
             &:hover {
@@ -256,6 +266,12 @@
               margin: auto;
               width: 80%;
               height: 100%;
+
+              @include mobile {
+                width: 100%;
+                position: absolute;
+                bottom: -40%;
+              }
 
               .option {
                 padding: 10px;
@@ -273,6 +289,10 @@
                   color: orange;
                   transform: scale(1.2);
                   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.473);
+                }
+
+                @include mobile {
+                  flex-direction: row;
                 }
               }
             }

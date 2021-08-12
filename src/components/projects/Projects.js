@@ -31,24 +31,6 @@ export default function Projects() {
                 <div className="left-container">
                   <div className="mobile-details">
                     <a
-                      href={project.repository}
-                      className="option"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <CodeIcon />
-                      Code
-                    </a>
-                    <a
-                      href={project.live}
-                      className="option"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <LanguageIcon />
-                      Live
-                    </a>
-                    <a
                       href={project.live}
                       className="option"
                       target="_blank"
@@ -83,7 +65,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <CodeIcon />
+                      <CodeIcon style={{ margin: " 0px 5px" }} />
                       Code
                     </a>
                     <a
@@ -92,7 +74,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <LanguageIcon />
+                      <LanguageIcon style={{ margin: " 0px 5px" }} />
                       Live
                     </a>
                   </div>
