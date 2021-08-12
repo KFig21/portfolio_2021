@@ -2,6 +2,7 @@ $primaryColor: #202020;
 $menuActiveBackgroundColor: rgba(0, 0, 0, 0.5);
 $mobileMenuActiveBackgroundColor: rgba(0, 0, 0, 0.9);
 $accentColor: #23c5d9;
+$accentColorFaded: #23c2d799;
 
 $width: 768px;
 
@@ -54,6 +55,8 @@ $width: 768px;
 $reactColor: #61b8fb;
 $tailwindColor: #17bbb9;
 $firebaseColor: #f79b00;
+$javascriptColor: #f7cf00;
+$cssColor: #1c86c4;
 .react-color-bg {
   background-color: $reactColor;
 }
@@ -63,6 +66,12 @@ $firebaseColor: #f79b00;
 .firebase-color-bg {
   background-color: $firebaseColor;
 }
+.javascript-color-bg {
+  background-color: $javascriptColor;
+}
+.css-color-bg {
+  background-color: $cssColor;
+}
 .react-color-text {
   color: $reactColor;
 }
@@ -71,4 +80,10 @@ $firebaseColor: #f79b00;
 }
 .firebase-color-text {
   color: $firebaseColor;
+}
+.javascript-color-text {
+  color: $javascriptColor;
+}
+.css-color-text {
+  color: $cssColor;
 }

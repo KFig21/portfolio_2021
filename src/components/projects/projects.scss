@@ -175,6 +175,8 @@
               font-size: 20px;
               color: white;
               line-height: 40px;
+              text-decoration: underline solid 2.5px $accentColorFaded;
+              text-underline-offset: 0.5px;
 
               @include mobile {
                 font-size: 15px;

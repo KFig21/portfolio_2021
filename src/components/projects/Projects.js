@@ -29,7 +29,7 @@ export default function Projects() {
             <div className="item">
               <div className="left">
                 <div className="left-container">
-                  <div className="mobile-details">
+                  {/* <div className="mobile-details">
                     <a
                       href={project.live}
                       className="option"
@@ -39,7 +39,7 @@ export default function Projects() {
                       <DescriptionIcon />
                       Details
                     </a>
-                  </div>
+                  </div> */}
                   <div className="icons-container">
                     {project.icon.map((tech) => (
                       <div>
