@@ -51,6 +51,21 @@ $width: 768px;
   }
 }
 
+// scrollbar
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $accentColor;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $primaryColor;
+}
+
 // tech colors
 $reactColor: #61b8fb;
 $tailwindColor: #17bbb9;

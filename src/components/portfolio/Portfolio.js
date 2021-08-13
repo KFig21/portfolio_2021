@@ -1,47 +1,55 @@
 import React, { useState, useEffect } from "react";
 import List from "./list/List";
 import "./portfolio.scss";
+import Modal from "../modal/Modal";
 import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  webDesign,
+  reactPortfolio,
+  gamesPortfolio,
+  apiPortfolio,
+  otherPortfolio,
 } from "./portfolioData.js";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("webDesign");
   const [data, setData] = useState([]);
+  const [project, setProject] = useState([]);
+  const [showModal, setShowModal] = useState(false);
 
   const list = [
-    { id: "featured", title: "Featured" },
-    { id: "web", title: "Web App" },
-    { id: "mobile", title: "Mobile App" },
-    { id: "design", title: "Design" },
-    { id: "content", title: "Content" },
+    { id: "webDesign", title: "Web Design" },
+    { id: "react", title: "React Apps" },
+    { id: "games", title: "Games" },
+    { id: "apis", title: "APIs" },
+    { id: "other", title: "Other" },
   ];
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
+      case "webDesign":
+        setData(webDesign);
         break;
-      case "web":
-        setData(webPortfolio);
+      case "react":
+        setData(reactPortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
+      case "games":
+        setData(gamesPortfolio);
         break;
-      case "design":
-        setData(designPortfolio);
+      case "apis":
+        setData(apiPortfolio);
         break;
-      case "content":
-        setData(contentPortfolio);
+      case "other":
+        setData(otherPortfolio);
         break;
       default:
-        setData(featuredPortfolio);
+        setData(webDesign);
     }
   }, [selected]);
+
+  const handleSetModal = (item) => {
+    setShowModal(true);
+    setProject(item);
+  };
 
   return (
     <div className="portfolio" id="portfolio">
@@ -51,6 +59,7 @@ export default function Portfolio() {
           <List
             title={item.title}
             id={item.id}
+            key={item.id}
             active={selected === item.id}
             setSelected={setSelected}
           />
@@ -58,7 +67,11 @@ export default function Portfolio() {
       </ul>
       <div className="container">
         {data.map((item) => (
-          <div className="item">
+          <div
+            key={item.id}
+            className="item"
+            onClick={() => handleSetModal(item)}
+          >
             <img src={item.img} alt={`${item.title} img`} />
             <h3>{item.title}</h3>
           </div>
@@ -70,6 +83,7 @@ export default function Portfolio() {
       <a className="down-arrow" href="#projects">
         <img className="arrow-img" src="assets/down.png" alt="next section" />
       </a>
+      {showModal && <Modal project={project} setShowModal={setShowModal} />}
     </div>
   );
 }

@@ -1,4 +1,4 @@
-export const featuredPortfolio = [
+export const webDesign = [
   {
     id: 1,
     title: "Social Media App",
@@ -31,21 +31,44 @@ export const featuredPortfolio = [
   },
 ];
 
-export const webPortfolio = [
+export const reactPortfolio = [
   {
-    id: 1,
-    title: "Web Social Media App",
-    img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+    id: "1",
+    icon: [
+      { id: "1", icon: "./assets/react.png", color: "react" },
+      { id: "2", icon: "./assets/tailwind.png", color: "tailwind" },
+      { id: "3", icon: "./assets/firebase.png", color: "firebase" },
+    ],
+    title: "Instagram Clone",
+    desc: "An Instagram re-creation built with React, Tailwind CSS, and Firebase. A fully functional and responsive app that allows users to create an account, post photos, like, comment, follow/unfollow, and change their avatar.",
+    img: "./assets/projects/portfolio-instagramPic1.PNG",
+    repository: "https://github.com/KFig21/instagram_clone",
+    live: "https://kfig21.github.io/instagram_clone/",
   },
   {
-    id: 2,
-    title: "Web Rampa UI Design",
-    img: "https://cdn.dribbble.com/users/3967258/screenshots/15463803/media/4fddb9a2caf3b3bd634060f706a91e73.png?compress=1&resize=1200x900",
+    id: "2",
+    icon: [
+      { id: "1", icon: "./assets/react.png", color: "react" },
+      { id: "2", icon: "./assets/firebase.png", color: "firebase" },
+    ],
+    title: "Game & Seek",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "./assets/projects/portfolio-gameNseekPic1.PNG",
+    repository: "https://github.com/KFig21/photo_tagging_app",
+    live: "https://kfig21.github.io/photo_tagging_app/",
   },
   {
-    id: 3,
-    title: "Web E-commerce Design",
-    img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
+    id: "3",
+    icon: [
+      { id: "1", icon: "./assets/react.png", color: "react" },
+      { id: "2", icon: "./assets/javascript.png", color: "javascript" },
+      { id: "3", icon: "./assets/css.png", color: "css" },
+    ],
+    title: "HoopShop",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "./assets/projects/portfolio-hoopShopPic1.PNG",
+    repository: "https://github.com/KFig21/shopping_cart",
+    live: "https://kfig21.github.io/shopping_cart/",
   },
   {
     id: 4,
@@ -64,7 +87,7 @@ export const webPortfolio = [
   },
 ];
 
-export const mobilePortfolio = [
+export const gamesPortfolio = [
   {
     id: 1,
     title: "Mobile Social Media App",
@@ -97,7 +120,7 @@ export const mobilePortfolio = [
   },
 ];
 
-export const designPortfolio = [
+export const apiPortfolio = [
   {
     id: 1,
     title: "Design Social Media App",
@@ -130,7 +153,7 @@ export const designPortfolio = [
   },
 ];
 
-export const contentPortfolio = [
+export const otherPortfolio = [
   {
     id: 1,
     title: "Content Social Media App",

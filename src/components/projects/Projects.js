@@ -4,7 +4,6 @@ import { useState } from "react";
 import { projectData } from "./projectData";
 import CodeIcon from "@material-ui/icons/Code";
 import LanguageIcon from "@material-ui/icons/Language";
-import DescriptionIcon from "@material-ui/icons/Description";
 
 export default function Projects() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,14 +24,14 @@ export default function Projects() {
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {projectData.map((project) => (
-          <div className="container">
+          <div className="container" key={project.id}>
             <div className="item">
               <div className="left">
                 <div className="left-container">
                   {/* desktop icons */}
                   <div className="icons-container desktop">
                     {project.icon.map((tech) => (
-                      <div>
+                      <div key={tech.id}>
                         <div className={`img-container ${tech.color}-color-bg`}>
                           <img src={tech.icon} alt="" />
                           <span className={`stack ${tech.color}-color-text`}>
@@ -47,7 +46,7 @@ export default function Projects() {
                   {/* mobile icons */}
                   <div className="icons-container mobile">
                     {project.icon.map((tech) => (
-                      <div>
+                      <div key={tech.id}>
                         <div className={`img-container ${tech.color}-color-bg`}>
                           <img src={tech.icon} alt="" />
                           <span className={`stack ${tech.color}-color-text`}>

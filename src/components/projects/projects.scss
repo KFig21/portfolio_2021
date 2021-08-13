@@ -72,7 +72,6 @@
 
     @include mobile {
       height: 100vh;
-      // flex-direction: column;
       justify-content: center;
     }
 
@@ -106,7 +105,7 @@
 
         .left {
           flex: 4;
-          height: 80%;
+          height: 88%;
           display: flex;
           justify-content: center;
 
@@ -157,7 +156,7 @@
 
                 .stack {
                   position: absolute;
-                  top: 45px;
+                  top: 42px;
                   transition: linear 0.2s;
                   opacity: 0;
 
@@ -175,7 +174,7 @@
             h2 {
               font-size: 20px;
               color: white;
-              line-height: 40px;
+              line-height: 32px;
               text-decoration: underline solid 2.5px $accentColorFaded;
               text-underline-offset: 0.5px;
 
@@ -191,11 +190,13 @@
               font-size: 14px;
               line-height: 18px;
               color: white;
-              padding: 20px 0px;
+              padding: 0px 7px 0px 0px;
+              margin-top: 20px;
+              height: calc((360px * 0.86) - 115px);
 
               @include mobile {
                 height: calc((70vh * (2 / 3)) - 195px);
-                margin: 10px 0px;
+                margin: 0px 0px 10px 0px;
                 padding: 0px;
                 overflow-y: scroll;
               }
@@ -270,8 +271,13 @@
             color: white;
             opacity: 0;
             transition: linear 0.2s;
+
             &:hover {
               opacity: 1;
+            }
+
+            @include mobile {
+              display: none;
             }
 
             .shade-container {
