@@ -8,8 +8,8 @@ export const webDesign = [
     title: "Responsive Design Project",
     desc: "An Instagram re-creation built with React, Tailwind CSS, and Firebase. A fully functional and responsive app that allows users to create an account, post photos, like, comment, follow/unfollow, and change their avatar. An Instagram re-creation built with React, Tailwind CSS, and Firebase. A fully functional and responsive app that allows users to create an account, post photos, like, comment, follow/unfollow, and change their avatar.",
     imgs: [
-      "./assets/projects/portfolio-responsiveDesignPic1.PNG",
-      "./assets/projects/portfolio-responsiveDesignPic2.PNG",
+      "./assets/projects/portfolio-responsiveDesignPic-1.PNG",
+      "./assets/projects/portfolio-responsiveDesignPic-2.PNG",
     ],
     repository: "https://github.com/KFig21/the_next_web_page",
     live: "https://kfig21.github.io/the_next_web_page/",
