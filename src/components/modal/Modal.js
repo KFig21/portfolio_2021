@@ -7,9 +7,14 @@ export default function Modal({ project, setShowModal }) {
   console.log(project);
 
   return (
-    <div className="modal" onClick={() => setShowModal(false)}>
+    <div className="modal">
       <div className="modal-container" key={project.id}>
         <div className="modal-item">
+          <button className="closeX" onClick={() => setShowModal(false)}>
+            <div>
+              <span>x</span>
+            </div>
+          </button>
           <div className="left">
             <div className="left-container">
               {/* desktop icons */}
@@ -63,12 +68,13 @@ export default function Modal({ project, setShowModal }) {
             </div>
           </div>
           <div className="right">
-            <div className="img-container">
-              <img src={project.img} alt="" />
-            </div>
-            <div className="img-container">
-              <img src={project.img} alt="" />
-            </div>
+            {project.imgs.map((img) => (
+              <div className="img-container">
+                <a href={img} target="_blank" rel="noopener noreferrer">
+                  <img src={img} alt="" />
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -27,6 +27,7 @@
       align-items: center;
       justify-content: center;
       box-shadow: 0px 0px 20px $accentColor;
+      position: relative;
 
       @media (max-width: 875px) {
         width: 80vw;
@@ -59,11 +60,12 @@
 
           @include mobile {
             height: 100%;
-            display: block;
+            // display: block;
           }
 
           .icons-container {
             display: flex;
+            flex: none;
             position: relative;
             height: 65px;
 
@@ -111,15 +113,17 @@
           h2 {
             font-size: 20px;
             color: white;
-            line-height: 32px;
+            flex: none;
             text-decoration: underline solid 2.5px $accentColorFaded;
             text-underline-offset: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             @include mobile {
-              font-size: 25px;
-              height: 40px;
-              margin: 10px;
               text-align: center;
+              font-size: 25px;
+              margin: 10px;
             }
           }
 
@@ -129,10 +133,12 @@
             color: white;
             padding: 0px 7px 0px 0px;
             margin-top: 20px;
-            height: calc((60vh * 0.88) - 160px);
+            height: calc((60vh * 0.88) - 190px);
 
             @include mobile {
-              height: calc((70vh * (2 / 3)) - 195px);
+              flex: 0 20 calc((70vh * (2 / 3)) - 220px);
+              // min-height: calc((70vh * (2 / 3)) - 220px);
+              max-height: calc((70vh * (2 / 3)) - 195px);
               margin: 10px 0px;
               padding: 0px;
               overflow-y: scroll;
@@ -141,6 +147,7 @@
 
           .details-container {
             display: flex;
+            flex: none;
             justify-content: space-around;
             align-items: flex-end;
             margin: auto;
@@ -236,6 +243,37 @@
             height: auto;
             width: 100%;
           }
+        }
+      }
+
+      .closeX {
+        color: black;
+        background-color: gray;
+        border: none;
+        border-radius: 3px;
+        opacity: 0.4;
+        font-size: 30px;
+        height: 40px;
+        width: 40px;
+        font-weight: 700;
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        z-index: 10;
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        div {
+          height: 100%;
+          width: 100%;
+          position: relative;
+        }
+
+        &:hover {
+          opacity: 1;
+          background-color: rgba(220, 20, 60, 0.8);
+          color: white;
+          border-radius: 30px;
         }
       }
     }

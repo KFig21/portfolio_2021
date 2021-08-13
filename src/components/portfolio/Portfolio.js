@@ -72,7 +72,7 @@ export default function Portfolio() {
             className="item"
             onClick={() => handleSetModal(item)}
           >
-            <img src={item.img} alt={`${item.title} img`} />
+            <img src={item.imgs[0]} alt={`${item.title} img`} />
             <h3>{item.title}</h3>
           </div>
         ))}
