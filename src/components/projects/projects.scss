@@ -71,7 +71,7 @@
     transition: all 1s ease-out;
 
     @include mobile {
-      height: 100vh;
+      height: 85vh;
       justify-content: center;
     }
 
@@ -245,21 +245,36 @@
           flex: 8;
           height: 100%;
           width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          display: block;
           overflow: hidden;
           position: relative;
+          scroll-behavior: smooth;
+          scroll-snap-type: y mandatory;
 
           @include mobile {
             flex: 4;
+            width: auto;
+            height: 100%;
+            white-space: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
           }
 
-          img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
+          .img-container {
+            height: 100%;
+            overflow: hidden;
+            scroll-snap-align: start;
+
+            @include mobile {
+              width: 100%;
+              display: inline-block;
+            }
+
+            img {
+              height: auto;
+              width: 100%;
+            }
           }
 
           .shade {

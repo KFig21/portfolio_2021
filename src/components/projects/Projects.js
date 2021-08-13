@@ -101,7 +101,12 @@ export default function Projects() {
                     </a>
                   </div>
                 </div>
-                <img src={project.img} alt="" />
+                <div className="img-container">
+                  <img src={project.img} alt="" />
+                </div>
+                <div className="img-container">
+                  <img src={project.img} alt="" />
+                </div>
               </div>
             </div>
           </div>

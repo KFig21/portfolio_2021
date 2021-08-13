@@ -1,8 +1,9 @@
 $primaryColor: #202020;
+$primaryColorFaded: #383838;
 $menuActiveBackgroundColor: rgba(0, 0, 0, 0.5);
 $mobileMenuActiveBackgroundColor: rgba(0, 0, 0, 0.9);
 $accentColor: #23c5d9;
-$accentColorFaded: #23c2d799;
+$accentColorFaded: hsla(187, 72%, 49%, 0.6);
 
 $width: 768px;
 
@@ -53,12 +54,12 @@ $width: 768px;
 
 // scrollbar
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $accentColor;
+  background: $primaryColorFaded;
   border-radius: 10px;
 }
 
