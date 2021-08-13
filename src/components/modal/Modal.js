@@ -53,7 +53,7 @@ export default function Modal({ project, setShowModal }) {
                   rel="noopener noreferrer"
                 >
                   <CodeIcon style={{ margin: " 0px 5px" }} />
-                  Code
+                  Repo
                 </a>
                 <a
                   href={project.live}

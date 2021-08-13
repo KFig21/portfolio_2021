@@ -64,7 +64,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                     >
                       <CodeIcon style={{ margin: " 0px 5px" }} />
-                      Code
+                      Repo
                     </a>
                     <a
                       href={project.live}
@@ -88,7 +88,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                     >
                       <CodeIcon style={{ margin: " 0px 5px" }} />
-                      Code
+                      Repo
                     </a>
                     <a
                       href={project.live}
