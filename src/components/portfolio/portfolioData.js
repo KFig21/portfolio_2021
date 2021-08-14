@@ -32,6 +32,65 @@ export const webDesign = [
     repository: "https://github.com/KFig21/design_teardown",
     live: "https://kfig21.github.io/design_teardown/",
   },
+
+  {
+    id: "3",
+    icon: [
+      { id: "1", icon: "./assets/react.png", color: "react" },
+      { id: "2", icon: "./assets/html.png", color: "html" },
+      { id: "3", icon: "./assets/css.png", color: "css" },
+    ],
+    title: "HTML Form Project",
+    desc: "",
+    imgs: [
+      "./assets/projects/htmlForm/portfolio-htmlFormPic-1.png",
+      "./assets/projects/htmlForm/portfolio-htmlFormPic-2.gif",
+    ],
+    repository: "https://github.com/KFig21/mailchimp_form",
+    live: "https://kfig21.github.io/mailchimp_form/",
+  },
+  {
+    id: "4",
+    icon: [
+      { id: "1", icon: "./assets/html.png", color: "html" },
+      { id: "2", icon: "./assets/css.png", color: "css" },
+    ],
+    title: "Embedding Video & Images Project",
+    desc: "",
+    imgs: [
+      "./assets/projects/embed/portfolio-embedPic-1.png",
+      "./assets/projects/embed/portfolio-embedPic-2.gif",
+    ],
+    repository: "https://github.com/KFig21/youtube_page",
+    live: "https://kfig21.github.io/youtube_page/",
+  },
+  {
+    id: "5",
+    icon: [
+      { id: "1", icon: "./assets/html.png", color: "html" },
+      { id: "2", icon: "./assets/css.png", color: "css" },
+    ],
+    title: "Grid-based Framework",
+    desc: "",
+    imgs: [
+      "./assets/projects/gridFramework/portfolio-gridFrameworkPic-1.png",
+      "./assets/projects/gridFramework/portfolio-gridFrameworkPic-2.gif",
+    ],
+    repository: "https://github.com/KFig21/top_homepage",
+    live: "https://kfig21.github.io/top_homepage/",
+  },
+  {
+    id: "6",
+    icon: [
+      { id: "1", icon: "./assets/html.png", color: "html" },
+      { id: "2", icon: "./assets/css.png", color: "css" },
+    ],
+    title: "Backgrounds & Gradients Project",
+    desc: "",
+    imgs: ["./assets/projects/gradient/portfolio-gradientPic-1.png"],
+    repository: "https://github.com/KFig21/apple_page",
+    live: "https://kfig21.github.io/apple_page/",
+  },
 ];
 
 export const reactPortfolio = [
