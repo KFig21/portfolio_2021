@@ -10,7 +10,7 @@ export const projectData = [
     desc: "An Instagram re-creation built with React, Tailwind CSS, and Firebase. A fully functional and responsive app that allows users to create an account, post photos, like, comment, follow/unfollow, and change their avatar.",
     imgs: [
       "./assets/projects/react/instagram/instagram-1.PNG",
-      "./assets/projects/react/instagram/instagram-2.PNG",
+      "./assets/projects/react/instagram/instagram-2.png",
       "./assets/projects/react/instagram/instagram-3.PNG",
       "./assets/projects/react/instagram/instagram-4.gif",
       "./assets/projects/react/instagram/instagram-5.gif",

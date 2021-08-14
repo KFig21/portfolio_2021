@@ -23,7 +23,7 @@ export default function Contact() {
           {message && <span>Thanks, I'll reply ASAP :)</span>}
         </form>
       </div>
-      <a className="up-arrow" href="#testimonials">
+      <a className="up-arrow" href="#technologies">
         <img className="arrow-img" src="assets/up.png" alt="next section" />
       </a>
     </div>

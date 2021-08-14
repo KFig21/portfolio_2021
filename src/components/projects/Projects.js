@@ -128,7 +128,7 @@ export default function Projects() {
       <a className="up-arrow" href="#portfolio">
         <img className="arrow-img" src="assets/up.png" alt="next section" />
       </a>
-      <a className="down-arrow" href="#testimonials">
+      <a className="down-arrow" href="#technologies">
         <img className="arrow-img" src="assets/down.png" alt="next section" />
       </a>
     </div>

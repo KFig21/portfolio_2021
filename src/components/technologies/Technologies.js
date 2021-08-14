@@ -1,5 +1,5 @@
 import React from "react";
-import "./testimonials.scss";
+import "./technologies.scss";
 
 export default function Testimonials() {
   const data = [
@@ -30,9 +30,9 @@ export default function Testimonials() {
     },
   ];
   return (
-    <div className="testimonials" id="testimonials">
-      <h1>Testimonials</h1>
-      <div className="container">
+    <div className="technologies" id="technologies">
+      <h1>Technologies</h1>
+      {/* <div className="container">
         {data.map((d) => (
           <div className={d.featured ? "card featured" : "card"}>
             <div className="top">
@@ -47,7 +47,7 @@ export default function Testimonials() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
       <a className="up-arrow" href="#projects">
         <img className="arrow-img" src="assets/up.png" alt="next section" />
       </a>

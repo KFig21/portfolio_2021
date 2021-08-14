@@ -9,7 +9,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         <MenuItem item={"Home"} setMenuOpen={setMenuOpen} />
         <MenuItem item={"Portfolio"} setMenuOpen={setMenuOpen} />
         <MenuItem item={"Projects"} setMenuOpen={setMenuOpen} />
-        <MenuItem item={"Testimonials"} setMenuOpen={setMenuOpen} />
+        <MenuItem item={"Technologies"} setMenuOpen={setMenuOpen} />
         <MenuItem item={"Contact"} setMenuOpen={setMenuOpen} />
       </ul>
     </div>

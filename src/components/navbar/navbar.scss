@@ -5,8 +5,8 @@
   top: 0;
   width: 100%;
   height: 70px;
-  background-color: $primaryColor;
-  color: white;
+  background-color: $navbarColor;
+  color: $textColor;
   z-index: 100;
   transition: ease all 0.5s;
 
@@ -162,7 +162,7 @@
 
   &.active {
     background-color: $menuActiveBackgroundColor;
-    color: white;
+    color: $textColor;
 
     .hamburger {
       span {

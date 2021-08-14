@@ -7,7 +7,7 @@ import {
   reactPortfolio,
   gamesPortfolio,
   apiPortfolio,
-  otherPortfolio,
+  morePortfolio,
 } from "./portfolioData.js";
 
 export default function Portfolio() {
@@ -21,7 +21,7 @@ export default function Portfolio() {
     { id: "react", title: "React Apps" },
     { id: "games", title: "Games" },
     { id: "apis", title: "APIs" },
-    { id: "other", title: "Other" },
+    { id: "more", title: "More" },
   ];
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export default function Portfolio() {
         setData(apiPortfolio);
         break;
       case "other":
-        setData(otherPortfolio);
+        setData(morePortfolio);
         break;
       default:
         setData(webDesign);
