@@ -101,12 +101,13 @@ export default function Projects() {
                     </a>
                   </div>
                 </div>
-                <div className="img-container">
-                  <img src={project.img} alt="" />
-                </div>
-                <div className="img-container">
-                  <img src={project.img} alt="" />
-                </div>
+                {project.imgs.map((img) => (
+                  <div className="img-container">
+                    <a href={img} target="_blank" rel="noopener noreferrer">
+                      <img src={img} alt="" />
+                    </a>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
