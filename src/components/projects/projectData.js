@@ -27,7 +27,12 @@ export const projectData = [
     ],
     title: "Game & Seek",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    imgs: ["./assets/projects/react/gameNseek/gameNseek-1.PNG"],
+    imgs: [
+      "./assets/projects/react/gameNseek/gameNseek-1.PNG",
+      "./assets/projects/react/gameNseek/gameNseek-2.png",
+      "./assets/projects/react/gameNseek/gameNseek-3.png",
+      "./assets/projects/react/gameNseek/gameNseek-4.gif",
+    ],
     repository: "https://github.com/KFig21/photo_tagging_app",
     live: "https://kfig21.github.io/photo_tagging_app/",
   },
