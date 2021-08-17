@@ -173,8 +173,8 @@ export const reactPortfolio = [
     title: "Battleship",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     imgs: [
-      "./assets/projects/react/cvBuilder/cvBuilder-1.png",
-      "./assets/projects/react/cvBuilder/cvBuilder-2.png",
+      "./assets/projects/react/battleship/battleship-1.png",
+      "./assets/projects/react/battleship/battleship-2.png",
     ],
     repository: "https://github.com/KFig21/battleship",
     live: "https://kfig21.github.io/battleship/",
