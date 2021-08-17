@@ -140,9 +140,44 @@ export const reactPortfolio = [
     ],
     title: "HoopShop",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    imgs: ["./assets/projects/react/hoopShop/hoopShop-1.PNG"],
+    imgs: [
+      "./assets/projects/react/hoopShop/hoopShop-1.PNG",
+      "./assets/projects/react/hoopShop/hoopShop-2.png",
+    ],
     repository: "https://github.com/KFig21/shopping_cart",
     live: "https://kfig21.github.io/shopping_cart/",
+  },
+  {
+    id: "4",
+    icon: [
+      { id: "1", icon: "./assets/react.png", color: "react" },
+      { id: "2", icon: "./assets/javascript.png", color: "javascript" },
+      { id: "3", icon: "./assets/css.png", color: "css" },
+    ],
+    title: "CV Builder",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imgs: [
+      "./assets/projects/react/cvBuilder/cvBuilder-1.png",
+      "./assets/projects/react/cvBuilder/cvBuilder-2.png",
+    ],
+    repository: "https://github.com/KFig21/cv_application",
+    live: "https://kfig21.github.io/cv_application/",
+  },
+  {
+    id: "5",
+    icon: [
+      { id: "1", icon: "./assets/react.png", color: "react" },
+      { id: "2", icon: "./assets/javascript.png", color: "javascript" },
+      { id: "3", icon: "./assets/css.png", color: "css" },
+    ],
+    title: "Battleship",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imgs: [
+      "./assets/projects/react/cvBuilder/cvBuilder-1.png",
+      "./assets/projects/react/cvBuilder/cvBuilder-2.png",
+    ],
+    repository: "https://github.com/KFig21/battleship",
+    live: "https://kfig21.github.io/battleship/",
   },
 ];
 
