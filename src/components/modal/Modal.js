@@ -7,13 +7,10 @@ export default function Modal({ project, setShowModal }) {
   console.log(project);
 
   useEffect(() => {
+    // center images that are too wide
     for (let i = 1; i < project.imgs.length + 1; i++) {
       const img = document.getElementById(`img-${i}`);
-      console.log(img.clientHeight);
-      console.log(img.clientWidth);
-      let height = img.clientHeight;
-      let width = img.clientWidth;
-      if (width / height > 1.05) {
+      if (img.clientWidth / img.clientHeight > 1.05) {
         img.parentElement.parentElement.classList.add("center-the-img");
       }
     }
