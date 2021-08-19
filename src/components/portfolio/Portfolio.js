@@ -6,7 +6,6 @@ import {
   webDesign,
   reactPortfolio,
   gamesPortfolio,
-  apiPortfolio,
   morePortfolio,
 } from "./portfolioData.js";
 
@@ -20,7 +19,6 @@ export default function Portfolio() {
     { id: "webDesign", title: "Web Design" },
     { id: "react", title: "React Apps" },
     { id: "games", title: "Games" },
-    { id: "apis", title: "APIs" },
     { id: "more", title: "More" },
   ];
 
@@ -35,10 +33,7 @@ export default function Portfolio() {
       case "games":
         setData(gamesPortfolio);
         break;
-      case "apis":
-        setData(apiPortfolio);
-        break;
-      case "other":
+      case "more":
         setData(morePortfolio);
         break;
       default:

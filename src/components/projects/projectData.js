@@ -1,7 +1,7 @@
 export const projectData = [
   {
     id: "1",
-    icon: [
+    icons: [
       { id: "1", icon: "./assets/react.png", color: "react" },
       { id: "2", icon: "./assets/tailwind.png", color: "tailwind" },
       { id: "3", icon: "./assets/firebase.png", color: "firebase" },
@@ -21,7 +21,7 @@ export const projectData = [
   },
   {
     id: "2",
-    icon: [
+    icons: [
       { id: "1", icon: "./assets/react.png", color: "react" },
       { id: "2", icon: "./assets/firebase.png", color: "firebase" },
     ],
@@ -38,7 +38,7 @@ export const projectData = [
   },
   {
     id: "3",
-    icon: [
+    icons: [
       { id: "1", icon: "./assets/react.png", color: "react" },
       { id: "2", icon: "./assets/javascript.png", color: "javascript" },
       { id: "3", icon: "./assets/css.png", color: "css" },

@@ -202,22 +202,6 @@ export const gamesPortfolio = [
     id: "1",
     icon: [
       { id: "1", icon: "./assets/react.png", color: "react" },
-      { id: "2", icon: "./assets/javascript.png", color: "javascript" },
-      { id: "3", icon: "./assets/css.png", color: "css" },
-    ],
-    title: "Battleship",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    imgs: [
-      "./assets/projects/react/battleship/battleship-1.png",
-      "./assets/projects/react/battleship/battleship-2.png",
-    ],
-    repository: "https://github.com/KFig21/battleship",
-    live: "https://kfig21.github.io/battleship/",
-  },
-  {
-    id: "2",
-    icon: [
-      { id: "1", icon: "./assets/react.png", color: "react" },
       { id: "2", icon: "./assets/firebase.png", color: "firebase" },
       { id: "3", icon: "./assets/css.png", color: "css" },
     ],
@@ -232,6 +216,23 @@ export const gamesPortfolio = [
     repository: "https://github.com/KFig21/photo_tagging_app",
     live: "https://kfig21.github.io/photo_tagging_app/",
   },
+  {
+    id: "2",
+    icon: [
+      { id: "1", icon: "./assets/react.png", color: "react" },
+      { id: "2", icon: "./assets/javascript.png", color: "javascript" },
+      { id: "3", icon: "./assets/css.png", color: "css" },
+    ],
+    title: "Battleship",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imgs: [
+      "./assets/projects/react/battleship/battleship-1.png",
+      "./assets/projects/react/battleship/battleship-2.png",
+    ],
+    repository: "https://github.com/KFig21/battleship",
+    live: "https://kfig21.github.io/battleship/",
+  },
+
   {
     id: "3",
     icon: [
@@ -248,8 +249,55 @@ export const gamesPortfolio = [
     repository: "https://github.com/KFig21/memory_card_project",
     live: "https://kfig21.github.io/memory_card_project/",
   },
-];
+  {
+    id: "4",
+    icon: [
+      { id: "1", icon: "./assets/javascript.png", color: "javascript" },
+      { id: "2", icon: "./assets/html.png", color: "html" },
+      { id: "3", icon: "./assets/css.png", color: "css" },
+    ],
+    title: "Tic Tac Toe",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imgs: [
+      "./assets/projects/react/gameNseek/gameNseek-1.PNG",
+      "./assets/projects/react/gameNseek/gameNseek-2.png",
+    ],
+    repository: "https://github.com/KFig21/tic_tac_toe",
+    live: "https://kfig21.github.io/tic_tac_toe/",
+  },
+  {
+    id: "5",
+    icon: [
+      { id: "1", icon: "./assets/javascript.png", color: "javascript" },
+      { id: "2", icon: "./assets/html.png", color: "html" },
+      { id: "3", icon: "./assets/css.png", color: "css" },
+    ],
+    title: "Rock Paper Scissors",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imgs: [
+      "./assets/projects/react/battleship/battleship-1.png",
+      "./assets/projects/react/battleship/battleship-2.png",
+    ],
+    repository: "https://github.com/KFig21/rock_paper_scissors",
+    live: "https://kfig21.github.io/rock_paper_scissors/",
+  },
 
-export const apiPortfolio = [];
+  {
+    id: "6",
+    icon: [
+      { id: "1", icon: "./assets/react.png", color: "react" },
+      { id: "2", icon: "./assets/javascript.png", color: "javascript" },
+      { id: "3", icon: "./assets/css.png", color: "css" },
+    ],
+    title: "NBA Memory Game",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imgs: [
+      "./assets/projects/react/memoryGame/memoryGame-1.png",
+      "./assets/projects/react/memoryGame/memoryGame-2.png",
+    ],
+    repository: "https://github.com/KFig21/memory_card_project",
+    live: "https://kfig21.github.io/memory_card_project/",
+  },
+];
 
 export const morePortfolio = [];

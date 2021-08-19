@@ -65,9 +65,10 @@
 
   .slider {
     height: 400px;
+    width: 100vw;
     display: flex;
-    position: absolute;
-    left: 0;
+    position: relative;
+    overflow: hidden;
     transition: all 1s ease-out;
 
     @include mobile {
@@ -80,6 +81,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      opacity: 0;
+      transition: all 1s ease-out;
 
       .item {
         width: 700px;
@@ -329,6 +336,17 @@
           }
         }
       }
+    }
+
+    .activeSlide {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .lastSlide {
+      transform: translateX(-100%);
+    }
+    .nextSlide {
+      transform: translateX(100%);
     }
   }
 }
