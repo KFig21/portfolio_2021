@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./modal.scss";
 import CodeIcon from "@material-ui/icons/Code";
 import LanguageIcon from "@material-ui/icons/Language";
 
 export default function Modal({ project, setShowModal }) {
   console.log(project);
+
+  useEffect(() => {
+    for (let i = 1; i < project.imgs.length + 1; i++) {
+      const img = document.getElementById(`img-${i}`);
+      console.log(img.clientHeight);
+      console.log(img.clientWidth);
+    }
+  }, [project]);
 
   return (
     <div className="modal">
@@ -68,13 +76,17 @@ export default function Modal({ project, setShowModal }) {
             </div>
           </div>
           <div className="right">
-            {project.imgs.map((img) => (
-              <div className="img-container">
-                <a href={img} target="_blank" rel="noopener noreferrer">
-                  <img src={img} alt="" />
-                </a>
-              </div>
-            ))}
+            {project.imgs.map((img) => {
+              const { id, src } = img;
+
+              return (
+                <div className="img-container">
+                  <a href={src} target="_blank" rel="noopener noreferrer">
+                    <img id={id} src={src} alt="" />
+                  </a>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

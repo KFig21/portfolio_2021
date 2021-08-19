@@ -254,6 +254,12 @@
             width: 100%;
           }
         }
+
+        .center-the-img {
+          display: flex;
+          align-items: center;
+          height: 100%;
+        }
       }
 
       .closeX {
