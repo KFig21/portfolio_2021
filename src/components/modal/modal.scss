@@ -243,6 +243,13 @@
           height: 100%;
           overflow: hidden;
           scroll-snap-align: start;
+          background: repeating-linear-gradient(
+            90deg,
+            $primaryColor,
+            $primaryColor 10px,
+            #000000 10px,
+            #000000 20px
+          );
 
           @include mobile {
             width: 100%;
@@ -258,6 +265,7 @@
         .center-the-img {
           display: flex;
           align-items: center;
+          justify-content: center;
           height: 100%;
         }
       }

@@ -10,7 +10,9 @@ export default function Modal({ project, setShowModal }) {
     // center images that are too wide
     for (let i = 1; i < project.imgs.length + 1; i++) {
       const img = document.getElementById(`img-${i}`);
-      if (img.clientWidth / img.clientHeight > 1.05) {
+      let height = img.naturalHeight;
+      let width = img.naturalWidth;
+      if (width / height > 1.05) {
         img.parentElement.parentElement.classList.add("center-the-img");
       }
     }
