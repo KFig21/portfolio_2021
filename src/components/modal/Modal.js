@@ -11,6 +11,11 @@ export default function Modal({ project, setShowModal }) {
       const img = document.getElementById(`img-${i}`);
       console.log(img.clientHeight);
       console.log(img.clientWidth);
+      let height = img.clientHeight;
+      let width = img.clientWidth;
+      if (width / height > 1.05) {
+        img.parentElement.parentElement.classList.add("center-the-img");
+      }
     }
   }, [project]);
 
