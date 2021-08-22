@@ -1,12 +1,14 @@
 import React from "react";
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { init } from "ityped";
 import "./home.scss";
 // imgs
-import arrowDown from "../../assets/arrows/arrowDown.png";
+import arrowDown from "../../assets/arrows/arrowDownGold.png";
 
 export default function Home() {
   const textRef = useRef();
+  const [sidebarSelected, setSidebarSelected] = useState(1);
+  const [fileSelected, setFileSelected] = useState(1);
 
   useEffect(() => {
     init(textRef.current, {
@@ -47,22 +49,75 @@ export default function Home() {
           </div>
           <div className="center">
             <div className="sidebar">
-              <span className="circle filled"></span>
-              <span className="circle"></span>
-              <span className="circle"></span>
-              <span className="circle"></span>
-              <span className="circle"></span>
+              <span
+                className={sidebarSelected === 1 ? "circle filled" : "circle"}
+                onClick={() => setSidebarSelected(1)}
+              ></span>
+              <span
+                className={sidebarSelected === 2 ? "circle filled" : "circle"}
+                onClick={() => setSidebarSelected(2)}
+              ></span>
+              <span
+                className={sidebarSelected === 3 ? "circle filled" : "circle"}
+                onClick={() => setSidebarSelected(3)}
+              ></span>
+              <span
+                className={sidebarSelected === 4 ? "circle filled" : "circle"}
+                onClick={() => setSidebarSelected(4)}
+              ></span>
+              <span
+                className={sidebarSelected === 5 ? "circle filled" : "circle"}
+                onClick={() => setSidebarSelected(5)}
+              ></span>
             </div>
             <div className="filebar">
-              <span style={{ width: "88%" }} className="file"></span>
-              <span style={{ width: "80%" }} className="file aqua"></span>
-              <span style={{ width: "72%" }} className="file"></span>
-              <span style={{ width: "75%" }} className="file"></span>
-              <span style={{ width: "84%" }} className="file yellow"></span>
-              <span style={{ width: "68%" }} className="file"></span>
-              <span style={{ width: "80%" }} className="file red"></span>
-              <span style={{ width: "74%" }} className="file"></span>
-              <span style={{ width: "60%" }} className="file"></span>
+              <span
+                style={{ width: "88%" }}
+                className={fileSelected === 1 ? "file open" : "file"}
+                onClick={() => setFileSelected(1)}
+              ></span>
+              <span
+                style={{ width: "80%" }}
+                className={fileSelected === 2 ? "file aqua open" : "file aqua"}
+                onClick={() => setFileSelected(2)}
+              ></span>
+              <span
+                style={{ width: "72%" }}
+                className={fileSelected === 3 ? "file open" : "file"}
+                onClick={() => setFileSelected(3)}
+              ></span>
+              <span
+                style={{ width: "75%" }}
+                className={fileSelected === 4 ? "file open" : "file"}
+                onClick={() => setFileSelected(4)}
+              ></span>
+              <span
+                style={{ width: "84%" }}
+                className={
+                  fileSelected === 5 ? "file yellow open" : "file yellow"
+                }
+                onClick={() => setFileSelected(5)}
+              ></span>
+              <span
+                style={{ width: "68%" }}
+                className={fileSelected === 6 ? "file open" : "file"}
+                onClick={() => setFileSelected(6)}
+              ></span>
+              <span
+                style={{ width: "80%" }}
+                className={fileSelected === 7 ? "file red open" : "file red"}
+                onClick={() => setFileSelected(7)}
+              ></span>
+              <span
+                style={{ width: "74%" }}
+                className={fileSelected === 8 ? "file open" : "file"}
+                onClick={() => setFileSelected(8)}
+              ></span>
+              <span
+                style={{ width: "60%" }}
+                className={fileSelected === 9 ? "file open" : "file"}
+                onClick={() => setFileSelected(9)}
+              ></span>
             </div>
             <div className="openDoc">
               <div className="wrapper">
@@ -77,7 +132,7 @@ export default function Home() {
         </div>
       </div>
 
-      <a className="down-arrow" href="#portfolio">
+      <a className="down-arrow home-arrow" href="#portfolio">
         <img className="arrow-img" src={arrowDown} alt="next section" />
       </a>
     </div>
