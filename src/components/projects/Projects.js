@@ -4,6 +4,11 @@ import { useState, useEffect } from "react";
 import { projectData } from "./projectData";
 import CodeIcon from "@material-ui/icons/Code";
 import LanguageIcon from "@material-ui/icons/Language";
+// imgs
+import arrowDown from "../../assets/arrows/arrowDown.png";
+import arrowUp from "../../assets/arrows/arrowUp.png";
+import arrowRight from "../../assets/arrows/arrowRight.png";
+import arrowLeft from "../../assets/arrows/arrowLeft.png";
 
 export default function Projects() {
   const [projectSlides, setProjectSlides] = useState(projectData);
@@ -134,22 +139,22 @@ export default function Projects() {
         })}
       </div>
       <img
-        src="assets/arrowLeft.png"
+        src={arrowLeft}
         className="arrow left"
         alt="left arrow"
         onClick={() => setIndex(index - 1)}
       />
       <img
-        src="assets/arrow.png"
+        src={arrowRight}
         className="arrow right"
         alt="right arrow"
         onClick={() => setIndex(index + 1)}
       />
       <a className="up-arrow" href="#portfolio">
-        <img className="arrow-img" src="assets/up.png" alt="next section" />
+        <img className="arrow-img" src={arrowUp} alt="next section" />
       </a>
       <a className="down-arrow" href="#technologies">
-        <img className="arrow-img" src="assets/down.png" alt="next section" />
+        <img className="arrow-img" src={arrowDown} alt="next section" />
       </a>
     </div>
   );

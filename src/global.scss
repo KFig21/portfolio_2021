@@ -76,6 +76,7 @@ $firebaseColor: #f79b00;
 $javascriptColor: #f7cf00;
 $cssColor: #1c86c4;
 $htmlColor: #f16529;
+$sassColor: #cf649a;
 .react-color-bg {
   background-color: $reactColor;
 }
@@ -94,6 +95,9 @@ $htmlColor: #f16529;
 .html-color-bg {
   background-color: $htmlColor;
 }
+.sass-color-bg {
+  background-color: $sassColor;
+}
 .react-color-text {
   color: $reactColor;
 }
@@ -111,4 +115,7 @@ $htmlColor: #f16529;
 }
 .html-color-text {
   color: $htmlColor;
+}
+.sass-color-text {
+  color: $sassColor;
 }

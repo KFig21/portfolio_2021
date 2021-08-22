@@ -1,5 +1,8 @@
 import React from "react";
 import "./technologies.scss";
+// imgs
+import arrowDown from "../../assets/arrows/arrowDown.png";
+import arrowUp from "../../assets/arrows/arrowUp.png";
 
 export default function Testimonials() {
   // const data = [
@@ -49,10 +52,10 @@ export default function Testimonials() {
         ))}
       </div> */}
       <a className="up-arrow" href="#projects">
-        <img className="arrow-img" src="assets/up.png" alt="next section" />
+        <img className="arrow-img" src={arrowUp} alt="next section" />
       </a>
       <a className="down-arrow" href="#contact">
-        <img className="arrow-img" src="assets/down.png" alt="next section" />
+        <img className="arrow-img" src={arrowDown} alt="next section" />
       </a>
     </div>
   );

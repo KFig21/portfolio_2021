@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import "./contact.scss";
+// imgs
+import arrowUp from "../../assets/arrows/arrowUp.png";
+import shake from "../../assets/other/shake.svg";
 
 export default function Contact() {
   const [message, setMessage] = useState(false);
@@ -12,7 +15,7 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="assets/shake.svg" alt="" />
+        <img src={shake} alt="" />
       </div>
       <div className="right">
         <h2>Contact.</h2>
@@ -24,7 +27,7 @@ export default function Contact() {
         </form>
       </div>
       <a className="up-arrow" href="#technologies">
-        <img className="arrow-img" src="assets/up.png" alt="next section" />
+        <img className="arrow-img" src={arrowUp} alt="next section" />
       </a>
     </div>
   );

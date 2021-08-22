@@ -69,6 +69,7 @@
         position: absolute;
         font-style: 20px;
         text-align: center;
+        text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.664);
       }
 
       img {
@@ -77,14 +78,14 @@
         left: 0;
         width: 100%;
         z-index: 1;
-        transition: linear 0.4s;
+        transition: linear 0.35s;
       }
 
       &:hover {
         background-color: $accentColor;
 
         img {
-          opacity: 0.5;
+          opacity: 0.3;
           z-index: 0;
           transform: scale(1.05);
         }

@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import { init } from "ityped";
 import "./home.scss";
+// imgs
+import arrowDown from "../../assets/arrows/arrowDown.png";
 
 export default function Home() {
   const textRef = useRef();
@@ -32,7 +34,7 @@ export default function Home() {
         </div>
       </div>
       <a className="down-arrow" href="#portfolio">
-        <img className="arrow-img" src="assets/down.png" alt="next section" />
+        <img className="arrow-img" src={arrowDown} alt="next section" />
       </a>
     </div>
   );

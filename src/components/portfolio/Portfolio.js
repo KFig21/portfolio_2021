@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import List from "./list/List";
 import "./portfolio.scss";
 import Modal from "../modal/Modal";
-import {
-  webDesign,
-  reactPortfolio,
-  gamesPortfolio,
-  morePortfolio,
-} from "./portfolioData.js";
+// portfolios
+import { webDesignPortfolio } from "./portfolioData/webDesignPortfolio";
+import { reactPortfolio } from "./portfolioData/reactPortfolio";
+import { gamesPortfolio } from "./portfolioData/gamesPortfolio";
+import { morePortfolio } from "./portfolioData/morePortfolio";
+// imgs
+import arrowDown from "../../assets/arrows/arrowDown.png";
+import arrowUp from "../../assets/arrows/arrowUp.png";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("webDesign");
@@ -17,7 +19,7 @@ export default function Portfolio() {
 
   const list = [
     { id: "webDesign", title: "Web Design" },
-    { id: "react", title: "React Apps" },
+    { id: "react", title: "React" },
     { id: "games", title: "Games" },
     { id: "more", title: "More" },
   ];
@@ -25,7 +27,7 @@ export default function Portfolio() {
   useEffect(() => {
     switch (selected) {
       case "webDesign":
-        setData(webDesign);
+        setData(webDesignPortfolio);
         break;
       case "react":
         setData(reactPortfolio);
@@ -37,7 +39,7 @@ export default function Portfolio() {
         setData(morePortfolio);
         break;
       default:
-        setData(webDesign);
+        setData(webDesignPortfolio);
     }
   }, [selected]);
 
@@ -73,10 +75,10 @@ export default function Portfolio() {
         ))}
       </div>
       <a className="up-arrow" href="#home">
-        <img className="arrow-img" src="assets/up.png" alt="next section" />
+        <img className="arrow-img" src={arrowUp} alt="next section" />
       </a>
       <a className="down-arrow" href="#projects">
-        <img className="arrow-img" src="assets/down.png" alt="next section" />
+        <img className="arrow-img" src={arrowDown} alt="next section" />
       </a>
       {showModal && <Modal project={project} setShowModal={setShowModal} />}
     </div>
