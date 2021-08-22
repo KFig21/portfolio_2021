@@ -7,8 +7,8 @@ export default function Menu({ menuOpen, setMenuOpen }) {
     <div className={"menu " + (menuOpen && "active")} id="menu">
       <ul>
         <MenuItem item={"Home"} setMenuOpen={setMenuOpen} />
-        <MenuItem item={"Portfolio"} setMenuOpen={setMenuOpen} />
         <MenuItem item={"Projects"} setMenuOpen={setMenuOpen} />
+        <MenuItem item={"Portfolio"} setMenuOpen={setMenuOpen} />
         <MenuItem item={"Technologies"} setMenuOpen={setMenuOpen} />
         <MenuItem item={"Contact"} setMenuOpen={setMenuOpen} />
       </ul>

@@ -51,7 +51,7 @@ export default function Testimonials() {
           </div>
         ))}
       </div> */}
-      <a className="up-arrow" href="#projects">
+      <a className="up-arrow" href="#portfolio">
         <img className="arrow-img" src={arrowUp} alt="next section" />
       </a>
       <a className="down-arrow" href="#contact">

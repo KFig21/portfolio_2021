@@ -75,10 +75,10 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <a className="up-arrow" href="#home">
+      <a className="up-arrow" href="#projects">
         <img className="arrow-img" src={arrowUp} alt="next section" />
       </a>
-      <a className="down-arrow" href="#projects">
+      <a className="down-arrow" href="#technologies">
         <img className="arrow-img" src={arrowDown} alt="next section" />
       </a>
       {showModal && <Modal project={project} setShowModal={setShowModal} />}

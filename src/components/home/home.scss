@@ -315,12 +315,21 @@
   }
 
   .home-arrow {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.35);
     border-radius: 50px;
     height: 45px;
     width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all linear 0.1s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .home-arrow-img {
+      padding-top: 3px;
+    }
   }
 }
