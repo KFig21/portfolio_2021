@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio_2021/static/css/main.64d0c23e.chunk.css",
-    "main.js": "/portfolio_2021/static/js/main.7b5afee2.chunk.js",
-    "main.js.map": "/portfolio_2021/static/js/main.7b5afee2.chunk.js.map",
+    "main.css": "/portfolio_2021/static/css/main.be0d99b5.chunk.css",
+    "main.js": "/portfolio_2021/static/js/main.c8d102b8.chunk.js",
+    "main.js.map": "/portfolio_2021/static/js/main.c8d102b8.chunk.js.map",
     "runtime-main.js": "/portfolio_2021/static/js/runtime-main.592f6d91.js",
     "runtime-main.js.map": "/portfolio_2021/static/js/runtime-main.592f6d91.js.map",
     "static/js/2.7d2b35dd.chunk.js": "/portfolio_2021/static/js/2.7d2b35dd.chunk.js",
     "static/js/2.7d2b35dd.chunk.js.map": "/portfolio_2021/static/js/2.7d2b35dd.chunk.js.map",
     "index.html": "/portfolio_2021/index.html",
-    "static/css/main.64d0c23e.chunk.css.map": "/portfolio_2021/static/css/main.64d0c23e.chunk.css.map",
+    "static/css/main.be0d99b5.chunk.css.map": "/portfolio_2021/static/css/main.be0d99b5.chunk.css.map",
     "static/js/2.7d2b35dd.chunk.js.LICENSE.txt": "/portfolio_2021/static/js/2.7d2b35dd.chunk.js.LICENSE.txt",
     "static/media/battleship-1.9e20785a.png": "/portfolio_2021/static/media/battleship-1.9e20785a.png",
     "static/media/battleship-2.27ace4a4.png": "/portfolio_2021/static/media/battleship-2.27ace4a4.png",
@@ -37,7 +37,7 @@
     "static/media/instagram-6.7e6600b9.gif": "/portfolio_2021/static/media/instagram-6.7e6600b9.gif",
     "static/media/javascript.4d228236.png": "/portfolio_2021/static/media/javascript.4d228236.png",
     "static/media/memoryGame-1.9b5a1ba5.png": "/portfolio_2021/static/media/memoryGame-1.9b5a1ba5.png",
-    "static/media/memoryGame-2.f987f854.png": "/portfolio_2021/static/media/memoryGame-2.f987f854.png",
+    "static/media/memoryGame-2.acbfbe56.png": "/portfolio_2021/static/media/memoryGame-2.acbfbe56.png",
     "static/media/pseudoClass-1.bcb31869.png": "/portfolio_2021/static/media/pseudoClass-1.bcb31869.png",
     "static/media/pseudoClass-2.98a069b4.gif": "/portfolio_2021/static/media/pseudoClass-2.98a069b4.gif",
     "static/media/react.a3ddf27e.png": "/portfolio_2021/static/media/react.a3ddf27e.png",
@@ -56,7 +56,7 @@
   "entrypoints": [
     "static/js/runtime-main.592f6d91.js",
     "static/js/2.7d2b35dd.chunk.js",
-    "static/css/main.64d0c23e.chunk.css",
-    "static/js/main.7b5afee2.chunk.js"
+    "static/css/main.be0d99b5.chunk.css",
+    "static/js/main.c8d102b8.chunk.js"
   ]
 }
