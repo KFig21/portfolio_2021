@@ -120,6 +120,13 @@ export default function Home() {
               ></span>
             </div>
             <div className="openDoc">
+              <div className="lines">
+                <span className="number line1">1</span>
+                <span className="number line2">2</span>
+                <span className="number line3">
+                  <span className="number3">3</span>
+                </span>
+              </div>
               <div className="wrapper">
                 <h2>Hi there, I'm</h2>
                 <h1>&lt;Kevin Figenshu /&gt;</h1>

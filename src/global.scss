@@ -18,7 +18,7 @@ $width: 768px;
 
 .up-arrow {
   position: absolute;
-  bottom: 10px;
+  bottom: 12px;
   left: 45%;
 
   @include mobile {
@@ -29,7 +29,7 @@ $width: 768px;
 
 .down-arrow {
   position: absolute;
-  bottom: 10px;
+  bottom: 12px;
   right: 45%;
 
   @include mobile {

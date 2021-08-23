@@ -245,11 +245,56 @@
           width: 75%;
           background-color: #282c34;
           overflow: hidden;
+          display: flex;
+
+          .lines {
+            display: flex;
+            flex-direction: column;
+            width: 30px;
+            justify-content: center;
+            align-items: center;
+
+            .number {
+              font-family: "Source Code Pro", monospace;
+              color: gray;
+              font-size: 25px;
+            }
+
+            .line1 {
+              line-height: 32px;
+            }
+
+            .line2 {
+              line-height: 70.4px;
+
+              @include mobile {
+                line-height: 95.2px;
+              }
+            }
+
+            .line3 {
+              display: flex;
+              justify-content: end;
+              align-items: flex-end;
+              height: 38.4px;
+              margin-bottom: 30px;
+
+              @include mobile {
+                margin-bottom: 10px;
+              }
+
+              .number3 {
+                padding-bottom: 1px;
+                height: 32px;
+                color: rgba(255, 255, 255, 0.75);
+              }
+            }
+          }
 
           .wrapper {
             width: 100%;
             height: 100%;
-            padding-left: 20px;
+            // padding-left: 20px;
             display: flex;
             flex-direction: column;
             color: rgb(72, 187, 72);
@@ -261,6 +306,7 @@
               font-family: "Source Code Pro", monospace;
               font-weight: 600;
               color: gold;
+              padding-left: 3px;
 
               @include mobile {
                 font-size: 30px;
@@ -270,16 +316,20 @@
               font-size: 25px;
               font-family: "Source Code Pro", monospace;
               font-weight: 400;
+              padding-left: 3px;
             }
             h3 {
               font-size: 25px;
               font-family: "Source Code Pro", monospace;
               font-weight: 400;
-              padding-bottom: 30px;
+              margin-bottom: 30px;
+              padding-left: 3px;
               line-height: 35px;
+              overflow: hidden;
+              background-color: rgba(255, 255, 255, 0.08);
 
               @include mobile {
-                padding-bottom: 10px;
+                margin-bottom: 10px;
               }
 
               span {
@@ -315,7 +365,7 @@
   }
 
   .home-arrow {
-    background-color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50px;
     height: 45px;
     width: 45px;
@@ -325,7 +375,7 @@
     transition: all linear 0.1s;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(255, 255, 255, 0.5);
     }
 
     .home-arrow-img {
