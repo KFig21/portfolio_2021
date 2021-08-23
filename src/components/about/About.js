@@ -53,16 +53,16 @@ export default function About() {
         </div>
         <div className="right">
           <p>
-            Welcome! My name is Kevin Figenshu and I am a self-taught developer
+            Welcome! My name is Kevin Figenshu, I am a self-taught developer
             based in Philadelphia, PA.
           </p>
           <div className="break"></div>
           <p>
-            Starting at from no-code in January of 2020 I became obsessed with
-            the world of programming and decided to dive in head first and learn
-            as much as possible. Poring through resources such as The Odin
-            Project, FreeCodeCamp, and Codecademy I have been persistently
-            learning the necessarly skills for becoming a full stack developer.
+            Starting from no-code in January of 2020 I became obsessed with the
+            world of programming and decided to dive in head first and learn as
+            much as possible. Poring through resources such as The Odin Project,
+            FreeCodeCamp, and Codecademy I have been persistently learning the
+            necessarly skills for becoming a full stack developer.
           </p>
           <div className="break"></div>
           <p>
@@ -72,6 +72,8 @@ export default function About() {
             free-lance graphic designer since 2017 being self-taught in Adobe
             photoshop & illustrator.
           </p>
+          <div className="break"></div>
+          <p>Thank you for visiting my page!</p>
           <div className="info mobile">
             <div className="break"></div>
             <div className="item-container">

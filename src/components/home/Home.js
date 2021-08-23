@@ -53,49 +53,49 @@ export default function Home() {
             </div>
             <div className="filebar">
               <span
-                style={{ width: "88%" }}
+                style={{ width: "98%" }}
                 className={fileSelected === 1 ? "file open" : "file"}
                 onClick={() => setFileSelected(1)}
               ></span>
               <span
-                style={{ width: "80%" }}
+                style={{ width: "90%" }}
                 className={fileSelected === 2 ? "file aqua open" : "file aqua"}
                 onClick={() => setFileSelected(2)}
               ></span>
               <span
-                style={{ width: "72%" }}
+                style={{ width: "82%" }}
                 className={fileSelected === 3 ? "file open" : "file"}
                 onClick={() => setFileSelected(3)}
               ></span>
               <span
-                style={{ width: "75%" }}
+                style={{ width: "85%" }}
                 className={fileSelected === 4 ? "file open" : "file"}
                 onClick={() => setFileSelected(4)}
               ></span>
               <span
-                style={{ width: "84%" }}
+                style={{ width: "94%" }}
                 className={
                   fileSelected === 5 ? "file yellow open" : "file yellow"
                 }
                 onClick={() => setFileSelected(5)}
               ></span>
               <span
-                style={{ width: "68%" }}
+                style={{ width: "78%" }}
                 className={fileSelected === 6 ? "file open" : "file"}
                 onClick={() => setFileSelected(6)}
               ></span>
               <span
-                style={{ width: "80%" }}
+                style={{ width: "90%" }}
                 className={fileSelected === 7 ? "file red open" : "file red"}
                 onClick={() => setFileSelected(7)}
               ></span>
               <span
-                style={{ width: "74%" }}
+                style={{ width: "84%" }}
                 className={fileSelected === 8 ? "file open" : "file"}
                 onClick={() => setFileSelected(8)}
               ></span>
               <span
-                style={{ width: "60%" }}
+                style={{ width: "70%" }}
                 className={fileSelected === 9 ? "file open" : "file"}
                 onClick={() => setFileSelected(9)}
               ></span>
