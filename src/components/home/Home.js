@@ -21,25 +21,6 @@ export default function Home() {
 
   return (
     <div className="home" id="home">
-      {/* original home page */}
-
-      {/* <div className="left">
-        <div className="img-container"> */}
-      {/* <img src="assets/man.png" alt="" /> */}
-      {/* </div>
-      </div> */}
-      {/* <div className="right">
-        <div className="wrapper">
-          <h2>Hi there, I'm</h2>
-          <h1>Kevin Figenshu</h1>
-          <h3>
-            A <span ref={textRef}></span>
-          </h3>
-        </div>
-      </div> */}
-
-      {/* new home page */}
-
       <div className="editor-container">
         <div className="editor">
           <div className="top-bar">
@@ -139,7 +120,7 @@ export default function Home() {
         </div>
       </div>
 
-      <a className="down-arrow home-arrow" href="#projects">
+      <a className="down-arrow home-arrow" href="#about">
         <img
           className="arrow-img home-arrow-img"
           src={arrowDown}

@@ -1,0 +1,233 @@
+@import "../../global.scss";
+
+.about {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @include mobile {
+    justify-content: space-around;
+  }
+
+  h1 {
+    position: absolute;
+    top: 50px;
+    font-size: 50px;
+    overflow: hidden;
+    color: $textColor;
+
+    @include mobile {
+      font-size: 2.25em;
+      top: 0px;
+    }
+  }
+
+  .container {
+    max-height: 400px;
+    width: 90vw;
+    max-width: 900px;
+    display: flex;
+    background-color: $primaryColor;
+    box-shadow: 0px 0px 20px black;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+
+    @include mobile {
+      flex-direction: column;
+      width: 80vw;
+      max-height: 50vh;
+      overflow: visible;
+    }
+
+    .left {
+      flex: 2;
+      max-width: 320px;
+      min-width: 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include mobile {
+        display: none;
+      }
+
+      .img-container {
+        max-height: 100%;
+        max-width: 100%;
+        overflow: visible;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+        img {
+          border-radius: 50%;
+          max-height: 95%;
+          max-width: 95%;
+          object-fit: fill;
+          box-shadow: 0px 0px 20px black;
+        }
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          font-size: 20px;
+          color: $textColor;
+          line-height: 32px;
+          text-decoration: underline solid 2.5px $accentColor;
+          text-underline-offset: 0.5px;
+          text-align: center;
+          margin-bottom: 5px;
+        }
+
+        .item-container {
+          display: flex;
+          align-items: center;
+          color: $textColor;
+          background-color: transparent;
+          padding: 4px 8px;
+          border-radius: 3px;
+          cursor: pointer;
+          margin-bottom: 3px;
+
+          &:hover {
+            background-color: $primaryColorFaded;
+          }
+
+          .icon {
+            font-size: 18px;
+            margin-right: 5px;
+          }
+
+          span {
+            font-size: 15px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .right {
+      flex: 5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 12px;
+
+      @include mobile {
+        margin-top: 95px;
+        overflow-y: scroll;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      p {
+        color: $textColor;
+        font-size: 18px;
+        overflow: visible;
+      }
+
+      .break {
+        margin: 15px auto;
+        width: 150px;
+        height: 3px;
+        min-height: 3px;
+        background-color: $accentColor;
+        border-radius: 20px;
+      }
+    }
+
+    .mobile-img-container {
+      position: absolute;
+      max-height: 140px;
+      max-width: 140px;
+      overflow: visible;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      top: -70px;
+      left: calc(50% - 70px);
+      display: none;
+
+      @include mobile {
+        display: block;
+      }
+
+      img {
+        border-radius: 50%;
+        max-height: 95%;
+        max-width: 95%;
+        object-fit: fill;
+        box-shadow: 0px 0px 20px black;
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+      color: $textColor;
+      line-height: 32px;
+      text-decoration: underline solid 2.5px $accentColor;
+      text-underline-offset: 0.5px;
+      text-align: center;
+      margin-bottom: 5px;
+      overflow: visible;
+      position: absolute;
+      top: 70px;
+      right: 50%;
+      transform: translate(50%, 0%);
+    }
+
+    .mobile {
+      display: none;
+
+      @include mobile {
+        display: block;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      overflow: visible;
+
+      @include mobile {
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin: auto;
+      }
+
+      .item-container {
+        display: flex;
+        align-items: center;
+        color: $textColor;
+        background-color: transparent;
+        padding: 4px 8px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-bottom: 3px;
+
+        &:hover {
+          background-color: $primaryColorFaded;
+        }
+
+        .icon {
+          font-size: 18px;
+          margin-right: 5px;
+        }
+
+        span {
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

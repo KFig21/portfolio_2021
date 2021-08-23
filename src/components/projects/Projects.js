@@ -150,7 +150,7 @@ export default function Projects() {
         alt="right arrow"
         onClick={() => setIndex(index + 1)}
       />
-      <a className="up-arrow" href="#home">
+      <a className="up-arrow" href="#about">
         <img className="arrow-img" src={arrowUp} alt="next section" />
       </a>
       <a className="down-arrow" href="#portfolio">

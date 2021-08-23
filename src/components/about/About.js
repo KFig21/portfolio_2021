@@ -1,0 +1,97 @@
+import React from "react";
+import "./about.scss";
+import { Person, Mail, GitHub } from "@material-ui/icons";
+
+// imgs
+import arrowDown from "../../assets/arrows/arrowDown.png";
+import arrowUp from "../../assets/arrows/arrowUp.png";
+import avi from "../../assets/other/avi.png";
+
+export default function About() {
+  return (
+    <div className="about" id="about">
+      <h1>About me</h1>
+
+      <div className="container">
+        <div className="mobile-img-container">
+          <img src={avi} alt="" />
+        </div>
+        <h2 className="mobile">Kevin Figenshu</h2>
+        <div className="left">
+          <div className="img-container">
+            <img src={avi} alt="" />
+          </div>
+          <div className="info">
+            <h2>Kevin Figenshu</h2>
+            <div className="item-container">
+              <Mail className="icon" />
+              <span>Kevin.Figenshu@gmail.com</span>
+            </div>
+            <a
+              href="https://github.com/KFig21"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="item-container"
+            >
+              <GitHub className="icon" />
+              <span>github.com/KFig21</span>
+            </a>
+            <div className="item-container">
+              <Person className="icon" />
+              <span>(610)-608-0468</span>
+            </div>
+          </div>
+        </div>
+        <div className="right">
+          <p>
+            Welcome! My name is Kevin Figenshu and I am a self-taught developer
+            based in Philadelphia, PA.
+          </p>
+          <div className="break"></div>
+          <p>
+            Starting at from no-code in January of 2020 I became obsessed with
+            the world of programming and decided to dive in head first and learn
+            as much as possible. Poring through resources such as The Odin
+            Project, FreeCodeCamp, and Codecademy I have been persistently
+            learning the necessarly skills for becoming a full stack developer.
+          </p>
+          <div className="break"></div>
+          <p>
+            Prior to programming I graduated with a bachelors in business
+            administration with a focus in accounting from Temple University and
+            spent 6 years working in the field. I have also been working as a
+            free-lance graphic designer since 2017 being self-taught in Adobe
+            photoshop & illustrator.
+          </p>
+          <div className="info mobile">
+            <div className="break"></div>
+            <div className="item-container">
+              <Mail className="icon" />
+              <span>Kevin.Figenshu@gmail.com</span>
+            </div>
+            <a
+              href="https://github.com/KFig21"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="item-container"
+            >
+              <GitHub className="icon" />
+              <span>github.com/KFig21</span>
+            </a>
+            <div className="item-container">
+              <Person className="icon" />
+              <span>(610)-608-0468</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a className="up-arrow" href="#home">
+        <img className="arrow-img" src={arrowUp} alt="next section" />
+      </a>
+      <a className="down-arrow" href="#projects">
+        <img className="arrow-img" src={arrowDown} alt="next section" />
+      </a>
+    </div>
+  );
+}

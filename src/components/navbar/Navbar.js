@@ -1,6 +1,5 @@
 import React from "react";
 import "./navbar.scss";
-import { Person, Mail } from "@material-ui/icons";
 
 export default function Navbar({ menuOpen, setMenuOpen }) {
   return (
@@ -46,14 +45,6 @@ c15 -39 50 -143 77 -229z m-2463 -5144 c-46 -24 -282 -106 -419 -144 -830
               </g>
             </svg>
           </a>
-          <div className="item-container">
-            <Person className="icon" />
-            <span>(610)-608-0468</span>
-          </div>
-          <div className="item-container">
-            <Mail className="icon" />
-            <span>Kevin.Figenshu@gmail.com</span>
-          </div>
         </div>
         <div className="right">
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>

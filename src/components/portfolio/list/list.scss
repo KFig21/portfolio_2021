@@ -6,9 +6,11 @@
   padding: 7px 11px;
   border-radius: 50px;
   color: $textColor;
+  background-color: $primaryColorFaded;
   height: auto;
   cursor: pointer;
   margin-bottom: 0px;
+  transition: all linear 0.2s;
 
   &:nth-child(5) {
     margin-right: 0px;
