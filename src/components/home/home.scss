@@ -165,6 +165,8 @@
           overflow: hidden;
           display: flex;
 
+          $fourLines: 532px;
+
           .lines {
             display: flex;
             flex-direction: column;
@@ -193,8 +195,8 @@
                 line-height: 57.6px;
               }
 
-              @media (max-width: 532px) {
-                line-height: 95.2px;
+              @media (max-width: $fourLines) {
+                line-height: 51px;
               }
             }
 
@@ -202,16 +204,48 @@
               display: flex;
               justify-content: end;
               align-items: flex-end;
-              height: 33.6px;
+              height: 32.6px;
               margin-bottom: 30px;
 
               @include mobile {
                 margin-bottom: 10px;
               }
 
+              @media (max-width: $fourLines) {
+                height: 38px;
+                margin-bottom: 0px;
+                color: rgb(116, 116, 116);
+              }
+
               .number3 {
-                height: 29.5px;
+                height: 31px;
                 color: rgba(255, 255, 255, 0.75);
+                font-family: "Source Code Pro", monospace;
+                overflow: hidden;
+
+                @media (max-width: $fourLines) {
+                  height: 40px;
+                  color: rgb(116, 116, 116);
+                }
+              }
+            }
+
+            .line4 {
+              display: none;
+              justify-content: end;
+              align-items: flex-end;
+              height: 33.6px;
+              margin-bottom: 30px;
+
+              @media (max-width: $fourLines) {
+                margin-bottom: 10px;
+                display: flex;
+              }
+
+              .number4 {
+                height: 31px;
+                color: rgba(255, 255, 255, 0.75);
+                font-family: "Source Code Pro", monospace;
                 overflow: hidden;
               }
             }
@@ -237,6 +271,11 @@
               @include mobile {
                 font-size: 30px;
               }
+
+              @media (max-width: $fourLines) {
+                line-height: 40px;
+                margin: 5px 0px;
+              }
             }
             h2 {
               font-size: 25px;
@@ -250,7 +289,7 @@
               font-weight: 400;
               margin-bottom: 30px;
               padding-left: 3px;
-              line-height: 31px;
+              line-height: 29px;
               overflow: hidden;
               background-color: rgba(255, 255, 255, 0.08);
 

@@ -107,6 +107,9 @@ export default function Home() {
                 <span className="number line3">
                   <span className="number3">3</span>
                 </span>
+                <span className="number line4">
+                  <span className="number4">4</span>
+                </span>
               </div>
               <div className="wrapper">
                 <h2>Hi there, I'm</h2>
