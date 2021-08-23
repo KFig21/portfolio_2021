@@ -73,7 +73,7 @@ export default function About() {
             photoshop & illustrator.
           </p>
           <div className="break"></div>
-          <p>Thank you for visiting my page!</p>
+          <p className="last-p">Thank you for visiting my page!</p>
           <div className="info mobile">
             <div className="break"></div>
             <div className="item-container">
