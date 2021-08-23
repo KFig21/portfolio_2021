@@ -127,6 +127,7 @@
         overflow-y: scroll;
         justify-content: flex-start;
         align-items: flex-start;
+        padding-left: 0px;
       }
 
       p {
@@ -154,7 +155,8 @@
       justify-content: center;
       display: flex;
       top: -70px;
-      left: calc(50% - 70px);
+      left: 50%;
+      transform: translate(-50%, 0%);
       display: none;
 
       @include mobile {
@@ -171,10 +173,11 @@
     }
 
     h2 {
-      font-size: 20px;
+      font-size: 25px;
       color: $textColor;
       line-height: 32px;
-      text-decoration: underline solid 2.5px $accentColor;
+      width: 200px;
+      text-decoration: underline solid 3px $accentColor;
       text-underline-offset: 0.5px;
       text-align: center;
       margin-bottom: 5px;

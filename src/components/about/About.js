@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.scss";
-import { Person, Mail, GitHub } from "@material-ui/icons";
+import { Person, Mail, GitHub, Code } from "@material-ui/icons";
 
 // imgs
 import arrowDown from "../../assets/arrows/arrowDown.png";
@@ -40,6 +40,15 @@ export default function About() {
               <Person className="icon" />
               <span>(610)-608-0468</span>
             </div>
+            <a
+              href="https://github.com/KFig21/portfolio_2021"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="item-container"
+            >
+              <Code className="icon" />
+              <span>Repo for this project</span>
+            </a>
           </div>
         </div>
         <div className="right">
@@ -82,6 +91,15 @@ export default function About() {
               <Person className="icon" />
               <span>(610)-608-0468</span>
             </div>
+            <a
+              href="https://github.com/KFig21/portfolio_2021"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="item-container"
+            >
+              <Code className="icon" />
+              <span>Repo for this project</span>
+            </a>
           </div>
         </div>
       </div>
