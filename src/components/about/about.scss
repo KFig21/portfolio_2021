@@ -39,7 +39,8 @@
     @include mobile {
       flex-direction: column;
       width: 80vw;
-      max-height: 50vh;
+      margin-top: 5vh;
+      max-height: 55vh;
       overflow: visible;
     }
 
@@ -182,6 +183,7 @@
       top: 70px;
       right: 50%;
       transform: translate(50%, 0%);
+      display: none;
     }
 
     .mobile {
@@ -193,11 +195,12 @@
     }
 
     .info {
-      display: flex;
+      display: none;
       flex-direction: column;
       overflow: visible;
 
       @include mobile {
+        display: flex;
         justify-content: center;
         align-items: center;
         padding: 5px;
