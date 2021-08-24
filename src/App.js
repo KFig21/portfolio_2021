@@ -13,7 +13,6 @@ import About from "./components/about/About";
 
 function App() {
   const appHeight = () => {
-    // console.log("change", window.innerHeight);
     document.documentElement.style.setProperty(
       "--app-height",
       `calc(${window.innerHeight}px)`
