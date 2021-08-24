@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./contact.scss";
-import { Person, Mail, GitHub, Code } from "@material-ui/icons";
+import { Person, Mail, GitHub } from "@material-ui/icons";
 // imgs
 import arrowUp from "../../assets/arrows/arrowUp.png";
 import shake from "../../assets/other/shake.svg";
@@ -33,14 +33,14 @@ export default function Contact() {
       <div className="info">
         <div className="item-container" id="phone-contact-icon">
           <Person className="icon" />
-          <span class="item-span" id="phone-contact-span">
+          <span className="item-span" id="phone-contact-span">
             (610)-608-0468
           </span>
         </div>
         <div className="item-container" id="gitHub-contact-icon">
           <GitHub className="icon" />
           <a
-            class="item-span"
+            className="item-span"
             id="gitHub-contact-span"
             href="https://github.com/KFig21"
             target="_blank"
@@ -51,7 +51,7 @@ export default function Contact() {
         </div>
         <div className="item-container" id="email-contact-icon">
           <Mail className="icon" />
-          <span class="item-span" id="email-contact-span">
+          <span className="item-span" id="email-contact-span">
             Kevin.Figenshu@gmail.com
           </span>
         </div>

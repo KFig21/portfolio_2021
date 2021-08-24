@@ -12,6 +12,16 @@ import Menu from "./components/navbar/menu/Menu";
 import About from "./components/about/About";
 
 function App() {
+  const appHeight = () => {
+    // console.log("change", window.innerHeight);
+    document.documentElement.style.setProperty(
+      "--app-height",
+      `${window.innerHeight}px`
+    );
+  };
+  window.addEventListener("resize", appHeight);
+  appHeight();
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
