@@ -12,7 +12,7 @@ export default function Modal({ project, setShowModal }) {
       const img = document.getElementById(`img-${i}`);
       let height = img.naturalHeight;
       let width = img.naturalWidth;
-      if (width / height > 1.05) {
+      if (width / height > 1.08) {
         img.parentElement.parentElement.classList.add("center-the-img");
       }
     }
@@ -31,7 +31,7 @@ export default function Modal({ project, setShowModal }) {
             <div className="left-container">
               {/* desktop icons */}
               <div className="icons-container desktop">
-                {project.icon.map((tech) => (
+                {project.icons.map((tech) => (
                   <div key={tech.id}>
                     <div className={`img-container ${tech.color}-color-bg`}>
                       <img src={tech.icon} alt="" />
@@ -46,7 +46,7 @@ export default function Modal({ project, setShowModal }) {
               <p>{project.desc}</p>
               {/* mobile icons */}
               <div className="icons-container mobile">
-                {project.icon.map((tech) => (
+                {project.icons.map((tech) => (
                   <div key={tech.id}>
                     <div className={`img-container ${tech.color}-color-bg`}>
                       <img src={tech.icon} alt="" />

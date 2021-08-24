@@ -11,19 +11,17 @@ import arrowRight from "../../assets/arrows/arrowRight.png";
 import arrowLeft from "../../assets/arrows/arrowLeft.png";
 
 export default function Projects() {
-  const [projectSlides, setProjectSlides] = useState(projectData);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const lastIndex = projectSlides.length - 1;
-    console.log(index);
+    const lastIndex = projectData.length - 1;
     if (index < 0) {
       setIndex(lastIndex);
     }
     if (index > lastIndex) {
       setIndex(0);
     }
-  }, [index, projectSlides]);
+  }, [index]);
 
   return (
     <div className="projects" id="projects">
@@ -38,14 +36,14 @@ export default function Projects() {
           }
           if (
             projectIndex === index - 1 ||
-            (index === 0 && projectIndex === projectSlides.length - 1)
+            (index === 0 && projectIndex === projectData.length - 1)
           ) {
             position = "lastSlide";
           }
 
           return (
-            <div className={`container ${position}`} key={id}>
-              <div className="item">
+            <div className={`container ${position}`}>
+              <div className="item" key={id}>
                 <div className="left">
                   <div className="left-container">
                     {/* desktop icons */}
@@ -125,13 +123,15 @@ export default function Projects() {
                       </a>
                     </div>
                   </div>
-                  {imgs.map((img) => (
-                    <div className="img-container">
-                      <a href={img} target="_blank" rel="noopener noreferrer">
-                        <img src={img} alt="" />
-                      </a>
-                    </div>
-                  ))}
+                  <div className="img-container">
+                    <a
+                      href={imgs[0].src}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={imgs[0].src} alt="" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

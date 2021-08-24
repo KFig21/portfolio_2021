@@ -82,4 +82,46 @@
       }
     }
   }
+
+  .info {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    .item-container {
+      display: flex;
+      background-color: $primaryColor;
+      padding: 8px;
+      text-decoration: none;
+      align-items: center;
+      justify-self: start;
+      transition: all 0.2s linear;
+      cursor: pointer;
+      height: 24px;
+      width: 28px;
+      float: right;
+
+      &:hover {
+        background-color: $primaryColorFaded;
+        width: 250px;
+      }
+
+      .icon {
+        color: $textColor;
+      }
+
+      .item-span {
+        width: 0px;
+        color: $textColor;
+        padding-left: 0px;
+        transition: all 0.2s linear;
+        white-space: nowrap;
+      }
+
+      &:hover .item-span {
+        width: 222px;
+        padding-left: 10px;
+      }
+    }
+  }
 }
