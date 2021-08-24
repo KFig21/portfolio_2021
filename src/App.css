@@ -1,8 +1,19 @@
 :root {
-  --app-height: calc(100% - 70px);
+  --app-height: calc(100%);
+  --section-height: calc(100% - 70px);
 }
 
-.App {
-  text-align: center;
+.app {
+  /* text-align: center; */
   height: var(--app-height);
+}
+
+.sections,
+.home,
+.about,
+.projects,
+.portfolio,
+.technologies,
+.contact {
+  height: var(--section-height);
 }

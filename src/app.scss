@@ -1,7 +1,7 @@
 @import "./global.scss";
 
 .app {
-  height: 100vh;
+  // height: 100vh;
   background: rgb(32, 32, 32);
   background: linear-gradient(
     180deg,
@@ -11,7 +11,7 @@
 
   .sections {
     width: 100%;
-    height: calc(100% - 70px);
+    // height: calc(100% - 70px);
     position: relative;
     top: 70px;
     scroll-behavior: smooth;
@@ -23,7 +23,7 @@
 
     > * {
       width: 100vw;
-      height: calc(100%);
+      // height: calc(100%);
       scroll-snap-align: start;
     }
   }

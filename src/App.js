@@ -1,5 +1,5 @@
-// import "./App.css";
 import "./app.scss";
+import "./App.css";
 import { useState } from "react";
 // components
 import Navbar from "./components/navbar/Navbar";
@@ -16,7 +16,11 @@ function App() {
     // console.log("change", window.innerHeight);
     document.documentElement.style.setProperty(
       "--app-height",
-      `${window.innerHeight}px`
+      `calc(${window.innerHeight}px)`
+    );
+    document.documentElement.style.setProperty(
+      "--section-height",
+      `calc(${window.innerHeight}px - 70px)`
     );
   };
   window.addEventListener("resize", appHeight);
