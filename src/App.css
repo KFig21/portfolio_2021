@@ -1,5 +1,5 @@
 :root {
-  --app-height: 100%;
+  --app-height: calc(100% - 70px);
 }
 
 .App {
