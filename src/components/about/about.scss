@@ -14,14 +14,13 @@
 
   h1 {
     position: absolute;
-    top: 50px;
+    top: 80px;
     font-size: 50px;
     overflow: hidden;
     color: $textColor;
 
     @include mobile {
       font-size: 2.25em;
-      top: 0px;
     }
   }
 
@@ -39,7 +38,7 @@
     @include mobile {
       flex-direction: column;
       width: 80vw;
-      margin-top: 5vh;
+      margin-top: 150px;
       max-height: 55vh;
       overflow: visible;
     }
