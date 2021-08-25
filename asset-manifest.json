@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio_2021/static/css/main.aaa13fe7.chunk.css",
-    "main.js": "/portfolio_2021/static/js/main.392d4d39.chunk.js",
-    "main.js.map": "/portfolio_2021/static/js/main.392d4d39.chunk.js.map",
+    "main.css": "/portfolio_2021/static/css/main.355cecc1.chunk.css",
+    "main.js": "/portfolio_2021/static/js/main.f85026cb.chunk.js",
+    "main.js.map": "/portfolio_2021/static/js/main.f85026cb.chunk.js.map",
     "runtime-main.js": "/portfolio_2021/static/js/runtime-main.592f6d91.js",
     "runtime-main.js.map": "/portfolio_2021/static/js/runtime-main.592f6d91.js.map",
     "static/js/2.43c961dd.chunk.js": "/portfolio_2021/static/js/2.43c961dd.chunk.js",
     "static/js/2.43c961dd.chunk.js.map": "/portfolio_2021/static/js/2.43c961dd.chunk.js.map",
     "index.html": "/portfolio_2021/index.html",
-    "static/css/main.aaa13fe7.chunk.css.map": "/portfolio_2021/static/css/main.aaa13fe7.chunk.css.map",
+    "static/css/main.355cecc1.chunk.css.map": "/portfolio_2021/static/css/main.355cecc1.chunk.css.map",
     "static/js/2.43c961dd.chunk.js.LICENSE.txt": "/portfolio_2021/static/js/2.43c961dd.chunk.js.LICENSE.txt",
     "static/media/avi.0f6e1bbf.png": "/portfolio_2021/static/media/avi.0f6e1bbf.png",
     "static/media/battleship-1.9e20785a.png": "/portfolio_2021/static/media/battleship-1.9e20785a.png",
@@ -23,6 +23,7 @@
     "static/media/gameNseek-2.d6dcc2d6.png": "/portfolio_2021/static/media/gameNseek-2.d6dcc2d6.png",
     "static/media/gameNseek-3.34562595.png": "/portfolio_2021/static/media/gameNseek-3.34562595.png",
     "static/media/gameNseek-4.6879b8df.gif": "/portfolio_2021/static/media/gameNseek-4.6879b8df.gif",
+    "static/media/git.af321635.png": "/portfolio_2021/static/media/git.af321635.png",
     "static/media/gradient-1.3ae700fe.png": "/portfolio_2021/static/media/gradient-1.3ae700fe.png",
     "static/media/gridFramework-1.c8fb1e0d.png": "/portfolio_2021/static/media/gridFramework-1.c8fb1e0d.png",
     "static/media/gridFramework-2.1b703a81.gif": "/portfolio_2021/static/media/gridFramework-2.1b703a81.gif",
@@ -65,7 +66,7 @@
   "entrypoints": [
     "static/js/runtime-main.592f6d91.js",
     "static/js/2.43c961dd.chunk.js",
-    "static/css/main.aaa13fe7.chunk.css",
-    "static/js/main.392d4d39.chunk.js"
+    "static/css/main.355cecc1.chunk.css",
+    "static/js/main.f85026cb.chunk.js"
   ]
 }
