@@ -15,6 +15,7 @@ import photoshopIcon from "./assets/languages/photoshop.png";
 import illustratorIcon from "./assets/languages/illustrator.png";
 import excelIcon from "./assets/languages/excel.PNG";
 import mysqlIcon from "./assets/languages/mysql.PNG";
+import gitIcon from "./assets/languages/git.png";
 
 // Instagram project images
 import instagramImg1 from "./assets/projects/react/instagram/instagram-1.PNG";
@@ -345,6 +346,11 @@ export const languages = [
     icon: pythonIcon,
     exp: "1",
   },
+  {
+    name: "Sass",
+    icon: sassIcon,
+    exp: "1",
+  },
 ];
 
 export const techData = [
@@ -364,9 +370,9 @@ export const techData = [
     exp: "1",
   },
   {
-    name: "Sass",
-    icon: sassIcon,
-    exp: "1",
+    name: "Git",
+    icon: gitIcon,
+    exp: "2",
   },
 ];
 

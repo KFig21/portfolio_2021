@@ -345,3 +345,20 @@ $mysqlColor: #1f7aa5;
 .mysql-color-text {
   color: $mysqlColor;
 }
+
+// git
+$gitColor: #f05033;
+.git-color-bg {
+  background-color: $gitColor;
+}
+.git-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $gitColor;
+    color: black;
+  }
+}
+.git-color-text {
+  color: $gitColor;
+}
