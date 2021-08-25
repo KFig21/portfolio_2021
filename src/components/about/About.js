@@ -62,7 +62,7 @@ export default function About() {
             world of programming and decided to dive in head first and learn as
             much as possible. Poring through resources such as The Odin Project,
             FreeCodeCamp, and Codecademy I have been persistently learning the
-            necessarly skills for becoming a full stack developer.
+            necessary skills for becoming a full stack developer.
           </p>
           <div className="break"></div>
           <p>

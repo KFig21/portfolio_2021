@@ -1,7 +1,6 @@
 import React from "react";
 import "./projects.scss";
 import { useState, useEffect } from "react";
-import { projectData } from "./projectData";
 import CodeIcon from "@material-ui/icons/Code";
 import LanguageIcon from "@material-ui/icons/Language";
 // imgs
@@ -9,6 +8,18 @@ import arrowDown from "../../assets/arrows/arrowDown.png";
 import arrowUp from "../../assets/arrows/arrowUp.png";
 import arrowRight from "../../assets/arrows/arrowRight.png";
 import arrowLeft from "../../assets/arrows/arrowLeft.png";
+// project data
+import {
+  instagramProjectData,
+  gameNseekProjectData,
+  hoopShopProjectData,
+} from "../../allProjects";
+
+const projectData = [
+  instagramProjectData,
+  gameNseekProjectData,
+  hoopShopProjectData,
+];
 
 export default function Projects() {
   const [index, setIndex] = useState(0);

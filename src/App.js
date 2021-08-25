@@ -6,7 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import Portfolio from "./components/portfolio/Portfolio";
 import Projects from "./components/projects/Projects";
-import Technologies from "./components/technologies/Technologies";
+import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/navbar/menu/Menu";
 import About from "./components/about/About";
@@ -36,7 +36,7 @@ function App() {
         <About />
         <Projects />
         <Portfolio />
-        <Technologies />
+        <Skills />
         <Contact />
       </div>
     </div>

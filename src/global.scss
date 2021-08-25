@@ -9,7 +9,6 @@ $textColor: white;
 $editorPrimary: #21252b;
 $editorSecondary: #282c34;
 $editorBorder: rgb(146, 146, 146);
-$appHeight: 100vh;
 
 $width: 768px;
 
@@ -74,52 +73,275 @@ $width: 768px;
 }
 
 // tech colors
+
+// react
 $reactColor: #61b8fb;
-$tailwindColor: #17bbb9;
-$firebaseColor: #f79b00;
-$javascriptColor: #f7cf00;
-$cssColor: #1c86c4;
-$htmlColor: #f16529;
-$sassColor: #cf649a;
 .react-color-bg {
   background-color: $reactColor;
 }
-.tailwind-color-bg {
-  background-color: $tailwindColor;
-}
-.firebase-color-bg {
-  background-color: $firebaseColor;
-}
-.javascript-color-bg {
-  background-color: $javascriptColor;
-}
-.css-color-bg {
-  background-color: $cssColor;
-}
-.html-color-bg {
-  background-color: $htmlColor;
-}
-.sass-color-bg {
-  background-color: $sassColor;
+.react-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $reactColor;
+    color: black;
+  }
 }
 .react-color-text {
   color: $reactColor;
 }
+
+// tailwind
+$tailwindColor: #17bbb9;
+.tailwind-color-bg {
+  background-color: $tailwindColor;
+}
+.tailwind-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $tailwindColor;
+    color: black;
+  }
+}
 .tailwind-color-text {
   color: $tailwindColor;
+}
+
+// firebase
+$firebaseColor: #f79b00;
+.firebase-color-bg {
+  background-color: $firebaseColor;
+}
+.firebase-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $firebaseColor;
+    color: black;
+  }
 }
 .firebase-color-text {
   color: $firebaseColor;
 }
+
+// javascript
+$javascriptColor: #f7cf00;
+.javascript-color-bg {
+  background-color: $javascriptColor;
+}
+.javascript-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $javascriptColor;
+    color: black;
+  }
+}
 .javascript-color-text {
   color: $javascriptColor;
+}
+
+// css
+$cssColor: #1c86c4;
+.css-color-bg {
+  background-color: $cssColor;
+}
+.css-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $cssColor;
+    color: black;
+  }
 }
 .css-color-text {
   color: $cssColor;
 }
+
+// html
+$htmlColor: #f16529;
+.html-color-bg {
+  background-color: $htmlColor;
+}
+.html-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $htmlColor;
+    color: black;
+  }
+}
 .html-color-text {
   color: $htmlColor;
 }
+
+// sass
+$sassColor: #cf649a;
+.sass-color-bg {
+  background-color: $sassColor;
+}
+.sass-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $sassColor;
+    color: black;
+  }
+}
 .sass-color-text {
   color: $sassColor;
+}
+
+// sql
+$sqlColor: #2887db;
+.sql-color-bg {
+  background-color: $sqlColor;
+}
+.sql-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $sqlColor;
+    color: black;
+  }
+}
+.sql-color-text {
+  color: $sqlColor;
+}
+
+// php
+$phpColor: #7377ad;
+.php-color-bg {
+  background-color: $phpColor;
+}
+.php-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $phpColor;
+    color: black;
+  }
+}
+.php-color-text {
+  color: $phpColor;
+}
+
+// ruby
+$rubyColor: #eb3d43;
+.ruby-color-bg {
+  background-color: $rubyColor;
+}
+.ruby-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $rubyColor;
+    color: black;
+  }
+}
+.ruby-color-text {
+  color: $rubyColor;
+}
+
+// python
+$pythonColor: #ebda3d;
+.python-color-bg {
+  background-color: $pythonColor;
+}
+.python-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $pythonColor;
+    color: black;
+  }
+}
+.python-color-text {
+  color: $pythonColor;
+}
+
+// node
+$nodeColor: #41b350;
+.node-color-bg {
+  background-color: $nodeColor;
+}
+.node-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $nodeColor;
+    color: black;
+  }
+}
+.node-color-text {
+  color: $nodeColor;
+}
+
+// photoshop
+$photoshopColor: #39a9eb;
+.photoshop-color-bg {
+  background-color: $photoshopColor;
+}
+.photoshop-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $photoshopColor;
+    color: black;
+  }
+}
+.photoshop-color-text {
+  color: $photoshopColor;
+}
+
+// illustrator
+$illustratorColor: #ff9b00;
+.illustrator-color-bg {
+  background-color: $illustratorColor;
+}
+.illustrator-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $illustratorColor;
+    color: black;
+  }
+}
+.illustrator-color-text {
+  color: $illustratorColor;
+}
+
+// excel
+$excelColor: #1a8d56;
+.excel-color-bg {
+  background-color: $excelColor;
+}
+.excel-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $excelColor;
+    color: black;
+  }
+}
+.excel-color-text {
+  color: $excelColor;
+}
+
+// mysql
+$mysqlColor: #1f7aa5;
+.mysql-color-bg {
+  background-color: $mysqlColor;
+}
+.mysql-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $mysqlColor;
+    color: black;
+  }
+}
+.mysql-color-text {
+  color: $mysqlColor;
 }

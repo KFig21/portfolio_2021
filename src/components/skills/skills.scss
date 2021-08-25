@@ -1,0 +1,124 @@
+@import "../../global.scss";
+
+.skills {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $textColor;
+  position: relative;
+
+  h1 {
+    margin-top: 4vw;
+    font-size: 50px;
+    overflow: hidden;
+    color: $textColor;
+
+    @include mobile {
+      font-size: 2.25em;
+      top: 0px;
+    }
+  }
+
+  .detail {
+    border: solid 2px $accentColorFaded;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 700px;
+    margin: 10px auto 20px auto;
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+    height: 63%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+      width: 90vw;
+      height: 100%;
+      max-width: 800px;
+
+      .tech {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px 0px 0px;
+
+        h2 {
+          color: $textColor;
+          text-decoration: underline 2.5px solid $accentColor;
+        }
+
+        .tech-container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          margin: 10px 10px;
+          gap: 20px;
+          overflow: visible;
+
+          @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+            margin: 10px 20px 10px 10px;
+            gap: 12px;
+          }
+
+          .skill-container {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            border-radius: 100px;
+            width: fit-content;
+            cursor: default;
+            transition: all 0.1s linear;
+            overflow: visible;
+
+            @include mobile {
+              width: 100%;
+            }
+
+            &:hover {
+              box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.8);
+              transform: scale(1.05);
+            }
+
+            .img-container {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              @include mobile {
+                margin-right: 0px;
+                width: 25px;
+                height: 25px;
+              }
+
+              img {
+                width: 25px;
+
+                @include mobile {
+                  width: 20px;
+                }
+              }
+            }
+
+            .skill {
+              padding: 0px 15px;
+
+              @include mobile {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
