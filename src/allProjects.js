@@ -355,8 +355,8 @@ export const languages = [
 
 export const techData = [
   {
-    name: "React",
-    icon: reactIcon,
+    name: "Git",
+    icon: gitIcon,
     exp: "1",
   },
   {
@@ -365,14 +365,14 @@ export const techData = [
     exp: "1",
   },
   {
-    name: "Firebase",
-    icon: firebaseIcon,
+    name: "React",
+    icon: reactIcon,
     exp: "1",
   },
   {
-    name: "Git",
-    icon: gitIcon,
-    exp: "2",
+    name: "Firebase",
+    icon: firebaseIcon,
+    exp: "1",
   },
 ];
 

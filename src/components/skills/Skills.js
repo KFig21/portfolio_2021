@@ -17,7 +17,9 @@ export default function Skills() {
         </div>
         <div className="skill">
           <p>{skill.name}</p>
-          <p>{skill.exp} years exp</p>
+          <p>
+            {skill.exp} {skill.exp > 1 ? "years" : "year"} exp
+          </p>
         </div>
       </div>
     ));
