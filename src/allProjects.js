@@ -134,7 +134,7 @@ export const cvBuilderProjectData = {
     { id: "3", icon: cssIcon, color: "css" },
   ],
   title: "CV Builder",
-  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  desc: "A CV builder built with React that instantly updates upon data entry. The app allows users to add/remove experience and education entries and even view an example of how a completed CV should look. Finally, users can save the CV preview as a PDF file or even print it out for their own use.",
   imgs: [
     { id: "img-1", src: cvBuilderImg1 },
     { id: "img-2", src: cvBuilderImg2 },
