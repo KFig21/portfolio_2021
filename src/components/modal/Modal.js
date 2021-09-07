@@ -16,7 +16,7 @@ export default function Modal({ project, setShowModal }) {
         img.parentElement.parentElement.classList.add("center-the-img");
       }
     }
-  }, [project]);
+  }, []);
 
   return (
     <div className="modal">

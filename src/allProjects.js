@@ -410,7 +410,7 @@ export const portfolioProjectData = {
     { id: "3", icon: sassIcon, color: "sass" },
   ],
   title: "Portfolio",
-  desc: "",
+  desc: "My portfolio! This project was built with React and styled with Sass, it is fully responsive for all screen sizes. Thanks again for visiting my page!",
   imgs: [
     { id: "img-1", src: portfolioImg1 },
     { id: "img-2", src: portfolioImg2 },
