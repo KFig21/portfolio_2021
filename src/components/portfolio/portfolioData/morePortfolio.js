@@ -1,3 +1,11 @@
-// import webDesignImg1 from "../../../assets/projects/webDesign/responsiveDesign/responsiveDesign-1.PNG";
+import {
+  calculatorProjectData,
+  etchASketchProjectData,
+  libraryProjectData,
+} from "../../../allProjects";
 
-export const morePortfolio = [];
+export const morePortfolio = [
+  calculatorProjectData,
+  etchASketchProjectData,
+  libraryProjectData,
+];

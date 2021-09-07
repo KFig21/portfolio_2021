@@ -11,8 +11,9 @@
   cursor: pointer;
   margin-bottom: 0px;
   transition: all linear 0.2s;
+  overflow: visible;
 
-  &:nth-child(5) {
+  &:nth-child(3) {
     margin-right: 0px;
   }
 

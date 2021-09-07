@@ -35,12 +35,24 @@ import hoopShopImg2 from "./assets/projects/react/hoopShop/hoopShop-2.png";
 // CV Builder project images
 import cvBuilderImg1 from "./assets/projects/react/cvBuilder/cvBuilder-1.png";
 import cvBuilderImg2 from "./assets/projects/react/cvBuilder/cvBuilder-2.png";
+// Weather API project images
+import weatherAppImg1 from "./assets/projects/react/weatherApp/weatherApp-1.PNG";
+import weatherAppImg2 from "./assets/projects/react/weatherApp/weatherApp-2.png";
+import weatherAppImg3 from "./assets/projects/react/weatherApp/weatherApp-3.gif";
+// Portfolio project images
+import portfolioImg1 from "./assets/projects/react/portfolio/portfolio-1.png";
+import portfolioImg2 from "./assets/projects/react/portfolio/portfolio-2.png";
+import portfolioImg3 from "./assets/projects/react/portfolio/portfolio-3.png";
 // Battleship project images
 import battleshipImg1 from "./assets/projects/react/battleship/battleship-1.png";
 import battleshipImg2 from "./assets/projects/react/battleship/battleship-2.png";
 // NBA Memory Game project images
 import memoryGameImg1 from "./assets/projects/react/memoryGame/memoryGame-1.png";
 import memoryGameImg2 from "./assets/projects/react/memoryGame/memoryGame-2.png";
+// To Do List project images
+import toDoListImg1 from "./assets/projects/react/toDoList/toDoList-1.PNG";
+import toDoListImg2 from "./assets/projects/react/toDoList/toDoList-2.png";
+import toDoListImg3 from "./assets/projects/react/toDoList/toDoList-3.gif";
 // Tic Tac Toe project images
 import ticTacToe1 from "./assets/projects/games/ticTacToe/ticTacToe-1.png";
 import ticTacToe2 from "./assets/projects/games/ticTacToe/ticTacToe-2.png";
@@ -67,6 +79,8 @@ import gridFrameworkImg1 from "./assets/projects/webDesign/gridFramework/gridFra
 import gridFrameworkImg2 from "./assets/projects/webDesign/gridFramework/gridFramework-2.gif";
 // Backgrounds & Gradients Project images
 import gradientImg1 from "./assets/projects/webDesign/gradient/gradient-1.png";
+// calculator Project images
+import calculatorImg1 from "./assets/projects/more/calculator/calculator-1.png";
 
 // react projects
 export const instagramProjectData = {
@@ -152,7 +166,7 @@ export const battleshipProjectData = {
     { id: "3", icon: cssIcon, color: "css" },
   ],
   title: "Battleship",
-  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  desc: "The game of Battleship built with React! Place your ships vertical or horizontal to setup your board and begin selecting spaces on the computer's board to attack. When the computer lands an attack it will know which spaces to target next and it will not fooled by edge placement or ships being placed next to each other.",
   imgs: [
     { id: "img-1", src: battleshipImg1 },
     { id: "img-2", src: battleshipImg2 },
@@ -168,8 +182,8 @@ export const nbaMemoryGameProjectData = {
     { id: "2", icon: javascriptIcon, color: "javascript" },
     { id: "3", icon: cssIcon, color: "css" },
   ],
-  title: "NBA Memory Game",
-  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  title: "Memory Game",
+  desc: "A memory card game built with React. With 30 cards available, the object of the game is to select all 30 once without re-selecting a card. The cards placement are randomized after each turn. This app is responsive so it can be played on any device.",
   imgs: [
     { id: "img-1", src: memoryGameImg1 },
     { id: "img-2", src: memoryGameImg2 },
@@ -186,7 +200,7 @@ export const ticTacToeProjectData = {
     { id: "3", icon: sassIcon, color: "sass" },
   ],
   title: "Tic Tac Toe",
-  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  desc: "A Tic-Tac-Toe game built with React, play against a friend or vs the computer. Players are able to change their name and markers.",
   imgs: [
     { id: "img-1", src: ticTacToe1 },
     { id: "img-2", src: ticTacToe2 },
@@ -203,7 +217,7 @@ export const rockPaperScissorsProjectData = {
     { id: "3", icon: cssIcon, color: "css" },
   ],
   title: "Rock Paper Scissors",
-  desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  desc: "Rock paper scissors built with vanilla Js and styled with CSS. The goal of this project was to learn DOM manipulation and variables in Javascript.",
   imgs: [
     { id: "img-1", src: rockPaperScissors1 },
     { id: "img-2", src: rockPaperScissors2 },
@@ -211,7 +225,25 @@ export const rockPaperScissorsProjectData = {
   repository: "https://github.com/KFig21/rock_paper_scissors",
   live: "https://kfig21.github.io/rock_paper_scissors/",
 };
+export const toDoListProjectData = {
+  id: "9",
+  icons: [
+    { id: "1", icon: reactIcon, color: "react" },
+    { id: "2", icon: firebaseIcon, color: "firebase" },
+    { id: "3", icon: sassIcon, color: "sass" },
+  ],
+  title: "To Do List",
+  desc: "A to-do list app built with React, styled with Sass, and uses Firebase as a backend database. Features include: adding/deleting tasks & lists, set tasks as complete, incomplete & urgent, update task & list details in realtime. This application is fully responsive to be used on any device screen size.",
+  imgs: [
+    { id: "img-1", src: toDoListImg1 },
+    { id: "img-2", src: toDoListImg2 },
+    { id: "img-3", src: toDoListImg3 },
+  ],
+  repository: "https://github.com/KFig21/todo_list_react",
+  live: "https://kfig21.github.io/todo_list_react/",
+};
 
+// design
 export const responsiveDesignProjectData = {
   id: "10",
   icons: [
@@ -219,7 +251,7 @@ export const responsiveDesignProjectData = {
     { id: "2", icon: cssIcon, color: "css" },
   ],
   title: "Responsive Design Project",
-  desc: "",
+  desc: "The purpose of this project was to re-create the responsive design of home page of TheNextWeb.com. CSS media queries were used to achieve this goal.",
   imgs: [
     { id: "img-1", src: responsiveDesignImg1 },
     { id: "img-2", src: responsiveDesignImg2 },
@@ -238,7 +270,7 @@ export const pseudoClassDesignProjectData = {
     { id: "2", icon: cssIcon, color: "css" },
   ],
   title: "Pseudo Class Design",
-  desc: "",
+  desc: "The goal of this web design project was to work on CSS pseudo classes. There are plenty of :hover, :before, and :after pseudo classes included in the elements",
   imgs: [
     { id: "img-1", src: pseudoClassImg1 },
     { id: "img-2", src: pseudoClassImg2 },
@@ -255,7 +287,7 @@ export const htmlFormProjectData = {
     { id: "3", icon: cssIcon, color: "css" },
   ],
   title: "HTML Form Project",
-  desc: "",
+  desc: "HTML and CSS were the basis for this project, I included react to add a dynamic interface to the password authentication. This form is also responsive and can be viewed on any device.",
   imgs: [
     { id: "img-1", src: htmlFormImg1 },
     { id: "img-2", src: htmlFormImg2 },
@@ -271,7 +303,7 @@ export const embedProjectData = {
     { id: "2", icon: cssIcon, color: "css" },
   ],
   title: "Embedding Video & Images Project",
-  desc: "",
+  desc: "The goal of this project was to learn how to embed videos and images by re-creating a youtube video page. I included pseudo classes to make the page feel more lively and made the design responsive to fit multiple screen sizes.",
   imgs: [
     { id: "img-1", src: embedImg1 },
     { id: "img-2", src: embedImg2 },
@@ -287,7 +319,7 @@ export const gridBasedFrameworkProjectData = {
     { id: "2", icon: cssIcon, color: "css" },
   ],
   title: "Grid-based Framework",
-  desc: "",
+  desc: "The goal of this project was to create a webpage with a responsive framework. Using HTML and CSS I was able to build a page that will look great on any device or screen size.",
   imgs: [
     { id: "img-1", src: gridFrameworkImg1 },
     { id: "img-2", src: gridFrameworkImg2 },
@@ -307,6 +339,85 @@ export const gradientProjectData = {
   imgs: [{ id: "img-1", src: gradientImg1 }],
   repository: "https://github.com/KFig21/apple_page",
   live: "https://kfig21.github.io/apple_page/",
+};
+
+// more projects
+export const weatherApiProjectData = {
+  id: "16",
+  icons: [
+    { id: "1", icon: reactIcon, color: "react" },
+    { id: "2", icon: javascriptIcon, color: "javascript" },
+    { id: "3", icon: sassIcon, color: "sass" },
+  ],
+  title: "Weather API application",
+  desc: "A weather application built with React and styled with Sass. This app uses the OpenWeather API to retreive and display data on a fully responsive UI. The app shows the location's current weather & 7 day forecast, your 5 most recent searches, and the ability to switch between metric and imperial.",
+  imgs: [
+    { id: "img-1", src: weatherAppImg1 },
+    { id: "img-2", src: weatherAppImg2 },
+    { id: "img-3", src: weatherAppImg3 },
+  ],
+  repository: "https://github.com/KFig21/weather_api_react",
+  live: "https://kfig21.github.io/weather_api_react/",
+};
+
+export const calculatorProjectData = {
+  id: "17",
+  icons: [
+    { id: "1", icon: htmlIcon, color: "html" },
+    { id: "2", icon: javascriptIcon, color: "javascript" },
+    { id: "3", icon: cssIcon, color: "css" },
+  ],
+  title: "Calculator",
+  desc: "",
+  imgs: [{ id: "img-1", src: calculatorImg1 }],
+  repository: "https://github.com/KFig21/calculator",
+  live: "https://kfig21.github.io/calculator/",
+};
+
+export const etchASketchProjectData = {
+  id: "18",
+  icons: [
+    { id: "1", icon: htmlIcon, color: "html" },
+    { id: "2", icon: javascriptIcon, color: "javascript" },
+    { id: "3", icon: cssIcon, color: "css" },
+  ],
+  title: "Etch-A-Sketch",
+  desc: "",
+  imgs: [{ id: "img-1", src: gradientImg1 }],
+  repository: "https://github.com/KFig21/etch_a_sketch",
+  live: "https://kfig21.github.io/etch_a_sketch/",
+};
+
+export const libraryProjectData = {
+  id: "19",
+  icons: [
+    { id: "1", icon: htmlIcon, color: "html" },
+    { id: "2", icon: javascriptIcon, color: "javascript" },
+    { id: "3", icon: cssIcon, color: "css" },
+  ],
+  title: "My Library",
+  desc: "",
+  imgs: [{ id: "img-1", src: gradientImg1 }],
+  repository: "https://github.com/KFig21/my_library",
+  live: "https://kfig21.github.io/my_library/",
+};
+
+export const portfolioProjectData = {
+  id: "20",
+  icons: [
+    { id: "1", icon: reactIcon, color: "react" },
+    { id: "2", icon: javascriptIcon, color: "javascript" },
+    { id: "3", icon: sassIcon, color: "sass" },
+  ],
+  title: "Portfolio",
+  desc: "",
+  imgs: [
+    { id: "img-1", src: portfolioImg1 },
+    { id: "img-2", src: portfolioImg2 },
+    { id: "img-3", src: portfolioImg3 },
+  ],
+  repository: "https://github.com/KFig21/portfolio_2021",
+  live: "https://kfig21.github.io/portfolio_2021/",
 };
 
 // languages and skills
@@ -395,6 +506,6 @@ export const otherSkills = [
   {
     name: "MySQL",
     icon: mysqlIcon,
-    exp: "1",
+    exp: "2",
   },
 ];

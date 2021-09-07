@@ -4,7 +4,7 @@ import {
   htmlFormProjectData,
   embedProjectData,
   gridBasedFrameworkProjectData,
-  gradientProjectData,
+  // gradientProjectData,
 } from "../../../allProjects";
 
 export const webDesignPortfolio = [
@@ -13,5 +13,5 @@ export const webDesignPortfolio = [
   htmlFormProjectData,
   embedProjectData,
   gridBasedFrameworkProjectData,
-  gradientProjectData,
+  // gradientProjectData,
 ];

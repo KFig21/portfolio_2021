@@ -1,17 +1,17 @@
 import {
   instagramProjectData,
-  gameNseekProjectData,
+  toDoListProjectData,
+  weatherApiProjectData,
   hoopShopProjectData,
   cvBuilderProjectData,
-  battleshipProjectData,
-  nbaMemoryGameProjectData,
+  portfolioProjectData,
 } from "../../../allProjects";
 
 export const reactPortfolio = [
   instagramProjectData,
-  gameNseekProjectData,
+  toDoListProjectData,
+  weatherApiProjectData,
   hoopShopProjectData,
   cvBuilderProjectData,
-  battleshipProjectData,
-  nbaMemoryGameProjectData,
+  portfolioProjectData,
 ];

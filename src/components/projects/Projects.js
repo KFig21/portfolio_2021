@@ -12,13 +12,13 @@ import arrowLeft from "../../assets/arrows/arrowLeft.png";
 import {
   instagramProjectData,
   gameNseekProjectData,
-  hoopShopProjectData,
+  toDoListProjectData,
 } from "../../allProjects";
 
 const projectData = [
   instagramProjectData,
   gameNseekProjectData,
-  hoopShopProjectData,
+  toDoListProjectData,
 ];
 
 export default function Projects() {

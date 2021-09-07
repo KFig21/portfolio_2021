@@ -18,6 +18,10 @@
     background-color: $mobileMenuActiveBackgroundColor;
   }
 
+  @media (max-width: 900px) {
+    background-color: $mobileMenuActiveBackgroundColor;
+  }
+
   &.active {
     right: 0;
   }

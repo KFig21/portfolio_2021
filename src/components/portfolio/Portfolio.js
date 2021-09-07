@@ -6,40 +6,40 @@ import Modal from "../modal/Modal";
 import { webDesignPortfolio } from "./portfolioData/webDesignPortfolio";
 import { reactPortfolio } from "./portfolioData/reactPortfolio";
 import { gamesPortfolio } from "./portfolioData/gamesPortfolio";
-import { morePortfolio } from "./portfolioData/morePortfolio";
+// import { morePortfolio } from "./portfolioData/morePortfolio";
 // imgs
 import arrowDown from "../../assets/arrows/arrowDown.png";
 import arrowUp from "../../assets/arrows/arrowUp.png";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("webDesign");
+  const [selected, setSelected] = useState("react");
   const [data, setData] = useState([]);
   const [project, setProject] = useState([]);
   const [showModal, setShowModal] = useState(false);
 
   const list = [
-    { id: "webDesign", title: "Web Design" },
     { id: "react", title: "React" },
     { id: "games", title: "Games" },
-    { id: "more", title: "More" },
+    { id: "webDesign", title: "Web Design" },
+    // { id: "more", title: "More" },
   ];
 
   useEffect(() => {
     switch (selected) {
-      case "webDesign":
-        setData(webDesignPortfolio);
-        break;
       case "react":
         setData(reactPortfolio);
         break;
       case "games":
         setData(gamesPortfolio);
         break;
-      case "more":
-        setData(morePortfolio);
-        break;
-      default:
+      case "webDesign":
         setData(webDesignPortfolio);
+        break;
+      // case "more":
+      //   setData(morePortfolio);
+      //   break;
+      default:
+        setData(reactPortfolio);
     }
   }, [selected]);
 
