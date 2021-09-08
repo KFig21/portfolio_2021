@@ -36,6 +36,7 @@ export default function Skills() {
 
       <div className="container">
         <div className="content">
+          <div class="scroll-fade-top"></div>
           <div className="tech">
             <h2>Languages</h2>
             <div className="tech-container">{mapSkills(languages)}</div>
@@ -48,6 +49,7 @@ export default function Skills() {
             <h2>Other Software</h2>
             <div className="tech-container">{mapSkills(otherSkills)}</div>
           </div>
+          <div class="scroll-fade-bottom"></div>
         </div>
       </div>
       <a className="up-arrow" href="#portfolio">
