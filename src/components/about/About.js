@@ -52,57 +52,62 @@ export default function About() {
           </div>
         </div>
         <div className="right">
-          <h4 className="mobile-horizontal-title">About Me</h4>
-          <p>
-            Welcome! My name is Kevin Figenshu, I am a self-taught developer
-            based in Philadelphia, PA.
-          </p>
-          <div className="break"></div>
-          <p>
-            Starting from no-code in January of 2020 I became obsessed with the
-            world of programming and decided to dive in head first and learn as
-            much as possible. Poring through resources such as The Odin Project,
-            FreeCodeCamp, and Codecademy I have been persistently learning the
-            necessary skills for becoming a full stack developer.
-          </p>
-          <div className="break"></div>
-          <p>
-            Prior to programming I graduated with a bachelors in business
-            administration with a focus in accounting from Temple University and
-            spent 6 years working in the field. I have also been working as a
-            free-lance graphic designer since 2017 being self-taught in Adobe
-            photoshop & illustrator.
-          </p>
-          <div className="break"></div>
-          <p className="last-p">Thank you for visiting my page!</p>
-          <div className="info mobile">
+          <div className="right-content">
+            <div class="scroll-fade-top"></div>
+            <h4 className="mobile-horizontal-title">About Me</h4>
+            <p>
+              Welcome! My name is Kevin Figenshu, I am a self-taught developer
+              based in Philadelphia, PA.
+            </p>
             <div className="break"></div>
-            <div className="item-container">
-              <Mail className="icon" />
-              <span>Kevin.Figenshu@gmail.com</span>
+            <p>
+              Starting from no-code in January of 2020 I became obsessed with
+              the world of programming and decided to dive in head first and
+              learn as much as possible. Poring through resources such as The
+              Odin Project, FreeCodeCamp, and Codecademy I have been
+              persistently learning the necessary skills for becoming a full
+              stack developer.
+            </p>
+            <div className="break"></div>
+            <p>
+              Prior to programming I graduated with a bachelors in business
+              administration with a focus in accounting from Temple University
+              and spent 6 years working in the field. I have also been working
+              as a free-lance graphic designer since 2017 being self-taught in
+              Adobe photoshop & illustrator.
+            </p>
+            <div className="break"></div>
+            <p className="last-p">Thank you for visiting my page!</p>
+            <div className="info mobile">
+              <div className="break"></div>
+              <div className="item-container">
+                <Mail className="icon" />
+                <span>Kevin.Figenshu@gmail.com</span>
+              </div>
+              <a
+                href="https://github.com/KFig21"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="item-container"
+              >
+                <GitHub className="icon" />
+                <span>github.com/KFig21</span>
+              </a>
+              <div className="item-container">
+                <Person className="icon" />
+                <span>(610)-608-0468</span>
+              </div>
+              <a
+                href="https://github.com/KFig21/portfolio_2021"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="item-container"
+              >
+                <Code className="icon" />
+                <span>Repo for this project</span>
+              </a>
             </div>
-            <a
-              href="https://github.com/KFig21"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="item-container"
-            >
-              <GitHub className="icon" />
-              <span>github.com/KFig21</span>
-            </a>
-            <div className="item-container">
-              <Person className="icon" />
-              <span>(610)-608-0468</span>
-            </div>
-            <a
-              href="https://github.com/KFig21/portfolio_2021"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="item-container"
-            >
-              <Code className="icon" />
-              <span>Repo for this project</span>
-            </a>
+            <div class="scroll-fade-bottom"></div>
           </div>
         </div>
       </div>

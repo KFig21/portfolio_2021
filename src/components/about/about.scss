@@ -139,6 +139,7 @@
       justify-content: center;
       align-items: center;
       padding-left: 12px;
+      position: relative;
 
       @include mobile {
         margin-top: 95px;
@@ -156,6 +157,12 @@
         color: $textColor;
         font-size: 18px;
         overflow: visible;
+
+        &:nth-child(3) {
+          @include mobile {
+            padding-top: 15px;
+          }
+        }
       }
       .last-p {
         text-align: center;
@@ -191,6 +198,41 @@
           color: $textColor;
           font-size: 22px;
           margin-bottom: 10px;
+        }
+      }
+      .scroll-fade-top {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0px;
+        left: 0;
+        z-index: 20;
+        height: 25px;
+        background: linear-gradient(#202020, transparent);
+        width: inherit;
+        margin: auto;
+        overflow: hidden;
+
+        @include mobile {
+          display: block;
+        }
+      }
+
+      .scroll-fade-bottom {
+        display: none;
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        left: 0;
+        z-index: 20;
+        height: 25px;
+        background: linear-gradient(transparent, #202020);
+        width: inherit;
+        margin: auto;
+        overflow: hidden;
+
+        @include mobile {
+          display: block;
         }
       }
     }
@@ -255,7 +297,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5px;
+        padding: 5px 5px 18px 5px;
         margin: auto;
       }
 
