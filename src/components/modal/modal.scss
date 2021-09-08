@@ -22,7 +22,7 @@
       max-width: 800px;
       height: 60vh;
       background-color: $primaryColor;
-      border-radius: 20px;
+      border-radius: $containerBorderRadius;
       display: flex;
       align-items: center;
       justify-content: center;
