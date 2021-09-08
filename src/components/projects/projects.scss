@@ -19,6 +19,11 @@
       padding: 0;
       font-size: 2.25em;
     }
+
+    @include mobileHorizontal {
+      top: 5px;
+      font-size: 20px;
+    }
   }
 
   .arrow {
@@ -28,6 +33,10 @@
 
     @include mobile {
       height: 25px;
+    }
+
+    @include mobileHorizontal {
+      height: 30px;
     }
 
     &:active {
@@ -46,6 +55,9 @@
       @include mobile {
         left: 9px;
       }
+      @include mobileHorizontal {
+        left: 15px;
+      }
     }
 
     &.right {
@@ -59,6 +71,9 @@
       }
       @include mobile {
         right: 9px;
+      }
+      @include mobileHorizontal {
+        right: 15px;
       }
     }
   }
@@ -74,6 +89,11 @@
     @include mobile {
       height: 80vh;
       justify-content: center;
+    }
+
+    @include mobileHorizontal {
+      height: 85%;
+      margin-top: 2%;
     }
 
     .container {
@@ -184,11 +204,15 @@
               line-height: 32px;
               text-decoration: underline solid 2.5px $accentColor;
               text-underline-offset: 0.5px;
+              overflow: visible;
 
               @include mobile {
                 font-size: 25px;
                 height: 40px;
                 margin: 10px;
+                text-align: center;
+              }
+              @include mobileHorizontal {
                 text-align: center;
               }
             }
@@ -228,6 +252,18 @@
                 transition: linear 0.2s;
                 text-decoration: none;
                 color: $textColor;
+
+                @include mobileHorizontal {
+                  font-size: 14px;
+                }
+              }
+
+              @include mobileHorizontal {
+                display: flex;
+                align-items: center;
+                padding-top: 10px;
+                max-height: 30px;
+                min-height: 30px;
               }
             }
 
@@ -237,12 +273,31 @@
               @include mobile {
                 display: none;
               }
+              @include mobileHorizontal {
+                display: none;
+              }
             }
 
             .mobile {
               display: none;
 
               @include mobile {
+                display: flex;
+              }
+
+              @include mobileHorizontal {
+                display: none;
+              }
+            }
+
+            .mobileHorizontal {
+              display: none;
+
+              @include mobile {
+                display: none;
+              }
+
+              @include mobileHorizontal {
                 display: flex;
               }
             }
@@ -266,6 +321,12 @@
             overflow-x: scroll;
             overflow-y: hidden;
             scroll-snap-type: x mandatory;
+          }
+
+          @include mobileHorizontal {
+            overflow-x: hidden;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
           }
 
           .img-container {
@@ -299,6 +360,9 @@
             }
 
             @include mobile {
+              display: none;
+            }
+            @include mobileHorizontal {
               display: none;
             }
 

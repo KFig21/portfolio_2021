@@ -89,7 +89,29 @@ export default function Projects() {
                         </div>
                       ))}
                     </div>
+                    {/* details container mobile */}
                     <div className="details-container mobile">
+                      <a
+                        href={repository}
+                        className="option"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <CodeIcon style={{ margin: " 0px 5px" }} />
+                        Repo
+                      </a>
+                      <a
+                        href={live}
+                        className="option"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <LanguageIcon style={{ margin: " 0px 5px" }} />
+                        Live
+                      </a>
+                    </div>
+                    {/* details container mobile horizontal */}
+                    <div className="details-container mobileHorizontal">
                       <a
                         href={repository}
                         className="option"

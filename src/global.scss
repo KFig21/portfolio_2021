@@ -13,8 +13,10 @@ $editorBorder: rgb(146, 146, 146);
 $width: 768px;
 
 @mixin mobile {
-  @media (max-width: #{$width}) {
-    @content;
+  @media (min-height: 421px) {
+    @media (max-width: #{$width}) {
+      @content;
+    }
   }
 }
 
@@ -40,7 +42,7 @@ $width: 768px;
     bottom: unset;
     left: unset;
     top: 20px;
-    right: 20px;
+    right: 15px;
   }
 }
 
@@ -57,7 +59,7 @@ $width: 768px;
   @include mobileHorizontal {
     bottom: 20px;
     left: unset;
-    right: 20px;
+    right: 15px;
   }
 }
 
