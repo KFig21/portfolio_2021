@@ -32,6 +32,12 @@
         height: 280px;
       }
 
+      @include mobileHorizontal {
+        height: 80%;
+        max-height: 250px;
+        max-width: 500px;
+      }
+
       .top-bar {
         background-color: $editorPrimary; // white: #fffffa;
         border-bottom: solid 2px $editorBorder;
@@ -139,6 +145,10 @@
             &:hover {
               opacity: 1;
             }
+
+            @include mobileHorizontal {
+              height: 12px;
+            }
           }
 
           .open {
@@ -198,6 +208,9 @@
               @media (max-width: $fourLines) {
                 line-height: 51px;
               }
+              @include mobileHorizontal {
+                line-height: 55px;
+              }
             }
 
             .line3 {
@@ -226,6 +239,9 @@
                 @media (max-width: $fourLines) {
                   height: 39px;
                   color: rgb(116, 116, 116);
+                }
+                @include mobileHorizontal {
+                  height: 30px;
                 }
               }
             }
@@ -275,6 +291,10 @@
               @media (max-width: $fourLines) {
                 line-height: 40px;
                 margin: 5px 0px;
+              }
+
+              @include mobileHorizontal {
+                font-size: 28px;
               }
             }
             h2 {

@@ -23,6 +23,10 @@
       font-size: 2.25em;
       top: 0px;
     }
+
+    @include mobileHorizontal {
+      display: none;
+    }
   }
 
   .container {
@@ -44,6 +48,12 @@
       overflow: visible;
     }
 
+    @include mobileHorizontal {
+      max-height: 75%;
+      width: 80%;
+      max-width: 600px;
+    }
+
     .left {
       flex: 2;
       max-width: 320px;
@@ -54,6 +64,10 @@
 
       @include mobile {
         display: none;
+      }
+
+      @include mobileHorizontal {
+        justify-content: center;
       }
 
       .img-container {
@@ -76,6 +90,10 @@
       .info {
         display: flex;
         flex-direction: column;
+
+        @include mobileHorizontal {
+          display: none;
+        }
 
         h2 {
           font-size: 20px;
@@ -130,6 +148,10 @@
         padding-left: 4px;
       }
 
+      @include mobileHorizontal {
+        display: block;
+      }
+
       p {
         color: $textColor;
         font-size: 18px;
@@ -157,6 +179,18 @@
 
         @include mobile {
           border-radius: 0px;
+        }
+      }
+
+      .mobile-horizontal-title {
+        display: none;
+
+        @include mobileHorizontal {
+          display: block;
+          text-align: center;
+          color: $textColor;
+          font-size: 22px;
+          margin-bottom: 10px;
         }
       }
     }
@@ -225,6 +259,13 @@
         margin: auto;
       }
 
+      @include mobileHorizontal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin: auto;
+      }
       .item-container {
         display: flex;
         align-items: center;

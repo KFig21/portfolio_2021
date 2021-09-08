@@ -52,6 +52,7 @@ export default function About() {
           </div>
         </div>
         <div className="right">
+          <h4 className="mobile-horizontal-title">About Me</h4>
           <p>
             Welcome! My name is Kevin Figenshu, I am a self-taught developer
             based in Philadelphia, PA.

@@ -18,6 +18,14 @@ $width: 768px;
   }
 }
 
+@mixin mobileHorizontal {
+  @media (max-height: 420px) {
+    @media (min-width: 700px) {
+      @content;
+    }
+  }
+}
+
 .up-arrow {
   position: absolute;
   bottom: 12px;
@@ -26,6 +34,13 @@ $width: 768px;
   @include mobile {
     bottom: 7px;
     left: 37%;
+  }
+
+  @include mobileHorizontal {
+    bottom: unset;
+    left: unset;
+    top: 20px;
+    right: 20px;
   }
 }
 
@@ -37,6 +52,12 @@ $width: 768px;
   @include mobile {
     bottom: 7px;
     right: 37%;
+  }
+
+  @include mobileHorizontal {
+    bottom: 20px;
+    left: unset;
+    right: 20px;
   }
 }
 
