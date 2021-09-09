@@ -1,6 +1,7 @@
 $navbarColor: #202020;
 $primaryColor: #202020;
 $primaryColorFaded: #525252;
+$secondaryColor: #1a1a1a;
 $menuActiveBackgroundColor: rgba(0, 0, 0, 0.7);
 $mobileMenuActiveBackgroundColor: rgba(0, 0, 0, 0.9);
 $accentColor: #23c5d9;
@@ -94,7 +95,7 @@ $width: 768px;
 }
 
 ::-webkit-scrollbar-track {
-  background: $primaryColor;
+  background: $secondaryColor;
 }
 
 // tech colors

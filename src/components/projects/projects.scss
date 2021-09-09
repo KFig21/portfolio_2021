@@ -111,12 +111,12 @@
       .item {
         width: 700px;
         height: 90%;
-        background-color: $primaryColor;
+        background-color: $secondaryColor;
         border-radius: $containerBorderRadius;
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0px 0px 20px black;
+        box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.75);
 
         @media (max-width: 875px) {
           width: 77%;

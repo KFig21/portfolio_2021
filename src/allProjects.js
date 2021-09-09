@@ -442,26 +442,26 @@ export const languages = [
     icon: sqlIcon,
     exp: "2",
   },
-  {
-    name: "PHP",
-    icon: phpIcon,
-    exp: "1",
-  },
-  {
-    name: "Ruby",
-    icon: rubyIcon,
-    exp: "1",
-  },
-  {
-    name: "Python",
-    icon: pythonIcon,
-    exp: "1",
-  },
-  {
-    name: "Sass",
-    icon: sassIcon,
-    exp: "1",
-  },
+  // {
+  //   name: "PHP",
+  //   icon: phpIcon,
+  //   exp: "1",
+  // },
+  // {
+  //   name: "Ruby",
+  //   icon: rubyIcon,
+  //   exp: "1",
+  // },
+  // {
+  //   name: "Python",
+  //   icon: pythonIcon,
+  //   exp: "1",
+  // },
+  // {
+  //   name: "Sass",
+  //   icon: sassIcon,
+  //   exp: "1",
+  // },
 ];
 
 export const techData = [
