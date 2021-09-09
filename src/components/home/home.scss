@@ -20,7 +20,7 @@
     justify-content: center;
     // backdrop-filter: blur(2px) contrast(80%);
     // backdrop-filter: contrast(80%);
-    background-color: hsla(0, 0%, 13%, 0.3);
+    background-color: hsla(0, 0%, 13%, 0.15);
 
     .editor {
       width: 90vw;
@@ -30,7 +30,8 @@
       display: flex;
       flex-direction: column;
       // border: solid 2px $editorBorder;
-      box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.75),
+        0px 0px 50px 10px rgba(0, 0, 0, 0.9);
       border-radius: 5px;
 
       @include mobile {
