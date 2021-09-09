@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio_2021/static/css/main.2b7fe12e.chunk.css",
-    "main.js": "/portfolio_2021/static/js/main.bdc5c58b.chunk.js",
-    "main.js.map": "/portfolio_2021/static/js/main.bdc5c58b.chunk.js.map",
+    "main.js": "/portfolio_2021/static/js/main.dc02b8b7.chunk.js",
+    "main.js.map": "/portfolio_2021/static/js/main.dc02b8b7.chunk.js.map",
     "runtime-main.js": "/portfolio_2021/static/js/runtime-main.592f6d91.js",
     "runtime-main.js.map": "/portfolio_2021/static/js/runtime-main.592f6d91.js.map",
     "static/js/2.e4194309.chunk.js": "/portfolio_2021/static/js/2.e4194309.chunk.js",
@@ -37,9 +37,7 @@
     "static/media/instagram-1.40226eb4.PNG": "/portfolio_2021/static/media/instagram-1.40226eb4.PNG",
     "static/media/instagram-2.09a88fd8.png": "/portfolio_2021/static/media/instagram-2.09a88fd8.png",
     "static/media/instagram-3.3ba7bf13.PNG": "/portfolio_2021/static/media/instagram-3.3ba7bf13.PNG",
-    "static/media/instagram-4.f525f6f5.gif": "/portfolio_2021/static/media/instagram-4.f525f6f5.gif",
-    "static/media/instagram-5.f54618bb.gif": "/portfolio_2021/static/media/instagram-5.f54618bb.gif",
-    "static/media/instagram-6.7e6600b9.gif": "/portfolio_2021/static/media/instagram-6.7e6600b9.gif",
+    "static/media/instagram-4.3a525dd9.gif": "/portfolio_2021/static/media/instagram-4.3a525dd9.gif",
     "static/media/javascript.4d228236.png": "/portfolio_2021/static/media/javascript.4d228236.png",
     "static/media/memoryGame-1.9b5a1ba5.png": "/portfolio_2021/static/media/memoryGame-1.9b5a1ba5.png",
     "static/media/memoryGame-2.acbfbe56.png": "/portfolio_2021/static/media/memoryGame-2.acbfbe56.png",
@@ -77,6 +75,6 @@
     "static/js/runtime-main.592f6d91.js",
     "static/js/2.e4194309.chunk.js",
     "static/css/main.2b7fe12e.chunk.css",
-    "static/js/main.bdc5c58b.chunk.js"
+    "static/js/main.dc02b8b7.chunk.js"
   ]
 }
