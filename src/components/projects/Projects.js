@@ -10,15 +10,15 @@ import arrowRight from "../../assets/arrows/arrowRight.png";
 import arrowLeft from "../../assets/arrows/arrowLeft.png";
 // project data
 import {
-  instagramProjectData,
-  gameNseekProjectData,
-  toDoListProjectData,
+  instagramSpotlightData,
+  gameNseekSpotlightData,
+  toDoListSpotlightData,
 } from "../../allProjects";
 
 const projectData = [
-  instagramProjectData,
-  gameNseekProjectData,
-  toDoListProjectData,
+  instagramSpotlightData,
+  gameNseekSpotlightData,
+  toDoListSpotlightData,
 ];
 
 export default function Projects() {

@@ -22,8 +22,6 @@ import instagramImg1 from "./assets/projects/react/instagram/instagram-1.PNG";
 import instagramImg2 from "./assets/projects/react/instagram/instagram-2.png";
 import instagramImg3 from "./assets/projects/react/instagram/instagram-3.PNG";
 import instagramImg4 from "./assets/projects/react/instagram/instagram-4.gif";
-import instagramImg5 from "./assets/projects/react/instagram/instagram-5.gif";
-import instagramImg6 from "./assets/projects/react/instagram/instagram-6.gif";
 // Game & Seek project images
 import gameNseekImg1 from "./assets/projects/react/gameNseek/gameNseek-1.PNG";
 import gameNseekImg2 from "./assets/projects/react/gameNseek/gameNseek-2.png";
@@ -97,9 +95,20 @@ export const instagramProjectData = {
     { id: "img-2", src: instagramImg2 },
     { id: "img-3", src: instagramImg3 },
     { id: "img-4", src: instagramImg4 },
-    { id: "img-5", src: instagramImg5 },
-    { id: "img-6", src: instagramImg6 },
   ],
+  repository: "https://github.com/KFig21/instagram_clone",
+  live: "https://kfig21.github.io/instagram_clone/",
+};
+export const instagramSpotlightData = {
+  id: "1",
+  icons: [
+    { id: "1", icon: reactIcon, color: "react" },
+    { id: "2", icon: tailwindIcon, color: "tailwind" },
+    { id: "3", icon: firebaseIcon, color: "firebase" },
+  ],
+  title: "Instagram Clone",
+  desc: "An Instagram re-creation built with React, Tailwind CSS, and Firebase. This is a fully functional and responsive app that allows users to create an account, post & crop photos, delete posts, comment, like/unlike, follow/unfollow, and change their avatar.",
+  imgs: [{ id: "img-1", src: instagramImg4 }],
   repository: "https://github.com/KFig21/instagram_clone",
   live: "https://kfig21.github.io/instagram_clone/",
 };
@@ -119,6 +128,19 @@ export const gameNseekProjectData = {
     { id: "img-3", src: gameNseekImg3 },
     { id: "img-4", src: gameNseekImg4 },
   ],
+  repository: "https://github.com/KFig21/photo_tagging_app",
+  live: "https://kfig21.github.io/photo_tagging_app/",
+};
+export const gameNseekSpotlightData = {
+  id: "2",
+  icons: [
+    { id: "1", icon: reactIcon, color: "react" },
+    { id: "2", icon: firebaseIcon, color: "firebase" },
+    { id: "3", icon: cssIcon, color: "css" },
+  ],
+  title: "Game & Seek",
+  desc: "A 'Where's Waldo' character finding game, this project was built with React and uses Firebase for a backend database. The game features 8 unique levels and a global leaderboard that updates in realtime. Explicit user names submitted to the leaderboard are censored with emojis.",
+  imgs: [{ id: "img-4", src: gameNseekImg4 }],
   repository: "https://github.com/KFig21/photo_tagging_app",
   live: "https://kfig21.github.io/photo_tagging_app/",
 };
@@ -239,6 +261,19 @@ export const toDoListProjectData = {
     { id: "img-2", src: toDoListImg2 },
     { id: "img-3", src: toDoListImg3 },
   ],
+  repository: "https://github.com/KFig21/todo_list_react",
+  live: "https://kfig21.github.io/todo_list_react/",
+};
+export const toDoListSpotlightData = {
+  id: "9",
+  icons: [
+    { id: "1", icon: reactIcon, color: "react" },
+    { id: "2", icon: firebaseIcon, color: "firebase" },
+    { id: "3", icon: sassIcon, color: "sass" },
+  ],
+  title: "To Do List",
+  desc: "A to-do list app built with React, styled with Sass, and uses Firebase as a backend database. Features include: adding/deleting tasks & lists, set tasks as complete, incomplete & urgent, update task & list details in realtime. This application is fully responsive to be used on any device screen size.",
+  imgs: [{ id: "img-3", src: toDoListImg3 }],
   repository: "https://github.com/KFig21/todo_list_react",
   live: "https://kfig21.github.io/todo_list_react/",
 };
