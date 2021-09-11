@@ -18,43 +18,54 @@ import mysqlIcon from "./assets/languages/mysql.PNG";
 import gitIcon from "./assets/languages/git.png";
 
 // Instagram project images
-import instagramImg1 from "./assets/projects/react/instagram/instagram-1.PNG";
-import instagramImg2 from "./assets/projects/react/instagram/instagram-2.png";
-import instagramImg3 from "./assets/projects/react/instagram/instagram-3.PNG";
-import instagramImg4 from "./assets/projects/react/instagram/instagram-4.gif";
+import petstagramFavicon from "./assets/projects/react/instagram/instagram-favicon.png";
+import petstagramImg1 from "./assets/projects/react/instagram/instagram-1.PNG";
+import petstagramImg2 from "./assets/projects/react/instagram/instagram-2.png";
+import petstagramImg3 from "./assets/projects/react/instagram/instagram-3.PNG";
+import petstagramImg4 from "./assets/projects/react/instagram/instagram-4.gif";
 // Game & Seek project images
+import gameNseekFavicon from "./assets/projects/react/gameNseek/gameNseek-favicon.png";
 import gameNseekImg1 from "./assets/projects/react/gameNseek/gameNseek-1.PNG";
 import gameNseekImg2 from "./assets/projects/react/gameNseek/gameNseek-2.png";
 import gameNseekImg3 from "./assets/projects/react/gameNseek/gameNseek-3.png";
 import gameNseekImg4 from "./assets/projects/react/gameNseek/gameNseek-4.gif";
 // HoopShop project images
+import hoopShopFavicon from "./assets/projects/react/hoopShop/hoopShop-favicon.png";
 import hoopShopImg1 from "./assets/projects/react/hoopShop/hoopShop-1.PNG";
 import hoopShopImg2 from "./assets/projects/react/hoopShop/hoopShop-2.png";
 // CV Builder project images
+import cvBuilderFavicon from "./assets/projects/react/cvBuilder/cvBuilder-favicon.png";
 import cvBuilderImg1 from "./assets/projects/react/cvBuilder/cvBuilder-1.png";
 import cvBuilderImg2 from "./assets/projects/react/cvBuilder/cvBuilder-2.png";
 // Weather API project images
+import weatherAppFavicon from "./assets/projects/react/weatherApp/weatherApp-favicon.png";
 import weatherAppImg1 from "./assets/projects/react/weatherApp/weatherApp-1.PNG";
 import weatherAppImg2 from "./assets/projects/react/weatherApp/weatherApp-2.png";
 import weatherAppImg3 from "./assets/projects/react/weatherApp/weatherApp-3.gif";
 // Portfolio project images
+import portfolioFavicon from "./assets/projects/react/portfolio/portfolio-favicon.png";
 import portfolioImg1 from "./assets/projects/react/portfolio/portfolio-1.png";
 import portfolioImg2 from "./assets/projects/react/portfolio/portfolio-2.png";
 import portfolioImg3 from "./assets/projects/react/portfolio/portfolio-3.png";
 // Battleship project images
+import battleshipFavicon from "./assets/projects/react/battleship/battleship-favicon.png";
 import battleshipImg1 from "./assets/projects/react/battleship/battleship-1.png";
 import battleshipImg2 from "./assets/projects/react/battleship/battleship-2.png";
-// NBA Memory Game project images
+// Memory Game project images
+import memoryGameFavicon from "./assets/projects/react/memoryGame/memoryGame-favicon.png";
 import memoryGameImg1 from "./assets/projects/react/memoryGame/memoryGame-1.png";
 import memoryGameImg2 from "./assets/projects/react/memoryGame/memoryGame-2.png";
 // To Do List project images
+import toDoListFavicon from "./assets/projects/react/toDoList/toDoList-favicon.png";
 import toDoListImg1 from "./assets/projects/react/toDoList/toDoList-1.PNG";
 import toDoListImg2 from "./assets/projects/react/toDoList/toDoList-2.png";
 import toDoListImg3 from "./assets/projects/react/toDoList/toDoList-3.gif";
 // Tic Tac Toe project images
+import ticTacToeFavicon from "./assets/projects/games/ticTacToe/ticTacToe-favicon.png";
 import ticTacToe1 from "./assets/projects/games/ticTacToe/ticTacToe-1.png";
 import ticTacToe2 from "./assets/projects/games/ticTacToe/ticTacToe-2.png";
 // Rock Paper Scissors project images
+import rockPaperScissorsFavicon from "./assets/projects/games/rockPaperScissors/rockPaperScissors-favicon.png";
 import rockPaperScissors1 from "./assets/projects/games/rockPaperScissors/rockPaperScissors-1.png";
 import rockPaperScissors2 from "./assets/projects/games/rockPaperScissors/rockPaperScissors-2.png";
 // Responsive Design Project images
@@ -81,34 +92,35 @@ import gradientImg1 from "./assets/projects/webDesign/gradient/gradient-1.png";
 import calculatorImg1 from "./assets/projects/more/calculator/calculator-1.png";
 
 // react projects
-export const instagramProjectData = {
+export const petstagramProjectData = {
   id: "1",
   icons: [
     { id: "1", icon: reactIcon, color: "react" },
     { id: "2", icon: tailwindIcon, color: "tailwind" },
     { id: "3", icon: firebaseIcon, color: "firebase" },
   ],
-  title: "Instagram Clone",
+  title: "Petstagram",
   desc: "An Instagram re-creation built with React, Tailwind CSS, and Firebase. This is a fully functional and responsive app that allows users to create an account, post & crop photos, delete posts, comment, like/unlike, follow/unfollow, and change their avatar.",
+  favicon: petstagramFavicon,
   imgs: [
-    { id: "img-1", src: instagramImg1 },
-    { id: "img-2", src: instagramImg2 },
-    { id: "img-3", src: instagramImg3 },
-    { id: "img-4", src: instagramImg4 },
+    { id: "img-1", src: petstagramImg1 },
+    { id: "img-2", src: petstagramImg2 },
+    { id: "img-3", src: petstagramImg3 },
+    { id: "img-4", src: petstagramImg4 },
   ],
   repository: "https://github.com/KFig21/instagram_clone",
   live: "https://kfig21.github.io/instagram_clone/",
 };
-export const instagramSpotlightData = {
+export const petstagramSpotlightData = {
   id: "1",
   icons: [
     { id: "1", icon: reactIcon, color: "react" },
     { id: "2", icon: tailwindIcon, color: "tailwind" },
     { id: "3", icon: firebaseIcon, color: "firebase" },
   ],
-  title: "Instagram Clone",
+  title: "Petstagram",
   desc: "An Instagram re-creation built with React, Tailwind CSS, and Firebase. This is a fully functional and responsive app that allows users to create an account, post & crop photos, delete posts, comment, like/unlike, follow/unfollow, and change their avatar.",
-  imgs: [{ id: "img-1", src: instagramImg4 }],
+  imgs: [{ id: "img-1", src: petstagramImg4 }],
   repository: "https://github.com/KFig21/instagram_clone",
   live: "https://kfig21.github.io/instagram_clone/",
 };
@@ -122,6 +134,7 @@ export const gameNseekProjectData = {
   ],
   title: "Game & Seek",
   desc: "A 'Where's Waldo' character finding game, this project was built with React and uses Firebase for a backend database. The game features 8 unique levels and a global leaderboard that updates in realtime. Explicit user names submitted to the leaderboard are censored with emojis.",
+  favicon: gameNseekFavicon,
   imgs: [
     { id: "img-1", src: gameNseekImg1 },
     { id: "img-2", src: gameNseekImg2 },
@@ -154,6 +167,7 @@ export const hoopShopProjectData = {
   ],
   title: "HoopShop",
   desc: "A mock online storefront built with React, the goal of this project was to implement Browser Router, Routes, Link, & Switch from React Router DOM. Shoppers can add items to their cart which dynamically updates instantly thanks to React hooks.",
+  favicon: hoopShopFavicon,
   imgs: [
     { id: "img-1", src: hoopShopImg1 },
     { id: "img-2", src: hoopShopImg2 },
@@ -171,6 +185,7 @@ export const cvBuilderProjectData = {
   ],
   title: "CV Builder",
   desc: "A CV builder built with React that instantly updates upon data entry. The app allows users to add/remove experience and education entries and even view an example of how a completed CV should look. Finally, users can save the CV preview as a PDF file or even print it out for their own use.",
+  favicon: cvBuilderFavicon,
   imgs: [
     { id: "img-1", src: cvBuilderImg1 },
     { id: "img-2", src: cvBuilderImg2 },
@@ -189,6 +204,7 @@ export const battleshipProjectData = {
   ],
   title: "Battleship",
   desc: "The game of Battleship built with React! Place your ships vertical or horizontal to setup your board and begin selecting spaces on the computer's board to attack. When the computer lands an attack it will know which spaces to target next and it will not fooled by edge placement or ships being placed next to each other.",
+  favicon: battleshipFavicon,
   imgs: [
     { id: "img-1", src: battleshipImg1 },
     { id: "img-2", src: battleshipImg2 },
@@ -206,6 +222,7 @@ export const nbaMemoryGameProjectData = {
   ],
   title: "Memory Game",
   desc: "A memory card game built with React. With 30 cards available, the object of the game is to select all 30 once without re-selecting a card. The cards placement are randomized after each turn. This app is responsive so it can be played on any device.",
+  favicon: memoryGameFavicon,
   imgs: [
     { id: "img-1", src: memoryGameImg1 },
     { id: "img-2", src: memoryGameImg2 },
@@ -223,6 +240,7 @@ export const ticTacToeProjectData = {
   ],
   title: "Tic Tac Toe",
   desc: "A Tic-Tac-Toe game built with React, play against a friend or vs the computer. Players are able to change their name and markers.",
+  favicon: ticTacToeFavicon,
   imgs: [
     { id: "img-1", src: ticTacToe1 },
     { id: "img-2", src: ticTacToe2 },
@@ -240,6 +258,7 @@ export const rockPaperScissorsProjectData = {
   ],
   title: "Rock Paper Scissors",
   desc: "Rock paper scissors built with vanilla Js and styled with CSS. The goal of this project was to learn DOM manipulation and variables in Javascript.",
+  favicon: rockPaperScissorsFavicon,
   imgs: [
     { id: "img-1", src: rockPaperScissors1 },
     { id: "img-2", src: rockPaperScissors2 },
@@ -256,6 +275,7 @@ export const toDoListProjectData = {
   ],
   title: "To Do List",
   desc: "A to-do list app built with React, styled with Sass, and uses Firebase as a backend database. Features include: adding/deleting tasks & lists, set tasks as complete, incomplete & urgent, update task & list details in realtime. This application is fully responsive to be used on any device screen size.",
+  favicon: toDoListFavicon,
   imgs: [
     { id: "img-1", src: toDoListImg1 },
     { id: "img-2", src: toDoListImg2 },
@@ -287,6 +307,7 @@ export const responsiveDesignProjectData = {
   ],
   title: "Responsive Design Project",
   desc: "The purpose of this project was to re-create the responsive design of home page of TheNextWeb.com. CSS media queries were used to achieve this goal.",
+  favicon: petstagramFavicon,
   imgs: [
     { id: "img-1", src: responsiveDesignImg1 },
     { id: "img-2", src: responsiveDesignImg2 },
@@ -306,6 +327,7 @@ export const pseudoClassDesignProjectData = {
   ],
   title: "Pseudo Class Design",
   desc: "The goal of this web design project was to work on CSS pseudo classes. There are plenty of :hover, :before, and :after pseudo classes included in the elements",
+  favicon: petstagramFavicon,
   imgs: [
     { id: "img-1", src: pseudoClassImg1 },
     { id: "img-2", src: pseudoClassImg2 },
@@ -323,6 +345,7 @@ export const htmlFormProjectData = {
   ],
   title: "HTML Form Project",
   desc: "HTML and CSS were the basis for this project, I included react to add a dynamic interface to the password authentication. This form is also responsive and can be viewed on any device.",
+  favicon: petstagramFavicon,
   imgs: [
     { id: "img-1", src: htmlFormImg1 },
     { id: "img-2", src: htmlFormImg2 },
@@ -339,6 +362,7 @@ export const embedProjectData = {
   ],
   title: "Embedding Video & Images Project",
   desc: "The goal of this project was to learn how to embed videos and images by re-creating a youtube video page. I included pseudo classes to make the page feel more lively and made the design responsive to fit multiple screen sizes.",
+  favicon: petstagramFavicon,
   imgs: [
     { id: "img-1", src: embedImg1 },
     { id: "img-2", src: embedImg2 },
@@ -355,6 +379,7 @@ export const gridBasedFrameworkProjectData = {
   ],
   title: "Grid-based Framework",
   desc: "The goal of this project was to create a webpage with a responsive framework. Using HTML and CSS I was able to build a page that will look great on any device or screen size.",
+  favicon: petstagramFavicon,
   imgs: [
     { id: "img-1", src: gridFrameworkImg1 },
     { id: "img-2", src: gridFrameworkImg2 },
@@ -371,6 +396,7 @@ export const gradientProjectData = {
   ],
   title: "Backgrounds & Gradients Project",
   desc: "",
+  favicon: petstagramFavicon,
   imgs: [{ id: "img-1", src: gradientImg1 }],
   repository: "https://github.com/KFig21/apple_page",
   live: "https://kfig21.github.io/apple_page/",
@@ -386,6 +412,7 @@ export const weatherApiProjectData = {
   ],
   title: "Weather API application",
   desc: "A weather application built with React and styled with Sass. This app uses the OpenWeather API to retreive and display data on a fully responsive UI. The app shows the location's current weather & 7 day forecast, your 5 most recent searches, and the ability to switch between metric and imperial.",
+  favicon: weatherAppFavicon,
   imgs: [
     { id: "img-1", src: weatherAppImg1 },
     { id: "img-2", src: weatherAppImg2 },
@@ -404,6 +431,7 @@ export const calculatorProjectData = {
   ],
   title: "Calculator",
   desc: "",
+  favicon: petstagramFavicon,
   imgs: [{ id: "img-1", src: calculatorImg1 }],
   repository: "https://github.com/KFig21/calculator",
   live: "https://kfig21.github.io/calculator/",
@@ -418,6 +446,7 @@ export const etchASketchProjectData = {
   ],
   title: "Etch-A-Sketch",
   desc: "",
+  favicon: petstagramFavicon,
   imgs: [{ id: "img-1", src: gradientImg1 }],
   repository: "https://github.com/KFig21/etch_a_sketch",
   live: "https://kfig21.github.io/etch_a_sketch/",
@@ -432,6 +461,7 @@ export const libraryProjectData = {
   ],
   title: "My Library",
   desc: "",
+  favicon: petstagramFavicon,
   imgs: [{ id: "img-1", src: gradientImg1 }],
   repository: "https://github.com/KFig21/my_library",
   live: "https://kfig21.github.io/my_library/",
@@ -446,6 +476,7 @@ export const portfolioProjectData = {
   ],
   title: "Portfolio",
   desc: "My portfolio! This project was built with React and styled with Sass, it is fully responsive for all screen sizes. Thanks again for visiting my page!",
+  favicon: portfolioFavicon,
   imgs: [
     { id: "img-1", src: portfolioImg1 },
     { id: "img-2", src: portfolioImg2 },

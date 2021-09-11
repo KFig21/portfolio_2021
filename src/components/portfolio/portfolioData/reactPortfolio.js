@@ -1,5 +1,5 @@
 import {
-  instagramProjectData,
+  petstagramProjectData,
   toDoListProjectData,
   weatherApiProjectData,
   hoopShopProjectData,
@@ -8,7 +8,7 @@ import {
 } from "../../../allProjects";
 
 export const reactPortfolio = [
-  instagramProjectData,
+  petstagramProjectData,
   toDoListProjectData,
   weatherApiProjectData,
   hoopShopProjectData,

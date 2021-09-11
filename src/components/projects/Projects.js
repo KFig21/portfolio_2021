@@ -10,13 +10,13 @@ import arrowRight from "../../assets/arrows/arrowRight.png";
 import arrowLeft from "../../assets/arrows/arrowLeft.png";
 // project data
 import {
-  instagramSpotlightData,
+  petstagramSpotlightData,
   gameNseekSpotlightData,
   toDoListSpotlightData,
 } from "../../allProjects";
 
 const projectData = [
-  instagramSpotlightData,
+  petstagramSpotlightData,
   gameNseekSpotlightData,
   toDoListSpotlightData,
 ];
