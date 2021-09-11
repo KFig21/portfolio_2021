@@ -58,10 +58,7 @@
       transition: ease all 0.4s;
       cursor: pointer;
       overflow: hidden;
-      // flat icons
       box-shadow: 6px 6px 3px 2px rgba(0, 0, 0, 0.75);
-      // 3d icons
-      // box-shadow: 0px 0px 8px 2px black;
       position: relative;
 
       @include mobile {
@@ -114,6 +111,7 @@
         width: 100%;
         z-index: 1;
         transition: linear 0.35s;
+        border-radius: inherit;
       }
 
       &:hover {
@@ -134,23 +132,6 @@
           background-color: $primaryColor;
         }
       }
-      // .jelly-container {
-      //   position: absolute;
-      //   border-radius: inherit;
-      //   width: 100%;
-      //   height: 100%;
-      //   z-index: 2;
-      //   transition: all 0.2s ease;
-      //   box-shadow: 0 -0.25rem 1.5rem rgba(0, 0, 0, 0.8) inset,
-      //     0 0.5rem 0.5rem rgba(255, 255, 255, 0.2) inset,
-      //     0 0.25rem 0.5rem 0 rgba(255, 255, 255, 0.2) inset;
-
-      //   &:active {
-      //     box-shadow: 0 -0.25rem 1.5rem rgba(0, 0, 0, 0.5) inset,
-      //       0 0.5rem 0.5rem rgba(0, 0, 0, 0.5) inset,
-      //       0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.8) inset;
-      //   }
-      // }
     }
   }
 }
