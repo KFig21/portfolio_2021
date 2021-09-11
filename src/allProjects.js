@@ -69,21 +69,26 @@ import rockPaperScissorsFavicon from "./assets/projects/games/rockPaperScissors/
 import rockPaperScissors1 from "./assets/projects/games/rockPaperScissors/rockPaperScissors-1.png";
 import rockPaperScissors2 from "./assets/projects/games/rockPaperScissors/rockPaperScissors-2.png";
 // Responsive Design Project images
+import responsiveDesignFavicon from "./assets/projects/webDesign/responsiveDesign/responsiveDesign-favicon.png";
 import responsiveDesignImg1 from "./assets/projects/webDesign/responsiveDesign/responsiveDesign-1.PNG";
 import responsiveDesignImg2 from "./assets/projects/webDesign/responsiveDesign/responsiveDesign-2.PNG";
 import responsiveDesignImg3 from "./assets/projects/webDesign/responsiveDesign/responsiveDesign-3.png";
 import responsiveDesignImg4 from "./assets/projects/webDesign/responsiveDesign/responsiveDesign-4.png";
 import responsiveDesignImg5 from "./assets/projects/webDesign/responsiveDesign/responsiveDesign-5.gif";
 // Pseudo Class Project images
+import pseudoClassFavicon from "./assets/projects/webDesign/pseudoClass/pseudoClass-favicon.png";
 import pseudoClassImg1 from "./assets/projects/webDesign/pseudoClass/pseudoClass-1.png";
 import pseudoClassImg2 from "./assets/projects/webDesign/pseudoClass/pseudoClass-2.gif";
 // HTML Form Project images
+import htmlFormFavicon from "./assets/projects/webDesign/htmlForm/htmlForm-favicon.png";
 import htmlFormImg1 from "./assets/projects/webDesign/htmlForm/htmlForm-1.png";
 import htmlFormImg2 from "./assets/projects/webDesign/htmlForm/htmlForm-2.gif";
 // Embedding Video & Images Project images
+import embedFavicon from "./assets/projects/webDesign/embed/embed-favicon.png";
 import embedImg1 from "./assets/projects/webDesign/embed/embed-1.png";
 import embedImg2 from "./assets/projects/webDesign/embed/embed-2.gif";
-// Embedding Video & Images Project images
+// Grid Framework Project images
+import gridFrameworkFavicon from "./assets/projects/webDesign/gridFramework/gridFramework-favicon.png";
 import gridFrameworkImg1 from "./assets/projects/webDesign/gridFramework/gridFramework-1.png";
 import gridFrameworkImg2 from "./assets/projects/webDesign/gridFramework/gridFramework-2.gif";
 // Backgrounds & Gradients Project images
@@ -307,7 +312,7 @@ export const responsiveDesignProjectData = {
   ],
   title: "Responsive Design Project",
   desc: "The purpose of this project was to re-create the responsive design of home page of TheNextWeb.com. CSS media queries were used to achieve this goal.",
-  favicon: petstagramFavicon,
+  favicon: responsiveDesignFavicon,
   imgs: [
     { id: "img-1", src: responsiveDesignImg1 },
     { id: "img-2", src: responsiveDesignImg2 },
@@ -327,7 +332,7 @@ export const pseudoClassDesignProjectData = {
   ],
   title: "Pseudo Class Design",
   desc: "The goal of this web design project was to work on CSS pseudo classes. There are plenty of :hover, :before, and :after pseudo classes included in the elements",
-  favicon: petstagramFavicon,
+  favicon: pseudoClassFavicon,
   imgs: [
     { id: "img-1", src: pseudoClassImg1 },
     { id: "img-2", src: pseudoClassImg2 },
@@ -345,7 +350,7 @@ export const htmlFormProjectData = {
   ],
   title: "HTML Form Project",
   desc: "HTML and CSS were the basis for this project, I included react to add a dynamic interface to the password authentication. This form is also responsive and can be viewed on any device.",
-  favicon: petstagramFavicon,
+  favicon: htmlFormFavicon,
   imgs: [
     { id: "img-1", src: htmlFormImg1 },
     { id: "img-2", src: htmlFormImg2 },
@@ -362,7 +367,7 @@ export const embedProjectData = {
   ],
   title: "Embedding Video & Images Project",
   desc: "The goal of this project was to learn how to embed videos and images by re-creating a youtube video page. I included pseudo classes to make the page feel more lively and made the design responsive to fit multiple screen sizes.",
-  favicon: petstagramFavicon,
+  favicon: embedFavicon,
   imgs: [
     { id: "img-1", src: embedImg1 },
     { id: "img-2", src: embedImg2 },
@@ -379,7 +384,7 @@ export const gridBasedFrameworkProjectData = {
   ],
   title: "Grid-based Framework",
   desc: "The goal of this project was to create a webpage with a responsive framework. Using HTML and CSS I was able to build a page that will look great on any device or screen size.",
-  favicon: petstagramFavicon,
+  favicon: gridFrameworkFavicon,
   imgs: [
     { id: "img-1", src: gridFrameworkImg1 },
     { id: "img-2", src: gridFrameworkImg2 },
