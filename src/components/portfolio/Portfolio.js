@@ -44,8 +44,10 @@ export default function Portfolio() {
   }, [selected]);
 
   const handleSetModal = (item) => {
-    setShowModal(true);
     setProject(item);
+    setTimeout(function () {
+      setShowModal(true);
+    }, 250);
   };
 
   return (
@@ -64,14 +66,17 @@ export default function Portfolio() {
       </ul>
       <div className="container">
         {data.map((item) => (
-          <div
-            key={item.id}
-            className="item"
-            onClick={() => handleSetModal(item)}
-          >
-            <img src={item.favicon} alt={`${item.title} img`} />
-            <h3>{item.title}</h3>
-            <div className="shade"></div>
+          <div>
+            <div
+              key={item.id}
+              className="item"
+              onClick={() => handleSetModal(item)}
+            >
+              <div className="jelly-container"></div>
+              <img src={item.favicon} alt={`${item.title} img`} />
+              <h3>{item.title}</h3>
+              <div className="shade"></div>
+            </div>
           </div>
         ))}
       </div>

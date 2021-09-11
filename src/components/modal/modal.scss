@@ -304,4 +304,8 @@
       }
     }
   }
+
+  ::-webkit-scrollbar-track {
+    background: $primaryColor;
+  }
 }

@@ -15,6 +15,10 @@ $containerBorderRadius: 10px;
 
 $width: 768px;
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 @mixin mobile {
   @media (min-height: 421px) {
     @media (max-width: #{$width}) {
