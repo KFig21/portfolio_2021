@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio_2021/static/css/main.49a255cb.chunk.css",
-    "main.js": "/portfolio_2021/static/js/main.afcc1143.chunk.js",
-    "main.js.map": "/portfolio_2021/static/js/main.afcc1143.chunk.js.map",
+    "main.css": "/portfolio_2021/static/css/main.495cc8cf.chunk.css",
+    "main.js": "/portfolio_2021/static/js/main.0e92135f.chunk.js",
+    "main.js.map": "/portfolio_2021/static/js/main.0e92135f.chunk.js.map",
     "runtime-main.js": "/portfolio_2021/static/js/runtime-main.592f6d91.js",
     "runtime-main.js.map": "/portfolio_2021/static/js/runtime-main.592f6d91.js.map",
     "static/js/2.e4194309.chunk.js": "/portfolio_2021/static/js/2.e4194309.chunk.js",
     "static/js/2.e4194309.chunk.js.map": "/portfolio_2021/static/js/2.e4194309.chunk.js.map",
     "index.html": "/portfolio_2021/index.html",
-    "static/css/main.49a255cb.chunk.css.map": "/portfolio_2021/static/css/main.49a255cb.chunk.css.map",
+    "static/css/main.495cc8cf.chunk.css.map": "/portfolio_2021/static/css/main.495cc8cf.chunk.css.map",
     "static/js/2.e4194309.chunk.js.LICENSE.txt": "/portfolio_2021/static/js/2.e4194309.chunk.js.LICENSE.txt",
     "static/media/avi.0f6e1bbf.png": "/portfolio_2021/static/media/avi.0f6e1bbf.png",
     "static/media/battleship-1.9e20785a.png": "/portfolio_2021/static/media/battleship-1.9e20785a.png",
@@ -21,6 +21,7 @@
     "static/media/cvBuilder-favicon.e1233bfd.png": "/portfolio_2021/static/media/cvBuilder-favicon.e1233bfd.png",
     "static/media/embed-1.0a512aa7.png": "/portfolio_2021/static/media/embed-1.0a512aa7.png",
     "static/media/embed-2.3d651d93.gif": "/portfolio_2021/static/media/embed-2.3d651d93.gif",
+    "static/media/embed-favicon.61c05242.png": "/portfolio_2021/static/media/embed-favicon.61c05242.png",
     "static/media/excel.3c6b1776.PNG": "/portfolio_2021/static/media/excel.3c6b1776.PNG",
     "static/media/gameNseek-1.f6401c8a.PNG": "/portfolio_2021/static/media/gameNseek-1.f6401c8a.PNG",
     "static/media/gameNseek-2.d6dcc2d6.png": "/portfolio_2021/static/media/gameNseek-2.d6dcc2d6.png",
@@ -31,6 +32,7 @@
     "static/media/gradient-1.3ae700fe.png": "/portfolio_2021/static/media/gradient-1.3ae700fe.png",
     "static/media/gridFramework-1.49c1d1f3.png": "/portfolio_2021/static/media/gridFramework-1.49c1d1f3.png",
     "static/media/gridFramework-2.1b703a81.gif": "/portfolio_2021/static/media/gridFramework-2.1b703a81.gif",
+    "static/media/gridFramework-favicon.eafb0f5d.png": "/portfolio_2021/static/media/gridFramework-favicon.eafb0f5d.png",
     "static/media/home.scss": "/portfolio_2021/static/media/homeBg3.a223d9e6.jpg",
     "static/media/hoopShop-1.63be63f8.PNG": "/portfolio_2021/static/media/hoopShop-1.63be63f8.PNG",
     "static/media/hoopShop-2.130e9d56.png": "/portfolio_2021/static/media/hoopShop-2.130e9d56.png",
@@ -38,6 +40,7 @@
     "static/media/html.147799d1.png": "/portfolio_2021/static/media/html.147799d1.png",
     "static/media/htmlForm-1.d40ec662.png": "/portfolio_2021/static/media/htmlForm-1.d40ec662.png",
     "static/media/htmlForm-2.c6fd95f0.gif": "/portfolio_2021/static/media/htmlForm-2.c6fd95f0.gif",
+    "static/media/htmlForm-favicon.91cfc311.png": "/portfolio_2021/static/media/htmlForm-favicon.91cfc311.png",
     "static/media/instagram-1.40226eb4.PNG": "/portfolio_2021/static/media/instagram-1.40226eb4.PNG",
     "static/media/instagram-2.09a88fd8.png": "/portfolio_2021/static/media/instagram-2.09a88fd8.png",
     "static/media/instagram-3.3ba7bf13.PNG": "/portfolio_2021/static/media/instagram-3.3ba7bf13.PNG",
@@ -57,6 +60,7 @@
     "static/media/portfolio-favicon.ca0d6a54.png": "/portfolio_2021/static/media/portfolio-favicon.ca0d6a54.png",
     "static/media/pseudoClass-1.bcb31869.png": "/portfolio_2021/static/media/pseudoClass-1.bcb31869.png",
     "static/media/pseudoClass-2.98a069b4.gif": "/portfolio_2021/static/media/pseudoClass-2.98a069b4.gif",
+    "static/media/pseudoClass-favicon.a736f823.png": "/portfolio_2021/static/media/pseudoClass-favicon.a736f823.png",
     "static/media/python.fee59f41.png": "/portfolio_2021/static/media/python.fee59f41.png",
     "static/media/react.a3ddf27e.png": "/portfolio_2021/static/media/react.a3ddf27e.png",
     "static/media/responsiveDesign-1.4d1bd7c6.PNG": "/portfolio_2021/static/media/responsiveDesign-1.4d1bd7c6.PNG",
@@ -64,6 +68,7 @@
     "static/media/responsiveDesign-3.28fbf1a3.png": "/portfolio_2021/static/media/responsiveDesign-3.28fbf1a3.png",
     "static/media/responsiveDesign-4.20aca331.png": "/portfolio_2021/static/media/responsiveDesign-4.20aca331.png",
     "static/media/responsiveDesign-5.99ac1f18.gif": "/portfolio_2021/static/media/responsiveDesign-5.99ac1f18.gif",
+    "static/media/responsiveDesign-favicon.45dc4418.png": "/portfolio_2021/static/media/responsiveDesign-favicon.45dc4418.png",
     "static/media/rockPaperScissors-1.ec7c81fb.png": "/portfolio_2021/static/media/rockPaperScissors-1.ec7c81fb.png",
     "static/media/rockPaperScissors-2.b688a7a3.png": "/portfolio_2021/static/media/rockPaperScissors-2.b688a7a3.png",
     "static/media/rockPaperScissors-favicon.d842268f.png": "/portfolio_2021/static/media/rockPaperScissors-favicon.d842268f.png",
@@ -84,7 +89,7 @@
   "entrypoints": [
     "static/js/runtime-main.592f6d91.js",
     "static/js/2.e4194309.chunk.js",
-    "static/css/main.49a255cb.chunk.css",
-    "static/js/main.afcc1143.chunk.js"
+    "static/css/main.495cc8cf.chunk.css",
+    "static/js/main.0e92135f.chunk.js"
   ]
 }
