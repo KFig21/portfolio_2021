@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio_2021/static/css/main.495cc8cf.chunk.css",
-    "main.js": "/portfolio_2021/static/js/main.0e92135f.chunk.js",
-    "main.js.map": "/portfolio_2021/static/js/main.0e92135f.chunk.js.map",
+    "main.js": "/portfolio_2021/static/js/main.3264b001.chunk.js",
+    "main.js.map": "/portfolio_2021/static/js/main.3264b001.chunk.js.map",
     "runtime-main.js": "/portfolio_2021/static/js/runtime-main.592f6d91.js",
     "runtime-main.js.map": "/portfolio_2021/static/js/runtime-main.592f6d91.js.map",
     "static/js/2.e4194309.chunk.js": "/portfolio_2021/static/js/2.e4194309.chunk.js",
@@ -60,7 +60,7 @@
     "static/media/portfolio-favicon.ca0d6a54.png": "/portfolio_2021/static/media/portfolio-favicon.ca0d6a54.png",
     "static/media/pseudoClass-1.bcb31869.png": "/portfolio_2021/static/media/pseudoClass-1.bcb31869.png",
     "static/media/pseudoClass-2.98a069b4.gif": "/portfolio_2021/static/media/pseudoClass-2.98a069b4.gif",
-    "static/media/pseudoClass-favicon.a736f823.png": "/portfolio_2021/static/media/pseudoClass-favicon.a736f823.png",
+    "static/media/pseudoClass-favicon.4b69e917.png": "/portfolio_2021/static/media/pseudoClass-favicon.4b69e917.png",
     "static/media/python.fee59f41.png": "/portfolio_2021/static/media/python.fee59f41.png",
     "static/media/react.a3ddf27e.png": "/portfolio_2021/static/media/react.a3ddf27e.png",
     "static/media/responsiveDesign-1.4d1bd7c6.PNG": "/portfolio_2021/static/media/responsiveDesign-1.4d1bd7c6.PNG",
@@ -68,7 +68,7 @@
     "static/media/responsiveDesign-3.28fbf1a3.png": "/portfolio_2021/static/media/responsiveDesign-3.28fbf1a3.png",
     "static/media/responsiveDesign-4.20aca331.png": "/portfolio_2021/static/media/responsiveDesign-4.20aca331.png",
     "static/media/responsiveDesign-5.99ac1f18.gif": "/portfolio_2021/static/media/responsiveDesign-5.99ac1f18.gif",
-    "static/media/responsiveDesign-favicon.45dc4418.png": "/portfolio_2021/static/media/responsiveDesign-favicon.45dc4418.png",
+    "static/media/responsiveDesign-favicon.c761b348.png": "/portfolio_2021/static/media/responsiveDesign-favicon.c761b348.png",
     "static/media/rockPaperScissors-1.ec7c81fb.png": "/portfolio_2021/static/media/rockPaperScissors-1.ec7c81fb.png",
     "static/media/rockPaperScissors-2.b688a7a3.png": "/portfolio_2021/static/media/rockPaperScissors-2.b688a7a3.png",
     "static/media/rockPaperScissors-favicon.d842268f.png": "/portfolio_2021/static/media/rockPaperScissors-favicon.d842268f.png",
@@ -81,6 +81,7 @@
     "static/media/toDoList-1.151fcc50.PNG": "/portfolio_2021/static/media/toDoList-1.151fcc50.PNG",
     "static/media/toDoList-2.885b676c.png": "/portfolio_2021/static/media/toDoList-2.885b676c.png",
     "static/media/toDoList-3.b57d3b37.gif": "/portfolio_2021/static/media/toDoList-3.b57d3b37.gif",
+    "static/media/toDoList-favicon.b86bb75e.png": "/portfolio_2021/static/media/toDoList-favicon.b86bb75e.png",
     "static/media/weatherApp-1.d6cea0c3.PNG": "/portfolio_2021/static/media/weatherApp-1.d6cea0c3.PNG",
     "static/media/weatherApp-2.9e676a14.png": "/portfolio_2021/static/media/weatherApp-2.9e676a14.png",
     "static/media/weatherApp-3.49bd1f81.gif": "/portfolio_2021/static/media/weatherApp-3.49bd1f81.gif",
@@ -90,6 +91,6 @@
     "static/js/runtime-main.592f6d91.js",
     "static/js/2.e4194309.chunk.js",
     "static/css/main.495cc8cf.chunk.css",
-    "static/js/main.0e92135f.chunk.js"
+    "static/js/main.3264b001.chunk.js"
   ]
 }
