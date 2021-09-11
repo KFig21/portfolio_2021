@@ -1,17 +1,17 @@
 import {
   responsiveDesignProjectData,
-  pseudoClassDesignProjectData,
   htmlFormProjectData,
   embedProjectData,
+  pseudoClassDesignProjectData,
   gridBasedFrameworkProjectData,
   // gradientProjectData,
 } from "../../../allProjects";
 
 export const webDesignPortfolio = [
   responsiveDesignProjectData,
-  pseudoClassDesignProjectData,
   htmlFormProjectData,
   embedProjectData,
+  pseudoClassDesignProjectData,
   gridBasedFrameworkProjectData,
   // gradientProjectData,
 ];
