@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio_2021/static/css/main.836440ec.chunk.css",
-    "main.js": "/portfolio_2021/static/js/main.3264b001.chunk.js",
-    "main.js.map": "/portfolio_2021/static/js/main.3264b001.chunk.js.map",
+    "main.js": "/portfolio_2021/static/js/main.7f255164.chunk.js",
+    "main.js.map": "/portfolio_2021/static/js/main.7f255164.chunk.js.map",
     "runtime-main.js": "/portfolio_2021/static/js/runtime-main.592f6d91.js",
     "runtime-main.js.map": "/portfolio_2021/static/js/runtime-main.592f6d91.js.map",
     "static/js/2.e4194309.chunk.js": "/portfolio_2021/static/js/2.e4194309.chunk.js",
@@ -41,10 +41,10 @@
     "static/media/htmlForm-1.d40ec662.png": "/portfolio_2021/static/media/htmlForm-1.d40ec662.png",
     "static/media/htmlForm-2.c6fd95f0.gif": "/portfolio_2021/static/media/htmlForm-2.c6fd95f0.gif",
     "static/media/htmlForm-favicon.91cfc311.png": "/portfolio_2021/static/media/htmlForm-favicon.91cfc311.png",
-    "static/media/instagram-1.40226eb4.PNG": "/portfolio_2021/static/media/instagram-1.40226eb4.PNG",
-    "static/media/instagram-2.09a88fd8.png": "/portfolio_2021/static/media/instagram-2.09a88fd8.png",
-    "static/media/instagram-3.3ba7bf13.PNG": "/portfolio_2021/static/media/instagram-3.3ba7bf13.PNG",
-    "static/media/instagram-4.3a525dd9.gif": "/portfolio_2021/static/media/instagram-4.3a525dd9.gif",
+    "static/media/instagram-1.94269d6d.PNG": "/portfolio_2021/static/media/instagram-1.94269d6d.PNG",
+    "static/media/instagram-2.4e5e3b63.png": "/portfolio_2021/static/media/instagram-2.4e5e3b63.png",
+    "static/media/instagram-3.323b0766.PNG": "/portfolio_2021/static/media/instagram-3.323b0766.PNG",
+    "static/media/instagram-4.4aa4d7a7.gif": "/portfolio_2021/static/media/instagram-4.4aa4d7a7.gif",
     "static/media/instagram-favicon.aa959858.png": "/portfolio_2021/static/media/instagram-favicon.aa959858.png",
     "static/media/javascript.4d228236.png": "/portfolio_2021/static/media/javascript.4d228236.png",
     "static/media/memoryGame-1.9b5a1ba5.png": "/portfolio_2021/static/media/memoryGame-1.9b5a1ba5.png",
@@ -91,6 +91,6 @@
     "static/js/runtime-main.592f6d91.js",
     "static/js/2.e4194309.chunk.js",
     "static/css/main.836440ec.chunk.css",
-    "static/js/main.3264b001.chunk.js"
+    "static/js/main.7f255164.chunk.js"
   ]
 }
