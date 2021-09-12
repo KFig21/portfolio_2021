@@ -72,7 +72,6 @@ export default function Portfolio() {
               className="item"
               onClick={() => handleSetModal(item)}
             >
-              <div className="jelly-container"></div>
               <img src={item.favicon} alt={`${item.title} img`} />
               <h3>{item.title}</h3>
               <div className="shade"></div>
