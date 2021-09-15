@@ -18,17 +18,17 @@ import mysqlIcon from "./assets/languages/mysql.PNG";
 import gitIcon from "./assets/languages/git.png";
 
 // Instagram project images
-import petstagramFavicon from "./assets/projects/react/instagram/instagram-favicon.png";
-import petstagramImg1 from "./assets/projects/react/instagram/instagram-1.PNG";
-import petstagramImg2 from "./assets/projects/react/instagram/instagram-2.png";
-import petstagramImg3 from "./assets/projects/react/instagram/instagram-3.PNG";
-import petstagramGif1 from "./assets/projects/react/instagram/instagram-4.gif";
+import petstagramFavicon from "./assets/projects/react/petstagram/petstagram-favicon.png";
+import petstagramImg1 from "./assets/projects/react/petstagram/petstagram-1.PNG";
+import petstagramImg2 from "./assets/projects/react/petstagram/petstagram-2.png";
+import petstagramImg3 from "./assets/projects/react/petstagram/petstagram-3.PNG";
+import petstagramGif1 from "./assets/projects/react/petstagram/petstagram-4.gif";
 // Game & Seek project images
-import gameNseekFavicon from "./assets/projects/react/gameNseek/gameNseek-favicon.png";
-import gameNseekImg1 from "./assets/projects/react/gameNseek/gameNseek-1.PNG";
-import gameNseekImg2 from "./assets/projects/react/gameNseek/gameNseek-2.png";
-import gameNseekImg3 from "./assets/projects/react/gameNseek/gameNseek-3.png";
-import gameNseekGif1 from "./assets/projects/react/gameNseek/gameNseek-4.gif";
+import gameNseekFavicon from "./assets/projects/games/gameNseek/gameNseek-favicon.png";
+import gameNseekImg1 from "./assets/projects/games/gameNseek/gameNseek-1.PNG";
+import gameNseekImg2 from "./assets/projects/games/gameNseek/gameNseek-2.png";
+import gameNseekImg3 from "./assets/projects/games/gameNseek/gameNseek-3.png";
+import gameNseekGif1 from "./assets/projects/games/gameNseek/gameNseek-4.gif";
 // HoopShop project images
 import hoopShopFavicon from "./assets/projects/react/hoopShop/hoopShop-favicon.png";
 import hoopShopImg1 from "./assets/projects/react/hoopShop/hoopShop-1.PNG";
@@ -48,13 +48,13 @@ import portfolioImg1 from "./assets/projects/react/portfolio/portfolio-1.png";
 import portfolioImg2 from "./assets/projects/react/portfolio/portfolio-2.png";
 import portfolioImg3 from "./assets/projects/react/portfolio/portfolio-3.png";
 // Battleship project images
-import battleshipFavicon from "./assets/projects/react/battleship/battleship-favicon.png";
-import battleshipImg1 from "./assets/projects/react/battleship/battleship-1.png";
-import battleshipImg2 from "./assets/projects/react/battleship/battleship-2.png";
+import battleshipFavicon from "./assets/projects/games/battleship/battleship-favicon.png";
+import battleshipImg1 from "./assets/projects/games/battleship/battleship-1.png";
+import battleshipImg2 from "./assets/projects/games/battleship/battleship-2.png";
 // Memory Game project images
-import memoryGameFavicon from "./assets/projects/react/memoryGame/memoryGame-favicon.png";
-import memoryGameImg1 from "./assets/projects/react/memoryGame/memoryGame-1.png";
-import memoryGameImg2 from "./assets/projects/react/memoryGame/memoryGame-2.png";
+import memoryGameFavicon from "./assets/projects/games/memoryGame/memoryGame-favicon.png";
+import memoryGameImg1 from "./assets/projects/games/memoryGame/memoryGame-1.png";
+import memoryGameImg2 from "./assets/projects/games/memoryGame/memoryGame-2.png";
 // To Do List project images
 import toDoListFavicon from "./assets/projects/react/toDoList/toDoList-favicon.png";
 import toDoListImg1 from "./assets/projects/react/toDoList/toDoList-1.PNG";
