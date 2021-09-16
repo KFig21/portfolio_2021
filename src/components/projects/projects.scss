@@ -85,6 +85,7 @@
     position: relative;
     transition: all 1s ease-out;
     overflow-x: scroll;
+    overflow-y: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     scrollbar-width: none; //for firefox
