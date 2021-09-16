@@ -7,8 +7,6 @@ import LanguageIcon from "@material-ui/icons/Language";
 // imgs
 import arrowDown from "../../assets/arrows/arrowDown.png";
 import arrowUp from "../../assets/arrows/arrowUp.png";
-import arrowRight from "../../assets/arrows/arrowRight.png";
-import arrowLeft from "../../assets/arrows/arrowLeft.png";
 // project data
 import {
   petstagramSpotlightData,
