@@ -1,47 +1,33 @@
 import React, { useState, useEffect } from "react";
 import List from "./list/List";
+import Page from "./page/Page";
 import "./portfolio.scss";
 import Modal from "../modal/Modal";
 // portfolios
 import { webDesignPortfolio } from "./portfolioData/webDesignPortfolio";
 import { reactPortfolio } from "./portfolioData/reactPortfolio";
 import { gamesPortfolio } from "./portfolioData/gamesPortfolio";
-// import { morePortfolio } from "./portfolioData/morePortfolio";
 // imgs
 import arrowDown from "../../assets/arrows/arrowDown.png";
 import arrowUp from "../../assets/arrows/arrowUp.png";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("react");
-  const [data, setData] = useState([]);
   const [project, setProject] = useState([]);
   const [showModal, setShowModal] = useState(false);
+  // const target = React.createRef();
+
+  const pages = [
+    { id: "react", content: reactPortfolio },
+    { id: "games", content: gamesPortfolio },
+    { id: "webDesign", content: webDesignPortfolio },
+  ];
 
   const list = [
     { id: "react", title: "React" },
     { id: "games", title: "Games" },
     { id: "webDesign", title: "Web Design" },
-    // { id: "more", title: "More" },
   ];
-
-  useEffect(() => {
-    switch (selected) {
-      case "react":
-        setData(reactPortfolio);
-        break;
-      case "games":
-        setData(gamesPortfolio);
-        break;
-      case "webDesign":
-        setData(webDesignPortfolio);
-        break;
-      // case "more":
-      //   setData(morePortfolio);
-      //   break;
-      default:
-        setData(reactPortfolio);
-    }
-  }, [selected]);
 
   const handleSetModal = (item) => {
     setProject(item);
@@ -64,18 +50,13 @@ export default function Portfolio() {
           />
         ))}
       </ul>
-      <div className="container">
-        {data.map((item) => (
-          <div>
-            <div
-              key={item.id}
-              className="item"
-              onClick={() => handleSetModal(item)}
-            >
-              <img src={item.favicon} alt={`${item.title} img`} />
-              <h3>{item.title}</h3>
-              <div className="shade"></div>
-            </div>
+      <div className="scroller">
+        {pages.map((portfolio) => (
+          <div className="pages" id={portfolio.id}>
+            <Page
+              portfolio={portfolio.content}
+              handleSetModal={handleSetModal}
+            />
           </div>
         ))}
       </div>

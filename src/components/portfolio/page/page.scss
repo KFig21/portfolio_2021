@@ -1,0 +1,93 @@
+@import "../../../global.scss";
+
+.page-container {
+  width: 85%;
+  max-width: 800px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include mobile {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .item {
+    width: 180px;
+    height: 180px;
+    border: none;
+    margin: 10px 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $textColor;
+    transition: ease all 0.4s;
+    cursor: pointer;
+    box-shadow: 6px 6px 3px 2px rgba(0, 0, 0, 0.75);
+    position: relative;
+
+    @include mobile {
+      width: 18vh;
+      height: 18vh;
+      margin: 10px;
+      box-shadow: 0px 0px 8px 2px black;
+      transition: all 0.2s ease;
+    }
+
+    &:active {
+      transform: scale(0.98);
+      box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.75);
+    }
+
+    h3 {
+      font-size: 20px;
+      text-align: center;
+      text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.664);
+      color: $textColor;
+      width: inherit;
+      margin: 0px 10px;
+      white-space: normal;
+      transition: all 0.2s ease;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      transition: linear 0.35s;
+      border-radius: inherit;
+    }
+
+    &:hover {
+      background-color: $primaryColor;
+
+      img {
+        opacity: 0.5;
+        z-index: 0;
+
+        @include mobile {
+          opacity: 1;
+          transform: none;
+          z-index: 1;
+        }
+      }
+
+      h3 {
+        z-index: 2;
+      }
+
+      @include mobile {
+        background-color: $primaryColor;
+      }
+    }
+  }
+}

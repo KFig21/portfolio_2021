@@ -113,8 +113,8 @@ export const petstagramProjectData = {
     { id: "img-3", src: petstagramImg2 },
     { id: "img-4", src: petstagramImg3 },
   ],
-  repository: "https://github.com/KFig21/instagram_clone",
-  live: "https://kfig21.github.io/instagram_clone/",
+  repository: "https://github.com/KFig21/petstagram",
+  live: "https://kfig21.github.io/petstagram/",
 };
 export const petstagramSpotlightData = {
   id: "1",
@@ -126,8 +126,8 @@ export const petstagramSpotlightData = {
   title: "Petstagram",
   desc: "An Instagram re-creation built with React, Tailwind CSS, and Firebase. This is a fully functional and responsive app that allows users to create an account, post & crop photos, delete posts, comment, like/unlike, follow/unfollow, and change their avatar.",
   imgs: [{ id: "img-1", src: petstagramGif1 }],
-  repository: "https://github.com/KFig21/instagram_clone",
-  live: "https://kfig21.github.io/instagram_clone/",
+  repository: "https://github.com/KFig21/petstagram",
+  live: "https://kfig21.github.io/petstagram/",
 };
 
 export const gameNseekProjectData = {
