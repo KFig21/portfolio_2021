@@ -117,7 +117,7 @@ export const petstagramProjectData = {
   live: "https://kfig21.github.io/petstagram/",
 };
 export const petstagramSpotlightData = {
-  id: "1",
+  id: 0,
   icons: [
     { id: "1", icon: reactIcon, color: "react" },
     { id: "2", icon: tailwindIcon, color: "tailwind" },
@@ -150,7 +150,7 @@ export const gameNseekProjectData = {
   live: "https://kfig21.github.io/photo_tagging_app/",
 };
 export const gameNseekSpotlightData = {
-  id: "2",
+  id: 1,
   icons: [
     { id: "1", icon: reactIcon, color: "react" },
     { id: "2", icon: firebaseIcon, color: "firebase" },
@@ -290,7 +290,7 @@ export const toDoListProjectData = {
   live: "https://kfig21.github.io/todo_list_react/",
 };
 export const toDoListSpotlightData = {
-  id: "9",
+  id: 2,
   icons: [
     { id: "1", icon: reactIcon, color: "react" },
     { id: "2", icon: firebaseIcon, color: "firebase" },

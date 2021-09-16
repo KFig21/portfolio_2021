@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect, createRef } from "react";
 import "./projects.scss";
-import { useState, useEffect } from "react";
+import Dots from "./dots/Dots";
+// icons
 import CodeIcon from "@material-ui/icons/Code";
 import LanguageIcon from "@material-ui/icons/Language";
 // imgs
@@ -23,168 +24,195 @@ const projectData = [
 
 export default function Projects() {
   const [index, setIndex] = useState(0);
+  const list = [
+    { id: petstagramSpotlightData.id },
+    { id: gameNseekSpotlightData.id },
+    { id: toDoListSpotlightData.id },
+  ];
+
+  // scroll functionality
+  const target = createRef();
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const scrollListener = () => {
+    if (!target.current) {
+      return;
+    }
+
+    const element = target.current;
+    const windowScroll = element.scrollLeft; // Distance of the scrollbar from the leftmost point
+    const totalWidth = element.scrollWidth - element.clientWidth; // Total width the scrollbar can traverse
+    if (windowScroll === 0) {
+      return setScrollProgress(0);
+    }
+
+    if (windowScroll > totalWidth) {
+      return setScrollProgress(100);
+    }
+
+    setScrollProgress((windowScroll / totalWidth) * 100);
+  };
 
   useEffect(() => {
-    const lastIndex = projectData.length - 1;
-    if (index < 0) {
-      setIndex(lastIndex);
-    }
-    if (index > lastIndex) {
+    target.current.addEventListener("scroll", scrollListener);
+    return () =>
+      target.current &&
+      target.current.removeEventListener("scroll", scrollListener);
+  });
+
+  useEffect(() => {
+    if (scrollProgress < 25) {
       setIndex(0);
+    } else if (scrollProgress < 75) {
+      setIndex(1);
+    } else {
+      setIndex(2);
     }
-  }, [index]);
+  }, [scrollProgress]);
 
   return (
     <div className="projects" id="projects">
       <h1 className="projects-title">Project Spotlight</h1>
-      <div className="slider">
-        {projectData.map((project, projectIndex) => {
+      <div className="slider" ref={target}>
+        {projectData.map((project) => {
           const { id, icons, title, desc, repository, live, imgs } = project;
 
-          let position = "nextSlide";
-          if (projectIndex === index) {
-            position = "activeSlide";
-          }
-          if (
-            projectIndex === index - 1 ||
-            (index === 0 && projectIndex === projectData.length - 1)
-          ) {
-            position = "lastSlide";
-          }
-
           return (
-            <div className={`container ${position}`}>
-              <div className="item" key={id}>
-                <div className="left">
-                  <div className="left-container">
-                    {/* desktop icons */}
-                    <div className="icons-container desktop">
-                      {icons.map((tech) => (
-                        <div key={tech.id}>
-                          <div
-                            className={`img-container ${tech.color}-color-bg`}
-                          >
-                            <img src={tech.icon} alt="" />
-                            <span className={`stack ${tech.color}-color-text`}>
-                              {tech.color}
-                            </span>
+            <div className="project-slide" id={id}>
+              <div className="container">
+                <div className="item" key={id}>
+                  <div className="left">
+                    <div className="left-container">
+                      {/* desktop icons */}
+                      <div className="icons-container desktop">
+                        {icons.map((tech) => (
+                          <div key={tech.id}>
+                            <div
+                              className={`img-container ${tech.color}-color-bg`}
+                            >
+                              <img src={tech.icon} alt="" />
+                              <span
+                                className={`stack ${tech.color}-color-text`}
+                              >
+                                {tech.color}
+                              </span>
+                            </div>
                           </div>
-                        </div>
-                      ))}
-                    </div>
-                    <h2>{title}</h2>
-                    <p>{desc}</p>
-                    {/* mobile icons */}
-                    <div className="icons-container mobile">
-                      {icons.map((tech) => (
-                        <div key={tech.id}>
-                          <div
-                            className={`img-container ${tech.color}-color-bg`}
-                          >
-                            <img src={tech.icon} alt="" />
-                            <span className={`stack ${tech.color}-color-text`}>
-                              {tech.color}
-                            </span>
+                        ))}
+                      </div>
+                      <h2>{title}</h2>
+                      <p>{desc}</p>
+                      {/* mobile icons */}
+                      <div className="icons-container mobile">
+                        {icons.map((tech) => (
+                          <div key={tech.id}>
+                            <div
+                              className={`img-container ${tech.color}-color-bg`}
+                            >
+                              <img src={tech.icon} alt="" />
+                              <span
+                                className={`stack ${tech.color}-color-text`}
+                              >
+                                {tech.color}
+                              </span>
+                            </div>
                           </div>
-                        </div>
-                      ))}
-                    </div>
-                    {/* details container mobile */}
-                    <div className="details-container mobile">
-                      <a
-                        href={repository}
-                        className="option"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <CodeIcon style={{ margin: " 0px 5px" }} />
-                        Repo
-                      </a>
-                      <a
-                        href={live}
-                        className="option"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <LanguageIcon style={{ margin: " 0px 5px" }} />
-                        Live
-                      </a>
-                    </div>
-                    {/* details container mobile horizontal */}
-                    <div className="details-container mobileHorizontal">
-                      <a
-                        href={repository}
-                        className="option"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <CodeIcon style={{ margin: " 0px 5px" }} />
-                        Repo
-                      </a>
-                      <a
-                        href={live}
-                        className="option"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <LanguageIcon style={{ margin: " 0px 5px" }} />
-                        Live
-                      </a>
+                        ))}
+                      </div>
+                      {/* details container mobile */}
+                      <div className="details-container mobile">
+                        <a
+                          href={repository}
+                          className="option"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <CodeIcon style={{ margin: " 0px 5px" }} />
+                          Repo
+                        </a>
+                        <a
+                          href={live}
+                          className="option"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <LanguageIcon style={{ margin: " 0px 5px" }} />
+                          Live
+                        </a>
+                      </div>
+                      {/* details container mobile horizontal */}
+                      <div className="details-container mobileHorizontal">
+                        <a
+                          href={repository}
+                          className="option"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <CodeIcon style={{ margin: " 0px 5px" }} />
+                          Repo
+                        </a>
+                        <a
+                          href={live}
+                          className="option"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <LanguageIcon style={{ margin: " 0px 5px" }} />
+                          Live
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="right">
-                  <div className="shade">
-                    <div className="shade-container">
-                      <a
-                        href={repository}
-                        className="option"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <CodeIcon style={{ margin: " 0px 5px" }} />
-                        Repo
-                      </a>
-                      <a
-                        href={live}
-                        className="option"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <LanguageIcon style={{ margin: " 0px 5px" }} />
-                        Live
-                      </a>
+                  <div className="right">
+                    <div className="shade">
+                      <div className="shade-container">
+                        <a
+                          href={repository}
+                          className="option"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <CodeIcon style={{ margin: " 0px 5px" }} />
+                          Repo
+                        </a>
+                        <a
+                          href={live}
+                          className="option"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <LanguageIcon style={{ margin: " 0px 5px" }} />
+                          Live
+                        </a>
+                      </div>
                     </div>
+                    {imgs.map((img) => (
+                      <div className="img-container">
+                        <a
+                          href={img.src}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img src={img.src} alt="" />
+                        </a>
+                      </div>
+                    ))}
                   </div>
-                  {imgs.map((img) => (
-                    <div className="img-container">
-                      <a
-                        href={img.src}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img src={img.src} alt="" />
-                      </a>
-                    </div>
-                  ))}
                 </div>
               </div>
             </div>
           );
         })}
       </div>
-      <img
-        src={arrowLeft}
-        className="arrow left"
-        alt="left arrow"
-        onClick={() => setIndex(index - 1)}
-      />
-      <img
-        src={arrowRight}
-        className="arrow right"
-        alt="right arrow"
-        onClick={() => setIndex(index + 1)}
-      />
+      <div className="dots-container">
+        {list.map((item) => (
+          <Dots
+            id={item.id}
+            key={item.id}
+            active={index === item.id}
+            setIndex={setIndex}
+          />
+        ))}
+      </div>
       <a className="up-arrow" href="#about">
         <img className="arrow-img" src={arrowUp} alt="next section" />
       </a>
