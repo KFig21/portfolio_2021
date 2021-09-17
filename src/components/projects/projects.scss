@@ -402,33 +402,60 @@
 
               .shade-container {
                 display: flex;
-                justify-content: space-around;
+                flex-direction: column;
+                justify-content: center;
                 align-items: center;
                 margin: auto;
-                width: 80%;
                 height: 100%;
+
+                .favicon-container {
+                  max-height: 120px;
+                  max-width: 120px;
+                  overflow: visible;
+                  align-items: center;
+                  justify-content: center;
+                  display: block;
+                  z-index: 2;
+                  border-radius: 25px;
+                  margin-bottom: 20px;
+
+                  .favicon {
+                    border-radius: inherit;
+                    max-height: 100%;
+                    max-width: 100%;
+                    object-fit: fill;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.74);
+                  }
+                }
+
+                .shade-links {
+                  display: flex;
+                  justify-content: space-around;
+                  width: 60%;
+                  overflow: visible;
+
+                  .option {
+                    padding: 10px;
+                    font-weight: 700;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: linear 0.2s;
+                    text-decoration: none;
+                    color: $textColor;
+
+                    &:hover {
+                      color: orange;
+                      transform: scale(1.2);
+                      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.473);
+                    }
+                  }
+                }
 
                 @include mobile {
                   display: none;
-                }
-
-                .option {
-                  padding: 10px;
-                  font-weight: 700;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: center;
-                  cursor: pointer;
-                  transition: linear 0.2s;
-                  text-decoration: none;
-                  color: $textColor;
-
-                  &:hover {
-                    color: orange;
-                    transform: scale(1.2);
-                    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.473);
-                  }
                 }
               }
             }

@@ -22,6 +22,9 @@ export default function Modal({ project, setShowModal }) {
     <div className="modal">
       <div className="modal-container" key={project.id}>
         <div className="modal-item">
+          <div className="favicon-container">
+            <img src={project.favicon} alt="favicon" className="favicon" />
+          </div>
           <button className="closeX" onClick={() => setShowModal(false)}>
             <div>
               <span>x</span>

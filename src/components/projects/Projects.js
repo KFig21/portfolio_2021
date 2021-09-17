@@ -72,7 +72,8 @@ export default function Projects() {
       <h1 className="projects-title">Project Spotlight</h1>
       <div className="slider" ref={target}>
         {projectData.map((project) => {
-          const { id, icons, title, desc, repository, live, imgs } = project;
+          const { id, icons, title, desc, repository, live, imgs, favicon } =
+            project;
 
           return (
             <div className="project-slide" id={id}>
@@ -160,27 +161,37 @@ export default function Projects() {
                       </div>
                     </div>
                   </div>
+                  {/* desktop right container */}
                   <div className="right">
                     <div className="shade">
                       <div className="shade-container">
-                        <a
-                          href={repository}
-                          className="option"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <CodeIcon style={{ margin: " 0px 5px" }} />
-                          Repo
-                        </a>
-                        <a
-                          href={live}
-                          className="option"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <LanguageIcon style={{ margin: " 0px 5px" }} />
-                          Live
-                        </a>
+                        <div className="favicon-container">
+                          <img
+                            src={favicon}
+                            alt="favicon"
+                            className="favicon"
+                          />
+                        </div>
+                        <div className="shade-links">
+                          <a
+                            href={repository}
+                            className="option"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <CodeIcon style={{ margin: " 0px 5px" }} />
+                            Repo
+                          </a>
+                          <a
+                            href={live}
+                            className="option"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <LanguageIcon style={{ margin: " 0px 5px" }} />
+                            Live
+                          </a>
+                        </div>
                       </div>
                     </div>
                     {imgs.map((img) => (
