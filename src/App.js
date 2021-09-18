@@ -31,7 +31,7 @@ function App() {
     <div className="app">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className="sections">
+      <div className="sections" onClick={() => setMenuOpen(false)}>
         <Home />
         <About />
         <Projects />

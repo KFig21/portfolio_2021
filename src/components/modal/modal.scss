@@ -4,18 +4,18 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 10;
+  overflow: hidden;
 
   .modal-container {
-    width: 100vw;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: visible;
+    z-index: 2;
 
     .modal-wrapper {
       width: 100vw;
@@ -345,7 +345,96 @@
     }
   }
 
+  .modal-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    // background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+
   ::-webkit-scrollbar-track {
     background: $primaryColor;
+  }
+}
+
+//transition effects
+.modal-in {
+  // transform: scale(1);
+  .modal-container-in {
+    .modal-wrapper-in {
+      opacity: 0;
+      animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    }
+  }
+  .modal-background-in {
+    animation: fadeIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+}
+.modal-out {
+  animation: quickScaleDown 0s 0.5s linear forwards;
+  .modal-container-out {
+    .modal-wrapper-out {
+      animation: scaleDown 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    }
+  }
+  .modal-background-out {
+    animation: fadeOut 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+}
+
+//transition effects
+
+//transition effects
+
+@keyframes fadeIn {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1) translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleDown {
+  0% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes quickScaleDown {
+  0% {
+    transform: scale(1);
+  }
+  99% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
   }
 }

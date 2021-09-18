@@ -13,7 +13,7 @@ import arrowUp from "../../assets/arrows/arrowUp.png";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("react");
-  const [project, setProject] = useState([]);
+  const [project, setProject] = useState(reactPortfolio[0]);
   const [showModal, setShowModal] = useState(false);
 
   const pages = [
@@ -104,7 +104,12 @@ export default function Portfolio() {
       <a className="down-arrow" href="#skills">
         <img className="arrow-img" src={arrowDown} alt="next section" />
       </a>
-      {showModal && <Modal project={project} setShowModal={setShowModal} />}
+
+      <Modal
+        project={project}
+        showModal={showModal}
+        setShowModal={setShowModal}
+      />
     </div>
   );
 }

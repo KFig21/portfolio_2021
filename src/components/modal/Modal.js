@@ -3,9 +3,7 @@ import "./modal.scss";
 import CodeIcon from "@material-ui/icons/Code";
 import LanguageIcon from "@material-ui/icons/Language";
 
-export default function Modal({ project, setShowModal }) {
-  console.log(project);
-
+export default function Modal({ project, showModal, setShowModal }) {
   useEffect(() => {
     // center images that are too wide
     for (let i = 1; i < project.imgs.length + 1; i++) {
@@ -18,15 +16,30 @@ export default function Modal({ project, setShowModal }) {
     }
   }, []);
 
+  const handleClose = () => {
+    setShowModal(false);
+  };
+
   return (
-    <div className="modal">
-      <div className="modal-container" key={project.id}>
-        <div className="modal-wrapper">
+    <div className={"modal " + (!showModal ? "modal-out" : "modal-in")}>
+      <div
+        className={
+          "modal-container " +
+          (!showModal ? "modal-container-out" : "modal-container-in")
+        }
+        key={project.id}
+      >
+        <div
+          className={
+            "modal-wrapper " +
+            (!showModal ? "modal-wrapper-out" : "modal-wrapper-in")
+          }
+        >
           <div className="favicon-container">
             <img src={project.favicon} alt="favicon" className="favicon" />
           </div>
           <div className="modal-item">
-            <button className="closeX" onClick={() => setShowModal(false)}>
+            <button className="closeX" onClick={() => handleClose()}>
               <div>
                 <span>x</span>
               </div>
@@ -84,6 +97,7 @@ export default function Modal({ project, setShowModal }) {
               </div>
             </div>
             <div className="right">
+              {/* images */}
               {project.imgs.map((img) => {
                 const { id, src } = img;
 
@@ -99,6 +113,13 @@ export default function Modal({ project, setShowModal }) {
           </div>
         </div>
       </div>
+      <div
+        className={
+          "modal-background " +
+          (!showModal ? "modal-background-out" : "modal-background-in")
+        }
+        onClick={() => handleClose()}
+      ></div>
     </div>
   );
 }
