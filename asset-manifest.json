@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio_2021/static/css/main.091e7118.chunk.css",
-    "main.js": "/portfolio_2021/static/js/main.5497adb0.chunk.js",
-    "main.js.map": "/portfolio_2021/static/js/main.5497adb0.chunk.js.map",
+    "main.css": "/portfolio_2021/static/css/main.9a3b58b6.chunk.css",
+    "main.js": "/portfolio_2021/static/js/main.2a684a5e.chunk.js",
+    "main.js.map": "/portfolio_2021/static/js/main.2a684a5e.chunk.js.map",
     "runtime-main.js": "/portfolio_2021/static/js/runtime-main.592f6d91.js",
     "runtime-main.js.map": "/portfolio_2021/static/js/runtime-main.592f6d91.js.map",
     "static/js/2.eb0ceb6a.chunk.js": "/portfolio_2021/static/js/2.eb0ceb6a.chunk.js",
     "static/js/2.eb0ceb6a.chunk.js.map": "/portfolio_2021/static/js/2.eb0ceb6a.chunk.js.map",
     "index.html": "/portfolio_2021/index.html",
-    "static/css/main.091e7118.chunk.css.map": "/portfolio_2021/static/css/main.091e7118.chunk.css.map",
+    "static/css/main.9a3b58b6.chunk.css.map": "/portfolio_2021/static/css/main.9a3b58b6.chunk.css.map",
     "static/js/2.eb0ceb6a.chunk.js.LICENSE.txt": "/portfolio_2021/static/js/2.eb0ceb6a.chunk.js.LICENSE.txt",
     "static/media/avi.0f6e1bbf.png": "/portfolio_2021/static/media/avi.0f6e1bbf.png",
     "static/media/battleship-1.9e20785a.png": "/portfolio_2021/static/media/battleship-1.9e20785a.png",
@@ -51,7 +51,7 @@
     "static/media/petstagram-2.4e5e3b63.png": "/portfolio_2021/static/media/petstagram-2.4e5e3b63.png",
     "static/media/petstagram-3.323b0766.PNG": "/portfolio_2021/static/media/petstagram-3.323b0766.PNG",
     "static/media/petstagram-4.4aa4d7a7.gif": "/portfolio_2021/static/media/petstagram-4.4aa4d7a7.gif",
-    "static/media/petstagram-favicon.aa959858.png": "/portfolio_2021/static/media/petstagram-favicon.aa959858.png",
+    "static/media/petstagram-favicon.bc2cd0d7.png": "/portfolio_2021/static/media/petstagram-favicon.bc2cd0d7.png",
     "static/media/photoshop.e36cb3b3.png": "/portfolio_2021/static/media/photoshop.e36cb3b3.png",
     "static/media/php.151a41a8.png": "/portfolio_2021/static/media/php.151a41a8.png",
     "static/media/portfolio-1.cf83086e.png": "/portfolio_2021/static/media/portfolio-1.cf83086e.png",
@@ -90,7 +90,7 @@
   "entrypoints": [
     "static/js/runtime-main.592f6d91.js",
     "static/js/2.eb0ceb6a.chunk.js",
-    "static/css/main.091e7118.chunk.css",
-    "static/js/main.5497adb0.chunk.js"
+    "static/css/main.9a3b58b6.chunk.css",
+    "static/js/main.2a684a5e.chunk.js"
   ]
 }
