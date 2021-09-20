@@ -41,7 +41,7 @@
         justify-content: center;
         display: block;
         top: -30px;
-        left: 50%;
+        // left: 50%;
         transform: translate(-50%, 0%);
         z-index: 2;
         border-radius: 15px;
@@ -365,6 +365,10 @@
     .modal-wrapper-in {
       opacity: 0;
       animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+      .favicon-container-in {
+        animation: scaleDownInverse 0.9s cubic-bezier(0.165, 0.84, 0.44, 1)
+          forwards;
+      }
     }
   }
   .modal-background-in {
@@ -376,6 +380,10 @@
   .modal-container-out {
     .modal-wrapper-out {
       animation: scaleDown 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+      .favicon-container-out {
+        animation: scaleUpInverse 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
+          forwards;
+      }
     }
   }
   .modal-background-out {
@@ -424,6 +432,27 @@
   100% {
     transform: scale(1) translateY(1000px);
     opacity: 0;
+  }
+}
+@keyframes scaleUpInverse {
+  0% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(-1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes scaleDownInverse {
+  0% {
+    transform: scale(1) translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
   }
 }
 

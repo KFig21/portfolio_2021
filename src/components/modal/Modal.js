@@ -35,7 +35,12 @@ export default function Modal({ project, showModal, setShowModal }) {
             (!showModal ? "modal-wrapper-out" : "modal-wrapper-in")
           }
         >
-          <div className="favicon-container">
+          <div
+            className={
+              "favicon-container " +
+              (!showModal ? "favicon-container-out" : "favicon-container-in")
+            }
+          >
             <img src={project.favicon} alt="favicon" className="favicon" />
           </div>
           <div className="modal-item">
