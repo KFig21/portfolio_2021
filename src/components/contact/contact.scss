@@ -26,6 +26,10 @@
       flex-direction: column;
       max-width: 344px;
     }
+    @include mobileKeyboard {
+      flex-direction: column;
+      max-width: 344px;
+    }
 
     .contact-container-left {
       display: flex;
@@ -34,6 +38,9 @@
       background-color: $editorSecondary;
 
       @include mobile {
+        width: 100%;
+      }
+      @include mobileKeyboard {
         width: 100%;
       }
       h2 {
@@ -46,6 +53,10 @@
         margin: auto;
 
         @include mobile {
+          padding-top: 15px;
+          font-size: 25px;
+        }
+        @include mobileKeyboard {
           padding-top: 15px;
           font-size: 25px;
         }
@@ -81,6 +92,9 @@
           @include mobile {
             padding: 11px 0px 4px 0px;
           }
+          @include mobileKeyboard {
+            padding: 11px 0px 4px 0px;
+          }
         }
 
         textarea {
@@ -104,6 +118,9 @@
           @include mobile {
             height: 80px;
           }
+          @include mobileKeyboard {
+            height: 80px;
+          }
         }
 
         button {
@@ -118,6 +135,10 @@
           cursor: pointer;
 
           @include mobile {
+            padding: 9px 0px;
+            margin: 10px 0px;
+          }
+          @include mobileKeyboard {
             padding: 9px 0px;
             margin: 10px 0px;
           }
@@ -157,6 +178,9 @@
       @include mobile {
         width: 100%;
       }
+      @include mobileKeyboard {
+        width: 100%;
+      }
 
       .right-content {
         width: 300px;
@@ -172,6 +196,9 @@
           @include mobile {
             padding-top: 16px;
           }
+          @include mobileKeyboard {
+            padding-top: 16px;
+          }
         }
 
         p {
@@ -182,6 +209,9 @@
           @include mobile {
             padding-top: 8px;
           }
+          @include mobileKeyboard {
+            padding-top: 8px;
+          }
         }
 
         .info {
@@ -189,6 +219,10 @@
           flex-direction: column;
 
           @include mobile {
+            flex-direction: row;
+            justify-content: space-around;
+          }
+          @include mobileKeyboard {
             flex-direction: row;
             justify-content: space-around;
           }
@@ -204,6 +238,9 @@
             height: 50px;
 
             @include mobile {
+              padding: 6px 0px;
+            }
+            @include mobileKeyboard {
               padding: 6px 0px;
             }
 
@@ -224,6 +261,9 @@
               @include mobile {
                 margin-right: 0px;
               }
+              @include mobileKeyboard {
+                margin-right: 0px;
+              }
 
               .leetcode-icon {
                 padding: 7px;
@@ -238,12 +278,23 @@
                 transition: background-color 0.2s ease, color 0.1s ease,
                   fill 0.1s ease;
               }
+              @include mobileKeyboard {
+                background-color: $accentColor;
+                color: $primaryColor;
+                fill: $primaryColor;
+                transition: background-color 0.2s ease, color 0.1s ease,
+                  fill 0.1s ease;
+              }
             }
 
             .item-details {
               display: flex;
 
               @include mobile {
+                display: none;
+              }
+
+              @include mobileKeyboard {
                 display: none;
               }
 
@@ -267,6 +318,15 @@
           text-align: center;
 
           @include mobile {
+            display: block;
+            background-color: $primaryColorFaded;
+            font-size: 18px;
+            padding: 8px 12px;
+            border-radius: 3px 9px;
+            margin-top: 3px;
+            margin-bottom: 15px;
+          }
+          @include mobileKeyboard {
             display: block;
             background-color: $primaryColorFaded;
             font-size: 18px;
