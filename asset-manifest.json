@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio_2021/static/css/main.256ace98.chunk.css",
-    "main.js": "/portfolio_2021/static/js/main.377dbb7f.chunk.js",
-    "main.js.map": "/portfolio_2021/static/js/main.377dbb7f.chunk.js.map",
+    "main.css": "/portfolio_2021/static/css/main.ea278480.chunk.css",
+    "main.js": "/portfolio_2021/static/js/main.be89745a.chunk.js",
+    "main.js.map": "/portfolio_2021/static/js/main.be89745a.chunk.js.map",
     "runtime-main.js": "/portfolio_2021/static/js/runtime-main.592f6d91.js",
     "runtime-main.js.map": "/portfolio_2021/static/js/runtime-main.592f6d91.js.map",
     "static/js/2.460584ff.chunk.js": "/portfolio_2021/static/js/2.460584ff.chunk.js",
     "static/js/2.460584ff.chunk.js.map": "/portfolio_2021/static/js/2.460584ff.chunk.js.map",
     "index.html": "/portfolio_2021/index.html",
-    "static/css/main.256ace98.chunk.css.map": "/portfolio_2021/static/css/main.256ace98.chunk.css.map",
+    "static/css/main.ea278480.chunk.css.map": "/portfolio_2021/static/css/main.ea278480.chunk.css.map",
     "static/js/2.460584ff.chunk.js.LICENSE.txt": "/portfolio_2021/static/js/2.460584ff.chunk.js.LICENSE.txt",
     "static/media/avi.0f6e1bbf.png": "/portfolio_2021/static/media/avi.0f6e1bbf.png",
     "static/media/battleship-1.9e20785a.png": "/portfolio_2021/static/media/battleship-1.9e20785a.png",
@@ -41,6 +41,7 @@
     "static/media/htmlForm-2.c6fd95f0.gif": "/portfolio_2021/static/media/htmlForm-2.c6fd95f0.gif",
     "static/media/htmlForm-favicon.91cfc311.png": "/portfolio_2021/static/media/htmlForm-favicon.91cfc311.png",
     "static/media/javascript.4d228236.png": "/portfolio_2021/static/media/javascript.4d228236.png",
+    "static/media/logo1TransparentBlackInvert.236fa721.png": "/portfolio_2021/static/media/logo1TransparentBlackInvert.236fa721.png",
     "static/media/memoryGame-1.9b5a1ba5.png": "/portfolio_2021/static/media/memoryGame-1.9b5a1ba5.png",
     "static/media/memoryGame-2.acbfbe56.png": "/portfolio_2021/static/media/memoryGame-2.acbfbe56.png",
     "static/media/memoryGame-favicon.7b4d63c1.png": "/portfolio_2021/static/media/memoryGame-favicon.7b4d63c1.png",
@@ -88,7 +89,7 @@
   "entrypoints": [
     "static/js/runtime-main.592f6d91.js",
     "static/js/2.460584ff.chunk.js",
-    "static/css/main.256ace98.chunk.css",
-    "static/js/main.377dbb7f.chunk.js"
+    "static/css/main.ea278480.chunk.css",
+    "static/js/main.be89745a.chunk.js"
   ]
 }
