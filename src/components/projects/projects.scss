@@ -241,7 +241,7 @@
                 @include mobile {
                   font-size: 25px;
                   height: 40px;
-                  margin: 10px;
+                  margin: 10px 0px 5px 0px;
                   text-align: center;
                 }
                 @include mobileHorizontal {
@@ -260,7 +260,7 @@
                 white-space: normal;
 
                 @include mobile {
-                  height: calc((#{$itemHeight} * (2 / 3)) - 195px);
+                  height: calc((#{$itemHeight} * (2 / 3)) - 190px);
                   margin: 0px 0px 10px 0px;
                   padding: 0px;
                   overflow-y: scroll;

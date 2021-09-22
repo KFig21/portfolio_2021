@@ -78,9 +78,19 @@
         align-items: center;
         justify-content: center;
         display: flex;
+        border-radius: 50%;
 
         img {
-          border-radius: 50%;
+          background: linear-gradient(
+            -45deg,
+            #e73c7e,
+            #b61dc4,
+            #23a6d5,
+            #23d5ab
+          );
+          background-size: 400% 400%;
+          animation: gradient 15s ease infinite;
+          border-radius: inherit;
           max-height: 95%;
           max-width: 95%;
           object-fit: fill;
@@ -147,7 +157,7 @@
         overflow-y: none;
         justify-content: flex-start;
         align-items: flex-start;
-        padding-left: 4px;
+        padding: 0px 0px 0px 4px;
       }
 
       @include mobileHorizontal {
@@ -187,8 +197,8 @@
       .break {
         margin: 15px auto;
         width: 140px;
-        height: 4px;
-        min-height: 4px;
+        height: 3px;
+        min-height: 3px;
         background-color: $accentColor;
         border-radius: 20px;
 
@@ -247,8 +257,8 @@
 
     .mobile-img-container {
       position: absolute;
-      max-height: 133px;
-      max-width: 133px;
+      max-height: 125px;
+      max-width: 125px;
       overflow: visible;
       align-items: center;
       justify-content: center;
@@ -257,13 +267,29 @@
       left: 50%;
       transform: translate(-50%, 0%);
       display: none;
+      background: linear-gradient(-45deg, #e73c7e, #b61dc4, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      border-radius: 50%;
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
 
       @include mobile {
         display: block;
       }
 
       img {
-        border-radius: 50%;
+        border-radius: inherit;
         max-height: 100%;
         max-width: 100%;
         object-fit: fill;
@@ -272,7 +298,7 @@
     }
 
     h2 {
-      font-size: 25px;
+      font-size: 28px;
       color: $textColor;
       line-height: 32px;
       width: 200px;

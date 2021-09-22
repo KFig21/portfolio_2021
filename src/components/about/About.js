@@ -6,6 +6,7 @@ import { Person, Mail, GitHub, Code } from "@material-ui/icons";
 import arrowDown from "../../assets/arrows/arrowDown.png";
 import arrowUp from "../../assets/arrows/arrowUp.png";
 import avi from "../../assets/other/avi.png";
+import logo from "../../assets/logo/logo1TransparentBlackInvert.png";
 
 export default function About() {
   return (
@@ -14,12 +15,12 @@ export default function About() {
 
       <div className="container">
         <div className="mobile-img-container">
-          <img src={avi} alt="" />
+          <img src={logo} alt="" />
         </div>
         <h2 className="mobile">Kevin Figenshu</h2>
         <div className="left">
           <div className="img-container">
-            <img src={avi} alt="" />
+            <img src={logo} alt="" />
           </div>
           <div className="info">
             <h2>Kevin Figenshu</h2>
