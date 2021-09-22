@@ -15,6 +15,11 @@
     justify-content: center;
     align-items: center;
   }
+  @include mobileKeyboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .wrapper {
     padding: 15px 30px;
@@ -23,6 +28,13 @@
     justify-content: space-between;
 
     @include mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100vw;
+      padding: 10px 18px;
+    }
+    @include mobileKeyboard {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -50,6 +62,11 @@
       }
 
       @include mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @include mobileKeyboard {
         display: flex;
         justify-content: center;
         align-items: center;

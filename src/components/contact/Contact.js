@@ -17,7 +17,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMessage(true);
+    setMessage(false);
   };
 
   const handleInfo = (variable, str) => {
@@ -32,7 +32,7 @@ export default function Contact() {
           <h2>Lets get in touch</h2>
           <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
+            <input type="email" placeholder="Email" />
             <input type="text" placeholder="Subject" />
             <textarea placeholder="Message"></textarea>
             <button type="submit">Send</button>
