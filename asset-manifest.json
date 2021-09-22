@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio_2021/static/css/main.a668d68f.chunk.css",
-    "main.js": "/portfolio_2021/static/js/main.61c495fe.chunk.js",
-    "main.js.map": "/portfolio_2021/static/js/main.61c495fe.chunk.js.map",
+    "main.css": "/portfolio_2021/static/css/main.9eb43661.chunk.css",
+    "main.js": "/portfolio_2021/static/js/main.a112a789.chunk.js",
+    "main.js.map": "/portfolio_2021/static/js/main.a112a789.chunk.js.map",
     "runtime-main.js": "/portfolio_2021/static/js/runtime-main.592f6d91.js",
     "runtime-main.js.map": "/portfolio_2021/static/js/runtime-main.592f6d91.js.map",
-    "static/js/2.eb0ceb6a.chunk.js": "/portfolio_2021/static/js/2.eb0ceb6a.chunk.js",
-    "static/js/2.eb0ceb6a.chunk.js.map": "/portfolio_2021/static/js/2.eb0ceb6a.chunk.js.map",
+    "static/js/2.460584ff.chunk.js": "/portfolio_2021/static/js/2.460584ff.chunk.js",
+    "static/js/2.460584ff.chunk.js.map": "/portfolio_2021/static/js/2.460584ff.chunk.js.map",
     "index.html": "/portfolio_2021/index.html",
-    "static/css/main.a668d68f.chunk.css.map": "/portfolio_2021/static/css/main.a668d68f.chunk.css.map",
-    "static/js/2.eb0ceb6a.chunk.js.LICENSE.txt": "/portfolio_2021/static/js/2.eb0ceb6a.chunk.js.LICENSE.txt",
+    "static/css/main.9eb43661.chunk.css.map": "/portfolio_2021/static/css/main.9eb43661.chunk.css.map",
+    "static/js/2.460584ff.chunk.js.LICENSE.txt": "/portfolio_2021/static/js/2.460584ff.chunk.js.LICENSE.txt",
     "static/media/avi.0f6e1bbf.png": "/portfolio_2021/static/media/avi.0f6e1bbf.png",
     "static/media/battleship-1.9e20785a.png": "/portfolio_2021/static/media/battleship-1.9e20785a.png",
     "static/media/battleship-2.27ace4a4.png": "/portfolio_2021/static/media/battleship-2.27ace4a4.png",
@@ -74,7 +74,6 @@
     "static/media/rockPaperScissors-favicon.d842268f.png": "/portfolio_2021/static/media/rockPaperScissors-favicon.d842268f.png",
     "static/media/ruby.cc691225.png": "/portfolio_2021/static/media/ruby.cc691225.png",
     "static/media/sass.59c3bd22.png": "/portfolio_2021/static/media/sass.59c3bd22.png",
-    "static/media/shake.c7165a1f.svg": "/portfolio_2021/static/media/shake.c7165a1f.svg",
     "static/media/ticTacToe-1.8996b3fa.png": "/portfolio_2021/static/media/ticTacToe-1.8996b3fa.png",
     "static/media/ticTacToe-2.46930117.png": "/portfolio_2021/static/media/ticTacToe-2.46930117.png",
     "static/media/ticTacToe-favicon.cb3f3ab5.png": "/portfolio_2021/static/media/ticTacToe-favicon.cb3f3ab5.png",
@@ -89,8 +88,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.592f6d91.js",
-    "static/js/2.eb0ceb6a.chunk.js",
-    "static/css/main.a668d68f.chunk.css",
-    "static/js/main.61c495fe.chunk.js"
+    "static/js/2.460584ff.chunk.js",
+    "static/css/main.9eb43661.chunk.css",
+    "static/js/main.a112a789.chunk.js"
   ]
 }
