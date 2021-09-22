@@ -129,8 +129,8 @@
         textarea:-webkit-autofill,
         textarea:-webkit-autofill:hover,
         textarea:-webkit-autofill:focus {
-          color: $textColor;
-          background-color: $accentColor;
+          -webkit-text-fill-color: $textColor !important;
+          -webkit-box-shadow: 0 0 0 30px $editorSecondary inset !important;
         }
 
         button {
