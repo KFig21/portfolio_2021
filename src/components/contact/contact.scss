@@ -44,6 +44,11 @@
         text-align: left;
         width: 300px;
         margin: auto;
+
+        @include mobile {
+          padding-top: 16px;
+          font-size: 26px;
+        }
       }
 
       form {
@@ -98,7 +103,7 @@
           }
 
           @include mobile {
-            height: 100px;
+            height: 80px;
           }
         }
 
@@ -112,6 +117,10 @@
           padding: 12px 0px;
           margin: 15px 0px;
           cursor: pointer;
+
+          @include mobile {
+            padding: 9px 0px;
+          }
 
           &:focus {
             outline: none;
@@ -159,12 +168,20 @@
           font-size: 20px;
           font-weight: 400;
           text-align: left;
+
+          @include mobile {
+            padding-top: 16px;
+          }
         }
 
         p {
           color: gray;
           padding-top: 15px;
           line-height: 23px;
+
+          @include mobile {
+            padding-top: 10px;
+          }
         }
 
         .info {
