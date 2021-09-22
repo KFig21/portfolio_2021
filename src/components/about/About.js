@@ -57,27 +57,25 @@ export default function About() {
             <h4 className="mobile-horizontal-title">About Me</h4>
             <p>
               Welcome! My name is Kevin Figenshu, I am a self-taught developer
-              based in Philadelphia, PA.
+              and web designer.
             </p>
             <div className="break"></div>
             <p>
               Starting from no-code in January of 2020 I became obsessed with
-              the world of programming and decided to dive in head first and
-              learn as much as possible. Poring through resources such as The
-              Odin Project, FreeCodeCamp, and Codecademy I have been
-              persistently learning the necessary skills for becoming a full
-              stack developer.
+              the world of programming, poring through resources such as The
+              Odin Project, FreeCodeCamp, and Codecademy I have been developing
+              the necessary skills for becoming a full stack developer.
             </p>
             <div className="break"></div>
-            <p>
+            {/* <p>
               Prior to programming I graduated with a bachelors in business
               administration with a focus in accounting from Temple University
               and spent 6 years working in the field. I have also been working
               as a free-lance graphic designer since 2017 being self-taught in
               Adobe photoshop & illustrator.
             </p>
-            <div className="break"></div>
-            <p className="last-p">Thank you for visiting my page!</p>
+            <div className="break"></div> */}
+            <p className="last-p">Let's work together!</p>
             <div className="info mobile">
               <div className="break"></div>
               <div className="item-container">

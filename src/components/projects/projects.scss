@@ -138,7 +138,7 @@
         overflow: hidden;
 
         .item {
-          width: 700px;
+          width: 800px;
           height: 90%;
           background-color: $secondaryColor;
           border-radius: $containerBorderRadius;
@@ -162,7 +162,7 @@
           }
 
           .left {
-            flex: 4;
+            flex: 5;
             height: 88%;
             display: flex;
             justify-content: center;
@@ -250,8 +250,8 @@
               }
 
               p {
-                font-size: 14px;
-                line-height: 18px;
+                font-size: 16px;
+                line-height: 22px;
                 color: $textColor;
                 padding: 0px 7px 0px 0px;
                 margin-top: 20px;

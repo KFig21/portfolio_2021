@@ -139,7 +139,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-left: 12px;
+      padding: 0px 18px;
       position: relative;
 
       @include mobile {
@@ -156,13 +156,20 @@
 
       p {
         color: $textColor;
-        font-size: 18px;
+        text-align: center;
+        font-size: 23px;
+        line-height: 28px;
         overflow: visible;
 
         &:nth-child(3) {
           @include mobile {
             padding-top: 15px;
           }
+        }
+
+        @include mobile {
+          font-size: 18px;
+          line-height: 22px;
         }
       }
       .last-p {
@@ -180,8 +187,8 @@
       .break {
         margin: 15px auto;
         width: 140px;
-        height: 3px;
-        min-height: 3px;
+        height: 4px;
+        min-height: 4px;
         background-color: $accentColor;
         border-radius: 20px;
 
