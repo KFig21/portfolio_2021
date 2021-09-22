@@ -16,4 +16,5 @@
 .skills,
 .contact {
   height: var(--section-height);
+  min-height: 650px;
 }
