@@ -8,7 +8,7 @@ import arrowUp from "../../assets/arrows/arrowUp.png";
 
 export default function Contact() {
   const [message, setMessage] = useState(false);
-  const [active, setActive] = useState("mail");
+  const [active, setActive] = useState("email");
   const email = "Kevin.Figenshu@gmail.com";
   const phone = "(610)-608-0468";
   const github = "github.com/KFig21";

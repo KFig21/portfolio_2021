@@ -24,7 +24,7 @@
 
     @include mobile {
       flex-direction: column;
-      max-width: 90%;
+      max-width: 344px;
     }
 
     .contact-container-left {
@@ -46,8 +46,8 @@
         margin: auto;
 
         @include mobile {
-          padding-top: 16px;
-          font-size: 26px;
+          padding-top: 15px;
+          font-size: 25px;
         }
       }
 
@@ -79,8 +79,7 @@
           }
 
           @include mobile {
-            // width: 200px;
-            // height: 20px;
+            padding: 11px 0px 4px 0px;
           }
         }
 
@@ -120,6 +119,7 @@
 
           @include mobile {
             padding: 9px 0px;
+            margin: 10px 0px;
           }
 
           &:focus {
@@ -180,7 +180,7 @@
           line-height: 23px;
 
           @include mobile {
-            padding-top: 10px;
+            padding-top: 8px;
           }
         }
 
@@ -202,6 +202,10 @@
             justify-self: start;
             transition: all 0.2s linear;
             height: 50px;
+
+            @include mobile {
+              padding: 6px 0px;
+            }
 
             .contact-icon-container {
               background-color: rgba(100, 100, 100, 0.2);
@@ -269,7 +273,7 @@
             padding: 8px 12px;
             border-radius: 3px 9px;
             margin-top: 3px;
-            margin-bottom: 18px;
+            margin-bottom: 15px;
           }
         }
       }
