@@ -123,13 +123,20 @@ export default function Home() {
         </div>
       </div>
 
-      <a className="down-arrow home-arrow" href="#about">
+      <a className="down-arrow" href="#about">
         <img
           className="arrow-img home-arrow-img"
           src={arrowDown}
           alt="next section"
         />
       </a>
+      {/* <a className="down-arrow home-arrow" href="#about">
+        <img
+          className="arrow-img home-arrow-img"
+          src={arrowDown}
+          alt="next section"
+        />
+      </a> */}
     </div>
   );
 }
