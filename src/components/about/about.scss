@@ -83,10 +83,19 @@
         img {
           background: linear-gradient(
             -45deg,
-            #1e5685,
-            #1c76c0,
-            #29afe0,
-            #30ebbf
+            $accentColor,
+            $accentColor,
+            $accentColor,
+            $accentColor,
+            $accentColor,
+            $accentColor,
+            rgb(222, 255, 255),
+            $accentColor,
+            $accentColor,
+            $accentColor,
+            $accentColor,
+            $accentColor,
+            $accentColor
           );
           background-size: 400% 400%;
           animation: gradient 10s ease infinite;
@@ -267,7 +276,22 @@
       left: 50%;
       transform: translate(-50%, 0%);
       display: none;
-      background: linear-gradient(-45deg, #1e5685, #1c76c0, #29afe0, #30ebbf);
+      background: linear-gradient(
+        -45deg,
+        $accentColor,
+        $accentColor,
+        $accentColor,
+        $accentColor,
+        $accentColor,
+        $accentColor,
+        rgb(222, 255, 255),
+        $accentColor,
+        $accentColor,
+        $accentColor,
+        $accentColor,
+        $accentColor,
+        $accentColor
+      );
       background-size: 400% 400%;
       animation: gradient 10s ease infinite;
       border-radius: 50%;
