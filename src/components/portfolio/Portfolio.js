@@ -10,6 +10,7 @@ import { gamesPortfolio } from "./portfolioData/gamesPortfolio";
 // imgs
 import arrowDown from "../../assets/arrows/arrowDown.png";
 import arrowUp from "../../assets/arrows/arrowUp.png";
+import centerImg from "../../assets/arrows/center.png";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("react");
@@ -100,6 +101,9 @@ export default function Portfolio() {
       </div>
       <a className="up-arrow" href="#projects">
         <img className="arrow-img" src={arrowUp} alt="next section" />
+      </a>
+      <a className="center-screen" href="#portfolio">
+        <img className="center-img" src={centerImg} alt="center" />
       </a>
       <a className="down-arrow" href="#skills">
         <img className="arrow-img" src={arrowDown} alt="next section" />

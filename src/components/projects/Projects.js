@@ -7,6 +7,7 @@ import LanguageIcon from "@material-ui/icons/Language";
 // imgs
 import arrowDown from "../../assets/arrows/arrowDown.png";
 import arrowUp from "../../assets/arrows/arrowUp.png";
+import centerImg from "../../assets/arrows/center.png";
 // project data
 import {
   petstagramSpotlightData,
@@ -224,6 +225,9 @@ export default function Projects() {
       </div>
       <a className="up-arrow" href="#about">
         <img className="arrow-img" src={arrowUp} alt="next section" />
+      </a>
+      <a className="center-screen" href="#projects">
+        <img className="center-img" src={centerImg} alt="center" />
       </a>
       <a className="down-arrow" href="#portfolio">
         <img className="arrow-img" src={arrowDown} alt="next section" />

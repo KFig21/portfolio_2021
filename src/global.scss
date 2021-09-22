@@ -46,11 +46,11 @@ $width: 768px;
 .up-arrow {
   position: absolute;
   bottom: 12px;
-  left: 45%;
+  left: 40%;
 
   @include mobile {
     bottom: 7px;
-    left: 37%;
+    left: 16%;
   }
 
   @include mobileHorizontal {
@@ -64,11 +64,27 @@ $width: 768px;
 .down-arrow {
   position: absolute;
   bottom: 12px;
-  right: 45%;
+  right: 40%;
 
   @include mobile {
     bottom: 7px;
-    right: 37%;
+    right: 16%;
+  }
+
+  @include mobileHorizontal {
+    bottom: 20px;
+    left: unset;
+    right: 15px;
+  }
+}
+.center-screen {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  @include mobile {
+    bottom: 7px;
   }
 
   @include mobileHorizontal {
@@ -78,9 +94,9 @@ $width: 768px;
   }
 }
 
-.arrow-img {
+.arrow-img,
+.center-img {
   width: 30px;
-  // animation: arrowBlink 3s infinite;
 }
 
 @keyframes arrowBlink {

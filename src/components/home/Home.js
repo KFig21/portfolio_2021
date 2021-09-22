@@ -4,6 +4,7 @@ import { init } from "ityped";
 import "./home.scss";
 // imgs
 import arrowDown from "../../assets/arrows/arrowDown.png";
+import centerImg from "../../assets/arrows/center.png";
 
 export default function Home() {
   const textRef = useRef();
@@ -123,6 +124,9 @@ export default function Home() {
         </div>
       </div>
 
+      <a className="center-screen" href="#home">
+        <img className="center-img" src={centerImg} alt="center" />
+      </a>
       <a className="down-arrow home-arrow" href="#about">
         <img
           className="arrow-img home-arrow-img"
