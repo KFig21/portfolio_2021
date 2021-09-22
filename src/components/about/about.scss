@@ -83,13 +83,13 @@
         img {
           background: linear-gradient(
             -45deg,
-            #e73c7e,
-            #b61dc4,
-            #23a6d5,
-            #23d5ab
+            #1e5685,
+            #1c76c0,
+            #29afe0,
+            #30ebbf
           );
           background-size: 400% 400%;
-          animation: gradient 15s ease infinite;
+          animation: gradient 10s ease infinite;
           border-radius: inherit;
           max-height: 95%;
           max-width: 95%;
@@ -267,9 +267,9 @@
       left: 50%;
       transform: translate(-50%, 0%);
       display: none;
-      background: linear-gradient(-45deg, #e73c7e, #b61dc4, #23a6d5, #23d5ab);
+      background: linear-gradient(-45deg, #1e5685, #1c76c0, #29afe0, #30ebbf);
       background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
+      animation: gradient 10s ease infinite;
       border-radius: 50%;
 
       @keyframes gradient {

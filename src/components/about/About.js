@@ -6,7 +6,7 @@ import { Person, Mail, GitHub, Code } from "@material-ui/icons";
 import arrowDown from "../../assets/arrows/arrowDown.png";
 import arrowUp from "../../assets/arrows/arrowUp.png";
 import avi from "../../assets/other/avi.png";
-import logo from "../../assets/logo/logo1TransparentBlackInvert.png";
+import logo from "../../assets/logo/logo1TransparentSec.png";
 
 export default function About() {
   return (
