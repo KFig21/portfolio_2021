@@ -5,7 +5,6 @@ import { Phone, Mail, GitHub } from "@material-ui/icons";
 import LeetCodeIcon from "./LeetCodeIcon";
 // imgs
 import arrowUp from "../../assets/arrows/arrowUp.png";
-import centerImg from "../../assets/arrows/center.png";
 
 export default function Contact() {
   const [message, setMessage] = useState(false);
@@ -139,9 +138,6 @@ export default function Contact() {
         </div>
       </div>
 
-      <a className="center-screen" href="#contact">
-        <img className="center-img" src={centerImg} alt="center" />
-      </a>
       <a className="up-arrow" href="#skills">
         <img className="arrow-img" src={arrowUp} alt="next section" />
       </a>

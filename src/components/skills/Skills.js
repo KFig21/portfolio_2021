@@ -3,7 +3,6 @@ import "./skills.scss";
 // imgs
 import arrowDown from "../../assets/arrows/arrowDown.png";
 import arrowUp from "../../assets/arrows/arrowUp.png";
-import centerImg from "../../assets/arrows/center.png";
 // skills data
 import { languages, techData, otherSkills } from "../../allProjects";
 
@@ -55,9 +54,6 @@ export default function Skills() {
       </div>
       <a className="up-arrow" href="#portfolio">
         <img className="arrow-img" src={arrowUp} alt="next section" />
-      </a>
-      <a className="center-screen" href="#skills">
-        <img className="center-img" src={centerImg} alt="center" />
       </a>
       <a className="down-arrow" href="#contact">
         <img className="arrow-img" src={arrowDown} alt="next section" />

@@ -5,7 +5,6 @@ import { Person, Mail, GitHub, Code } from "@material-ui/icons";
 // imgs
 import arrowDown from "../../assets/arrows/arrowDown.png";
 import arrowUp from "../../assets/arrows/arrowUp.png";
-import centerImg from "../../assets/arrows/center.png";
 import avi from "../../assets/other/avi.png";
 
 export default function About() {
@@ -115,9 +114,6 @@ export default function About() {
 
       <a className="up-arrow" href="#home">
         <img className="arrow-img" src={arrowUp} alt="next section" />
-      </a>
-      <a className="center-screen" href="#about">
-        <img className="center-img" src={centerImg} alt="center" />
       </a>
       <a className="down-arrow" href="#projects">
         <img className="arrow-img" src={arrowDown} alt="next section" />
