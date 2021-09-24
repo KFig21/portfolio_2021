@@ -314,7 +314,7 @@ export const responsiveDesignProjectData = {
     { id: "2", icon: cssIcon, color: "css" },
   ],
   title: "Responsive Design Project",
-  desc: "The purpose of this project was to re-create the responsive design of home page of TheNextWeb.com. CSS media queries were used to achieve this goal.",
+  desc: "The goal of this project was to re-create the responsive design of home page of TheNextWeb.com. CSS media queries were used to achieve this goal.",
   favicon: responsiveDesignFavicon,
   imgs: [
     { id: "img-1", src: responsiveDesignGif1 },
