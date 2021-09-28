@@ -41,7 +41,7 @@
         display: block;
         top: -30px;
         // left: 50%;
-        transform: translate(-50%, 0%);
+        // transform: translate(-50%, 0%);
         z-index: 2;
         border-radius: 15px;
 
@@ -365,8 +365,7 @@
       opacity: 0;
       animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
       .favicon-container-in {
-        animation: scaleDownInverse 0.9s cubic-bezier(0.165, 0.84, 0.44, 1)
-          forwards;
+        animation: faviconAppear 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
       }
     }
   }
@@ -380,7 +379,7 @@
     .modal-wrapper-out {
       animation: scaleDown 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
       .favicon-container-out {
-        animation: scaleUpInverse 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
+        animation: faviconDissappear 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
           forwards;
       }
     }
@@ -433,25 +432,30 @@
     opacity: 0;
   }
 }
-@keyframes scaleUpInverse {
+@keyframes faviconDissappear {
   0% {
-    transform: scale(1) translateY(0px);
-    opacity: 1;
+    transform: scale(1);
   }
   100% {
-    transform: scale(1) translateY(-1000px);
-    opacity: 0;
+    transform: scale(0);
   }
 }
 
-@keyframes scaleDownInverse {
+@keyframes faviconAppear {
   0% {
-    transform: scale(1) translateY(-1000px);
-    opacity: 0;
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.03);
+  }
+  85% {
+    transform: scale(0.97);
   }
   100% {
-    transform: scale(1) translateY(0px);
-    opacity: 1;
+    transform: scale(1);
   }
 }
 
