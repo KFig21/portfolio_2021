@@ -63,7 +63,7 @@ export default function About() {
             <div className="break"></div>
             <p>
               Starting from no-code in January of 2020 I became obsessed with
-              the world of programming, poring through resources such as The
+              the world of programming. Poring through resources such as The
               Odin Project, FreeCodeCamp, and Codecademy I have been developing
               the necessary skills for becoming a full stack developer.
             </p>
