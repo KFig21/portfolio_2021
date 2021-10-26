@@ -1,5 +1,9 @@
 @import "./global.scss";
 
+body {
+  scroll-snap-type: y mandatory;
+}
+
 .app {
   background: rgb(32, 32, 32);
   background: linear-gradient(
