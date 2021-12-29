@@ -42,7 +42,10 @@
     h1 {
       font-size: 50px;
       overflow: hidden;
-      color: $textColor;
+
+      a {
+        color: $textHeaderColor;
+      }
 
       &:hover {
         span {

@@ -72,7 +72,7 @@ export default function Projects() {
   };
 
   return (
-    <div className="projects" id="projects">
+    <div className="projects section" id="projects">
       <div className="title-container">
         <h1 className="projects-title">
           <span>&lt; </span>

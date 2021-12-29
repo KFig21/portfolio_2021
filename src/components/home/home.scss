@@ -379,31 +379,4 @@
       padding-top: 3px;
     }
   }
-  .down-arrow {
-    position: absolute;
-    bottom: 12px;
-    right: 45%;
-
-    @include mobile {
-      bottom: 7px;
-      right: 37%;
-    }
-
-    @include mobileHorizontal {
-      bottom: 20px;
-      left: unset;
-      right: 15px;
-    }
-  }
-
-  .arrow-img {
-    width: 30px;
-    // animation: arrowBlink 3s infinite;
-    opacity: 0.5;
-    transition: all ease 0.2s;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
 }

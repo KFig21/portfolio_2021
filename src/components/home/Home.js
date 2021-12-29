@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="home" id="home">
+    <div className="home section" id="home">
       <div className="editor-container">
         <div className="editor">
           <div className="top-bar">

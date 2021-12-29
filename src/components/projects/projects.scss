@@ -23,13 +23,16 @@
       top: 5px;
     }
     .projects-title {
-      color: $textColor;
       font-size: 50px;
       margin-left: 15px;
 
       @include mobile {
         font-size: 2.25em;
         margin-left: unset;
+      }
+
+      a {
+        color: $textHeaderColor;
       }
 
       span {

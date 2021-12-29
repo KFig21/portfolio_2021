@@ -107,7 +107,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="portfolio section" id="portfolio">
       <div className="title-container">
         <h1>
           <span>&lt; </span>

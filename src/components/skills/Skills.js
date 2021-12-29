@@ -23,7 +23,7 @@ export default function Skills() {
   };
 
   return (
-    <div className="skills" id="skills">
+    <div className="skills section" id="skills">
       <div className="title-container">
         <h1 className="projects-title">
           <span>&lt; </span>

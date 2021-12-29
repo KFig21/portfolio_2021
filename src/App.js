@@ -98,17 +98,17 @@ function App() {
 
   return (
     <div className="app">
+      <Menu
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        list={list}
+        index={index}
+      />
       <Navbar
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
         upButton={upButton}
         downButton={downButton}
-        list={list}
-        index={index}
-      />
-      <Menu
-        menuOpen={menuOpen}
-        setMenuOpen={setMenuOpen}
         list={list}
         index={index}
       />

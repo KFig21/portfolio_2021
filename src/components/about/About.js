@@ -6,7 +6,7 @@ import logo from "../../assets/logo/logo1TransparentSec.png";
 
 export default function About() {
   return (
-    <div className="about" id="about">
+    <div className="about section" id="about">
       <div className="title-container">
         <h1>
           <span>&lt; </span>

@@ -3,8 +3,6 @@ import { useState } from "react";
 import "./contact.scss";
 import { Phone, Mail, GitHub } from "@material-ui/icons";
 import LeetCodeIcon from "./LeetCodeIcon";
-// imgs
-import arrowUp from "../../assets/arrows/arrowUp.png";
 
 export default function Contact() {
   const [message, setMessage] = useState(false);
@@ -26,7 +24,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact" id="contact">
+    <div className="contact section" id="contact">
       <div className="container">
         <div className="contact-container-left">
           <h2>Lets get in touch</h2>
@@ -137,10 +135,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      {/* 
-      <a className="up-arrow" href="#skills">
-        <img className="arrow-img" src={arrowUp} alt="next section" />
-      </a> */}
     </div>
   );
 }

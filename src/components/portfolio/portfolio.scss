@@ -28,6 +28,10 @@
       display: none;
     }
 
+    a {
+      color: $textHeaderColor;
+    }
+
     span {
       color: $accentColor;
       opacity: 0;
