@@ -402,7 +402,8 @@
     background: rgba(0, 0, 0, 0);
   }
   100% {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(35, 196, 217, 0.6);
+    backdrop-filter: blur(5px);
   }
 }
 
