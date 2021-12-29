@@ -17,7 +17,7 @@
 
   @include mobile {
     background-color: $mobileMenuActiveBackgroundColor;
-    justify-content: start;
+    justify-content: flex-end;
   }
 
   @media (max-width: 900px) {
@@ -43,7 +43,7 @@
     overflow: visible;
 
     @include mobile {
-      padding-top: 50px;
+      padding-bottom: 70px;
     }
 
     @include mobileHorizontal {
