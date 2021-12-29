@@ -8,6 +8,11 @@
   justify-content: center;
   position: relative;
 
+  @include mobile {
+    height: calc(100%);
+    padding-bottom: 70px;
+  }
+
   .title-container {
     display: flex;
     align-items: center;

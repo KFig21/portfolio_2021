@@ -8,7 +8,8 @@
   position: relative;
 
   @include mobile {
-    height: 100%;
+    height: calc(100%);
+    padding-bottom: 70px;
     justify-content: center;
   }
 

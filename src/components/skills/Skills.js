@@ -31,28 +31,30 @@ export default function Skills() {
           <span> /&gt;</span>
         </h1>
       </div>
-      <p className="detail">
-        Through my programming journey I have learned many languages and
-        technologies that I am comfortable with. Programming aside, I have
-        valuable skills with other software.
-      </p>
+      <div className="tech-container">
+        <div className="detail">
+          Through my programming journey I have learned many languages and
+          technologies that I am comfortable with. Programming aside, I have
+          valuable skills with other software.
+        </div>
 
-      <div className="container">
-        <div className="content">
-          <div class="scroll-fade-top"></div>
-          <div className="tech">
-            <h2>Languages</h2>
-            <div className="tech-container">{mapSkills(languages)}</div>
+        <div className="container">
+          <div className="content">
+            <div class="scroll-fade-top"></div>
+            <div className="tech">
+              <h2>Languages</h2>
+              <div className="tech-container">{mapSkills(languages)}</div>
+            </div>
+            <div className="tech">
+              <h2>Technologies</h2>
+              <div className="tech-container">{mapSkills(techData)}</div>
+            </div>
+            <div className="tech">
+              <h2>Other Software</h2>
+              <div className="tech-container">{mapSkills(otherSkills)}</div>
+            </div>
+            <div class="scroll-fade-bottom"></div>
           </div>
-          <div className="tech">
-            <h2>Technologies</h2>
-            <div className="tech-container">{mapSkills(techData)}</div>
-          </div>
-          <div className="tech">
-            <h2>Other Software</h2>
-            <div className="tech-container">{mapSkills(otherSkills)}</div>
-          </div>
-          <div class="scroll-fade-bottom"></div>
         </div>
       </div>
     </div>
