@@ -40,6 +40,10 @@ export default function Portfolio() {
         behavior: "smooth",
       });
       setTimeout(function () {
+        document.getElementById("portfolio").scrollIntoView({
+          block: "start",
+          behavior: "smooth",
+        });
         setShowModal(true);
       }, 250);
     }, 0);
@@ -96,6 +100,10 @@ export default function Portfolio() {
     setSelected(id);
     setScrollProgress((id / 3) * 100);
     element.scrollTo((id / 3) * totalWidth, 0);
+    document.getElementById("portfolio").scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+    });
   };
 
   return (

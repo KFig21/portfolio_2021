@@ -18,6 +18,13 @@
 
     @include mobile {
       margin: 0px 10px;
+
+      &:hover {
+        background-color: $primaryColorFaded;
+      }
+      &:active {
+        background-color: $primaryColorFaded;
+      }
     }
 
     &:hover {
@@ -32,6 +39,18 @@
     &.active {
       background-color: $accentColor;
       color: black;
+    }
+
+    &.inactive {
+      background-color: $primaryColorFaded;
+      &:hover {
+        background-color: $accentColorFaded;
+      }
+      @include mobile {
+        &:hover {
+          background-color: $primaryColorFaded;
+        }
+      }
     }
   }
 }
