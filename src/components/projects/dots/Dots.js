@@ -1,13 +1,13 @@
 import React from "react";
 import "./dots.scss";
 
-export default function Dots({ id, active, setIndex }) {
+export default function Dots({ id, active, handleDotClick }) {
   return (
-    <a className="dots-a" href={`#${id}`}>
+    <div className="dots-a">
       <li
         className={active ? "dot active" : "dot"}
-        onClick={() => setIndex(id)}
+        onClick={() => handleDotClick(id)}
       ></li>
-    </a>
+    </div>
   );
 }

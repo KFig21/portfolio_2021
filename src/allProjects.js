@@ -11,6 +11,9 @@ import phpIcon from "./assets/languages/php.png";
 import rubyIcon from "./assets/languages/ruby.png";
 import pythonIcon from "./assets/languages/python.png";
 import nodeIcon from "./assets/languages/node.png";
+import expressIcon from "./assets/languages/node.png";
+import mongodbIcon from "./assets/languages/mongodb.PNG";
+import pugIcon from "./assets/languages/pug.PNG";
 import photoshopIcon from "./assets/languages/photoshop.png";
 import illustratorIcon from "./assets/languages/illustrator.png";
 import excelIcon from "./assets/languages/excel.PNG";
@@ -95,6 +98,32 @@ import gridFrameworkGif1 from "./assets/projects/webDesign/gridFramework/gridFra
 import gradientImg1 from "./assets/projects/webDesign/gradient/gradient-1.png";
 // calculator Project images
 import calculatorImg1 from "./assets/projects/more/calculator/calculator-1.png";
+// nodebook Project images
+import nodebookFavicon from "./assets/projects/node/nodebook/nodebook-favicon.png";
+import nodebookGif1 from "./assets/projects/node/nodebook/nodebook-1.gif";
+import nodebookImg2 from "./assets/projects/node/nodebook/nodebook-2.PNG";
+import nodebookImg3 from "./assets/projects/node/nodebook/nodebook-3.PNG";
+import nodebookImg4 from "./assets/projects/node/nodebook/nodebook-4.PNG";
+import nodebookImg5 from "./assets/projects/node/nodebook/nodebook-5.png";
+// blog Project images
+import blogFavicon from "./assets/projects/node/blog/blog-favicon.png";
+import blogImg1 from "./assets/projects/node/blog/blog-1.png";
+import blogImg2 from "./assets/projects/node/blog/blog-2.png";
+// blog CMS Project images
+import blogCMSFavicon from "./assets/projects/node/blogCMS/blogCMS-favicon.png";
+import blogCMSImg1 from "./assets/projects/node/blogCMS/blogCMS-1.png";
+import blogCMSImg2 from "./assets/projects/node/blogCMS/blogCMS-2.png";
+// party planner Project images
+import partyPlannerFavicon from "./assets/projects/node/partyPlanner/partyPlanner-favicon.png";
+import partyPlannerImg1 from "./assets/projects/node/partyPlanner/partyPlanner-1.png";
+import partyPlannerImg2 from "./assets/projects/node/partyPlanner/partyPlanner-2.png";
+import partyPlannerImg3 from "./assets/projects/node/partyPlanner/partyPlanner-3.png";
+import partyPlannerImg4 from "./assets/projects/node/partyPlanner/partyPlanner-4.png";
+// members only Project images
+import membersOnlyFavicon from "./assets/projects/node/membersOnly/membersOnly-favicon.png";
+import membersOnlyImg1 from "./assets/projects/node/membersOnly/membersOnly-1.png";
+import membersOnlyImg2 from "./assets/projects/node/membersOnly/membersOnly-2.png";
+import membersOnlyImg3 from "./assets/projects/node/membersOnly/membersOnly-3.png";
 
 // react projects
 export const petstagramProjectData = {
@@ -117,7 +146,7 @@ export const petstagramProjectData = {
   live: "https://kfig21.github.io/petstagram/",
 };
 export const petstagramSpotlightData = {
-  id: 0,
+  id: 1,
   icons: [
     { id: "1", icon: reactIcon, color: "react" },
     { id: "2", icon: tailwindIcon, color: "tailwind" },
@@ -151,7 +180,7 @@ export const gameNseekProjectData = {
   live: "https://kfig21.github.io/photo_tagging_app/",
 };
 export const gameNseekSpotlightData = {
-  id: 1,
+  id: 2,
   icons: [
     { id: "1", icon: reactIcon, color: "react" },
     { id: "2", icon: firebaseIcon, color: "firebase" },
@@ -199,6 +228,128 @@ export const cvBuilderProjectData = {
   ],
   repository: "https://github.com/KFig21/cv_application",
   live: "https://kfig21.github.io/cv_application/",
+};
+// node projects
+export const nodebookProjectData = {
+  id: "21",
+  icons: [
+    { id: "1", icon: nodeIcon, color: "node" },
+    { id: "2", icon: reactIcon, color: "react" },
+    { id: "3", icon: expressIcon, color: "express" },
+    { id: "4", icon: mongodbIcon, color: "mongo" },
+  ],
+  title: "Nodebook",
+  desc: "A social media app built with MongoDB, Express, React, NodeJS, and more. This is a fully functional and responsive app that allows users to create an account, post messages, photos, edit & delete posts, comment, like/unlike, follow/unfollow, change their avatar and much more!",
+  favicon: nodebookFavicon,
+  imgs: [
+    { id: "img-1", src: nodebookGif1 },
+    { id: "img-2", src: nodebookImg2 },
+    { id: "img-3", src: nodebookImg3 },
+    { id: "img-4", src: nodebookImg4 },
+    { id: "img-5", src: nodebookImg5 },
+  ],
+  repository: "https://github.com/KFig21/nodebook_client",
+  live: "https://kfig21.github.io/nodebook_client/",
+};
+export const nodebookSpotlightData = {
+  id: 0,
+  icons: [
+    { id: "1", icon: nodeIcon, color: "node" },
+    { id: "2", icon: reactIcon, color: "react" },
+    { id: "3", icon: expressIcon, color: "express" },
+    { id: "4", icon: mongodbIcon, color: "mongo" },
+  ],
+  title: "Nodebook",
+  desc: "A social media app built with MongoDB, Express, React, NodeJS, and more. This is a fully functional and responsive app that allows users to create an account, post messages, photos, edit & delete posts, comment, like/unlike, follow/unfollow, change their avatar and much more!",
+  favicon: nodebookFavicon,
+  imgs: [
+    { id: "img-1", src: nodebookGif1 },
+    { id: "img-2", src: nodebookImg2 },
+    { id: "img-3", src: nodebookImg3 },
+    { id: "img-4", src: nodebookImg4 },
+    { id: "img-5", src: nodebookImg5 },
+  ],
+  repository: "https://github.com/KFig21/nodebook_client",
+  live: "https://kfig21.github.io/nodebook_client/",
+};
+
+export const blogProjectData = {
+  id: "22",
+  icons: [
+    { id: "1", icon: nodeIcon, color: "node" },
+    { id: "2", icon: reactIcon, color: "react" },
+    { id: "3", icon: expressIcon, color: "express" },
+    { id: "4", icon: mongodbIcon, color: "mongo" },
+  ],
+  title: "Blog Site",
+  desc: "The client side of a blog site built with MongoDB, Express, React, NodeJS, and Sass. The goal of the project was to build a restful API that can be used to build a blog client and a blog CMS. Features include responsive design, markdown text for blog posts, and visitors can comment on blog posts without an account.",
+  favicon: blogFavicon,
+  imgs: [
+    { id: "img-1", src: blogImg1 },
+    { id: "img-2", src: blogImg2 },
+  ],
+  repository: "https://github.com/KFig21/blog_client",
+  live: "https://kfig21.github.io/blog_client/",
+};
+
+export const blogCMSProjectData = {
+  id: "23",
+  icons: [
+    { id: "1", icon: nodeIcon, color: "node" },
+    { id: "2", icon: reactIcon, color: "react" },
+    { id: "3", icon: expressIcon, color: "express" },
+    { id: "4", icon: mongodbIcon, color: "mongo" },
+  ],
+  title: "Blog CMS",
+  desc: "The content management side of a blog site built with MongoDB, Express, React, NodeJS, and Sass. Features include responsive design, submitting new posts with markdown text, editing & deleting posts, and deleting comments.",
+  favicon: blogCMSFavicon,
+  imgs: [
+    { id: "img-1", src: blogCMSImg1 },
+    { id: "img-2", src: blogCMSImg2 },
+  ],
+  repository: "https://github.com/KFig21/blog_cms",
+  live: "https://kfig21.github.io/blog_cms/",
+};
+
+export const partyPlannerProjectData = {
+  id: "24",
+  icons: [
+    { id: "1", icon: nodeIcon, color: "node" },
+    { id: "2", icon: pugIcon, color: "pug" },
+    { id: "3", icon: expressIcon, color: "express" },
+    { id: "4", icon: mongodbIcon, color: "mongo" },
+  ],
+  title: "Party Planner",
+  desc: "An inventory application built with MongoDB, Pug, Express, and NodeJS. The goal of this project was to learn how to build a backend server and database with multiple CRUD routes. Visitors can create, update or delete items in the catalog.",
+  favicon: partyPlannerFavicon,
+  imgs: [
+    { id: "img-1", src: partyPlannerImg1 },
+    { id: "img-2", src: partyPlannerImg2 },
+    { id: "img-3", src: partyPlannerImg3 },
+    { id: "img-4", src: partyPlannerImg4 },
+  ],
+  repository: "https://github.com/KFig21/node_inventory_app",
+  live: "https://young-brook-21440.herokuapp.com/catalog/",
+};
+
+export const membersOnlyProjectData = {
+  id: "25",
+  icons: [
+    { id: "1", icon: nodeIcon, color: "node" },
+    { id: "2", icon: pugIcon, color: "pug" },
+    { id: "3", icon: expressIcon, color: "express" },
+    { id: "4", icon: mongodbIcon, color: "mongo" },
+  ],
+  title: "Members Only",
+  desc: "Members Only is a 'clubhouse' type of application in that only members can see what's posted and by who. The goal of this project wastolearn about authentication. This application was build with NodeJS, Pug, Express, MongoDB, and Passport.",
+  favicon: membersOnlyFavicon,
+  imgs: [
+    { id: "img-1", src: membersOnlyImg1 },
+    { id: "img-2", src: membersOnlyImg2 },
+    { id: "img-3", src: membersOnlyImg3 },
+  ],
+  repository: "https://github.com/KFig21/members_only",
+  live: "https://afternoon-depths-77299.herokuapp.com/",
 };
 
 // games
@@ -514,7 +665,7 @@ export const languages = [
   {
     name: "SQL",
     icon: sqlIcon,
-    exp: "2",
+    exp: "1",
   },
   // {
   //   name: "PHP",
@@ -540,13 +691,13 @@ export const languages = [
 
 export const techData = [
   {
-    name: "Git",
-    icon: gitIcon,
+    name: "Mongo",
+    icon: mongodbIcon,
     exp: "1",
   },
   {
-    name: "Node",
-    icon: nodeIcon,
+    name: "Express",
+    icon: expressIcon,
     exp: "1",
   },
   {
@@ -555,8 +706,8 @@ export const techData = [
     exp: "1",
   },
   {
-    name: "Firebase",
-    icon: firebaseIcon,
+    name: "Node",
+    icon: nodeIcon,
     exp: "1",
   },
 ];
@@ -578,8 +729,8 @@ export const otherSkills = [
     exp: "15",
   },
   {
-    name: "MySQL",
-    icon: mysqlIcon,
-    exp: "2",
+    name: "Firebase",
+    icon: firebaseIcon,
+    exp: "1",
   },
 ];

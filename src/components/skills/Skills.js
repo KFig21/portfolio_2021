@@ -1,8 +1,5 @@
 import React from "react";
 import "./skills.scss";
-// imgs
-import arrowDown from "../../assets/arrows/arrowDown.png";
-import arrowUp from "../../assets/arrows/arrowUp.png";
 // skills data
 import { languages, techData, otherSkills } from "../../allProjects";
 
@@ -27,7 +24,13 @@ export default function Skills() {
 
   return (
     <div className="skills" id="skills">
-      <h1>Tech Skills</h1>
+      <div className="title-container">
+        <h1 className="projects-title">
+          <span>&lt; </span>
+          <a href="#skills">Tech Skills</a>
+          <span> /&gt;</span>
+        </h1>
+      </div>
       <p className="detail">
         Through my programming journey I have learned many languages and
         technologies that I am comfortable with. Programming aside, I have
@@ -52,12 +55,6 @@ export default function Skills() {
           <div class="scroll-fade-bottom"></div>
         </div>
       </div>
-      <a className="up-arrow" href="#portfolio">
-        <img className="arrow-img" src={arrowUp} alt="next section" />
-      </a>
-      <a className="down-arrow" href="#contact">
-        <img className="arrow-img" src={arrowDown} alt="next section" />
-      </a>
     </div>
   );
 }

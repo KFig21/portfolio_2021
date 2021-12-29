@@ -20,6 +20,15 @@
       margin: 0px 10px;
     }
 
+    &:hover {
+      background-color: $accentColorFaded;
+    }
+
+    &:active {
+      background-color: $accentColorFaded;
+      transform: scale(0.9);
+    }
+
     &.active {
       background-color: $accentColor;
       color: black;

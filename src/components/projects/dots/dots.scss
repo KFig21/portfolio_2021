@@ -1,13 +1,13 @@
 @import "../../../global.scss";
 
 .dots-container {
-  position: absolute;
   display: flex;
   flex-direction: row;
-  bottom: 110px;
+  margin-top: 20px;
+  cursor: pointer;
 
   @include mobile {
-    bottom: 60px;
+    // bottom: 60px;
   }
 
   @include mobileHorizontal {

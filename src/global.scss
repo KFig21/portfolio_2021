@@ -3,13 +3,14 @@ $primaryColor: #202020;
 $primaryColorFaded: #525252;
 $secondaryColor: #1a1a1a;
 $menuActiveBackgroundColor: rgba(0, 0, 0, 0.7);
-$mobileMenuActiveBackgroundColor: rgba(0, 0, 0, 0.86);
+$mobileMenuActiveBackgroundColor: rgba(0, 0, 0, 0.88);
 $accentColor: #23c5d9;
-$accentColorFaded: hsla(187, 72%, 49%, 0.6);
+$accentColorFaded: rgba(35, 194, 215, 0.6);
 $textColor: white;
 $editorPrimary: #1f2329;
 $editorSecondary: #2c3138;
 $editorBorder: rgb(146, 146, 146);
+$navbarHeight: 70px;
 
 $containerBorderRadius: 10px;
 
@@ -43,57 +44,63 @@ $width: 768px;
   }
 }
 
-.up-arrow {
-  position: absolute;
-  bottom: 12px;
-  left: 45%;
+// .up-arrow {
+//   position: absolute;
+//   bottom: 12px;
+//   left: 45%;
 
-  @include mobile {
-    bottom: 7px;
-    left: 37%;
-  }
+//   @include mobile {
+//     bottom: 7px;
+//     left: 37%;
+//   }
 
-  @include mobileHorizontal {
-    bottom: unset;
-    left: unset;
-    top: 20px;
-    right: 15px;
-  }
-}
+//   @include mobileHorizontal {
+//     bottom: unset;
+//     left: unset;
+//     top: 20px;
+//     right: 15px;
+//   }
+// }
 
-.down-arrow {
-  position: absolute;
-  bottom: 12px;
-  right: 45%;
+// .down-arrow {
+//   position: absolute;
+//   bottom: 12px;
+//   right: 45%;
 
-  @include mobile {
-    bottom: 7px;
-    right: 37%;
-  }
+//   @include mobile {
+//     bottom: 7px;
+//     right: 37%;
+//   }
 
-  @include mobileHorizontal {
-    bottom: 20px;
-    left: unset;
-    right: 15px;
-  }
-}
+//   @include mobileHorizontal {
+//     bottom: 20px;
+//     left: unset;
+//     right: 15px;
+//   }
+// }
 
-.arrow-img {
-  width: 30px;
-  // animation: arrowBlink 3s infinite;
-}
+// .arrow-img {
+//   width: 30px;
+//   // animation: arrowBlink 3s infinite;
+//   opacity: 0.5;
+//   transition: all ease 0.2s;
 
-@keyframes arrowBlink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+//   &:hover {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes arrowBlink {
+//   0% {
+//     opacity: 1;
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
 // scrollbar
 ::-webkit-scrollbar {
@@ -178,6 +185,23 @@ $javascriptColor: #f7cf00;
 }
 .javascript-color-text {
   color: $javascriptColor;
+}
+
+// express
+$expressColor: #f7cf00;
+.express-color-bg {
+  background-color: $expressColor;
+}
+.express-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $expressColor;
+    color: black;
+  }
+}
+.express-color-text {
+  color: $expressColor;
 }
 
 // css
@@ -316,6 +340,23 @@ $nodeColor: #41b350;
   color: $nodeColor;
 }
 
+// mongo
+$mongoColor: #41b350;
+.mongo-color-bg {
+  background-color: $mongoColor;
+}
+.mongo-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $mongoColor;
+    color: black;
+  }
+}
+.mongo-color-text {
+  color: $mongoColor;
+}
+
 // photoshop
 $photoshopColor: #39a9eb;
 .photoshop-color-bg {
@@ -399,4 +440,21 @@ $gitColor: #f05033;
 }
 .git-color-text {
   color: $gitColor;
+}
+
+// pug
+$pugColor: crimson;
+.pug-color-bg {
+  background-color: $pugColor;
+}
+.pug-color-bg-hover {
+  background-color: $primaryColorFaded;
+
+  &:hover {
+    background-color: $pugColor;
+    color: black;
+  }
+}
+.pug-color-text {
+  color: $pugColor;
 }

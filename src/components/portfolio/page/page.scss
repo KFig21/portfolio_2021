@@ -8,10 +8,16 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 
   @include mobile {
     width: 100%;
     max-width: 400px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .item {

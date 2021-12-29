@@ -95,6 +95,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
+            position: relative;
 
             @include mobile {
               height: 100%;
@@ -108,9 +109,10 @@
               height: 65px;
 
               @include mobile {
-                width: 85%;
-                margin: 15px auto;
-                justify-content: space-around;
+                width: 90%;
+                margin: 10px auto;
+                justify-content: space-between;
+                overflow-x: visible;
               }
 
               .img-container {
@@ -171,12 +173,12 @@
               color: $textColor;
               padding: 0px 7px 0px 0px;
               margin-top: 20px;
-              height: calc((60vh * 0.88) - 190px);
+              height: calc((60vh * 0.88) - 150px);
 
               @include mobile {
-                flex: 0 20 calc((70vh * (2 / 3)) - 220px);
+                flex: 0 20 calc((70vh * (2 / 3)) - 200px);
                 // min-height: calc((70vh * (2 / 3)) - 220px);
-                max-height: calc((70vh * (2 / 3)) - 195px);
+                max-height: calc((70vh * (2 / 3)) - 175px);
                 margin: 10px 0px;
                 padding: 0px;
                 overflow-y: scroll;
@@ -190,16 +192,18 @@
               align-items: flex-end;
               margin: auto;
               width: 100%;
-              max-height: 45px;
-              min-height: 45px;
               overflow: hidden;
+              position: absolute;
+              bottom: 0px;
+              left: 0px;
+              // transform: translateX(-50%);
 
               @include mobile {
                 display: flex;
                 justify-content: space-around;
                 align-items: flex-start;
                 margin: auto;
-                width: 80%;
+                width: 100%;
                 max-height: 40px;
                 min-height: 40px;
               }
@@ -272,7 +276,7 @@
             scroll-snap-type: x mandatory;
 
             &::-webkit-scrollbar-thumb {
-              background: $primaryColorFaded;
+              background: $accentColor;
               border-radius: 10px;
             }
           }

@@ -4,8 +4,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 70px;
-  background-color: $navbarColor;
+  height: $navbarHeight;
+  // background-color: $navbarColor;
   color: $textColor;
   z-index: 100;
   transition: ease all 0.5s;
@@ -14,6 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    top: unset;
+    bottom: 0;
   }
   @include mobileKeyboard {
     display: flex;
@@ -22,7 +24,7 @@
   }
 
   .wrapper {
-    padding: 15px 30px;
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,7 +45,7 @@
     }
   }
 
-  .left {
+  .right {
     display: flex;
     align-items: center;
 
@@ -52,7 +54,6 @@
       text-decoration: none;
       font-family: 700;
       color: inherit;
-      margin-right: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -82,65 +83,81 @@
         .navbar-svg-g {
           fill: $primaryColor;
         }
-
-        &:hover {
-          background: linear-gradient(
-            130deg,
-            $accentColor,
-            $accentColor,
-            $accentColor,
-            $accentColor,
-            #97e7f5,
-            $accentColor,
-            $accentColor,
-            $accentColor,
-            $accentColor
-          );
-          -webkit-animation: animated-logo 2.8s ease infinite;
-          -moz-animation: animated-logo 2.8s ease infinite;
-          animation: animated-logo 2.8s ease infinite;
-          background-size: 275% 275%;
-          height: 300px;
-          width: 300px;
-
-          @-webkit-keyframes animated-logo {
-            0% {
-              background-position: 96% 100%;
-            }
-
-            100% {
-              background-position: 5% 0%;
-            }
-          }
-          @-moz-keyframes animated-logo {
-            0% {
-              background-position: 96% 100%;
-            }
-
-            100% {
-              background-position: 5% 0%;
-            }
-          }
-          @keyframes animated-logo {
-            0% {
-              background-position: 96% 100%;
-            }
-
-            100% {
-              background-position: 5% 0%;
-            }
-          }
-        }
       }
     }
   }
 
-  .right {
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .nav-button {
+      padding: 10px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      @include mobile {
+        &:hover {
+          background-color: rgba(255, 255, 255, 0);
+        }
+      }
+    }
+
+    .center-button {
+      margin: 0pc 20px;
+    }
+
+    .up-arrow {
+      margin-right: 20px;
+
+      @include mobile {
+        bottom: 7px;
+        left: 37%;
+      }
+
+      @include mobileHorizontal {
+        bottom: unset;
+        left: unset;
+        top: 20px;
+        right: 15px;
+      }
+    }
+
+    .down-arrow {
+      margin-left: 20px;
+
+      @include mobile {
+        bottom: 7px;
+        right: 37%;
+      }
+
+      @include mobileHorizontal {
+        bottom: 20px;
+        left: unset;
+        right: 15px;
+      }
+    }
+
+    .arrow-img {
+      width: 30px;
+    }
+  }
+
+  .left {
     overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .hamburger {
-      width: 32px;
+      width: 30px;
       height: 25px;
+      padding: 0px 5px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;

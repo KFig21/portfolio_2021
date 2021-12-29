@@ -1,12 +1,12 @@
 import React from "react";
 import "./list.scss";
 
-export default function List({ title, id, active, setSelected }) {
+export default function List({ title, id, active, handleListClick }) {
   return (
-    <a className="portfolio-list-a" href={`#${id}`}>
+    <a className="portfolio-list-a" href="#portfolio">
       <li
         className={active ? "list active" : "list"}
-        onClick={() => setSelected(id)}
+        onClick={() => handleListClick(id)}
       >
         {title}
       </li>

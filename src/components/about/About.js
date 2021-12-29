@@ -1,17 +1,19 @@
 import React from "react";
 import "./about.scss";
 import { Person, Mail, GitHub, Code } from "@material-ui/icons";
-
 // imgs
-import arrowDown from "../../assets/arrows/arrowDown.png";
-import arrowUp from "../../assets/arrows/arrowUp.png";
-import avi from "../../assets/other/avi.png";
 import logo from "../../assets/logo/logo1TransparentSec.png";
 
 export default function About() {
   return (
     <div className="about" id="about">
-      <h1>About me</h1>
+      <div className="title-container">
+        <h1>
+          <span>&lt; </span>
+          <a href="#about">About me</a>
+          <span> /&gt;</span>
+        </h1>
+      </div>
 
       <div className="container">
         <div className="mobile-img-container">
@@ -110,13 +112,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
-      <a className="up-arrow" href="#home">
-        <img className="arrow-img" src={arrowUp} alt="next section" />
-      </a>
-      <a className="down-arrow" href="#projects">
-        <img className="arrow-img" src={arrowDown} alt="next section" />
-      </a>
     </div>
   );
 }

@@ -137,10 +137,10 @@ export default function Contact() {
           </div>
         </div>
       </div>
-
+      {/* 
       <a className="up-arrow" href="#skills">
         <img className="arrow-img" src={arrowUp} alt="next section" />
-      </a>
+      </a> */}
     </div>
   );
 }

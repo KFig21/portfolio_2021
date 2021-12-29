@@ -350,3 +350,31 @@
     }
   }
 }
+
+@-webkit-keyframes animated-logo {
+  0% {
+    background-position: 96% 100%;
+  }
+
+  100% {
+    background-position: 5% 0%;
+  }
+}
+@-moz-keyframes animated-logo {
+  0% {
+    background-position: 96% 100%;
+  }
+
+  100% {
+    background-position: 5% 0%;
+  }
+}
+@keyframes animated-logo {
+  0% {
+    background-position: 96% 100%;
+  }
+
+  100% {
+    background-position: 5% 0%;
+  }
+}

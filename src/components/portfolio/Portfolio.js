@@ -7,32 +7,42 @@ import Modal from "../modal/Modal";
 import { webDesignPortfolio } from "./portfolioData/webDesignPortfolio";
 import { reactPortfolio } from "./portfolioData/reactPortfolio";
 import { gamesPortfolio } from "./portfolioData/gamesPortfolio";
-// imgs
-import arrowDown from "../../assets/arrows/arrowDown.png";
-import arrowUp from "../../assets/arrows/arrowUp.png";
+import { nodePortfolio } from "./portfolioData/nodePortfolio";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("react");
+  // used for selected portfolio
+  const [selected, setSelected] = useState(0);
+  // used for portfolio currently shown on screen. when scrolling this will change the collor of the nav buttons
+  const [current, setCurrent] = useState(0);
   const [project, setProject] = useState(reactPortfolio[0]);
   const [showModal, setShowModal] = useState(false);
 
   const pages = [
-    { id: "react", content: reactPortfolio },
-    { id: "games", content: gamesPortfolio },
-    { id: "webDesign", content: webDesignPortfolio },
+    { id: 0, name: "react", content: reactPortfolio },
+    { id: 1, name: "node", content: nodePortfolio },
+    { id: 2, name: "games", content: gamesPortfolio },
+    { id: 3, name: "webDesign", content: webDesignPortfolio },
   ];
 
   const list = [
-    { id: "react", title: "React" },
-    { id: "games", title: "Games" },
-    { id: "webDesign", title: "Web Design" },
+    { id: 0, title: "React" },
+    { id: 1, title: "Node" },
+    { id: 2, title: "Games" },
+    { id: 3, title: "Web Design" },
   ];
 
   const handleSetModal = (item) => {
     setProject(item);
+    // idk why, but for the page to center it needs to be within this timer function
     setTimeout(function () {
-      setShowModal(true);
-    }, 250);
+      document.getElementById("portfolio").scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+      });
+      setTimeout(function () {
+        setShowModal(true);
+      }, 250);
+    }, 0);
   };
 
   // scroll functionality
@@ -65,26 +75,48 @@ export default function Portfolio() {
   });
 
   useEffect(() => {
-    if (scrollProgress < 25) {
-      setSelected("react");
-    } else if (scrollProgress < 75) {
-      setSelected("games");
+    if (scrollProgress < 30) {
+      setSelected(0);
+      setCurrent(0);
+    } else if (scrollProgress < 60) {
+      setSelected(1);
+      setCurrent(1);
+    } else if (scrollProgress < 80) {
+      setSelected(2);
+      setCurrent(2);
     } else {
-      setSelected("webDesign");
+      setSelected(3);
+      setCurrent(3);
     }
   }, [scrollProgress]);
 
+  const handleListClick = (id) => {
+    const element = target.current;
+    const totalWidth = element.scrollWidth - element.clientWidth; // Total width the scrollbar can traverse
+    setSelected(id);
+    setScrollProgress((id / 3) * 100);
+    element.scrollTo((id / 3) * totalWidth, 0);
+  };
+
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <div className="title-container">
+        <h1>
+          <span>&lt; </span>
+          <a href="#portfolio">Portfolio</a>
+          <span> /&gt;</span>
+        </h1>
+      </div>
+
       <ul>
         {list.map((item) => (
           <List
             title={item.title}
             id={item.id}
             key={item.id}
-            active={selected === item.id}
-            setSelected={setSelected}
+            active={current === item.id}
+            handleListClick={handleListClick}
+            selected={selected}
           />
         ))}
       </ul>
@@ -98,12 +130,6 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <a className="up-arrow" href="#projects">
-        <img className="arrow-img" src={arrowUp} alt="next section" />
-      </a>
-      <a className="down-arrow" href="#skills">
-        <img className="arrow-img" src={arrowDown} alt="next section" />
-      </a>
 
       <Modal
         project={project}

@@ -5,18 +5,51 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   color: $textColor;
   position: relative;
 
-  h1 {
-    margin-top: 4vw;
-    font-size: 50px;
-    overflow: hidden;
-    color: $textColor;
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
 
     @include mobile {
-      font-size: 2.25em;
       top: 0px;
+      margin-left: unset;
+    }
+
+    @include mobileHorizontal {
+      top: 5px;
+      font-size: 20px;
+    }
+
+    span {
+      color: $accentColor;
+      opacity: 0;
+      transition: all ease 0.3s;
+
+      @include mobile {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      span {
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      font-size: 50px;
+      overflow: hidden;
+      color: $textColor;
+
+      @include mobile {
+        font-size: 2.25em;
+        top: 0px;
+      }
     }
   }
 

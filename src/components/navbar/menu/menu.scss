@@ -6,7 +6,7 @@
   background-color: $menuActiveBackgroundColor;
   position: fixed;
   top: 0;
-  right: -300px;
+  left: -300px;
   z-index: 30;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@
   }
 
   &.active {
-    right: 0;
+    left: 0;
   }
 
   ul {

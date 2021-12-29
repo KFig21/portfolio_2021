@@ -3,77 +3,49 @@
 .projects {
   background-color: transparent;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
 
-  .projects-title {
-    position: absolute;
-    top: 50px;
-    color: $textColor;
-    font-size: 50px;
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    overflow: visible;
 
     @include mobile {
-      top: 0px;
-      margin: 0;
-      padding: 0;
-      font-size: 2.25em;
+      top: 10px;
     }
 
     @include mobileHorizontal {
       top: 5px;
-      font-size: 20px;
     }
-  }
+    .projects-title {
+      color: $textColor;
+      font-size: 50px;
+      margin-left: 15px;
 
-  .arrow {
-    height: 50px;
-    position: absolute;
-    cursor: pointer;
-
-    @include mobile {
-      height: 25px;
-    }
-
-    @include mobileHorizontal {
-      height: 30px;
-    }
-
-    &:active {
-      transform: scale(0.95);
-    }
-
-    &.left {
-      left: 100px;
-
-      @media (max-width: 1100px) {
-        left: 50px;
-      }
-      @media (max-width: 950px) {
-        left: 20px;
-      }
       @include mobile {
-        left: 9px;
+        font-size: 2.25em;
+        margin-left: unset;
       }
-      @include mobileHorizontal {
-        left: 15px;
-      }
-    }
 
-    &.right {
-      right: 100px;
+      span {
+        color: $accentColor;
+        opacity: 0;
+        transition: all ease 0.3s;
 
-      @media (max-width: 1100px) {
-        right: 50px;
+        @include mobile {
+          opacity: 1;
+        }
       }
-      @media (max-width: 950px) {
-        right: 20px;
-      }
-      @include mobile {
-        right: 9px;
-      }
-      @include mobileHorizontal {
-        right: 15px;
+
+      &:hover {
+        span {
+          opacity: 1;
+        }
       }
     }
   }
@@ -99,7 +71,7 @@
     }
 
     @include mobile {
-      height: 80vh;
+      height: 65vh;
       justify-content: center;
     }
 
@@ -118,7 +90,7 @@
       overflow: hidden;
 
       @include mobile {
-        height: 80vh;
+        height: 65vh;
       }
 
       @include mobileHorizontal {
@@ -136,6 +108,10 @@
         height: 100%;
         transition: all 1s ease-out;
         overflow: hidden;
+
+        @include mobile {
+          height: unset;
+        }
 
         .item {
           width: 800px;
@@ -255,7 +231,7 @@
                 color: $textColor;
                 padding: 0px 7px 0px 0px;
                 margin-top: 20px;
-                height: calc((360px * 0.86) - 115px);
+                height: calc((360px * 0.86) - 110px);
 
                 white-space: normal;
 

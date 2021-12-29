@@ -9,17 +9,19 @@ body {
 .app {
   background: rgb(32, 32, 32);
   background: linear-gradient(
-    180deg,
-    rgba(32, 32, 32, 1) 50%,
-    rgba(43, 43, 43, 1) 100%
+    135deg,
+    rgba(32, 32, 32, 1) 25%,
+    rgba(59, 59, 59, 1) 51%,
+    rgba(32, 32, 32, 1) 75%
   );
 
   .sections {
     width: 100%;
     position: relative;
-    top: 70px;
+    top: $navbarHeight;
+    max-height: calc(100vh - 70px);
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y mandatory;
     scrollbar-width: none; //for firefox
     &::-webkit-scrollbar {
       display: none;
@@ -28,6 +30,15 @@ body {
     > * {
       width: 100vw;
       scroll-snap-align: start;
+    }
+
+    a {
+      text-decoration: none;
+      color: $textColor;
+    }
+
+    @include mobile {
+      top: unset;
     }
   }
 }
