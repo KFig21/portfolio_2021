@@ -1,12 +1,12 @@
 $navbarColor: #202020;
 $primaryColor: #202020;
-$primaryColorFaded: rgba(23, 23, 23, 0.7);
+$primaryColorFaded: #6f727a;
 $secondaryColor: #1a1a1a;
 $menuActiveBackgroundColor: rgba(0, 0, 0, 0.7);
 $mobileMenuActiveBackgroundColor: rgba(0, 0, 0, 0.88);
 $accentColor: #23c5d9;
 $accentColorFaded: rgba(35, 194, 215, 0.6);
-$textColor: white;
+$textColor: rgb(247, 247, 247);
 $editorPrimary: #1f2329;
 $editorSecondary: #2c3138;
 $editorBorder: rgb(146, 146, 146);
@@ -18,6 +18,7 @@ $width: 768px;
 
 * {
   -webkit-tap-highlight-color: transparent;
+  letter-spacing: 0.2px;
 }
 
 @mixin mobile {
