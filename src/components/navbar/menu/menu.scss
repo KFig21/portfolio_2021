@@ -17,6 +17,7 @@
 
   @include mobile {
     background-color: $mobileMenuActiveBackgroundColor;
+    justify-content: start;
   }
 
   @media (max-width: 900px) {
@@ -40,6 +41,10 @@
     color: $textColor;
     width: 60%;
     overflow: visible;
+
+    @include mobile {
+      padding-top: 50px;
+    }
 
     @include mobileHorizontal {
       font-size: 22px;
