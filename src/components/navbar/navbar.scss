@@ -20,6 +20,8 @@
     top: unset;
     bottom: 0;
     position: fixed;
+    border-bottom: unset;
+    border-top: solid 2px black;
   }
   @include mobileKeyboard {
     display: flex;
