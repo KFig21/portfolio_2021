@@ -335,6 +335,13 @@
           cursor: pointer;
           transition: all 0.2s linear;
 
+          @include mobile {
+            opacity: 1;
+            background-color: rgba(220, 20, 60, 0.8);
+            color: $textColor;
+            border-radius: 30px;
+          }
+
           div {
             height: 100%;
             width: 100%;
