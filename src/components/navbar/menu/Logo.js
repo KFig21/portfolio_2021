@@ -13,7 +13,7 @@ export default function Logo() {
     >
       <g
         transform="translate(0.000000,657.000000) scale(0.100000,-0.100000)"
-        fill="#000000"
+        fill="#00000000"
         stroke="none"
         className="navbar-svg-g"
       >

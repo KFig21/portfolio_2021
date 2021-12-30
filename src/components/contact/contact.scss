@@ -11,6 +11,11 @@
   align-items: center;
   justify-content: center;
 
+  @include mobile {
+    height: calc(100% - 70px);
+    padding-bottom: 70px;
+  }
+
   .container {
     flex: 1;
     display: flex;

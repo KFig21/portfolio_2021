@@ -7,9 +7,10 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 100%;
 
   @include mobile {
-    height: calc(100%);
+    height: calc(100% - 70px);
     padding-bottom: 70px;
   }
 
@@ -21,7 +22,7 @@
     overflow: visible;
 
     @include mobile {
-      top: 10px;
+      margin-bottom: 15px;
     }
 
     @include mobileHorizontal {
@@ -79,7 +80,7 @@
     }
 
     @include mobile {
-      height: 65vh;
+      height: 67vh;
       justify-content: center;
     }
 
@@ -98,7 +99,8 @@
       overflow: hidden;
 
       @include mobile {
-        height: 65vh;
+        height: 67vh;
+        overflow: visible;
       }
 
       @include mobileHorizontal {
@@ -123,6 +125,7 @@
 
         .item {
           width: 800px;
+          max-width: 78%;
           height: 90%;
           background-color: $secondaryColor;
           border-radius: $containerBorderRadius;
@@ -135,7 +138,7 @@
             width: 77%;
           }
 
-          $itemHeight: 62vh;
+          $itemHeight: 65vh;
 
           @include mobile {
             box-shadow: 0px 0px 12px black;

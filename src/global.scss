@@ -1,8 +1,8 @@
-$navbarColor: rgba(32, 32, 32, 0.94);
+$navbarColor: rgba(38, 42, 45, 0.94);
 $primaryColor: #202020;
 $primaryColorFaded: #6f727a;
 $secondaryColor: #1a1a1a;
-$menuActiveBackgroundColor: rgba(0, 0, 0, 0.7);
+$menuActiveBackgroundColor: rgba(0, 0, 0, 0.4);
 $mobileMenuActiveBackgroundColor: rgba(0, 0, 0, 0.88);
 $accentColor: #23c5d9;
 $accentColorFaded: rgba(35, 194, 215, 0.6);
@@ -29,6 +29,14 @@ $width: 768px;
 @mixin mobile {
   @media (min-height: 421px) {
     @media (max-width: #{$width}) {
+      @content;
+    }
+  }
+}
+
+@mixin smallDesktop {
+  @media (min-height: 1px) {
+    @media (max-width: 1300px) and (min-width: 820px) {
       @content;
     }
   }

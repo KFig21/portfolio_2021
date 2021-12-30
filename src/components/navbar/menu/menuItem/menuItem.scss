@@ -11,8 +11,23 @@ li {
     transition: linear 0.2s;
     position: relative;
 
-    .text {
+    .menu-item {
       text-shadow: 0px 0px 5px black;
+      // display: flex;
+
+      .menu-icon {
+        margin-right: 8px;
+        @include smallDesktop {
+          margin-right: 0px;
+          font-size: 30px;
+        }
+      }
+
+      .text {
+        @include smallDesktop {
+          display: none;
+        }
+      }
     }
     .active {
       display: inline;

@@ -1,14 +1,16 @@
 @import "../../global.scss";
 
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   height: $navbarHeight;
-  // background-color: $navbarColor;
+  background-color: $navbarColor;
   color: $textColor;
   z-index: 100;
   transition: ease all 0.5s;
+  backdrop-filter: blur(8px);
+  border-bottom: solid 3px black;
 
   @include mobile {
     display: flex;
@@ -81,7 +83,7 @@
         background-size: 200% 200%;
 
         .navbar-svg-g {
-          fill: $primaryColor;
+          fill: $navbarColor;
         }
       }
     }
@@ -153,16 +155,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 40px;
 
     .hamburger {
       width: 30px;
       height: 25px;
       padding: 0px 5px;
-      display: flex;
       flex-direction: column;
       justify-content: space-between;
       cursor: pointer;
       overflow: visible;
+      display: none;
+
+      @include mobile {
+        display: flex;
+      }
 
       span {
         width: 100%;
@@ -175,7 +182,7 @@
   }
 
   &.active {
-    background-color: $menuActiveBackgroundColor;
+    background-color: $mobileMenuActiveBackgroundColor;
     color: $textColor;
 
     .hamburger {

@@ -264,10 +264,10 @@ export const nodebookSpotlightData = {
   favicon: nodebookFavicon,
   imgs: [
     { id: "img-1", src: nodebookGif1 },
-    { id: "img-2", src: nodebookImg2 },
-    { id: "img-3", src: nodebookImg3 },
-    { id: "img-4", src: nodebookImg4 },
-    { id: "img-5", src: nodebookImg5 },
+    // { id: "img-2", src: nodebookImg2 },
+    // { id: "img-3", src: nodebookImg3 },
+    // { id: "img-4", src: nodebookImg4 },
+    // { id: "img-5", src: nodebookImg5 },
   ],
   repository: "https://github.com/KFig21/nodebook_client",
   live: "https://kfig21.github.io/nodebook_client/",
@@ -341,7 +341,7 @@ export const membersOnlyProjectData = {
     { id: "4", icon: mongodbIcon, color: "mongo" },
   ],
   title: "Members Only",
-  desc: "Members Only is a 'clubhouse' type of application in that only members can see what's posted and by who. The goal of this project wastolearn about authentication. This application was build with NodeJS, Pug, Express, MongoDB, and Passport.",
+  desc: "Members Only is a 'clubhouse' type of application in that only members can see what's posted and by who. The goal of this project was to learn about authentication. This application was build with NodeJS, Pug, Express, MongoDB, and Passport.",
   favicon: membersOnlyFavicon,
   imgs: [
     { id: "img-1", src: membersOnlyImg1 },

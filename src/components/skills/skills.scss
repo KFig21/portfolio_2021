@@ -8,8 +8,10 @@
   justify-content: center;
   color: $textColor;
   position: relative;
+  height: 100%;
+
   @include mobile {
-    height: calc(100%);
+    height: calc(100% - 70px);
     padding-bottom: 70px;
   }
 

@@ -11,11 +11,11 @@
   background-size: cover;
   background-position: center;
   display: flex;
+  height: 100%;
 
   @include mobile {
     flex-direction: column;
     align-items: center;
-    height: calc(100%);
     padding-bottom: 70px;
   }
 

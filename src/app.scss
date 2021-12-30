@@ -8,17 +8,13 @@ body {
 
 .app {
   background: rgb(32, 32, 32);
-  // background: linear-gradient(
-  //   135deg,
-  //   rgba(30, 32, 36, 1) 20%,
-  //   rgba(59, 62, 72, 1) 50%,
-  //   rgba(30, 32, 36, 1) 80%
-  // );
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgba(59, 62, 72, 1) 0%,
     rgba(30, 32, 36, 1) 90%
   );
+  display: flex;
+  width: 100%;
 
   @include mobile {
     background-image: radial-gradient(
@@ -28,44 +24,53 @@ body {
     );
   }
 
-  .sections {
-    width: 100%;
+  .sections-container {
+    flex: 9;
     position: relative;
-    top: $navbarHeight;
-    max-height: calc(100vh - 70px);
-    scroll-behavior: smooth;
-    // scroll-snap-type: y mandatory;
-    scrollbar-width: none; //for firefox
-    overflow: overlay;
+    overflow: hidden;
 
-    &::-webkit-scrollbar {
-      width: 18px;
-    }
+    .sections {
+      position: relative;
+      top: 0;
+      max-height: 100vh;
+      min-height: 100vh;
+      // max-height: calc(100vh - $navbarHeight);
+      // min-height: calc(100vh - $navbarHeight);
+      scroll-behavior: smooth;
+      // scroll-snap-type: y mandatory;
+      scrollbar-width: none; //for firefox
+      overflow: overlay;
 
-    &::-webkit-scrollbar-track {
-      background-color: $scollTrackColor;
-      background: $scollTrackColor;
-    }
+      &::-webkit-scrollbar {
+        width: 18px;
+      }
 
-    &::-webkit-scrollbar-thumb {
-      background-color: $scrollThumbColor;
-      border: solid 6px transparent;
-      // border-radius: 10px;
-      background-clip: content-box;
-    }
+      &::-webkit-scrollbar-track {
+        margin-top: $navbarHeight;
+        background-color: $scollTrackColor;
+        background: $scollTrackColor;
+      }
 
-    > * {
-      width: 100vw;
-      scroll-snap-align: start;
-    }
+      &::-webkit-scrollbar-thumb {
+        background-color: $scrollThumbColor;
+        border: solid 6px transparent;
+        // border-radius: 10px;
+        background-clip: content-box;
+      }
 
-    a {
-      text-decoration: none;
-      color: $textColor;
-    }
+      > * {
+        // width: 100vw;
+        scroll-snap-align: start;
+      }
 
-    @include mobile {
-      top: unset;
+      a {
+        text-decoration: none;
+        color: $textColor;
+      }
+
+      @include mobile {
+        top: unset;
+      }
     }
   }
 }

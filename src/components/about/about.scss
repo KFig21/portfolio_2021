@@ -7,24 +7,21 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 100%;
 
   @include mobile {
-    justify-content: center;
-    height: calc(100%);
+    height: calc(100% - 70px);
     padding-bottom: 70px;
   }
 
   .title-container {
-    position: absolute;
-    top: 50px;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 15px;
 
     @include mobile {
-      position: unset;
-      margin-bottom: 40px;
       margin-left: unset;
     }
 
@@ -63,7 +60,7 @@
 
   .container {
     max-height: 400px;
-    width: 90vw;
+    width: 80%;
     max-width: 900px;
     display: flex;
     background-color: $secondaryColor;
@@ -208,6 +205,13 @@
           @include mobile {
             padding-top: 15px;
           }
+        }
+
+        @media (max-width: 1050px) {
+          font-size: 20px;
+        }
+        @media (max-width: 900px) {
+          font-size: 18px;
         }
 
         @include mobile {

@@ -104,21 +104,27 @@ function App() {
         list={list}
         index={index}
       />
-      <Navbar
-        menuOpen={menuOpen}
-        setMenuOpen={setMenuOpen}
-        upButton={upButton}
-        downButton={downButton}
-        list={list}
-        index={index}
-      />
-      <div className="sections" onClick={() => setMenuOpen(false)} ref={target}>
-        <Home />
-        <About />
-        <Projects />
-        <Portfolio />
-        <Skills />
-        <Contact />
+      <div className="sections-container">
+        <Navbar
+          menuOpen={menuOpen}
+          setMenuOpen={setMenuOpen}
+          upButton={upButton}
+          downButton={downButton}
+          list={list}
+          index={index}
+        />
+        <div
+          className="sections"
+          onClick={() => setMenuOpen(false)}
+          ref={target}
+        >
+          <Home />
+          <About />
+          <Projects />
+          <Portfolio />
+          <Skills />
+          <Contact />
+        </div>
       </div>
     </div>
   );

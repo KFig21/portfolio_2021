@@ -19,7 +19,8 @@
 
     .modal-wrapper {
       width: 100vw;
-      max-width: 800px;
+      max-width: 80%;
+      margin-top: 50px;
       height: 60vh;
       display: flex;
       align-items: center;
@@ -29,6 +30,7 @@
 
       @include mobile {
         height: 70vh;
+        margin-top: 20px;
       }
 
       .favicon-container {
@@ -55,8 +57,8 @@
       }
 
       .modal-item {
-        width: 80vw;
-        max-width: 800px;
+        width: 800px;
+        max-width: 90%;
         height: 60vh;
         background-color: $primaryColor;
         border-radius: $containerBorderRadius;
