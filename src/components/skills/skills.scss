@@ -54,6 +54,7 @@
       a {
         font-family: Poppins, sans-serif;
         color: $textHeaderColor;
+        font-weight: 500;
       }
 
       @include mobile {
@@ -136,6 +137,7 @@
 
           h2 {
             color: $textColor;
+            font-weight: 500;
             font-family: Poppins, sans-serif;
             text-decoration: underline 2.5px solid $accentColor;
 
