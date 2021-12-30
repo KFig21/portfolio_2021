@@ -145,6 +145,7 @@
           text-underline-offset: 0.5px;
           text-align: center;
           margin-bottom: 5px;
+          font-family: Poppins, sans-serif;
         }
 
         .item-container {
@@ -350,7 +351,7 @@
       font-size: 28px;
       color: $textColor;
       line-height: 32px;
-      width: 200px;
+      width: 100%;
       text-decoration: underline solid 3px $accentColor;
       text-underline-offset: 0.5px;
       text-align: center;
@@ -361,6 +362,7 @@
       right: 50%;
       transform: translate(50%, 0%);
       display: none;
+      font-family: Poppins, sans-serif;
     }
 
     .mobile {

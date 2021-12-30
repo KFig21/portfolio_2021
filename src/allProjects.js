@@ -233,10 +233,10 @@ export const cvBuilderProjectData = {
 export const nodebookProjectData = {
   id: "21",
   icons: [
-    { id: "1", icon: nodeIcon, color: "node" },
-    { id: "2", icon: reactIcon, color: "react" },
-    { id: "3", icon: expressIcon, color: "express" },
-    { id: "4", icon: mongodbIcon, color: "mongo" },
+    { id: "1", icon: mongodbIcon, color: "mongo" },
+    { id: "2", icon: expressIcon, color: "express" },
+    { id: "3", icon: reactIcon, color: "react" },
+    { id: "4", icon: nodeIcon, color: "node" },
   ],
   title: "Nodebook",
   desc: "A social media app built with MongoDB, Express, React, NodeJS, and more. This is a fully functional and responsive app that allows users to create an account, post messages, photos, edit & delete posts, comment, like/unlike, follow/unfollow, change their avatar and much more!",
@@ -254,10 +254,10 @@ export const nodebookProjectData = {
 export const nodebookSpotlightData = {
   id: 0,
   icons: [
-    { id: "1", icon: nodeIcon, color: "node" },
-    { id: "2", icon: reactIcon, color: "react" },
-    { id: "3", icon: expressIcon, color: "express" },
-    { id: "4", icon: mongodbIcon, color: "mongo" },
+    { id: "1", icon: mongodbIcon, color: "mongo" },
+    { id: "2", icon: expressIcon, color: "express" },
+    { id: "3", icon: reactIcon, color: "react" },
+    { id: "4", icon: nodeIcon, color: "node" },
   ],
   title: "Nodebook",
   desc: "A social media app built with MongoDB, Express, React, NodeJS, and more. This is a fully functional and responsive app that allows users to create an account, post messages, photos, edit & delete posts, comment, like/unlike, follow/unfollow, change their avatar and much more!",
@@ -276,10 +276,10 @@ export const nodebookSpotlightData = {
 export const blogProjectData = {
   id: "22",
   icons: [
-    { id: "1", icon: nodeIcon, color: "node" },
-    { id: "2", icon: reactIcon, color: "react" },
-    { id: "3", icon: expressIcon, color: "express" },
-    { id: "4", icon: mongodbIcon, color: "mongo" },
+    { id: "1", icon: mongodbIcon, color: "mongo" },
+    { id: "2", icon: expressIcon, color: "express" },
+    { id: "3", icon: reactIcon, color: "react" },
+    { id: "4", icon: nodeIcon, color: "node" },
   ],
   title: "Blog Site",
   desc: "The client side of a blog site built with MongoDB, Express, React, NodeJS, and Sass. The goal of the project was to build a restful API that can be used to build a blog client and a blog CMS. Features include responsive design, markdown text for blog posts, and visitors can comment on blog posts without an account.",
@@ -295,10 +295,10 @@ export const blogProjectData = {
 export const blogCMSProjectData = {
   id: "23",
   icons: [
-    { id: "1", icon: nodeIcon, color: "node" },
-    { id: "2", icon: reactIcon, color: "react" },
-    { id: "3", icon: expressIcon, color: "express" },
-    { id: "4", icon: mongodbIcon, color: "mongo" },
+    { id: "1", icon: mongodbIcon, color: "mongo" },
+    { id: "2", icon: expressIcon, color: "express" },
+    { id: "3", icon: reactIcon, color: "react" },
+    { id: "4", icon: nodeIcon, color: "node" },
   ],
   title: "Blog CMS",
   desc: "The content management side of a blog site built with MongoDB, Express, React, NodeJS, and Sass. Features include responsive design, submitting new posts with markdown text, editing & deleting posts, and deleting comments.",
