@@ -70,6 +70,12 @@ body {
 
       @include mobile {
         top: unset;
+        max-height: calc(100vh - 70px);
+        min-height: calc(100vh - 70px);
+
+        &::-webkit-scrollbar-track {
+          margin-top: unset;
+        }
       }
     }
   }

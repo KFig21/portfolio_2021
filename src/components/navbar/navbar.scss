@@ -18,6 +18,7 @@
     align-items: center;
     top: unset;
     bottom: 0;
+    position: fixed;
   }
   @include mobileKeyboard {
     display: flex;
