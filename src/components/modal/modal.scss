@@ -163,6 +163,7 @@
               display: flex;
               align-items: center;
               justify-content: center;
+              font-family: Poppins, sans-serif;
 
               @include mobile {
                 text-align: center;
@@ -178,6 +179,7 @@
               padding: 0px 7px 0px 0px;
               margin-top: 20px;
               height: calc((60vh * 0.88) - 150px);
+              font-family: Poppins, sans-serif;
 
               @include mobile {
                 flex: 0 20 calc((70vh * (2 / 3)) - 200px);

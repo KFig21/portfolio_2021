@@ -16,7 +16,7 @@ li {
       // display: flex;
 
       .menu-icon {
-        margin-right: 8px;
+        margin-right: 10px;
         @include smallDesktop {
           margin-right: 0px;
           font-size: 30px;
@@ -24,6 +24,7 @@ li {
       }
 
       .text {
+        font-family: Poppins, sans-serif;
         @include smallDesktop {
           display: none;
         }

@@ -58,12 +58,12 @@ export default function About() {
           <div className="right-content">
             <div class="scroll-fade-top"></div>
             <h4 className="mobile-horizontal-title">About Me</h4>
-            <p>
+            <p className="info-p">
               Welcome! My name is Kevin Figenshu, I am a self-taught developer
               and web designer.
             </p>
             <div className="break"></div>
-            <p>
+            <p className="info-p">
               Starting from no-code in January of 2020 I became obsessed with
               the world of programming. Poring through resources such as The
               Odin Project, FreeCodeCamp, and Codecademy I have been developing

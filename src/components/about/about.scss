@@ -43,6 +43,7 @@
       overflow: hidden;
 
       a {
+        font-family: Poppins, sans-serif;
         color: $textHeaderColor;
       }
 
@@ -197,7 +198,7 @@
       p {
         color: $textColor;
         text-align: center;
-        font-size: 23px;
+        font-size: 22px;
         line-height: 28px;
         overflow: visible;
 
@@ -229,6 +230,10 @@
         @include mobile {
           max-width: 250px;
         }
+      }
+
+      .info-p {
+        font-family: Poppins, sans-serif;
       }
 
       .break {
