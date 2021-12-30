@@ -22,6 +22,8 @@
     position: fixed;
     border-bottom: unset;
     border-top: solid 2px black;
+    height: $navbarHeightMobile;
+    overflow: visible;
   }
   @include mobileKeyboard {
     display: flex;

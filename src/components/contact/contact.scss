@@ -12,8 +12,7 @@
   justify-content: center;
 
   @include mobile {
-    height: calc(100% - 70px);
-    padding-bottom: 70px;
+    height: calc(100% - 60px);
   }
 
   .container {
@@ -106,6 +105,8 @@
         textarea {
           width: inherit;
           height: 130px;
+          min-height: 30px;
+          max-height: 250px;
           background-color: transparent;
           border-top: none;
           border-left: none;
@@ -116,6 +117,7 @@
           color: white;
           font-size: 16px;
           transition: border-color 0.22s ease-in-out;
+          resize: vertical;
 
           &:focus {
             border-color: $accentColor;
@@ -261,6 +263,23 @@
               padding: 6px 0px;
             }
 
+            &:hover {
+              .contact-icon-container {
+                background-color: $accentColor;
+                color: $primaryColor;
+                fill: $primaryColor;
+              }
+              .item-details {
+                .item-span {
+                  color: $accentColor;
+                }
+              }
+              #leetcode path {
+                transition: fill 0.2s ease;
+                fill: $primaryColor;
+              }
+            }
+
             .contact-icon-container {
               background-color: rgba(100, 100, 100, 0.2);
               display: flex;
@@ -284,6 +303,7 @@
 
               .leetcode-icon {
                 padding: 6px 7px 8px 7px;
+                transition: all 0.25s ease;
               }
             }
 

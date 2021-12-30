@@ -70,8 +70,8 @@ body {
 
       @include mobile {
         top: unset;
-        max-height: calc(100vh - 70px);
-        min-height: calc(100vh - 70px);
+        max-height: calc(100vh - 60px);
+        min-height: calc(100vh - 60px);
 
         &::-webkit-scrollbar-track {
           margin-top: unset;
