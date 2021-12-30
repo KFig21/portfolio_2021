@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio_2021/static/css/main.c771afed.chunk.css",
+    "main.css": "/portfolio_2021/static/css/main.7e44ac61.chunk.css",
     "main.js": "/portfolio_2021/static/js/main.8ca33da8.chunk.js",
     "main.js.map": "/portfolio_2021/static/js/main.8ca33da8.chunk.js.map",
     "runtime-main.js": "/portfolio_2021/static/js/runtime-main.592f6d91.js",
@@ -8,7 +8,7 @@
     "static/js/2.cee9c280.chunk.js": "/portfolio_2021/static/js/2.cee9c280.chunk.js",
     "static/js/2.cee9c280.chunk.js.map": "/portfolio_2021/static/js/2.cee9c280.chunk.js.map",
     "index.html": "/portfolio_2021/index.html",
-    "static/css/main.c771afed.chunk.css.map": "/portfolio_2021/static/css/main.c771afed.chunk.css.map",
+    "static/css/main.7e44ac61.chunk.css.map": "/portfolio_2021/static/css/main.7e44ac61.chunk.css.map",
     "static/js/2.cee9c280.chunk.js.LICENSE.txt": "/portfolio_2021/static/js/2.cee9c280.chunk.js.LICENSE.txt",
     "static/media/battleship-1.9e20785a.png": "/portfolio_2021/static/media/battleship-1.9e20785a.png",
     "static/media/battleship-2.27ace4a4.png": "/portfolio_2021/static/media/battleship-2.27ace4a4.png",
@@ -111,7 +111,7 @@
   "entrypoints": [
     "static/js/runtime-main.592f6d91.js",
     "static/js/2.cee9c280.chunk.js",
-    "static/css/main.c771afed.chunk.css",
+    "static/css/main.7e44ac61.chunk.css",
     "static/js/main.8ca33da8.chunk.js"
   ]
 }
