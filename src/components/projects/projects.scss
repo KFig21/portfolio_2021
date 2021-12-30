@@ -164,6 +164,7 @@
               height: 100%;
               display: flex;
               flex-direction: column;
+              overflow: visible;
 
               @include mobile {
                 height: 100%;
@@ -174,6 +175,7 @@
                 display: flex;
                 position: relative;
                 height: 65px;
+                overflow: visible;
 
                 @include mobile {
                   width: 100%;
@@ -204,6 +206,7 @@
                     top: 42px;
                     transition: linear 0.2s;
                     opacity: 0;
+                    overflow: visible;
 
                     @include mobile {
                       opacity: 1;
