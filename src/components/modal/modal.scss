@@ -31,6 +31,7 @@
       @include mobile {
         height: 70vh;
         margin-top: 20px;
+        max-width: unset;
       }
 
       .favicon-container {
@@ -71,6 +72,7 @@
 
         @media (max-width: 875px) {
           width: 80vw;
+          max-width: unset;
         }
 
         @include mobile {

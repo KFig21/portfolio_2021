@@ -80,7 +80,7 @@
     }
 
     @include mobile {
-      height: 67vh;
+      height: 65vh;
       justify-content: center;
     }
 
@@ -99,8 +99,7 @@
       overflow: hidden;
 
       @include mobile {
-        height: 67vh;
-        overflow: visible;
+        height: 65vh;
       }
 
       @include mobileHorizontal {
@@ -138,7 +137,7 @@
             width: 77%;
           }
 
-          $itemHeight: 65vh;
+          $itemHeight: 62vh;
 
           @include mobile {
             box-shadow: 0px 0px 12px black;
