@@ -153,6 +153,7 @@
           padding: 12px 0px;
           margin: 15px 0px;
           cursor: pointer;
+          overflow: visible;
 
           @include mobile {
             padding: 9px 0px;
@@ -194,6 +195,7 @@
 
     .contact-container-right {
       width: 50%;
+      overflow: visible;
 
       @include mobile {
         width: 100%;
