@@ -7,34 +7,49 @@ import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [message, setMessage] = useState("");
-  const [active, setActive] = useState("email");
+  const [messageVisible, setMessageVisible] = useState(false);
+  const [nameCheck, setNameCheck] = useState("");
+  const [emailCheck, setEmailCheck] = useState("");
+  const [subjectCheck, setSubjectCheck] = useState("");
+  const [messageCheck, setMessageCheck] = useState("");
+  const formRef = useRef();
   const email = "Kevin.Figenshu@gmail.com";
   const phone = "(610) 608 0468";
   const github = "github.com/KFig21";
   const leetcode = "leetcode.com/KFig21";
+  const [active, setActive] = useState("email");
   const [contactInfo, setContactInfo] = useState(email);
-  const formRef = useRef();
-  const [messageVisible, setMessageVisible] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        formRef.current,
-        process.env.REACT_APP_EMAILJS_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setMessage("Message Sent!");
-        },
-        (error) => {
-          console.log(error.text);
-          setMessage("An error occured :(");
-        }
-      );
+    console.log(formRef.current);
+    if (nameCheck === "") {
+      setMessage("Include your name!");
+    } else if (emailCheck === "") {
+      setMessage("Include your email!");
+    } else if (subjectCheck === "") {
+      setMessage("Include a subject!");
+    } else if (messageCheck === "") {
+      setMessage("Include a message!");
+    } else {
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_EMAILJS_SERVICE_ID,
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+          formRef.current,
+          process.env.REACT_APP_EMAILJS_USER_ID
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setMessage("Message Sent!");
+          },
+          (error) => {
+            console.log(error.text);
+            setMessage("An error occured :(");
+          }
+        );
+    }
     setMessageVisible(true);
     setTimeout(async function () {
       setMessageVisible(false);
@@ -52,10 +67,29 @@ export default function Contact() {
         <div className="contact-container-left">
           <h2>Lets get in touch</h2>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input type="text" placeholder="Name" name="user_name" />
-            <input type="email" placeholder="Email" name="user_email" />
-            <input type="text" placeholder="Subject" name="user_subject" />
-            <textarea placeholder="Message" name="message"></textarea>
+            <input
+              type="text"
+              placeholder="Name"
+              name="user_name"
+              onChange={(e) => setNameCheck(e.target.value)}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="user_email"
+              onChange={(e) => setEmailCheck(e.target.value)}
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              name="user_subject"
+              onChange={(e) => setSubjectCheck(e.target.value)}
+            />
+            <textarea
+              placeholder="Message"
+              name="message"
+              onChange={(e) => setMessageCheck(e.target.value)}
+            ></textarea>
             <button type="submit">Send</button>
           </form>
         </div>
