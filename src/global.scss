@@ -74,6 +74,19 @@ $width: 768px;
   background: $secondaryColor;
 }
 
+::-webkit-resizer {
+  border-right: 2px solid $primaryColorFaded;
+  border-bottom: 2px solid $primaryColorFaded;
+  cursor: pointer;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    transparent 50%,
+    $primaryColorFaded 51%,
+    $primaryColorFaded 100%
+  );
+}
+
 // tech colors
 
 // react
