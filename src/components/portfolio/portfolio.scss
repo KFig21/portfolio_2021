@@ -14,6 +14,11 @@
     justify-content: center;
   }
 
+  @include mobileHorizontal {
+    padding-bottom: 120px;
+    justify-content: center;
+  }
+
   .title-container {
     margin-top: 100px;
     display: flex;
@@ -27,7 +32,8 @@
     }
 
     @include mobileHorizontal {
-      display: none;
+      margin-top: unset;
+      margin-left: unset;
     }
 
     a {
@@ -38,12 +44,6 @@
 
     span {
       color: $accentColor;
-      opacity: 0;
-      transition: all ease 0.3s;
-
-      @include mobile {
-        opacity: 1;
-      }
     }
 
     &:hover {
@@ -60,6 +60,10 @@
       @include mobile {
         font-size: 2.5em;
       }
+
+      @include mobileHorizontal {
+        font-size: 2em;
+      }
     }
   }
 
@@ -71,6 +75,11 @@
 
     @include mobile {
       margin: 15px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include mobileHorizontal {
+      margin: 5px 0;
       flex-wrap: wrap;
       justify-content: center;
     }

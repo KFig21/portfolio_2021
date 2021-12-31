@@ -1,10 +1,14 @@
 import React from "react";
 import "./menu.scss";
 import MenuItem from "./menuItem/MenuItem";
+import Logo from "./Logo";
 
 export default function Menu({ menuOpen, setMenuOpen, list, index }) {
   return (
     <div className={"menu " + (menuOpen && "active")} id="menu">
+      <a className="menu-logo" href="#home">
+        <Logo />
+      </a>
       <div className="ul-container">
         <ul>
           <MenuItem

@@ -28,6 +28,17 @@
       }
     }
 
+    @include mobileHorizontal {
+      margin: 0px 20px;
+
+      &:hover {
+        background-color: $primaryColorFaded;
+      }
+      &:active {
+        background-color: $primaryColorFaded;
+      }
+    }
+
     &:hover {
       background-color: $accentColorFaded;
     }
@@ -48,6 +59,11 @@
         background-color: $accentColorFaded;
       }
       @include mobile {
+        &:hover {
+          background-color: $primaryColorFaded;
+        }
+      }
+      @include mobileHorizontal {
         &:hover {
           background-color: $primaryColorFaded;
         }

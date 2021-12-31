@@ -569,7 +569,7 @@ export const weatherApiProjectData = {
     { id: "2", icon: javascriptIcon, color: "javascript" },
     { id: "3", icon: sassIcon, color: "sass" },
   ],
-  title: "Weather API application",
+  title: "API Weather App",
   desc: "A weather application built with React and styled with Sass. This app uses the OpenWeather API to retreive and display data on a fully responsive UI. The app shows the location's current weather & 7 day forecast, your 5 most recent searches, and the ability to switch between metric and imperial.",
   favicon: weatherAppFavicon,
   imgs: [

@@ -69,6 +69,10 @@ export default function Projects() {
     setIndex(id);
     setScrollProgress((id / 2) * 100);
     element.scrollTo((id / 2) * totalWidth, 0);
+    document.getElementById("projects").scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+    });
   };
 
   return (

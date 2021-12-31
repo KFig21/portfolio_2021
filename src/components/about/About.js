@@ -57,7 +57,12 @@ export default function About() {
         <div className="right">
           <div className="right-content">
             <div class="scroll-fade-top"></div>
-            <h4 className="mobile-horizontal-title">About Me</h4>
+            <h4 className="mobile-horizontal-title">
+              {" "}
+              <span>&lt; </span>
+              <a href="#about">About me</a>
+              <span> /&gt;</span>
+            </h4>
             <p className="info-p">
               Welcome! My name is Kevin Figenshu, I am a self-taught developer
               and web designer.

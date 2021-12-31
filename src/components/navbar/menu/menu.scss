@@ -3,7 +3,7 @@
 .menu {
   flex: 2;
   height: 100vh;
-  background-color: $menuActiveBackgroundColor;
+  background-color: rgba(33, 34, 37, 0.9);
   position: sticky;
   top: 0;
   border-right: solid 3px black;
@@ -20,6 +20,7 @@
     background-color: $mobileMenuActiveBackgroundColor;
     left: -300px;
     position: fixed;
+    padding: 0px;
 
     &.active {
       left: 0;
@@ -42,7 +43,37 @@
   }
 
   @include mobileHorizontal {
-    width: 180px;
+    max-width: 60px;
+    height: 100%;
+  }
+
+  .menu-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .navbar-svg {
+      position: absolute;
+      max-height: 50px;
+      max-width: 50px;
+      top: 50px;
+      background-color: $accentColor;
+      border-radius: 100px;
+      .navbar-svg-g {
+        fill: rgba(33, 34, 37, 0.9);
+      }
+
+      @include mobileHorizontal {
+        top: 20px;
+        max-height: 36px;
+        max-width: 36px;
+
+        .navbar-svg-g {
+          fill: black;
+        }
+      }
+    }
   }
 
   .ul-container {
@@ -50,10 +81,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // border-top: solid 3px black;
-    // border-bottom: solid 3px black;
-    // background-color: rgba(85, 94, 121, 0.142);
     padding: 25px 0px 0px 0px;
+
+    @include mobileHorizontal {
+      overflow: visible;
+      height: 100%;
+      padding: 0px 0px 0px 0px;
+      align-items: flex-end;
+      padding-bottom: 10px;
+    }
 
     ul {
       margin: 0;
@@ -64,9 +100,16 @@
       color: $textColor;
       width: 60%;
       overflow: visible;
+      justify-content: flex-start;
+      align-items: flex-start;
 
       @include mobileHorizontal {
         font-size: 22px;
+        height: 80%;
+        width: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
       }
 
       @include smallDesktop {

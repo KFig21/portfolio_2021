@@ -4,6 +4,13 @@ li {
   height: 50px;
   margin-bottom: 25px;
 
+  @include mobileHorizontal {
+    overflow: visible;
+    height: unset;
+    margin-top: unset;
+    margin-bottom: unset;
+  }
+
   a {
     font-size: inherit;
     color: inherit;
@@ -13,7 +20,6 @@ li {
 
     .menu-item {
       text-shadow: 0px 0px 5px black;
-      // display: flex;
 
       .menu-icon {
         margin-right: 10px;
@@ -21,11 +27,22 @@ li {
           margin-right: 0px;
           font-size: 30px;
         }
+        @include mobileHorizontal {
+          margin-right: 0px;
+          font-size: 30px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
 
       .text {
         font-family: Poppins, sans-serif;
         @include smallDesktop {
+          display: none;
+        }
+        @include mobileHorizontal {
           display: none;
         }
       }
@@ -35,6 +52,19 @@ li {
       position: relative;
       font-weight: 600;
       overflow: hidden;
+
+      @include mobileHorizontal {
+        display: block;
+        border-radius: 50px;
+        height: 40px;
+        width: 40px;
+        background-color: $accentColor;
+        position: relative;
+
+        .menu-icon {
+          color: black;
+        }
+      }
     }
     .active:after {
       border-radius: 50px;
@@ -50,15 +80,20 @@ li {
       transition-property: width;
       transition-duration: 0.3s;
       transition-timing-function: ease-out;
+
+      @include mobileHorizontal {
+        content: none;
+      }
     }
     .inactive {
       text-decoration: none;
+      @include mobileHorizontal {
+        display: block;
+        height: 40px;
+        width: 40px;
+        position: relative;
+      }
     }
-  }
-  @include mobileHorizontal {
-    height: 28px;
-    margin-top: 12px;
-    margin-bottom: unset;
   }
 }
 
@@ -80,6 +115,10 @@ li {
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
+
+  @include mobileHorizontal {
+    content: none;
+  }
 }
 .underline:hover:after,
 .underline:focus:after,

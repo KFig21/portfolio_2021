@@ -9,10 +9,10 @@
   color: $textColor;
   position: relative;
   height: 100%;
+  padding-bottom: 120px;
 
   @include mobile {
     height: calc(100% - 70px);
-    padding-bottom: 120px;
   }
 
   .title-container {
@@ -20,32 +20,21 @@
     align-items: center;
     justify-content: center;
     margin-left: 15px;
+    margin-bottom: 20px;
 
     @include mobile {
       top: 0px;
       margin-left: unset;
-      margin-bottom: 20px;
     }
 
     @include mobileHorizontal {
       top: 5px;
-      font-size: 20px;
+      margin-left: unset;
+      margin-bottom: 5px;
     }
 
     span {
       color: $accentColor;
-      opacity: 0;
-      transition: all ease 0.3s;
-
-      @include mobile {
-        opacity: 1;
-      }
-    }
-
-    &:hover {
-      span {
-        opacity: 1;
-      }
     }
 
     h1 {
@@ -61,6 +50,11 @@
         font-size: 2.25em;
         top: 0px;
       }
+
+      @include mobileHorizontal {
+        font-size: 2em;
+        top: 0px;
+      }
     }
   }
 
@@ -68,23 +62,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(22, 25, 27);
+    border-radius: 10px;
 
     @include mobile {
       max-height: 70vh;
-      background-color: rgb(22, 25, 27);
       max-width: 85vw;
-      border-radius: 10px;
+    }
+
+    @include mobileHorizontal {
+      max-height: 70vh;
+      max-width: 500px;
     }
 
     .detail {
-      border: solid 2px $accentColor;
-      background-color: rgba(0, 0, 0, 0.4);
       padding: 8px;
       border-radius: 5px;
       width: 90%;
       max-width: 700px;
       margin: 10px auto 20px auto;
-      font-size: 15px;
+      font-size: 18px;
       text-align: center;
       font-family: Poppins, sans-serif;
 
@@ -95,6 +92,13 @@
         border: unset;
         margin: 10px auto 10px auto;
       }
+
+      @include mobileHorizontal {
+        font-size: 14px;
+        padding: 0px;
+        overflow: visible;
+        margin: 10px auto 10px auto;
+      }
     }
     .container {
       width: 100%;
@@ -102,12 +106,19 @@
       align-items: center;
       justify-content: center;
       position: relative;
+      background-image: radial-gradient(
+        circle farthest-corner at 90% 80%,
+        rgb(45, 133, 196) 10%,
+        rgb(122, 42, 165) 70%
+      );
+      padding: 0px 20px 10px 20px;
 
       @include mobile {
         border-radius: 0px 0px 10px 10px;
         width: 100%;
-        background-color: $skillsContainerBackgroundColor;
         padding: 10px 0px 20px 0px;
+        background-color: $skillsContainerBackgroundColor;
+        background-image: none;
       }
 
       .content {
@@ -140,9 +151,14 @@
             font-weight: 500;
             font-family: Poppins, sans-serif;
             text-decoration: underline 2.5px solid $accentColor;
+            margin-left: 10px;
 
             @include mobile {
               padding-top: 10px;
+              margin-left: unset;
+            }
+            @include mobileHorizontal {
+              font-size: 18px;
             }
           }
 
@@ -150,14 +166,19 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             margin: 10px 10px;
-            gap: 20px;
+            gap: 0px;
             overflow: visible;
+            background-color: unset;
 
             @include mobile {
               grid-template-columns: repeat(1, 1fr);
               margin: 10px 20px 10px 10px;
               gap: 12px;
-              background-color: unset;
+            }
+
+            @include mobileHorizontal {
+              grid-template-columns: repeat(2, 1fr);
+              gap: 10px;
             }
 
             .skill-container {
@@ -171,9 +192,14 @@
               overflow: visible;
               min-width: 151px;
               margin: auto;
+              backdrop-filter: saturate(160%) brightness(120%);
 
               @include mobile {
                 width: 100%;
+                backdrop-filter: unset;
+              }
+              @include mobileHorizontal {
+                width: 90%;
               }
 
               &:hover {

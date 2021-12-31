@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
 
   @include mobile {
     height: calc(100% - 60px);
@@ -31,6 +32,12 @@
       flex-direction: column;
       max-width: 344px;
     }
+
+    @include mobileHorizontal {
+      max-height: 80vh;
+      max-width: 500px;
+    }
+
     @include mobileKeyboard {
       flex-direction: column;
       max-width: 344px;
@@ -48,6 +55,10 @@
       @include mobileKeyboard {
         width: 100%;
       }
+      @include mobileHorizontal {
+        padding: 0px 15px;
+      }
+
       h2 {
         padding-top: 20px;
         font-size: 28px;
@@ -67,6 +78,11 @@
           padding-top: 15px;
           font-size: 25px;
         }
+        @include mobileHorizontal {
+          padding-top: 15px;
+          font-size: 25px;
+          width: 100%;
+        }
       }
 
       form {
@@ -76,6 +92,10 @@
         justify-content: space-around;
         width: 300px;
         margin: auto;
+
+        @include mobileHorizontal {
+          width: 100%;
+        }
 
         input {
           width: inherit;
@@ -209,6 +229,11 @@
         margin: auto;
         color: $textColor;
 
+        @include mobileHorizontal {
+          width: unset;
+          padding: 15px 15px;
+        }
+
         h3 {
           padding-top: 28px;
           font-size: 20px;
@@ -218,6 +243,10 @@
 
           @include mobile {
             padding-top: 16px;
+          }
+          @include mobileHorizontal {
+            width: 100%;
+            padding-top: 5px;
           }
           @include mobileKeyboard {
             padding-top: 16px;
@@ -234,6 +263,11 @@
           }
           @include mobileKeyboard {
             padding-top: 8px;
+          }
+          @include mobileHorizontal {
+            width: 100%;
+            font-size: 14px;
+            padding-top: 5px;
           }
         }
 
@@ -265,6 +299,9 @@
             }
             @include mobileKeyboard {
               padding: 6px 0px;
+            }
+            @include mobileHorizontal {
+              padding: 0px 0px;
             }
 
             &:hover {
@@ -304,10 +341,29 @@
               @include mobileKeyboard {
                 margin-right: 0px;
               }
+              @include mobileHorizontal {
+                height: 30px;
+                width: 30px;
+                min-height: 30px;
+                min-width: 30px;
+                overflow: hidden;
+              }
+
+              .icon {
+                @include mobileHorizontal {
+                  height: 20px;
+                  width: 20px;
+                }
+              }
 
               .leetcode-icon {
                 padding: 6px 7px 8px 7px;
                 transition: all 0.25s ease;
+
+                @include mobileHorizontal {
+                  height: 20px;
+                  width: 20px;
+                }
               }
             }
 
@@ -341,6 +397,10 @@
 
               .item-span-title {
                 color: white;
+
+                @include mobileHorizontal {
+                  display: none;
+                }
               }
 
               .item-span {
@@ -383,12 +443,13 @@
   }
 
   .message-container {
-    margin-top: 30px;
+    margin-top: 0px;
     height: 0px;
     transition: all 0.3s ease;
     overflow-y: hidden;
 
     &.active {
+      margin-top: 30px;
       height: 60px;
     }
 

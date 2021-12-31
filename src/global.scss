@@ -13,6 +13,7 @@ $editorSecondary: #2c3138;
 $editorBorder: rgb(146, 146, 146);
 $navbarHeight: 70px;
 $navbarHeightMobile: 60px;
+$techContainerBackgroundColor: rgba(123, 128, 145, 0.3);
 $scrollThumbColor: rgba(115, 115, 115, 0.7);
 $scollTrackColor: transparent;
 $skillsContainerBackgroundColor: #24272c;
@@ -95,7 +96,7 @@ $reactColor: #61b8fb;
   background-color: $reactColor;
 }
 .react-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $reactColor;
@@ -112,7 +113,7 @@ $tailwindColor: #17bbb9;
   background-color: $tailwindColor;
 }
 .tailwind-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $tailwindColor;
@@ -129,7 +130,7 @@ $firebaseColor: #f79b00;
   background-color: $firebaseColor;
 }
 .firebase-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $firebaseColor;
@@ -146,7 +147,7 @@ $javascriptColor: #f7cf00;
   background-color: $javascriptColor;
 }
 .javascript-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $javascriptColor;
@@ -163,7 +164,7 @@ $expressColor: #f7cf00;
   background-color: $expressColor;
 }
 .express-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $expressColor;
@@ -180,7 +181,7 @@ $cssColor: #1c86c4;
   background-color: $cssColor;
 }
 .css-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $cssColor;
@@ -197,7 +198,7 @@ $htmlColor: #f16529;
   background-color: $htmlColor;
 }
 .html-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $htmlColor;
@@ -214,7 +215,7 @@ $sassColor: #cf649a;
   background-color: $sassColor;
 }
 .sass-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $sassColor;
@@ -231,7 +232,7 @@ $sqlColor: #2887db;
   background-color: $sqlColor;
 }
 .sql-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $sqlColor;
@@ -248,7 +249,7 @@ $phpColor: #7377ad;
   background-color: $phpColor;
 }
 .php-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $phpColor;
@@ -265,7 +266,7 @@ $rubyColor: #eb3d43;
   background-color: $rubyColor;
 }
 .ruby-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $rubyColor;
@@ -282,7 +283,7 @@ $pythonColor: #ebda3d;
   background-color: $pythonColor;
 }
 .python-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $pythonColor;
@@ -299,7 +300,7 @@ $nodeColor: #41b350;
   background-color: $nodeColor;
 }
 .node-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $nodeColor;
@@ -316,7 +317,7 @@ $mongoColor: #41b350;
   background-color: $mongoColor;
 }
 .mongo-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $mongoColor;
@@ -333,7 +334,7 @@ $photoshopColor: #39a9eb;
   background-color: $photoshopColor;
 }
 .photoshop-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $photoshopColor;
@@ -350,7 +351,7 @@ $illustratorColor: #ff9b00;
   background-color: $illustratorColor;
 }
 .illustrator-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $illustratorColor;
@@ -367,7 +368,7 @@ $excelColor: #1a8d56;
   background-color: $excelColor;
 }
 .excel-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $excelColor;
@@ -384,7 +385,7 @@ $mysqlColor: #1f7aa5;
   background-color: $mysqlColor;
 }
 .mysql-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $mysqlColor;
@@ -401,7 +402,7 @@ $gitColor: #f05033;
   background-color: $gitColor;
 }
 .git-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $gitColor;
@@ -418,7 +419,7 @@ $pugColor: crimson;
   background-color: $pugColor;
 }
 .pug-color-bg-hover {
-  background-color: $primaryColorFaded;
+  background-color: $techContainerBackgroundColor;
 
   &:hover {
     background-color: $pugColor;
