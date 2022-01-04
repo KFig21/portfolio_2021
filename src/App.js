@@ -69,23 +69,23 @@ function App() {
   });
 
   useEffect(() => {
-    if (scrollProgress < 17) {
+    if (scrollProgress < 15) {
       setIndex(1);
       setUpButton(1);
       setDownButton(2);
-    } else if (scrollProgress < 34) {
+    } else if (scrollProgress < 35) {
       setIndex(2);
       setUpButton(1);
       setDownButton(3);
-    } else if (scrollProgress < 52) {
+    } else if (scrollProgress < 53) {
       setIndex(3);
       setUpButton(2);
       setDownButton(4);
-    } else if (scrollProgress < 70) {
+    } else if (scrollProgress < 73) {
       setIndex(4);
       setUpButton(3);
       setDownButton(5);
-    } else if (scrollProgress < 88) {
+    } else if (scrollProgress < 91) {
       setIndex(5);
       setUpButton(4);
       setDownButton(6);

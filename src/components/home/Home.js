@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from "react";
 import { init } from "ityped";
 import "./home.scss";
 // imgs
-import arrowDown from "../../assets/arrows/arrowDown.png";
 
 export default function Home() {
   const textRef = useRef();
@@ -122,21 +121,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* <a className="down-arrow" href="#about">
-        <img
-          className="arrow-img home-arrow-img"
-          src={arrowDown}
-          alt="next section"
-        />
-      </a> */}
-      {/* <a className="down-arrow home-arrow" href="#about">
-        <img
-          className="arrow-img home-arrow-img"
-          src={arrowDown}
-          alt="next section"
-        />
-      </a> */}
     </div>
   );
 }

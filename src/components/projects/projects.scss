@@ -372,6 +372,7 @@
               color: $textColor;
               opacity: 0;
               transition: linear 0.2s;
+              overflow: hidden;
 
               &:hover {
                 opacity: 1;
@@ -391,6 +392,8 @@
                 align-items: center;
                 margin: auto;
                 height: 100%;
+                padding-top: 10px;
+                overflow: hidden;
 
                 .favicon-container {
                   max-height: 120px;
