@@ -3,7 +3,7 @@
 <p><a href="https://kfig21.github.io/portfolio_2021/" target="_blank" rel="noopener noreferrer">View the project here!</a> 👀</p>
 
 <h3>Summary</h3>
-<p>This was the main project for <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs/lessons/building-your-personal-website" target="_blank" rel="noopener noreferrer">The Odin Project's</a> getting hired curriculum. The goal of the project is to build your own portfolio/personal website to host your applications and provide detail about yourself as a developer.</p>
+<p>This was the main project for <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/html-and-css/lessons/embedding-images-and-video" target="_blank" rel="noopener noreferrer">The Odin Project's</a> getting hired curriculum. The goal of the project is to build your own portfolio/personal website to host your applications and provide detail about yourself as a developer.</p>
 
  <h3>Technologies:</h3>
   <ul>
