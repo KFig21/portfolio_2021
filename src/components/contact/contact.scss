@@ -356,7 +356,7 @@
 
             .active {
               @include mobile {
-                background-color: $accentColor;
+                // background-color: $accentColor;
                 color: $primaryColor;
                 fill: $primaryColor;
                 transition: background-color 0.2s ease, color 0.1s ease,

@@ -43,15 +43,15 @@ export default function Skills() {
           <div className="content">
             <div class="scroll-fade-top"></div>
             <div className="tech">
-              <h2>Languages</h2>
+              <SC.SkillsH2>Languages</SC.SkillsH2>
               <div className="tech-container">{mapSkills(languages)}</div>
             </div>
             <div className="tech">
-              <h2>Technologies</h2>
+              <SC.SkillsH2>Technologies</SC.SkillsH2>
               <div className="tech-container">{mapSkills(techData)}</div>
             </div>
             <div className="tech">
-              <h2>Other Software</h2>
+              <SC.SkillsH2>Other Software</SC.SkillsH2>
               <div className="tech-container">{mapSkills(otherSkills)}</div>
             </div>
             <div class="scroll-fade-bottom"></div>

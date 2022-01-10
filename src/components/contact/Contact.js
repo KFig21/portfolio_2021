@@ -101,7 +101,7 @@ export default function Contact() {
             <div className="info">
               {/* email */}
               <SC.ContactItem className="item-container">
-                <div
+                <SC.ContactIcon
                   className={
                     active === "email"
                       ? "contact-icon-container active"
@@ -110,7 +110,7 @@ export default function Contact() {
                   onClick={() => handleInfo(email, "email")}
                 >
                   <Mail className="icon" />
-                </div>
+                </SC.ContactIcon>
                 <div className="item-details">
                   <span className="item-span-title">Email:</span>
                   <span className="item-span" id="email-contact-span">
@@ -120,7 +120,7 @@ export default function Contact() {
               </SC.ContactItem>
               {/* phone */}
               <SC.ContactItem className="item-container">
-                <div
+                <SC.ContactIcon
                   className={
                     active === "phone"
                       ? "contact-icon-container active"
@@ -129,7 +129,7 @@ export default function Contact() {
                   onClick={() => handleInfo(phone, "phone")}
                 >
                   <Phone className="icon" />
-                </div>
+                </SC.ContactIcon>
                 <div className="item-details">
                   <span className="item-span-title">Phone:</span>
                   <span className="item-span" id="phone-contact-span">
@@ -139,7 +139,7 @@ export default function Contact() {
               </SC.ContactItem>
               {/* github */}
               <SC.ContactItem className="item-container">
-                <div
+                <SC.ContactIcon
                   className={
                     active === "github"
                       ? "contact-icon-container active"
@@ -148,7 +148,7 @@ export default function Contact() {
                   onClick={() => handleInfo(github, "github")}
                 >
                   <GitHub className="icon" />
-                </div>
+                </SC.ContactIcon>
                 <div className="item-details">
                   <span className="item-span-title">Github:</span>
                   <a
@@ -164,7 +164,7 @@ export default function Contact() {
               </SC.ContactItem>
               {/* leetcode */}
               <SC.ContactItem className="item-container">
-                <div
+                <SC.ContactIcon
                   className={
                     active === "leetcode"
                       ? "contact-icon-container active"
@@ -173,7 +173,7 @@ export default function Contact() {
                   onClick={() => handleInfo(leetcode, "leetcode")}
                 >
                   <LeetCodeIcon class="icon" />
-                </div>
+                </SC.ContactIcon>
                 <div className="item-details">
                   <span className="item-span-title">Leetcode:</span>
                   <a

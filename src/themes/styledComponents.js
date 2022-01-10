@@ -161,6 +161,18 @@ const SC = {
     }
   `,
 
+  // SKILLS
+  SkillsH2: styled.h2`
+    text-decoration: underline solid 3px #23c5d9 !important;
+    @media (min-height: 421px) {
+      @media (max-width: 768px) {
+        text-decoration: underline solid 3px
+          ${(props) => props.theme.colors.accentColor} !important;
+      }
+    }
+    transition: all 0.2s ease !important;
+  `,
+
   // CONTACT
   ContactButton: styled.button`
     background: ${(props) => props.theme.colors.accentColor};
@@ -191,6 +203,18 @@ const SC = {
     }
     &:hover .item-details .item-span {
       color: ${(props) => props.theme.colors.accentColor} !important;
+    }
+
+    transition: all 0.2s ease !important;
+  `,
+  ContactIcon: styled.div`
+    @media (min-height: 421px) {
+      @media (max-width: 768px) {
+        &.active {
+          background-color: ${(props) =>
+            props.theme.colors.accentColor} !important;
+        }
+      }
     }
     transition: all 0.2s ease !important;
   `,
