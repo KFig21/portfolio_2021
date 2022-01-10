@@ -157,7 +157,7 @@ const SC = {
   `,
   ModalBackground: styled.div`
     &.modal-background-in {
-      animation: ${(props) => fadeIn(props.theme.colors.accentColor)} 1s
+      animation: ${(props) => fadeIn(props.theme.colors.accentColorFaded)} 1s
         cubic-bezier(0.165, 0.84, 0.44, 1) forwards !important;
     }
   `,
