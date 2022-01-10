@@ -319,14 +319,16 @@
               margin-right: 10px;
               color: $textColor;
               fill: $textColor;
-              transition: background-color 0.2s ease, color 0.1s ease,
-                fill 0.1s ease;
+              transition: background-color 0.2s ease, color 0.05s ease,
+                fill 0.05s ease;
 
               @include mobile {
                 margin-right: 0px;
+                transition: unset;
               }
               @include mobileKeyboard {
                 margin-right: 0px;
+                transition: unset;
               }
               @include mobileHorizontal {
                 height: 30px;
@@ -334,6 +336,7 @@
                 min-height: 30px;
                 min-width: 30px;
                 overflow: hidden;
+                transition: unset;
               }
 
               .icon {
@@ -347,9 +350,13 @@
                 padding: 6px 7px 8px 7px;
                 transition: all 0.25s ease;
 
+                @include mobile {
+                  transition: unset;
+                }
                 @include mobileHorizontal {
                   height: 20px;
                   width: 20px;
+                  transition: unset;
                 }
               }
             }
@@ -359,15 +366,13 @@
                 // background-color: $accentColor;
                 color: $primaryColor;
                 fill: $primaryColor;
-                transition: background-color 0.2s ease, color 0.1s ease,
-                  fill 0.1s ease;
+                transition: unset;
               }
               @include mobileKeyboard {
                 background-color: $accentColor;
                 color: $primaryColor;
                 fill: $primaryColor;
-                transition: background-color 0.2s ease, color 0.1s ease,
-                  fill 0.1s ease;
+                transition: unset;
               }
             }
 

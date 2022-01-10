@@ -205,8 +205,6 @@ const SC = {
     &:hover .item-details .item-span {
       color: ${(props) => props.theme.colors.accentColor} !important;
     }
-
-    transition: all 0.2s ease !important;
   `,
   ContactIcon: styled.div`
     @media (min-height: 421px) {
@@ -217,7 +215,6 @@ const SC = {
         }
       }
     }
-    transition: all 0.2s ease !important;
   `,
   ContactInput: styled.input`
     &:focus {
