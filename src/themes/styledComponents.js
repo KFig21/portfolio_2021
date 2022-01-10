@@ -95,7 +95,7 @@ const SC = {
       ${(props) => props.theme.colors.accentColor} 100%
     );
     animation: ${gradientAnimation} 15s ease infinite !important;
-    background-size: 400% 400% !important;
+    background-size: 650% 650% !important;
   `,
   Break: styled.div`
     background: ${(props) => props.theme.colors.accentColor} !important;
