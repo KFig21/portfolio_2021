@@ -53,8 +53,8 @@ const yellowTheme = {
 const purpleTheme = {
   name: "purple",
   colors: {
-    accentColor: "#8633eb",
-    accentColorFaded: "#8633eb99",
+    accentColor: "#9b4cfb",
+    accentColorFaded: "#9b4cfb99",
     accentColorAnimation: "#ae6cff",
     accentTextColor: "white",
     lastPcolor: "#23c5d9",
