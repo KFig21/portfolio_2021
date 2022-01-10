@@ -140,6 +140,7 @@ const SC = {
     }
     &.active {
       background-color: ${(props) => props.theme.colors.accentColor} !important;
+      color: ${(props) => props.theme.colors.accentTextColor} !important;
     }
     &.inactive {
       &:hover {

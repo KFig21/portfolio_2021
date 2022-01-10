@@ -4,7 +4,7 @@ const aquaTheme = {
     accentColor: "#23c5d9",
     accentColorFaded: "#23c2d799",
     accentColorAnimation: "#b6eef8",
-    accentTextColor: "white",
+    accentTextColor: "black",
     lastPcolor: "#ffd100",
     gradientBackgroundColor1: "rgb(55, 128, 206)",
     gradientBackgroundColor2: "rgba(37, 216, 211, 1)",
