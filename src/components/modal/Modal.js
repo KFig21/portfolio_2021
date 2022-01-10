@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./modal.scss";
 import CodeIcon from "@material-ui/icons/Code";
 import LanguageIcon from "@material-ui/icons/Language";
+import SC from "../../themes/styledComponents";
 
 export default function Modal({ project, showModal, setShowModal }) {
   useEffect(() => {
@@ -64,7 +65,7 @@ export default function Modal({ project, showModal, setShowModal }) {
                     </div>
                   ))}
                 </div>
-                <h2>{project.title}</h2>
+                <SC.UnderLinedH2>{project.title}</SC.UnderLinedH2>
                 <p>{project.desc}</p>
                 {/* mobile icons */}
                 <div className="icons-container mobile">
@@ -101,7 +102,7 @@ export default function Modal({ project, showModal, setShowModal }) {
                 </div>
               </div>
             </div>
-            <div className="right">
+            <SC.ScrollThumb className="right">
               {/* images */}
               {project.imgs.map((img) => {
                 const { id, src } = img;
@@ -114,17 +115,17 @@ export default function Modal({ project, showModal, setShowModal }) {
                   </div>
                 );
               })}
-            </div>
+            </SC.ScrollThumb>
           </div>
         </div>
       </div>
-      <div
+      <SC.ModalBackground
         className={
           "modal-background " +
           (!showModal ? "modal-background-out" : "modal-background-in")
         }
         onClick={() => handleClose()}
-      ></div>
+      ></SC.ModalBackground>
     </div>
   );
 }

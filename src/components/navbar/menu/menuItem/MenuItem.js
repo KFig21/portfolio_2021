@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./menuItem.scss";
+import SC from "../../../../themes/styledComponents";
 import {
   Home,
   HomeOutlined,
@@ -26,8 +27,13 @@ export default function MenuItem({ item, setMenuOpen, list, index }) {
   }, [index]);
   return (
     <li onClick={() => setMenuOpen(false)}>
-      <a className="menuItem underline" href={`#${item.toLowerCase()}`}>
-        <span className={active ? "menu-item active" : "menu-item inactive"}>
+      <SC.MenuUnderline
+        className="menuItem underline"
+        href={`#${item.toLowerCase()}`}
+      >
+        <SC.MenuItem
+          className={active ? "menu-item active" : "menu-item inactive"}
+        >
           {item === "Home" ? (
             active ? (
               <Home className="menu-icon" />
@@ -72,8 +78,8 @@ export default function MenuItem({ item, setMenuOpen, list, index }) {
           ) : null}
 
           <span className="text">{item === "Intro" ? "Home" : item}</span>
-        </span>
-      </a>
+        </SC.MenuItem>
+      </SC.MenuUnderline>
     </li>
   );
 }

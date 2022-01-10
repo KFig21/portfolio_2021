@@ -137,6 +137,7 @@
 
     .down-arrow {
       margin-left: 20px;
+      transform: rotate(180deg);
 
       @include mobile {
         bottom: 7px;
@@ -152,6 +153,14 @@
 
     .arrow-img {
       width: 30px;
+    }
+    .arrow-svg {
+      max-height: 34px;
+      max-width: 34px;
+      .arrow-g {
+        max-height: 34px;
+        max-width: 34px;
+      }
     }
   }
 

@@ -3,6 +3,7 @@ import List from "./list/List";
 import Page from "./page/Page";
 import "./portfolio.scss";
 import Modal from "../modal/Modal";
+import SC from "../../themes/styledComponents";
 // portfolios
 import { webDesignPortfolio } from "./portfolioData/webDesignPortfolio";
 import { reactPortfolio } from "./portfolioData/reactPortfolio";
@@ -110,9 +111,9 @@ export default function Portfolio() {
     <div className="portfolio section" id="portfolio">
       <div className="title-container">
         <h1>
-          <span>&lt; </span>
+          <SC.Brackets>&lt; </SC.Brackets>
           <a href="#portfolio">Portfolio</a>
-          <span> /&gt;</span>
+          <SC.Brackets> /&gt;</SC.Brackets>
         </h1>
       </div>
 

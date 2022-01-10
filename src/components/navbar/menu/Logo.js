@@ -1,8 +1,9 @@
 import React from "react";
+import SC from "../../../themes/styledComponents";
 
 export default function Logo() {
   return (
-    <svg
+    <SC.NavLogo
       className="navbar-svg"
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
@@ -46,6 +47,6 @@ export default function Logo() {
 1116 0 1116 1120 -1120 c820 -820 1116 -1122 1105 -1127z"
         />
       </g>
-    </svg>
+    </SC.NavLogo>
   );
 }

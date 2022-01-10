@@ -3,11 +3,18 @@ import { useState, useEffect, useRef } from "react";
 import { init } from "ityped";
 import "./home.scss";
 // imgs
+import {
+  aquaTheme,
+  redTheme,
+  yellowTheme,
+  greenTheme,
+  purpleTheme,
+} from "../../themes/themes";
+import SC from "../../themes/styledComponents";
 
-export default function Home() {
+export default function Home({ changeTheme, fileSelected, setFileSelected }) {
   const textRef = useRef();
   const [sidebarSelected, setSidebarSelected] = useState(1);
-  const [fileSelected, setFileSelected] = useState(1);
 
   useEffect(() => {
     init(textRef.current, {
@@ -18,8 +25,13 @@ export default function Home() {
     });
   }, []);
 
+  const handleFileClick = (file, theme) => {
+    changeTheme(theme);
+    setFileSelected(file);
+  };
+
   return (
-    <div className="home section" id="home">
+    <SC.GradientBackground className="home section" id="home">
       <div className="editor-container">
         <div className="editor">
           <div className="top-bar">
@@ -53,48 +65,52 @@ export default function Home() {
             <div className="filebar">
               <span
                 style={{ width: "98%" }}
-                className={fileSelected === 1 ? "file open" : "file"}
-                onClick={() => setFileSelected(1)}
+                className={
+                  fileSelected === 1 ? "file green open" : "file green"
+                }
+                onClick={() => handleFileClick(1, greenTheme)}
               ></span>
               <span
                 style={{ width: "90%" }}
                 className={fileSelected === 2 ? "file aqua open" : "file aqua"}
-                onClick={() => setFileSelected(2)}
+                onClick={() => handleFileClick(2, aquaTheme)}
               ></span>
               <span
-                style={{ width: "82%" }}
+                style={{ width: "85%" }}
                 className={fileSelected === 3 ? "file open" : "file"}
                 onClick={() => setFileSelected(3)}
               ></span>
               <span
-                style={{ width: "85%" }}
-                className={fileSelected === 4 ? "file open" : "file"}
-                onClick={() => setFileSelected(4)}
-              ></span>
-              <span
                 style={{ width: "94%" }}
                 className={
-                  fileSelected === 5 ? "file yellow open" : "file yellow"
+                  fileSelected === 4 ? "file yellow open" : "file yellow"
                 }
-                onClick={() => setFileSelected(5)}
+                onClick={() => handleFileClick(4, yellowTheme)}
               ></span>
               <span
                 style={{ width: "78%" }}
-                className={fileSelected === 6 ? "file open" : "file"}
-                onClick={() => setFileSelected(6)}
+                className={fileSelected === 5 ? "file open" : "file"}
+                onClick={() => setFileSelected(5)}
               ></span>
               <span
                 style={{ width: "90%" }}
-                className={fileSelected === 7 ? "file red open" : "file red"}
-                onClick={() => setFileSelected(7)}
+                className={fileSelected === 6 ? "file red open" : "file red"}
+                onClick={() => handleFileClick(6, redTheme)}
               ></span>
               <span
                 style={{ width: "84%" }}
-                className={fileSelected === 8 ? "file open" : "file"}
-                onClick={() => setFileSelected(8)}
+                className={fileSelected === 7 ? "file open" : "file"}
+                onClick={() => setFileSelected(7)}
               ></span>
               <span
                 style={{ width: "70%" }}
+                className={
+                  fileSelected === 8 ? "file purple open" : "file purple"
+                }
+                onClick={() => handleFileClick(8, purpleTheme)}
+              ></span>
+              <span
+                style={{ width: "82%" }}
                 className={fileSelected === 9 ? "file open" : "file"}
                 onClick={() => setFileSelected(9)}
               ></span>
@@ -121,6 +137,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </SC.GradientBackground>
   );
 }

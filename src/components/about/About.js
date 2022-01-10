@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.scss";
 import { Person, Mail, GitHub, Code } from "@material-ui/icons";
+import SC from "../../themes/styledComponents";
 // imgs
 import logo from "../../assets/logo/logo1TransparentSec.png";
 
@@ -9,20 +10,20 @@ export default function About() {
     <div className="about section" id="about">
       <div className="title-container">
         <h1>
-          <span>&lt; </span>
+          <SC.Brackets>&lt; </SC.Brackets>
           <a href="#about">About me</a>
-          <span> /&gt;</span>
+          <SC.Brackets> /&gt;</SC.Brackets>
         </h1>
       </div>
 
       <div className="container">
         <div className="mobile-img-container">
-          <img src={logo} alt="" />
+          <SC.AboutImgMobile src={logo} alt="" />
         </div>
-        <h2 className="mobile">Kevin Figenshu</h2>
+        <SC.UnderLinedH2 className="mobile">Kevin Figenshu</SC.UnderLinedH2>
         <div className="left">
           <div className="img-container">
-            <img src={logo} alt="" />
+            <SC.AboutImg src={logo} alt="" />
           </div>
           <div className="info">
             <h2>Kevin Figenshu</h2>
@@ -67,14 +68,14 @@ export default function About() {
               Welcome! My name is Kevin Figenshu, I am a self-taught developer
               and web designer.
             </p>
-            <div className="break"></div>
+            <SC.Break className="break"></SC.Break>
             <p className="info-p">
               Starting from no-code in January of 2020 I became obsessed with
               the world of programming. Poring through resources such as The
               Odin Project, FreeCodeCamp, and Codecademy I have been developing
               the necessary skills for becoming a full stack developer.
             </p>
-            <div className="break"></div>
+            <SC.Break className="break"></SC.Break>
             {/* <p>
               Prior to programming I graduated with a bachelors in business
               administration with a focus in accounting from Temple University
@@ -83,9 +84,9 @@ export default function About() {
               Adobe photoshop & illustrator.
             </p>
             <div className="break"></div> */}
-            <p className="last-p">Let's work together!</p>
+            <SC.LastP className="last-p">Let's work together!</SC.LastP>
             <div className="info mobile">
-              <div className="break"></div>
+              <SC.Break className="break"></SC.Break>
               <div className="item-container">
                 <Mail className="icon" />
                 <span>Kevin.Figenshu@gmail.com</span>

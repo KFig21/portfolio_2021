@@ -1,11 +1,11 @@
 @import "../../global.scss";
 
 .contact {
-  background-image: linear-gradient(
-    132.6deg,
-    rgb(55, 128, 206) 23.3%,
-    rgba(37, 216, 211, 1) 84.7%
-  );
+  // background-image: linear-gradient(
+  //   132.6deg,
+  //   rgb(55, 128, 206) 23.3%,
+  //   rgba(37, 216, 211, 1) 84.7%
+  // );
   display: flex;
   position: relative;
   align-items: center;
@@ -166,7 +166,6 @@
         button {
           width: 120px;
           color: $textColor;
-          background-color: $accentColor;
           border: none;
           border-radius: 3px;
           font-size: 16px;
@@ -188,18 +187,6 @@
             outline: none;
           }
           &:hover {
-            background: linear-gradient(
-              130deg,
-              $accentColor,
-              $accentColor,
-              $accentColor,
-              $accentColor,
-              #97e7f5,
-              $accentColor,
-              $accentColor,
-              $accentColor,
-              $accentColor
-            );
             -webkit-animation: animated-logo 2.2s ease infinite;
             -moz-animation: animated-logo 2.2s ease infinite;
             animation: animated-logo 2.2s ease infinite;
@@ -306,7 +293,7 @@
 
             &:hover {
               .contact-icon-container {
-                background-color: $accentColor;
+                // background-color: $accentColor;
                 color: $primaryColor;
                 fill: $primaryColor;
               }

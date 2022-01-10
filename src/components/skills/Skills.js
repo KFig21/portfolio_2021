@@ -1,5 +1,6 @@
 import React from "react";
 import "./skills.scss";
+import SC from "../../themes/styledComponents";
 // skills data
 import { languages, techData, otherSkills } from "../../allProjects";
 
@@ -26,9 +27,9 @@ export default function Skills() {
     <div className="skills section" id="skills">
       <div className="title-container">
         <h1 className="projects-title">
-          <span>&lt; </span>
+          <SC.Brackets>&lt; </SC.Brackets>
           <a href="#skills">Tech Skills</a>
-          <span> /&gt;</span>
+          <SC.Brackets> /&gt;</SC.Brackets>
         </h1>
       </div>
       <div className="tech-container">

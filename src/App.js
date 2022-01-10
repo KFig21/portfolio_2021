@@ -1,6 +1,14 @@
 import "./app.scss";
 import "./App.css";
 import React, { useState, useEffect, createRef } from "react";
+import { ThemeProvider } from "styled-components";
+import {
+  aquaTheme,
+  yellowTheme,
+  redTheme,
+  greenTheme,
+  purpleTheme,
+} from "./themes/themes";
 // components
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
@@ -96,37 +104,73 @@ function App() {
     }
   }, [scrollProgress]);
 
+  // theme
+  const [theme, setTheme] = useState(aquaTheme);
+  const [fileSelected, setFileSelected] = useState(2);
+  const changeTheme = (newTheme) => {
+    if (newTheme) {
+      setTheme(newTheme);
+    } else {
+      if (theme.name === "green") {
+        setTheme(aquaTheme);
+        setFileSelected(2);
+      } else if (theme.name === "aqua") {
+        setTheme(yellowTheme);
+        setFileSelected(4);
+      } else if (theme.name === "yellow") {
+        setTheme(redTheme);
+        setFileSelected(6);
+      } else if (theme.name === "red") {
+        setTheme(purpleTheme);
+        setFileSelected(8);
+      } else if (theme.name === "purple") {
+        setTheme(greenTheme);
+        setFileSelected(1);
+      } else {
+        setTheme(aquaTheme);
+        setFileSelected(2);
+      }
+    }
+  };
+
   return (
-    <div className="app">
-      <Menu
-        menuOpen={menuOpen}
-        setMenuOpen={setMenuOpen}
-        list={list}
-        index={index}
-      />
-      <div className="sections-container">
-        <Navbar
+    <ThemeProvider theme={theme}>
+      <div className="app">
+        <Menu
           menuOpen={menuOpen}
           setMenuOpen={setMenuOpen}
-          upButton={upButton}
-          downButton={downButton}
           list={list}
           index={index}
+          changeTheme={changeTheme}
         />
-        <div
-          className="sections"
-          onClick={() => setMenuOpen(false)}
-          ref={target}
-        >
-          <Home />
-          <About />
-          <Projects />
-          <Portfolio />
-          <Skills />
-          <Contact />
+        <div className="sections-container">
+          <Navbar
+            menuOpen={menuOpen}
+            setMenuOpen={setMenuOpen}
+            upButton={upButton}
+            downButton={downButton}
+            list={list}
+            index={index}
+          />
+          <div
+            className="sections"
+            onClick={() => setMenuOpen(false)}
+            ref={target}
+          >
+            <Home
+              changeTheme={changeTheme}
+              fileSelected={fileSelected}
+              setFileSelected={setFileSelected}
+            />
+            <About />
+            <Projects />
+            <Portfolio />
+            <Skills />
+            <Contact />
+          </div>
         </div>
       </div>
-    </div>
+    </ThemeProvider>
   );
 }
 

@@ -1,13 +1,14 @@
 import React from "react";
 import "./dots.scss";
+import SC from "../../../themes/styledComponents";
 
 export default function Dots({ id, active, handleDotClick }) {
   return (
     <div className="dots-a">
-      <li
+      <SC.Dots
         className={active ? "dot active" : "dot"}
         onClick={() => handleDotClick(id)}
-      ></li>
+      ></SC.Dots>
     </div>
   );
 }

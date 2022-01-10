@@ -4,6 +4,7 @@ import "./contact.scss";
 import { Phone, Mail, GitHub } from "@material-ui/icons";
 import LeetCodeIcon from "./LeetCodeIcon";
 import emailjs from "@emailjs/browser";
+import SC from "../../themes/styledComponents";
 
 export default function Contact() {
   const [message, setMessage] = useState("");
@@ -62,35 +63,35 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact section" id="contact">
+    <SC.GradientBackground className="contact section" id="contact">
       <div className="container">
         <div className="contact-container-left">
           <h2>Lets get in touch</h2>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input
+            <SC.ContactInput
               type="text"
               placeholder="Name"
               name="user_name"
               onChange={(e) => setNameCheck(e.target.value)}
             />
-            <input
+            <SC.ContactInput
               type="email"
               placeholder="Email"
               name="user_email"
               onChange={(e) => setEmailCheck(e.target.value)}
             />
-            <input
+            <SC.ContactInput
               type="text"
               placeholder="Subject"
               name="user_subject"
               onChange={(e) => setSubjectCheck(e.target.value)}
             />
-            <textarea
+            <SC.ContactMessage
               placeholder="Message"
               name="message"
               onChange={(e) => setMessageCheck(e.target.value)}
-            ></textarea>
-            <button type="submit">Send</button>
+            ></SC.ContactMessage>
+            <SC.ContactButton type="submit">Send</SC.ContactButton>
           </form>
         </div>
         <div className="contact-container-right">
@@ -99,7 +100,7 @@ export default function Contact() {
             <p>Feel free to contact me or check me out on other platforms</p>
             <div className="info">
               {/* email */}
-              <div className="item-container">
+              <SC.ContactItem className="item-container">
                 <div
                   className={
                     active === "email"
@@ -116,9 +117,9 @@ export default function Contact() {
                     {email}
                   </span>
                 </div>
-              </div>
+              </SC.ContactItem>
               {/* phone */}
-              <div className="item-container">
+              <SC.ContactItem className="item-container">
                 <div
                   className={
                     active === "phone"
@@ -135,9 +136,9 @@ export default function Contact() {
                     {phone}
                   </span>
                 </div>
-              </div>
+              </SC.ContactItem>
               {/* github */}
-              <div className="item-container">
+              <SC.ContactItem className="item-container">
                 <div
                   className={
                     active === "github"
@@ -160,9 +161,9 @@ export default function Contact() {
                     {github}
                   </a>
                 </div>
-              </div>
+              </SC.ContactItem>
               {/* leetcode */}
-              <div className="item-container">
+              <SC.ContactItem className="item-container">
                 <div
                   className={
                     active === "leetcode"
@@ -185,7 +186,7 @@ export default function Contact() {
                     {leetcode}
                   </a>
                 </div>
-              </div>
+              </SC.ContactItem>
             </div>
             <div className="mobile-info-container">{contactInfo}</div>
           </div>
@@ -198,6 +199,6 @@ export default function Contact() {
       >
         <div className="message">{message}</div>
       </div>
-    </div>
+    </SC.GradientBackground>
   );
 }

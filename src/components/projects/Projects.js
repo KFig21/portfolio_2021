@@ -1,6 +1,7 @@
 import React, { useState, useEffect, createRef } from "react";
 import "./projects.scss";
 import Dots from "./dots/Dots";
+import SC from "../../themes/styledComponents";
 // icons
 import CodeIcon from "@material-ui/icons/Code";
 import LanguageIcon from "@material-ui/icons/Language";
@@ -79,9 +80,9 @@ export default function Projects() {
     <div className="projects section" id="projects">
       <div className="title-container">
         <h1 className="projects-title">
-          <span>&lt; </span>
+          <SC.Brackets>&lt; </SC.Brackets>
           <a href="#projects">Project Spotlight</a>
-          <span> /&gt;</span>
+          <SC.Brackets> /&gt;</SC.Brackets>
         </h1>
       </div>
 
@@ -113,7 +114,7 @@ export default function Projects() {
                           </div>
                         ))}
                       </div>
-                      <h2>{title}</h2>
+                      <SC.UnderLinedH2>{title}</SC.UnderLinedH2>
                       <p>{desc}</p>
                       {/* mobile icons */}
                       <div className="icons-container mobile">
