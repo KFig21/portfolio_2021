@@ -302,7 +302,7 @@ export const applifyProjectData = {
   live: "https://kfig21.github.io/applify_client/#/",
 };
 export const applifySpotlightData = {
-  id: "1",
+  id: 1,
   icons: [
     { id: "1", icon: mongodbIcon, color: "mongo" },
     { id: "2", icon: expressIcon, color: "express" },
