@@ -8,13 +8,13 @@ import LanguageIcon from "@material-ui/icons/Language";
 // project data
 import {
   nodebookSpotlightData,
-  petstagramSpotlightData,
+  applifySpotlightData,
   gameNseekSpotlightData,
 } from "../../allProjects";
 
 const projectData = [
   nodebookSpotlightData,
-  petstagramSpotlightData,
+  applifySpotlightData,
   gameNseekSpotlightData,
 ];
 
@@ -22,7 +22,7 @@ export default function Projects() {
   const [index, setIndex] = useState(0);
   const list = [
     { id: nodebookSpotlightData.id },
-    { id: petstagramSpotlightData.id },
+    { id: applifySpotlightData.id },
     { id: gameNseekSpotlightData.id },
   ];
 
@@ -80,9 +80,11 @@ export default function Projects() {
     <div className="projects section" id="projects">
       <div className="title-container">
         <h1 className="projects-title">
-          <SC.Brackets>&lt; </SC.Brackets>
-          <a href="#projects">Project Spotlight</a>
-          <SC.Brackets> /&gt;</SC.Brackets>
+          <SC.SectionTitle href="#projects">
+            <SC.Brackets>&lt; </SC.Brackets>
+            Project Spotlight
+            <SC.Brackets> /&gt;</SC.Brackets>
+          </SC.SectionTitle>
         </h1>
       </div>
 

@@ -19,15 +19,15 @@ export default function Portfolio() {
   const [showModal, setShowModal] = useState(false);
 
   const pages = [
-    { id: 0, name: "react", content: reactPortfolio },
-    { id: 1, name: "node", content: nodePortfolio },
+    { id: 0, name: "node", content: nodePortfolio },
+    { id: 1, name: "react", content: reactPortfolio },
     { id: 2, name: "games", content: gamesPortfolio },
     { id: 3, name: "webDesign", content: webDesignPortfolio },
   ];
 
   const list = [
-    { id: 0, title: "React" },
-    { id: 1, title: "Node" },
+    { id: 0, title: "Node" },
+    { id: 1, title: "React" },
     { id: 2, title: "Games" },
     { id: 3, title: "Web Design" },
   ];
@@ -111,9 +111,11 @@ export default function Portfolio() {
     <div className="portfolio section" id="portfolio">
       <div className="title-container">
         <h1>
-          <SC.Brackets>&lt; </SC.Brackets>
-          <a href="#portfolio">Portfolio</a>
-          <SC.Brackets> /&gt;</SC.Brackets>
+          <SC.SectionTitle href="#portfolio">
+            <SC.Brackets>&lt; </SC.Brackets>
+            Portfolio
+            <SC.Brackets> /&gt;</SC.Brackets>
+          </SC.SectionTitle>
         </h1>
       </div>
 

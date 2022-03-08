@@ -105,6 +105,13 @@ import nodebookImg2 from "./assets/projects/node/nodebook/nodebook-2.PNG";
 import nodebookImg3 from "./assets/projects/node/nodebook/nodebook-3.PNG";
 import nodebookImg4 from "./assets/projects/node/nodebook/nodebook-4.PNG";
 import nodebookImg5 from "./assets/projects/node/nodebook/nodebook-5.png";
+// applify Project images
+import applifyFavicon from "./assets/projects/node/applify/applify-favicon.png";
+import applifyGif1 from "./assets/projects/node/applify/applify-0.gif";
+import applifyImg1 from "./assets/projects/node/applify/applify-1.png";
+import applifyImg2 from "./assets/projects/node/applify/applify-2.png";
+import applifyImg3 from "./assets/projects/node/applify/applify-3.png";
+import applifyImg4 from "./assets/projects/node/applify/applify-4.png";
 // blog Project images
 import blogFavicon from "./assets/projects/node/blog/blog-favicon.png";
 import blogImg1 from "./assets/projects/node/blog/blog-1.png";
@@ -271,6 +278,49 @@ export const nodebookSpotlightData = {
   ],
   repository: "https://github.com/KFig21/nodebook_client",
   live: "https://kfig21.github.io/nodebook_client/",
+};
+
+export const applifyProjectData = {
+  id: "23",
+  icons: [
+    { id: "1", icon: mongodbIcon, color: "mongo" },
+    { id: "2", icon: expressIcon, color: "express" },
+    { id: "3", icon: reactIcon, color: "react" },
+    { id: "4", icon: nodeIcon, color: "node" },
+  ],
+  title: "Applify",
+  desc: "While on my job search I decided to build a web app that would assist me in the process. Applify is built with the MERN stack, React sticky-tables, styled components, and JWT authentication. The goal of this project is to help simplify and streamline the job search process by allowing users to track their applications and store their credientials in easily accessible quick-links.",
+  favicon: applifyFavicon,
+  imgs: [
+    { id: "img-0", src: applifyGif1 },
+    { id: "img-1", src: applifyImg1 },
+    { id: "img-2", src: applifyImg2 },
+    { id: "img-3", src: applifyImg3 },
+    { id: "img-4", src: applifyImg4 },
+  ],
+  repository: "https://github.com/KFig21/applify_client",
+  live: "https://kfig21.github.io/applify_client/#/",
+};
+export const applifySpotlightData = {
+  id: "1",
+  icons: [
+    { id: "1", icon: mongodbIcon, color: "mongo" },
+    { id: "2", icon: expressIcon, color: "express" },
+    { id: "3", icon: reactIcon, color: "react" },
+    { id: "4", icon: nodeIcon, color: "node" },
+  ],
+  title: "Applify",
+  desc: "While on my job search I decided to build a web app that would assist me in the process. Applify is built with the MERN stack, React sticky-tables, styled components, and JWT authentication. The goal of this project is to help simplify and streamline the job search process by allowing users to track their applications and store their credientials in easily accessible quick-links.",
+  favicon: applifyFavicon,
+  imgs: [
+    { id: "img-0", src: applifyGif1 },
+    // { id: "img-1", src: applifyImg1 },
+    // { id: "img-2", src: applifyImg2 },
+    // { id: "img-3", src: applifyImg3 },
+    // { id: "img-4", src: applifyImg4 },
+  ],
+  repository: "https://github.com/KFig21/applify_client",
+  live: "https://kfig21.github.io/applify_client/#/",
 };
 
 export const blogProjectData = {

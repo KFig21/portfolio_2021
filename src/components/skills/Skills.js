@@ -27,9 +27,11 @@ export default function Skills() {
     <div className="skills section" id="skills">
       <div className="title-container">
         <h1 className="projects-title">
-          <SC.Brackets>&lt; </SC.Brackets>
-          <a href="#skills">Tech Skills</a>
-          <SC.Brackets> /&gt;</SC.Brackets>
+          <SC.SectionTitle href="#skills">
+            <SC.Brackets>&lt; </SC.Brackets>
+            Tech Skills
+            <SC.Brackets> /&gt;</SC.Brackets>
+          </SC.SectionTitle>
         </h1>
       </div>
       <div className="tech-container">

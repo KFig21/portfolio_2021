@@ -27,6 +27,22 @@ const SC = {
     color: ${(props) => props.theme.colors.accentColor} !important;
     transition: all 0.2s ease !important;
   `,
+  SectionTitle: styled.a`
+    font-family: Poppins, sans-serif;
+    color: transparent !important;
+    background-color: ${(props) => props.theme.colors.accentColor};
+    background-image: linear-gradient(
+      132.6deg,
+      ${(props) => props.theme.colors.gradientBackgroundColor1},
+      ${(props) => props.theme.colors.gradientBackgroundColor2}
+    ) !important;
+    background-size: 100% !important;
+    -webkit-background-clip: text !important;
+    -moz-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    -moz-text-fill-color: transparent !important;
+    font-weight: 700 !important;
+  `,
   GradientBackground: styled.div`
     background-image: linear-gradient(
       132.6deg,

@@ -10,9 +10,11 @@ export default function About() {
     <div className="about section" id="about">
       <div className="title-container">
         <h1>
-          <SC.Brackets>&lt; </SC.Brackets>
-          <a href="#about">About me</a>
-          <SC.Brackets> /&gt;</SC.Brackets>
+          <SC.SectionTitle href="#about">
+            <SC.Brackets>&lt; </SC.Brackets>
+            About me
+            <SC.Brackets> /&gt;</SC.Brackets>
+          </SC.SectionTitle>
         </h1>
       </div>
 

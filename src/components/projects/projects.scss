@@ -33,7 +33,7 @@
       margin-left: 15px;
 
       @include mobile {
-        font-size: 2.1em;
+        font-size: 2em;
         margin-left: unset;
       }
 
@@ -365,6 +365,7 @@
 
             .shade {
               background-color: rgba(0, 0, 0, 0.5);
+              backdrop-filter: blur(6px);
               position: absolute;
               width: 100%;
               height: 100%;
@@ -404,7 +405,8 @@
                   display: block;
                   z-index: 2;
                   border-radius: 25px;
-                  margin-bottom: 20px;
+                  margin-bottom: 15px;
+                  margin-top: 10px;
 
                   .favicon {
                     border-radius: inherit;

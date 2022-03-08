@@ -1,5 +1,6 @@
 import {
   nodebookProjectData,
+  applifyProjectData,
   blogProjectData,
   blogCMSProjectData,
   partyPlannerProjectData,
@@ -8,6 +9,7 @@ import {
 
 export const nodePortfolio = [
   nodebookProjectData,
+  applifyProjectData,
   blogProjectData,
   blogCMSProjectData,
   partyPlannerProjectData,

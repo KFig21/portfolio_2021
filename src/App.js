@@ -56,6 +56,7 @@ function App() {
       return;
     }
 
+    console.log("log");
     const element = target.current;
     const windowScroll = element.scrollTop; // Distance of the scrollbar from the leftmost point
     const totalHeight = element.scrollHeight - element.clientHeight; // Total width the scrollbar can traverse
