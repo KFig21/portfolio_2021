@@ -5,7 +5,6 @@ import "./portfolio.scss";
 import Modal from "../modal/Modal";
 import SC from "../../themes/styledComponents";
 // portfolios
-import { webDesignPortfolio } from "./portfolioData/webDesignPortfolio";
 import { reactPortfolio } from "./portfolioData/reactPortfolio";
 import { gamesPortfolio } from "./portfolioData/gamesPortfolio";
 import { nodePortfolio } from "./portfolioData/nodePortfolio";
@@ -22,14 +21,12 @@ export default function Portfolio() {
     { id: 0, name: "node", content: nodePortfolio },
     { id: 1, name: "react", content: reactPortfolio },
     { id: 2, name: "games", content: gamesPortfolio },
-    { id: 3, name: "webDesign", content: webDesignPortfolio },
   ];
 
   const list = [
     { id: 0, title: "Node" },
     { id: 1, title: "React" },
     { id: 2, title: "Games" },
-    { id: 3, title: "Web Design" },
   ];
 
   const handleSetModal = (item) => {
@@ -83,15 +80,12 @@ export default function Portfolio() {
     if (scrollProgress < 30) {
       setSelected(0);
       setCurrent(0);
-    } else if (scrollProgress < 60) {
+    } else if (scrollProgress < 70) {
       setSelected(1);
       setCurrent(1);
-    } else if (scrollProgress < 80) {
+    } else {
       setSelected(2);
       setCurrent(2);
-    } else {
-      setSelected(3);
-      setCurrent(3);
     }
   }, [scrollProgress]);
 
@@ -99,8 +93,8 @@ export default function Portfolio() {
     const element = target.current;
     const totalWidth = element.scrollWidth - element.clientWidth; // Total width the scrollbar can traverse
     setSelected(id);
-    setScrollProgress((id / 3) * 100);
-    element.scrollTo((id / 3) * totalWidth, 0);
+    setScrollProgress((id / 2) * 100);
+    element.scrollTo((id / 2) * totalWidth, 0);
     document.getElementById("portfolio").scrollIntoView({
       block: "start",
       behavior: "smooth",

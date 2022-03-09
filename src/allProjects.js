@@ -71,33 +71,6 @@ import ticTacToe2 from "./assets/projects/games/ticTacToe/ticTacToe-2.png";
 import rockPaperScissorsFavicon from "./assets/projects/games/rockPaperScissors/rockPaperScissors-favicon.png";
 import rockPaperScissors1 from "./assets/projects/games/rockPaperScissors/rockPaperScissors-1.png";
 import rockPaperScissors2 from "./assets/projects/games/rockPaperScissors/rockPaperScissors-2.png";
-// Responsive Design Project images
-import responsiveDesignFavicon from "./assets/projects/webDesign/responsiveDesign/responsiveDesign-favicon.png";
-import responsiveDesignImg1 from "./assets/projects/webDesign/responsiveDesign/responsiveDesign-1.PNG";
-import responsiveDesignImg2 from "./assets/projects/webDesign/responsiveDesign/responsiveDesign-2.PNG";
-import responsiveDesignImg3 from "./assets/projects/webDesign/responsiveDesign/responsiveDesign-3.png";
-import responsiveDesignImg4 from "./assets/projects/webDesign/responsiveDesign/responsiveDesign-4.png";
-import responsiveDesignGif1 from "./assets/projects/webDesign/responsiveDesign/responsiveDesign-5.gif";
-// Pseudo Class Project images
-import pseudoClassFavicon from "./assets/projects/webDesign/pseudoClass/pseudoClass-favicon.png";
-import pseudoClassImg1 from "./assets/projects/webDesign/pseudoClass/pseudoClass-1.png";
-import pseudoClassGif1 from "./assets/projects/webDesign/pseudoClass/pseudoClass-2.gif";
-// HTML Form Project images
-import htmlFormFavicon from "./assets/projects/webDesign/htmlForm/htmlForm-favicon.png";
-import htmlFormImg1 from "./assets/projects/webDesign/htmlForm/htmlForm-1.png";
-import htmlFormGif1 from "./assets/projects/webDesign/htmlForm/htmlForm-2.gif";
-// Embedding Video & Images Project images
-import embedFavicon from "./assets/projects/webDesign/embed/embed-favicon.png";
-import embedImg1 from "./assets/projects/webDesign/embed/embed-1.png";
-import embedGif1 from "./assets/projects/webDesign/embed/embed-2.gif";
-// Grid Framework Project images
-import gridFrameworkFavicon from "./assets/projects/webDesign/gridFramework/gridFramework-favicon.png";
-import gridFrameworkImg1 from "./assets/projects/webDesign/gridFramework/gridFramework-1.png";
-import gridFrameworkGif1 from "./assets/projects/webDesign/gridFramework/gridFramework-2.gif";
-// Backgrounds & Gradients Project images
-import gradientImg1 from "./assets/projects/webDesign/gradient/gradient-1.png";
-// calculator Project images
-import calculatorImg1 from "./assets/projects/more/calculator/calculator-1.png";
 // nodebook Project images
 import nodebookFavicon from "./assets/projects/node/nodebook/nodebook-favicon.png";
 import nodebookGif1 from "./assets/projects/node/nodebook/nodebook-1.gif";
@@ -144,10 +117,9 @@ export const petstagramProjectData = {
   desc: "An Instagram re-creation built with React, Tailwind CSS, and Firebase. This is a fully functional and responsive app that allows users to create an account, post & crop photos, delete posts, comment, like/unlike, follow/unfollow, and change their avatar.",
   favicon: petstagramFavicon,
   imgs: [
-    { id: "img-1", src: petstagramGif1 },
-    { id: "img-2", src: petstagramImg1 },
-    { id: "img-3", src: petstagramImg2 },
-    { id: "img-4", src: petstagramImg3 },
+    { id: "img-1", src: petstagramImg1 },
+    { id: "img-2", src: petstagramImg2 },
+    { id: "img-3", src: petstagramImg3 },
   ],
   repository: "https://github.com/KFig21/petstagram",
   live: "https://kfig21.github.io/petstagram/",
@@ -178,10 +150,9 @@ export const gameNseekProjectData = {
   desc: "A 'Where's Waldo' character finding game, this project was built with React and uses Firebase for a backend database. The game features 8 unique levels and a global leaderboard that updates in realtime. Explicit user names submitted to the leaderboard are censored with emojis.",
   favicon: gameNseekFavicon,
   imgs: [
-    { id: "img-1", src: gameNseekGif1 },
-    { id: "img-2", src: gameNseekImg1 },
-    { id: "img-3", src: gameNseekImg2 },
-    { id: "img-4", src: gameNseekImg3 },
+    { id: "img-1", src: gameNseekImg1 },
+    { id: "img-2", src: gameNseekImg2 },
+    { id: "img-3", src: gameNseekImg3 },
   ],
   repository: "https://github.com/KFig21/photo_tagging_app",
   live: "https://kfig21.github.io/photo_tagging_app/",
@@ -249,11 +220,10 @@ export const nodebookProjectData = {
   desc: "A social media app built with MongoDB, Express, React, NodeJS, and more. This is a fully functional and responsive app that allows users to create an account, post messages, photos, edit & delete posts, comment, like/unlike, follow/unfollow, change their avatar and much more!",
   favicon: nodebookFavicon,
   imgs: [
-    { id: "img-1", src: nodebookGif1 },
-    { id: "img-2", src: nodebookImg2 },
-    { id: "img-3", src: nodebookImg3 },
-    { id: "img-4", src: nodebookImg4 },
-    { id: "img-5", src: nodebookImg5 },
+    { id: "img-1", src: nodebookImg2 },
+    { id: "img-2", src: nodebookImg3 },
+    { id: "img-3", src: nodebookImg4 },
+    { id: "img-4", src: nodebookImg5 },
   ],
   repository: "https://github.com/KFig21/nodebook_client",
   live: "https://kfig21.github.io/nodebook_client/",
@@ -292,7 +262,6 @@ export const applifyProjectData = {
   desc: "While on my job search I decided to build a web app that would assist me in the process. Applify is built with the MERN stack, React sticky-tables, styled components, and JWT authentication. The goal of this project is to help simplify and streamline the job search process by allowing users to track their applications and store their credientials in easily accessible quick-links.",
   favicon: applifyFavicon,
   imgs: [
-    { id: "img-0", src: applifyGif1 },
     { id: "img-1", src: applifyImg1 },
     { id: "img-2", src: applifyImg2 },
     { id: "img-3", src: applifyImg3 },
@@ -485,130 +454,11 @@ export const toDoListProjectData = {
   desc: "A to-do list app built with React, styled with Sass, and uses Firebase as a backend database. Features include: adding/deleting tasks & lists, set tasks as complete, incomplete & urgent, update task & list details in realtime. This application is fully responsive to be used on any device screen size.",
   favicon: toDoListFavicon,
   imgs: [
-    { id: "img-1", src: toDoListGif1 },
-    { id: "img-2", src: toDoListImg1 },
-    { id: "img-3", src: toDoListImg2 },
+    { id: "img-1", src: toDoListImg1 },
+    { id: "img-2", src: toDoListImg2 },
   ],
   repository: "https://github.com/KFig21/todo_list_react",
   live: "https://kfig21.github.io/todo_list_react/",
-};
-export const toDoListSpotlightData = {
-  id: 2,
-  icons: [
-    { id: "1", icon: reactIcon, color: "react" },
-    { id: "2", icon: firebaseIcon, color: "firebase" },
-    { id: "3", icon: sassIcon, color: "sass" },
-  ],
-  title: "To Do List",
-  desc: "A to-do list app built with React, styled with Sass, and uses Firebase as a backend database. Features include: adding/deleting tasks & lists, set tasks as complete, incomplete & urgent, update task & list details in realtime. This application is fully responsive to be used on any device screen size.",
-  favicon: toDoListFavicon,
-  imgs: [{ id: "img-1", src: toDoListGif1 }],
-  repository: "https://github.com/KFig21/todo_list_react",
-  live: "https://kfig21.github.io/todo_list_react/",
-};
-
-// design
-export const responsiveDesignProjectData = {
-  id: "10",
-  icons: [
-    { id: "1", icon: htmlIcon, color: "html" },
-    { id: "2", icon: cssIcon, color: "css" },
-  ],
-  title: "Responsive Design Project",
-  desc: "The goal of this project was to re-create the responsive design of home page of TheNextWeb.com. CSS media queries were used to achieve this goal.",
-  favicon: responsiveDesignFavicon,
-  imgs: [
-    { id: "img-1", src: responsiveDesignGif1 },
-    { id: "img-2", src: responsiveDesignImg1 },
-    { id: "img-3", src: responsiveDesignImg2 },
-    { id: "img-4", src: responsiveDesignImg3 },
-    { id: "img-5", src: responsiveDesignImg4 },
-  ],
-  repository: "https://github.com/KFig21/the_next_web_page",
-  live: "https://kfig21.github.io/the_next_web_page/",
-};
-
-export const pseudoClassDesignProjectData = {
-  id: "11",
-  icons: [
-    { id: "1", icon: htmlIcon, color: "html" },
-    { id: "2", icon: cssIcon, color: "css" },
-  ],
-  title: "Pseudo Class Design",
-  desc: "The goal of this web design project was to work on CSS pseudo classes. There are plenty of :hover, :before, and :after pseudo classes included in the elements",
-  favicon: pseudoClassFavicon,
-  imgs: [
-    { id: "img-1", src: pseudoClassGif1 },
-    { id: "img-2", src: pseudoClassImg1 },
-  ],
-  repository: "https://github.com/KFig21/design_teardown",
-  live: "https://kfig21.github.io/design_teardown/",
-};
-
-export const htmlFormProjectData = {
-  id: "12",
-  icons: [
-    { id: "1", icon: reactIcon, color: "react" },
-    { id: "2", icon: htmlIcon, color: "html" },
-    { id: "3", icon: cssIcon, color: "css" },
-  ],
-  title: "HTML Form Project",
-  desc: "HTML and CSS were the basis for this project, I included react to add a dynamic interface to the password authentication. This form is also responsive and can be viewed on any device.",
-  favicon: htmlFormFavicon,
-  imgs: [
-    { id: "img-1", src: htmlFormGif1 },
-    { id: "img-2", src: htmlFormImg1 },
-  ],
-  repository: "https://github.com/KFig21/mailchimp_form",
-  live: "https://kfig21.github.io/mailchimp_form/",
-};
-
-export const embedProjectData = {
-  id: "13",
-  icons: [
-    { id: "1", icon: htmlIcon, color: "html" },
-    { id: "2", icon: cssIcon, color: "css" },
-  ],
-  title: "Embedding Video & Images Project",
-  desc: "The goal of this project was to learn how to embed videos and images by re-creating a youtube video page. I included pseudo classes to make the page feel more lively and made the design responsive to fit multiple screen sizes.",
-  favicon: embedFavicon,
-  imgs: [
-    { id: "img-1", src: embedGif1 },
-    { id: "img-2", src: embedImg1 },
-  ],
-  repository: "https://github.com/KFig21/youtube_page",
-  live: "https://kfig21.github.io/youtube_page/",
-};
-
-export const gridBasedFrameworkProjectData = {
-  id: "14",
-  icons: [
-    { id: "1", icon: htmlIcon, color: "html" },
-    { id: "2", icon: cssIcon, color: "css" },
-  ],
-  title: "Grid-based Framework",
-  desc: "The goal of this project was to create a webpage with a responsive framework. Using HTML and CSS I was able to build a page that will look great on any device or screen size.",
-  favicon: gridFrameworkFavicon,
-  imgs: [
-    { id: "img-1", src: gridFrameworkGif1 },
-    { id: "img-2", src: gridFrameworkImg1 },
-  ],
-  repository: "https://github.com/KFig21/top_homepage",
-  live: "https://kfig21.github.io/top_homepage/",
-};
-
-export const gradientProjectData = {
-  id: "15",
-  icons: [
-    { id: "1", icon: htmlIcon, color: "html" },
-    { id: "2", icon: cssIcon, color: "css" },
-  ],
-  title: "Backgrounds & Gradients Project",
-  desc: "",
-  favicon: petstagramFavicon,
-  imgs: [{ id: "img-1", src: gradientImg1 }],
-  repository: "https://github.com/KFig21/apple_page",
-  live: "https://kfig21.github.io/apple_page/",
 };
 
 // more projects
@@ -623,57 +473,11 @@ export const weatherApiProjectData = {
   desc: "A weather application built with React and styled with Sass. This app uses the OpenWeather API to retreive and display data on a fully responsive UI. The app shows the location's current weather & 7 day forecast, your 5 most recent searches, and the ability to switch between metric and imperial.",
   favicon: weatherAppFavicon,
   imgs: [
-    { id: "img-1", src: weatherAppGif1 },
-    { id: "img-2", src: weatherAppImg1 },
-    { id: "img-3", src: weatherAppImg2 },
+    { id: "img-1", src: weatherAppImg1 },
+    { id: "img-2", src: weatherAppImg2 },
   ],
   repository: "https://github.com/KFig21/weather_api_react",
   live: "https://kfig21.github.io/weather_api_react/",
-};
-
-export const calculatorProjectData = {
-  id: "17",
-  icons: [
-    { id: "1", icon: htmlIcon, color: "html" },
-    { id: "2", icon: javascriptIcon, color: "javascript" },
-    { id: "3", icon: cssIcon, color: "css" },
-  ],
-  title: "Calculator",
-  desc: "",
-  favicon: petstagramFavicon,
-  imgs: [{ id: "img-1", src: calculatorImg1 }],
-  repository: "https://github.com/KFig21/calculator",
-  live: "https://kfig21.github.io/calculator/",
-};
-
-export const etchASketchProjectData = {
-  id: "18",
-  icons: [
-    { id: "1", icon: htmlIcon, color: "html" },
-    { id: "2", icon: javascriptIcon, color: "javascript" },
-    { id: "3", icon: cssIcon, color: "css" },
-  ],
-  title: "Etch-A-Sketch",
-  desc: "",
-  favicon: petstagramFavicon,
-  imgs: [{ id: "img-1", src: gradientImg1 }],
-  repository: "https://github.com/KFig21/etch_a_sketch",
-  live: "https://kfig21.github.io/etch_a_sketch/",
-};
-
-export const libraryProjectData = {
-  id: "19",
-  icons: [
-    { id: "1", icon: htmlIcon, color: "html" },
-    { id: "2", icon: javascriptIcon, color: "javascript" },
-    { id: "3", icon: cssIcon, color: "css" },
-  ],
-  title: "My Library",
-  desc: "",
-  favicon: petstagramFavicon,
-  imgs: [{ id: "img-1", src: gradientImg1 }],
-  repository: "https://github.com/KFig21/my_library",
-  live: "https://kfig21.github.io/my_library/",
 };
 
 export const portfolioProjectData = {
